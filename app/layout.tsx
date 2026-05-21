@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
     'Faith-rooted journals, stickers, and seasonal pieces made to help you feel grounded, inspired, and softly reminded of who you are becoming.',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>{children}</body>
