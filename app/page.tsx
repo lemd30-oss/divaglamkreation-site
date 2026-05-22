@@ -5,15 +5,17 @@ const facebookUrl = 'https://www.facebook.com/share/1G9VQrJnaZ/';
 const products = [
   {
     title: '3-Day Mini Reset Journal',
-    description: 'A gentle printable journal for a quiet pause, a fresh breath, and a simple reset.',
-    icon: '03',
+    description: 'A free gentle printable journal for a quiet pause, a fresh breath, and a simple reset.',
+    icon: 'FREE',
     href: gumroadShopUrl,
+    priceLabel: 'Free download',
   },
   {
     title: '7-Day Gentle Reset Journal',
     description: 'A soft weekly companion for reflection, faith, planning, and becoming with intention.',
     icon: '07',
     href: gumroadShopUrl,
+    priceLabel: '$7',
     featured: true,
   },
   {
@@ -21,6 +23,7 @@ const products = [
     description: 'Soft morning pages created to help you begin the day with faith, calm, and care.',
     icon: 'AM',
     href: gumroadShopUrl,
+    priceLabel: 'Digital download',
   },
 ];
 
@@ -135,6 +138,7 @@ export default function Home() {
           {products.map((product) => (
             <article className={product.featured ? 'card featured-card' : 'card'} key={product.title}>
               <div className="card-image">{product.icon}</div>
+              <p className="eyebrow">{product.priceLabel}</p>
               <h3>{product.title}</h3>
               <p>{product.description}</p>
               <a className="button secondary" href={product.href}>View Details</a>
