@@ -4,8 +4,8 @@ const facebookUrl = 'https://www.facebook.com/share/1G9VQrJnaZ/';
 
 const products = [
   {
-    title: '3-Day Mini Reset Journal',
-    description: 'A free gentle printable journal for a quiet pause, a fresh breath, and a simple reset.',
+    title: 'The Gentle Reset',
+    description: 'A free 3-day guided faith reset journal with reflection pages, prayer space, and gratitude prompts.',
     icon: 'FREE',
     href: gumroadShopUrl,
     priceLabel: 'Free download',
@@ -67,11 +67,11 @@ export default function Home() {
 
         <aside className="hero-card" aria-label="Featured DivaglamKreation message">
           <div className="hero-card-inner">
-            <p className="eyebrow">7-Day Reset Journal</p>
-            <h2>Pause. Reflect. Begin again.</h2>
+            <p className="eyebrow">The Gentle Reset</p>
+            <h2>Free 3-Day Guided Faith Reset Journal</h2>
             <p>
-              A calm printable companion for the woman who is learning to move with grace,
-              intention, and quiet confidence.
+              A gentle, faith-rooted printable journal with guided reflection pages, prayer space,
+              and gratitude prompts to help you slow down, release what feels heavy, and begin again with peace.
             </p>
           </div>
         </aside>
@@ -89,25 +89,25 @@ export default function Home() {
           of grace, these printable pieces were made to meet you gently where you are.
         </p>
         <div className="hero-actions">
-          <a className="button" href={gumroadShopUrl}>Shop the 7-Day Reset Journal</a>
+          <a className="button" href={gumroadShopUrl}>Download the Free Journal</a>
           <a className="button secondary" href="#glowlist">Join the Glowlist</a>
         </div>
       </section>
 
       <section className="section featured-product" id="shop">
         <div>
-          <p className="eyebrow">Featured Reset Journal</p>
-          <h2>7-Day Gentle Reset Journal</h2>
+          <p className="eyebrow">Featured Free Journal</p>
+          <h2>The Gentle Reset</h2>
           <p>
-            The 7-Day Gentle Reset Journal is a soft printable journal created to help you slow
-            down, reflect, and begin again with intention.
+            The Gentle Reset is a free 3-day guided faith reset journal created to help you slow
+            down, reflect, and begin again with peace.
           </p>
           <p>
-            Inside, you’ll find guided pages for gentle reflection, morning focus, emotional
-            grounding, and faith-centered encouragement. Use it during your quiet time, morning
-            routine, Sunday reset, or whenever your heart needs a calmer rhythm.
+            Inside, you’ll find guided reflection pages, prayer space, gratitude prompts, and
+            gentle faith-rooted encouragement. Use it during your quiet time, morning routine,
+            Sunday reset, or whenever your heart needs a softer rhythm.
           </p>
-          <a className="button" href={gumroadShopUrl}>Get the 7-Day Reset Journal</a>
+          <a className="button" href={gumroadShopUrl}>Download the Free Journal</a>
           <p className="trust-note">
             Digital product. No physical item will be shipped. Your printable PDF will be available
             through Gumroad after checkout.
@@ -116,13 +116,13 @@ export default function Home() {
         <div className="details-card">
           <p className="eyebrow">What’s Included</p>
           <ul>
-            <li>7 days of guided reset pages</li>
+            <li>3 days of guided faith reset pages</li>
             <li>Gentle reflection prompts</li>
-            <li>Morning intention space</li>
-            <li>Evening check-in space</li>
+            <li>Prayer space</li>
+            <li>Gratitude prompts</li>
             <li>Faith-rooted encouragement</li>
             <li>Printable PDF format</li>
-            <li>Instant digital download through Gumroad</li>
+            <li>Free digital download through Gumroad</li>
           </ul>
         </div>
       </section>
