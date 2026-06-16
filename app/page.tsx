@@ -1,4 +1,5 @@
 const gumroadShopUrl = 'https://lemdo8.gumroad.com/';
+const gumroadSubscribeUrl = 'https://lemdo8.gumroad.com/subscribe';
 const contactEmail = 'mailto:divaglamkreation@gmail.com';
 const facebookUrl = 'https://www.facebook.com/share/1G9VQrJnaZ/';
 
@@ -199,16 +200,16 @@ export default function Home() {
 
       <section className="section" id="glowlist">
         <div className="email-box">
-          <p className="eyebrow">Join the Glowlist</p>
-          <h2>Receive soft resets, journal prompts, and seasonal updates.</h2>
+          <p className="eyebrow">Join the DGK Glowlist</p>
+          <h2>Start with soft encouragement and a simple gentle reset.</h2>
           <p>
-            A simple email space for new products, printable gifts, behind-the-glow notes, and
-            gentle reminders for your week.
+            Join the DGK Glowlist for faith-rooted notes, journaling prompts, behind-the-glow updates,
+            and gentle reminders created to help you pause, reset, and keep becoming with grace.
           </p>
-          <form className="email-form">
-            <input aria-label="Email address" placeholder="Your email address" type="email" />
-            <button type="submit">Join the Glowlist</button>
-          </form>
+          <div className="email-form" aria-label="Glowlist subscription actions">
+            <a className="button" href={gumroadSubscribeUrl}>Join the Glowlist</a>
+            <a className="button secondary" href={gumroadShopUrl}>Download the Free Journal</a>
+          </div>
         </div>
       </section>
 
