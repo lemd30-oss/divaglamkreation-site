@@ -53,7 +53,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Faith • Flow • Flourish</p>
-          <h1>Faith-rooted journals and creative pieces for your gentle reset.</h1>
+          <h1>Faith-rooted journals, stickers, and creative pieces for your gentle reset.</h1>
           <p>
             DivaglamKreation is where faith, creativity, and gentle encouragement meet — through
             journals, stickers, and seasonal pieces made to help you feel grounded, inspired, and
