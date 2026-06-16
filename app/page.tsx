@@ -47,7 +47,7 @@ export default function Home() {
           <a href="#shop">Shop</a>
           <a href="#about">About</a>
           <a href="#blog">Blog</a>
-          <a href="#glowlist">Glowlist</a>
+          <a href="/glowlist">Glowlist</a>
         </nav>
       </header>
 
@@ -91,7 +91,7 @@ export default function Home() {
         </p>
         <div className="hero-actions">
           <a className="button" href={gumroadShopUrl}>Download the Free Journal</a>
-          <a className="button secondary" href="#glowlist">Join the Glowlist</a>
+          <a className="button secondary" href="/glowlist">Join the Glowlist</a>
         </div>
       </section>
 
@@ -208,7 +208,7 @@ export default function Home() {
           </p>
           <div className="email-form" aria-label="Glowlist subscription actions">
             <a className="button" href={gumroadSubscribeUrl}>Join the Glowlist</a>
-            <a className="button secondary" href={gumroadShopUrl}>Download the Free Journal</a>
+            <a className="button secondary" href="/glowlist">Learn More</a>
           </div>
         </div>
       </section>
@@ -216,7 +216,7 @@ export default function Home() {
       <footer className="footer">
         <p>© {new Date().getFullYear()} DivaglamKreation. Faith. Flow. Flourish.</p>
         <p>
-          <a href={gumroadShopUrl}>Gumroad</a> · <a href={gumroadSubscribeUrl}>Glowlist</a> · <a href={facebookUrl}>Facebook</a> · <a href={contactEmail}>Email</a>
+          <a href={gumroadShopUrl}>Gumroad</a> · <a href="/glowlist">Glowlist</a> · <a href={facebookUrl}>Facebook</a> · <a href={contactEmail}>Email</a>
         </p>
       </footer>
     </main>
