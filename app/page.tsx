@@ -216,7 +216,7 @@ export default function Home() {
       <footer className="footer">
         <p>© {new Date().getFullYear()} DivaglamKreation. Faith. Flow. Flourish.</p>
         <p>
-          <a href={gumroadShopUrl}>Gumroad</a> · <a href={facebookUrl}>Facebook</a> · <a href={contactEmail}>Email</a>
+          <a href={gumroadShopUrl}>Gumroad</a> · <a href={gumroadSubscribeUrl}>Glowlist</a> · <a href={facebookUrl}>Facebook</a> · <a href={contactEmail}>Email</a>
         </p>
       </footer>
     </main>
