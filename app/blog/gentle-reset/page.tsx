@@ -110,7 +110,7 @@ export default function GentleResetBlogPage() {
 
           <footer className="blog-soft-signature">
             <p>With grace,</p>
-            <p>Lisa at DivaglamKreation</p>
+            <p>DivaglamKreation</p>
           </footer>
         </section>
 
