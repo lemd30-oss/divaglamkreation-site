@@ -4,5 +4,16 @@
   "private": true,
   "scripts": {
     "build": "echo 'Static site - no build step needed'"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0",
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "typescript": "7.0.2"
   }
 }
