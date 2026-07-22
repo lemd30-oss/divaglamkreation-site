@@ -5,7 +5,7 @@ export const metadata = {
 };
 
 const orderUrl =
-  'mailto:divaglamkreation@gmail.com?subject=Beautiful%20Dragonfly%20Rhinestone%20Keychain%20Order&body=Hello%20DGK%2C%20I%20would%20like%20to%20order%20a%20Beautiful%20Dragonfly%20Rhinestone%20Keychain.%20My%20preferred%20color%20is%3A%20';
+  'https://a85da190-df2c-44b8-9510-5fb19ca1b186.paylinks.godaddy.com/p/8ff7cff0-6da6-4ac1-a31b-c70fd941358e';
 
 export default function DragonflyKeychainPage() {
   return (
@@ -36,7 +36,7 @@ export default function DragonflyKeychainPage() {
             touch of beauty and encouragement wherever you go.
           </p>
           <div className="hero-actions">
-            <a className="button" href={orderUrl}>Order for $9.99</a>
+            <a className="button" href={orderUrl}>Buy Now for $9.99</a>
             <a className="button secondary" href="/#shop">Return to the Collection</a>
           </div>
           <p className="trust-note">Available in Pink or Blue while this limited batch lasts.</p>
@@ -102,13 +102,12 @@ export default function DragonflyKeychainPage() {
       <section className="section" aria-labelledby="dragonfly-order-title">
         <div className="email-box">
           <p className="eyebrow">$9.99 · Limited Batch</p>
-          <h2 id="dragonfly-order-title">Choose your color.</h2>
+          <h2 id="dragonfly-order-title">Choose your color and check out.</h2>
           <p>
-            Tap below to request Pink or Blue. DGK will confirm availability and send your purchase
-            and shipping details by email.
+            Tap below to open the secure GoDaddy checkout and complete your Dragonfly Keychain order.
           </p>
           <div className="email-form">
-            <a className="button" href={orderUrl}>Start Your Order</a>
+            <a className="button" href={orderUrl}>Go to Secure Checkout</a>
           </div>
         </div>
       </section>
