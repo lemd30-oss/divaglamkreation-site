@@ -2,13 +2,23 @@
   "name": "divaglamkreation-site",
   "version": "0.1.0",
   "private": true,
-  "description": "Official website for DivaglamKreation - Faith-rooted printable reset journals and gentle routines",
+  "description": "Official website for DivaglamKreation — faith-rooted journals, keepsakes, and gentle encouragement.",
   "scripts": {
-    "build": "echo 'Static site - no build step needed'"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "@vercel/speed-insights": "^2.0.0"
+    "@vercel/speed-insights": "^2.0.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
-  "devDependencies": {},
-  "keywords": ["static-site", "vercel", "performance-monitoring", "reset-journals"]
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  },
+  "keywords": ["nextjs", "vercel", "divaglamkreation", "reset-journals"]
 }
