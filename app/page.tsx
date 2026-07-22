@@ -1,7 +1,7 @@
 const gumroadShopUrl = 'https://lemdo8.gumroad.com/';
 const gumroadSubscribeUrl = 'https://lemdo8.gumroad.com/subscribe';
 const contactEmail = 'mailto:divaglamkreation@gmail.com';
-const dragonflyKeychainUrl = 'mailto:divaglamkreation@gmail.com?subject=Dragonfly%20Keychain%20Order';
+const dragonflyKeychainUrl = '/dragonfly-keychain';
 const facebookUrl = 'https://www.facebook.com/share/1G9VQrJnaZ/';
 
 const products = [
@@ -21,11 +21,11 @@ const products = [
     featured: true,
   },
   {
-    title: 'Dragonfly Keychain',
-    description: 'A small carry-with-you reminder that transformation does not need hustle. Clip it to your keys, bag, or journal pouch.',
+    title: 'Beautiful Dragonfly Rhinestone Keychain',
+    description: 'A sparkling Pink or Blue dragonfly charm with gold-tone hardware — a giftable reminder of growth, light, and gentle transformation.',
     icon: 'DF',
     href: dragonflyKeychainUrl,
-    priceLabel: 'Limited batch',
+    priceLabel: '$9.99 · Limited batch',
   },
   {
     title: 'Gentle Morning Reset Pack',
@@ -158,28 +158,27 @@ export default function Home() {
 
       <section className="section split" aria-labelledby="dragonfly-keychain-title">
         <div>
-          <p className="eyebrow">Limited Carry-With-You Reminder</p>
-          <h2 id="dragonfly-keychain-title">The Dragonfly Keychain</h2>
+          <p className="eyebrow">$9.99 · Pink or Blue</p>
+          <h2 id="dragonfly-keychain-title">Beautiful Dragonfly Rhinestone Keychain</h2>
           <p>
-            The dragonfly doesn’t rush. She rests, she moves, she rests again — and she still gets
-            where she’s going.
+            A sparkling dragonfly charm with gold-tone hardware, created as a small symbol of growth,
+            light, and transformation.
           </p>
           <p>
-            Our dragonfly keychain is a small carry-with-you reminder: transformation doesn’t need
-            hustle. Clip it to your keys, your bag, or your journal pouch — a little touch of Faith.
-            Flow. Flourish. for the road.
+            Clip it to your keys, purse, backpack, or journal pouch — a lightweight Little Glow Gift
+            for yourself or someone who needs a gentle reminder to keep becoming at her own pace.
           </p>
           <div className="hero-actions">
-            <a className="button" href={dragonflyKeychainUrl}>Claim Yours</a>
+            <a className="button" href={dragonflyKeychainUrl}>View Keychain Details</a>
           </div>
-          <p className="trust-note">Only a few are available in this batch. This is a physical item.</p>
+          <p className="trust-note">Physical item. Available in Pink or Blue while the limited batch lasts.</p>
         </div>
         <div className="quote-panel">
-          <p className="eyebrow">Carry a Little Permission</p>
-          <h2>Move at your own pace.</h2>
+          <p className="eyebrow">Carry a Little Light</p>
+          <h2>Transformation does not need hustle.</h2>
           <p>
-            A gentle companion for your keys, bag, or planner pouch — and a small, pretty nudge that
-            you are allowed to rest, move, and begin again.
+            A sparkling everyday companion and a small, beautiful nudge that gentle movement still
+            carries you forward.
           </p>
         </div>
       </section>
