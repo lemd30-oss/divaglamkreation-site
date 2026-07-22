@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'Dragonfly Keychain | DivaglamKreation',
+  title: 'Beautiful Dragonfly Rhinestone Keychain | DivaglamKreation',
   description:
-    'A gentle carry-with-you reminder that transformation does not need hustle. A limited-batch physical keychain from DivaglamKreation.',
+    'A sparkling gold-tone dragonfly keychain and purse charm available in Pink or Blue. A giftable DGK reminder of growth, light, and gentle transformation.',
 };
 
 const orderUrl =
-  'mailto:divaglamkreation@gmail.com?subject=Dragonfly%20Keychain%20Order&body=Hello%20DGK%2C%20I%20would%20like%20to%20order%20a%20Dragonfly%20Keychain.';
+  'mailto:divaglamkreation@gmail.com?subject=Beautiful%20Dragonfly%20Rhinestone%20Keychain%20Order&body=Hello%20DGK%2C%20I%20would%20like%20to%20order%20a%20Beautiful%20Dragonfly%20Rhinestone%20Keychain.%20My%20preferred%20color%20is%3A%20';
 
 export default function DragonflyKeychainPage() {
   return (
@@ -25,30 +25,29 @@ export default function DragonflyKeychainPage() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">Limited-Batch Physical Keepsake</p>
-          <h1>The Dragonfly Keychain</h1>
+          <p className="eyebrow">Little Glow Gift · Limited Batch</p>
+          <h1>Beautiful Dragonfly Rhinestone Keychain</h1>
           <p>
-            The dragonfly doesn’t rush. She rests, she moves, she rests again — and she still gets
-            where she’s going.
+            A sparkling carry-with-you reminder of growth, light, and transformation — made for the
+            woman learning to move forward without rushing herself.
           </p>
           <p>
-            This small carry-with-you reminder was created for the road you are already walking:
-            transformation does not need hustle.
+            Clip this lightweight charm to your keys, purse, backpack, or journal pouch for a little
+            touch of beauty and encouragement wherever you go.
           </p>
           <div className="hero-actions">
-            <a className="button" href={orderUrl}>Claim Yours</a>
+            <a className="button" href={orderUrl}>Order for $9.99</a>
             <a className="button secondary" href="/#shop">Return to the Collection</a>
           </div>
-          <p className="trust-note">Only a few are available in this batch.</p>
+          <p className="trust-note">Available in Pink or Blue while this limited batch lasts.</p>
         </div>
 
-        <aside className="hero-card" aria-label="Dragonfly keychain message">
+        <aside className="hero-card" aria-label="Dragonfly keychain product highlight">
           <div className="hero-card-inner">
-            <p className="eyebrow">Carry a Little Permission</p>
-            <h2>Move at your own pace.</h2>
+            <p className="eyebrow">Pink · Blue · Gold Tone</p>
+            <h2>$9.99</h2>
             <p>
-              Clip it to your keys, your bag, or your journal pouch — a little touch of Faith. Flow.
-              Flourish. for the road.
+              Rhinestone dragonfly charm with a gold-tone keyring and lobster clasp attachment.
             </p>
           </div>
         </aside>
@@ -57,27 +56,29 @@ export default function DragonflyKeychainPage() {
       <section className="section featured-product">
         <div>
           <p className="eyebrow">A Gentle Companion</p>
-          <h2>A reminder for wherever your hands go.</h2>
+          <h2>More than a keychain — a small symbol of becoming.</h2>
           <p>
-            Some reminders belong on the page. Others need to travel with you. The Dragonfly
-            Keychain is a small, pretty nudge that you are allowed to rest, move, and begin again
-            without forcing the process.
+            The dragonfly is often connected with change, resilience, and light. This sparkling charm
+            turns that meaning into a useful everyday keepsake you can carry on your keys, purse,
+            backpack, or planner pouch.
           </p>
           <p>
-            Carry it as a symbol of quiet transformation — the kind that unfolds with faith,
-            patience, and one gentle next step at a time.
+            It is a thoughtful little gift for a friend, daughter, teen, coworker, or anyone who could
+            use a beautiful reminder that growth can happen gently.
           </p>
-          <a className="button" href={orderUrl}>Order the Dragonfly Keychain</a>
+          <a className="button" href={orderUrl}>Choose Pink or Blue</a>
         </div>
 
         <div className="details-card">
           <p className="eyebrow">Product Details</p>
           <ul>
-            <li>Physical dragonfly keychain</li>
-            <li>Made to clip onto keys, bags, or planner pouches</li>
-            <li>DGK symbol of transformation without hustle</li>
-            <li>Giftable encouragement for yourself or someone you love</li>
-            <li>Part of a small limited batch</li>
+            <li>Sparkling rhinestone dragonfly design</li>
+            <li>Available in Pink or Blue</li>
+            <li>Gold-tone keyring and lobster clasp</li>
+            <li>Lightweight and easy to clip on</li>
+            <li>Works as a keychain, purse charm, or backpack charm</li>
+            <li>Giftable DGK “Little Glow Gift”</li>
+            <li>Physical item · limited-batch availability</li>
           </ul>
         </div>
       </section>
@@ -85,26 +86,26 @@ export default function DragonflyKeychainPage() {
       <section className="section split">
         <div>
           <p className="eyebrow">The Meaning</p>
-          <h2>Rest. Move. Rest again.</h2>
+          <h2>Transformation does not need hustle.</h2>
           <p>
-            Growth does not always arrive in a straight line. The dragonfly reminds us that pausing
-            is not falling behind, and gentle movement still carries us forward.
+            The dragonfly does not force the journey. She rests, moves, catches the light, and keeps
+            going. Let this charm remind you that your pace can still carry you forward.
           </p>
         </div>
         <div className="quote-panel">
           <p className="eyebrow">Faith • Flow • Flourish</p>
-          <h2>Carry a little permission with you.</h2>
-          <p>Transformation can be quiet, faithful, and beautifully unhurried.</p>
+          <h2>Carry a little light with you.</h2>
+          <p>A small, sparkling reminder that becoming can be quiet, faithful, and beautifully your own.</p>
         </div>
       </section>
 
       <section className="section" aria-labelledby="dragonfly-order-title">
         <div className="email-box">
-          <p className="eyebrow">Limited Batch</p>
-          <h2 id="dragonfly-order-title">Ready to carry yours?</h2>
+          <p className="eyebrow">$9.99 · Limited Batch</p>
+          <h2 id="dragonfly-order-title">Choose your color.</h2>
           <p>
-            Send your order request and DGK will follow up with availability, price, and purchase
-            details.
+            Tap below to request Pink or Blue. DGK will confirm availability and send your purchase
+            and shipping details by email.
           </p>
           <div className="email-form">
             <a className="button" href={orderUrl}>Start Your Order</a>
