@@ -8,6 +8,9 @@
     "build": "next build",
     "start": "next start"
   },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
     "@vercel/speed-insights": "^2.0.0",
     "next": "latest",
