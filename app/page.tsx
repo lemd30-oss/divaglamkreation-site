@@ -62,11 +62,10 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Faith • Flow • Flourish</p>
-          <h1>Faith-rooted journals, stickers, and creative pieces for your gentle reset.</h1>
+          <h1>Journals and little resets for women who take care of everyone but themselves.</h1>
           <p>
-            DivaglamKreation is where faith, creativity, and gentle encouragement meet — through
-            journals, stickers, and seasonal pieces made to help you feel grounded, inspired, and
-            softly reminded of who you are becoming.
+            I make faith-rooted journals, stickers, and seasonal pieces — the kind of things that
+            sit on your nightstand and quietly remind you it&apos;s okay to stop for a minute.
           </p>
           <div className="hero-actions">
             <a className="button" href="#start">Start Here</a>
@@ -77,10 +76,10 @@ export default function Home() {
         <aside className="hero-card" aria-label="Featured DivaglamKreation message">
           <div className="hero-card-inner">
             <p className="eyebrow">The Gentle Reset</p>
-            <h2>Free 3-Day Guided Faith Reset Journal</h2>
+            <h2>Free 3-Day Faith Reset</h2>
             <p>
-              A gentle, faith-rooted printable journal with guided reflection pages, prayer space,
-              and gratitude prompts to help you slow down, release what feels heavy, and begin again with peace.
+              Three days. A few pages each. Reflection prompts, a little prayer space, room to put
+              down what&apos;s been heavy. Print it, grab a pen, start tonight if you want.
             </p>
           </div>
         </aside>
@@ -88,14 +87,14 @@ export default function Home() {
 
       <section className="section start-section" id="start">
         <p className="eyebrow">Start Here</p>
-        <h2>Choose your gentle beginning.</h2>
+        <h2>Not sure where to begin?</h2>
         <p>
-          DivaglamKreation creates soft, faith-rooted digital journals and reset tools to help you
-          pause, reflect, and return to yourself with peace and intention.
+          Start small. Maybe that&apos;s the free 3-day reset, maybe it&apos;s just reading the
+          blog with your coffee.
         </p>
         <p>
-          Whether you need a quiet morning reset, a fresh start for the week, or a small reminder
-          of grace, these printable pieces were made to meet you gently where you are.
+          There&apos;s no right order here — pick whatever meets you where you actually are this
+          week.
         </p>
         <div className="hero-actions">
           <a className="button" href={gumroadShopUrl}>Download the Free Journal</a>
