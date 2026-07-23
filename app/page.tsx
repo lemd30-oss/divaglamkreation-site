@@ -37,9 +37,16 @@ const products = [
 ];
 
 const blogPosts = [
-  'How to Begin a Gentle Reset Routine',
-  'Journal Prompts for a Softer Season',
-  'Faith, Creativity, and Becoming Again',
+  {
+    title: 'How to Begin a Gentle Reset Routine',
+    description: 'A soft place to begin when life feels full and you need a quieter rhythm.',
+    href: '/blog/gentle-reset',
+  },
+  {
+    title: 'Why You Don’t Need to Earn Rest',
+    description: 'A faith-rooted reminder that rest is not a reward for finishing everything.',
+    href: '/blog/why-you-dont-need-to-earn-rest',
+  },
 ];
 
 export default function Home() {
@@ -54,7 +61,7 @@ export default function Home() {
           <a href="#start">Start Here</a>
           <a href="#shop">Shop</a>
           <a href="#about">About</a>
-          <a href="#blog">Blog</a>
+          <a href="/blog">Blog</a>
           <a href="/glowlist">Glowlist</a>
         </nav>
       </header>
@@ -81,6 +88,7 @@ export default function Home() {
               Three days. A few pages each. Reflection prompts, a little prayer space, room to put
               down what&apos;s been heavy. Print it, grab a pen, start tonight if you want.
             </p>
+            <a className="button" href={gumroadShopUrl}>Download Free</a>
           </div>
         </aside>
       </section>
@@ -89,59 +97,19 @@ export default function Home() {
         <p className="eyebrow">Start Here</p>
         <h2>Not sure where to begin?</h2>
         <p>
-          Start small. Maybe that&apos;s the free 3-day reset, maybe it&apos;s just reading the
-          blog with your coffee.
+          Start small. Try the free 3-day reset, browse the shop, or read a quiet note with your coffee.
         </p>
-        <p>
-          There&apos;s no right order here — pick whatever meets you where you actually are this
-          week.
-        </p>
+        <p>There&apos;s no right order — choose what fits this week.</p>
         <div className="hero-actions">
-          <a className="button" href={gumroadShopUrl}>Download the Free Journal</a>
-          <a className="button secondary" href="/glowlist">Join the Glowlist</a>
+          <a className="button" href={gumroadShopUrl}>Browse the Shop</a>
+          <a className="button secondary" href="/blog">Read the Blog</a>
         </div>
       </section>
 
-      <section className="section featured-product" id="shop">
-        <div>
-          <p className="eyebrow">Featured Free Journal</p>
-          <h2>The Gentle Reset</h2>
-          <p>
-            The Gentle Reset is a free 3-day guided faith reset journal created to help you slow
-            down, reflect, and begin again with peace.
-          </p>
-          <p>
-            Inside, you’ll find guided reflection pages, prayer space, gratitude prompts, and
-            gentle faith-rooted encouragement. Use it during your quiet time, morning routine,
-            Sunday reset, or whenever your heart needs a softer rhythm.
-          </p>
-          <a className="button" href={gumroadShopUrl}>Download the Free Journal</a>
-          <p className="trust-note">
-            Digital product. No physical item will be shipped. Your printable PDF will be available
-            through Gumroad after checkout.
-          </p>
-        </div>
-        <div className="details-card">
-          <p className="eyebrow">What’s Included</p>
-          <ul>
-            <li>3 days of guided faith reset pages</li>
-            <li>Gentle reflection prompts</li>
-            <li>Prayer space</li>
-            <li>Gratitude prompts</li>
-            <li>Faith-rooted encouragement</li>
-            <li>Printable PDF format</li>
-            <li>Free digital download through Gumroad</li>
-          </ul>
-        </div>
-      </section>
-
-      <section className="section">
-        <p className="eyebrow">Featured Collection</p>
-        <h2>Gentle tools for your next soft reset.</h2>
-        <p>
-          Start with the core DGK pieces and let each product lead you into reflection,
-          encouragement, and peaceful daily rhythm.
-        </p>
+      <section className="section" id="shop">
+        <p className="eyebrow">Shop</p>
+        <h2>Small tools for real-life pauses.</h2>
+        <p>Printable journals, gentle reminders, and giftable pieces made for everyday use.</p>
         <div className="product-grid">
           {products.map((product) => (
             <article className={product.featured ? 'card featured-card' : 'card'} key={product.title}>
@@ -160,86 +128,60 @@ export default function Home() {
           <p className="eyebrow">$9.99 · Pink or Blue</p>
           <h2 id="dragonfly-keychain-title">Beautiful Dragonfly Rhinestone Keychain</h2>
           <p>
-            A sparkling dragonfly charm with gold-tone hardware, created as a small symbol of growth,
-            light, and transformation.
-          </p>
-          <p>
-            Clip it to your keys, purse, backpack, or journal pouch — a lightweight Little Glow Gift
-            for yourself or someone who needs a gentle reminder to keep becoming at her own pace.
+            A sparkling little symbol of growth and transformation for your keys, purse, backpack,
+            or journal pouch.
           </p>
           <div className="hero-actions">
             <a className="button" href={dragonflyKeychainUrl}>View Keychain Details</a>
           </div>
-          <p className="trust-note">Physical item. Available in Pink or Blue while the limited batch lasts.</p>
         </div>
         <div className="quote-panel">
           <p className="eyebrow">Carry a Little Light</p>
           <h2>Transformation does not need hustle.</h2>
-          <p>
-            A sparkling everyday companion and a small, beautiful nudge that gentle movement still
-            carries you forward.
-          </p>
-        </div>
-      </section>
-
-      <section className="section how-it-works">
-        <p className="eyebrow">Digital Downloads</p>
-        <h2>From checkout to quiet time in a few simple steps.</h2>
-        <div className="steps-grid">
-          <div className="step-card"><span>1</span><p>Choose your reset tool.</p></div>
-          <div className="step-card"><span>2</span><p>Checkout securely through Gumroad.</p></div>
-          <div className="step-card"><span>3</span><p>Download your printable PDF.</p></div>
-          <div className="step-card"><span>4</span><p>Print it at home or use it digitally.</p></div>
-          <div className="step-card"><span>5</span><p>Begin your reset at your own pace.</p></div>
+          <p>A small reminder that gentle movement still carries you forward.</p>
         </div>
       </section>
 
       <section className="section split" id="about">
         <div>
           <p className="eyebrow">Behind the Glow</p>
-          <h2>A brand built with heart, faith, and creative purpose.</h2>
+          <h2>Made with heart, faith, and creative purpose.</h2>
           <p>
-            DivaglamKreation creates meaningful paper goods and digital pieces for women who want
-            to feel encouraged in everyday moments. Each collection is designed to feel warm,
-            timeless, reflective, and easy to return to.
-          </p>
-          <p>
-            The heart of DGK is simple: make room for grace, honor the quiet work of becoming, and
-            create beauty that helps people feel gently seen.
+            DivaglamKreation creates paper goods and digital pieces for women who need encouragement
+            in ordinary moments. The goal is simple: make useful things that feel warm, thoughtful,
+            and easy to return to.
           </p>
         </div>
         <div className="quote-panel">
           <p className="eyebrow">Gentle Reminder</p>
           <h2>You are allowed to begin softly.</h2>
-          <p>
-            Growth does not always have to be loud. Sometimes it starts with a prayer, a page, and
-            one faithful next step.
-          </p>
+          <p>Sometimes growth starts with a prayer, a page, and one faithful next step.</p>
         </div>
       </section>
 
       <section className="section" id="blog">
         <p className="eyebrow">Journal Notes</p>
-        <h2>Fresh reflections for faith, creativity, and gentle routines.</h2>
+        <h2>Something quiet to read with your coffee.</h2>
         <div className="blog-grid">
           {blogPosts.map((post) => (
-            <article className="card" key={post}>
-              <p className="eyebrow">Blog Preview</p>
-              <h3>{post}</h3>
-              <p>A thoughtful DGK note designed for Pinterest traffic, brand trust, and quiet encouragement.</p>
+            <article className="card" key={post.href}>
+              <p className="eyebrow">From the Blog</p>
+              <h3>{post.title}</h3>
+              <p>{post.description}</p>
+              <a className="button secondary" href={post.href}>Read the Note</a>
             </article>
           ))}
+        </div>
+        <div className="hero-actions">
+          <a className="button" href="/blog">Visit the Blog</a>
         </div>
       </section>
 
       <section className="section" id="glowlist">
         <div className="email-box">
           <p className="eyebrow">Join the DGK Glowlist</p>
-          <h2>Start with soft encouragement and a simple gentle reset.</h2>
-          <p>
-            Join the DGK Glowlist for faith-rooted notes, journaling prompts, behind-the-glow updates,
-            and gentle reminders created to help you pause, reset, and keep becoming with grace.
-          </p>
+          <h2>A gentle note for your inbox.</h2>
+          <p>Receive new journal prompts, product updates, and behind-the-glow notes.</p>
           <div className="email-form" aria-label="Glowlist subscription actions">
             <a className="button" href={gumroadSubscribeUrl}>Join the Glowlist</a>
             <a className="button secondary" href="/glowlist">Learn More</a>
@@ -250,7 +192,7 @@ export default function Home() {
       <footer className="footer">
         <p>© {new Date().getFullYear()} DivaglamKreation. Faith. Flow. Flourish.</p>
         <p>
-          <a href={gumroadShopUrl}>Gumroad</a> · <a href="/glowlist">Glowlist</a> · <a href={facebookUrl}>Facebook</a> · <a href={contactEmail}>Email</a>
+          <a href={gumroadShopUrl}>Gumroad</a> · <a href="/blog">Blog</a> · <a href="/glowlist">Glowlist</a> · <a href={facebookUrl}>Facebook</a> · <a href={contactEmail}>Email</a>
         </p>
       </footer>
     </main>
