@@ -1,5 +1,8 @@
 const gumroadShopUrl = 'https://lemdo8.gumroad.com/';
 const gumroadSubscribeUrl = 'https://lemdo8.gumroad.com/subscribe';
+const gentleResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
+const sevenDayResetUrl = 'https://lemdo8.gumroad.com/l/dgk-7-day-reset-journal';
+const morningResetUrl = 'https://lemdo8.gumroad.com/l/Divaglamkreation';
 const contactEmail = 'mailto:divaglamkreation@gmail.com';
 const dragonflyKeychainUrl = '/dragonfly-keychain';
 const facebookUrl = 'https://www.facebook.com/share/1G9VQrJnaZ/';
@@ -9,14 +12,14 @@ const products = [
     title: 'The Gentle Reset',
     description: 'A free 3-day guided faith reset journal with reflection pages, prayer space, and gratitude prompts.',
     icon: 'FREE',
-    href: gumroadShopUrl,
+    href: gentleResetUrl,
     priceLabel: 'Free download',
   },
   {
     title: '7-Day Gentle Reset Journal',
     description: 'A soft weekly companion for reflection, faith, planning, and becoming with intention.',
     icon: '07',
-    href: gumroadShopUrl,
+    href: sevenDayResetUrl,
     priceLabel: '$7',
     featured: true,
   },
@@ -31,8 +34,8 @@ const products = [
     title: 'Gentle Morning Reset Pack',
     description: 'Soft morning pages created to help you begin the day with faith, calm, and care.',
     icon: 'AM',
-    href: gumroadShopUrl,
-    priceLabel: 'Digital download',
+    href: morningResetUrl,
+    priceLabel: '$7 digital download',
   },
 ];
 
@@ -88,7 +91,7 @@ export default function Home() {
               Three days. A few pages each. Reflection prompts, a little prayer space, room to put
               down what&apos;s been heavy. Print it, grab a pen, start tonight if you want.
             </p>
-            <a className="button" href={gumroadShopUrl}>Download Free</a>
+            <a className="button" href={gentleResetUrl}>Download Free</a>
           </div>
         </aside>
       </section>
