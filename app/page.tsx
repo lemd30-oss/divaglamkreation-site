@@ -40,6 +40,8 @@ const products = [
     title: 'Gentle Morning Reset Pack',
     description: 'Soft morning pages created to help you begin the day with faith, calm, and care.',
     icon: 'AM',
+    image: '/images/gentle-morning-reset-pack.jpg',
+    imageAlt: 'Gentle Morning Reset Pack with five printable reflection pages',
     href: morningResetUrl,
     priceLabel: '$7 · Digital PDF',
     buttonLabel: 'View Reset Pack on Gumroad',
@@ -124,7 +126,11 @@ export default function Home() {
         <div className="product-grid">
           {products.map((product) => (
             <article className={product.featured ? 'card featured-card' : 'card'} key={product.title}>
-              <div className="card-image" aria-hidden="true">{product.icon}</div>
+              {product.image ? (
+                <img className="card-product-image" src={product.image} alt={product.imageAlt} />
+              ) : (
+                <div className="card-image" aria-hidden="true">{product.icon}</div>
+              )}
               <p className="eyebrow">{product.priceLabel}</p>
               <h3>{product.title}</h3>
               <p>{product.description}</p>
