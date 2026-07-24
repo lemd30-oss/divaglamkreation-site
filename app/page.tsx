@@ -101,7 +101,7 @@ export default function Home() {
         </p>
         <p>There&apos;s no right order — choose what fits this week.</p>
         <div className="hero-actions">
-          <a className="button" href={gumroadShopUrl}>Browse the Shop</a>
+          <a className="button" href="#shop">Browse the Shop</a>
           <a className="button secondary" href="/blog">Read the Blog</a>
         </div>
       </section>
