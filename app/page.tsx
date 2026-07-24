@@ -127,7 +127,18 @@ export default function Home() {
           {products.map((product) => (
             <article className={product.featured ? 'card featured-card' : 'card'} key={product.title}>
               {product.image ? (
-                <img className="card-product-image" src={product.image} alt={product.imageAlt} />
+                <img
+                  src={product.image}
+                  alt={product.imageAlt}
+                  style={{
+                    borderRadius: '1rem',
+                    display: 'block',
+                    height: '180px',
+                    marginBottom: '1rem',
+                    objectFit: 'cover',
+                    width: '100%',
+                  }}
+                />
               ) : (
                 <div className="card-image" aria-hidden="true">{product.icon}</div>
               )}
