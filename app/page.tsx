@@ -4,6 +4,7 @@ const gentleResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
 const sevenDayResetUrl = 'https://lemdo8.gumroad.com/l/dgk-7-day-reset-journal';
 const morningResetUrl = 'https://lemdo8.gumroad.com/l/Divaglamkreation';
 const resetChallengeImageUrl = '/images/file_000000006878822f9afa6bda9bae9f6d.png';
+const heroImageUrl = '/images/file_00000000bbfc822fb379f73bd8a3c064.png';
 const contactEmail = 'mailto:divaglamkreation@gmail.com';
 const dragonflyKeychainUrl = '/dragonfly-keychain';
 const facebookUrl = 'https://www.facebook.com/share/1G9VQrJnaZ/';
@@ -98,19 +99,28 @@ export default function Home() {
           </div>
         </div>
 
-        <aside className="hero-card" aria-label="Featured DivaglamKreation message">
-          <div className="hero-card-inner">
-            <p className="eyebrow">The Gentle Reset</p>
-            <h2>Free 3-Day Faith Reset</h2>
-            <p>
-              Three days. A few pages each. Reflection prompts, a little prayer space, room to put
-              down what&apos;s been heavy. Print it, grab a pen, and begin softly.
-            </p>
-            <a className="button" href={gentleResetUrl} target="_blank" rel="noopener noreferrer">
-              Download Free on Gumroad
-            </a>
-          </div>
-        </aside>
+        <div
+          style={{
+            borderRadius: '2rem',
+            boxShadow: '0 24px 70px rgba(75, 58, 50, 0.12)',
+            overflow: 'hidden',
+            width: '100%',
+          }}
+        >
+          <img
+            src={heroImageUrl}
+            alt="Cozy DivaglamKreation journaling scene with books, candle, warm drink, and faith-rooted encouragement"
+            style={{
+              display: 'block',
+              height: '100%',
+              maxHeight: '620px',
+              minHeight: '360px',
+              objectFit: 'cover',
+              objectPosition: 'center',
+              width: '100%',
+            }}
+          />
+        </div>
       </section>
 
       <section className="section start-section" id="start">
