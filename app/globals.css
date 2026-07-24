@@ -97,11 +97,13 @@ button:hover,
 }
 
 .hero {
+  align-items: center;
   display: grid;
   gap: 2rem;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
-  min-height: 72vh;
-  place-items: center;
+  min-height: auto;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .eyebrow {
@@ -339,6 +341,12 @@ ul {
   .blog-grid,
   .steps-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
   }
 
   .nav {
