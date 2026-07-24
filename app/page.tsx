@@ -3,7 +3,7 @@ const gumroadSubscribeUrl = 'https://lemdo8.gumroad.com/subscribe';
 const gentleResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
 const sevenDayResetUrl = 'https://lemdo8.gumroad.com/l/dgk-7-day-reset-journal';
 const morningResetUrl = 'https://lemdo8.gumroad.com/l/Divaglamkreation';
-const resetChallengeImageUrl = 'https://drive.google.com/uc?export=view&id=1_eA8j0bDoFbDG2qVLFow4Cie8_Isuq2m';
+const resetChallengeImageUrl = '/images/file_000000006878822f9afa6bda9bae9f6d.png';
 const contactEmail = 'mailto:divaglamkreation@gmail.com';
 const dragonflyKeychainUrl = '/dragonfly-keychain';
 const facebookUrl = 'https://www.facebook.com/share/1G9VQrJnaZ/';
@@ -13,6 +13,8 @@ const products = [
     title: 'The Gentle Reset',
     description: 'A free 3-day guided faith reset journal with reflection pages, prayer space, and gratitude prompts.',
     icon: 'FREE',
+    image: '/images/file_000000007a0481f59f22529a564a90af.png',
+    imageAlt: 'Woman journaling with a warm drink in a calm, faith-rooted setting',
     href: gentleResetUrl,
     priceLabel: 'Free · Digital PDF',
     buttonLabel: 'Download Free on Gumroad',
@@ -22,6 +24,8 @@ const products = [
     title: '7-Day Gentle Reset Journal',
     description: 'A soft weekly companion for reflection, faith, planning, and becoming with intention.',
     icon: '07',
+    image: '/images/file_00000000d7fc81f5ab22d6bd2ddeec33.png',
+    imageAlt: '7-Day Gentle Reset Journal clarity reflection page',
     href: sevenDayResetUrl,
     priceLabel: '$7 · Digital PDF',
     buttonLabel: 'View Journal on Gumroad',
@@ -41,7 +45,7 @@ const products = [
     title: 'Gentle Morning Reset Pack',
     description: 'Soft morning pages created to help you begin the day with faith, calm, and care.',
     icon: 'AM',
-    image: '/images/gentle-morning-reset-pack.jpg',
+    image: '/images/file_00000000340c81f580fa4e9e6704ebf2.png',
     imageAlt: 'Gentle Morning Reset Pack with five printable reflection pages',
     href: morningResetUrl,
     priceLabel: '$7 · Digital PDF',
