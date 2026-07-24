@@ -3,6 +3,7 @@ const gumroadSubscribeUrl = 'https://lemdo8.gumroad.com/subscribe';
 const gentleResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
 const sevenDayResetUrl = 'https://lemdo8.gumroad.com/l/dgk-7-day-reset-journal';
 const morningResetUrl = 'https://lemdo8.gumroad.com/l/Divaglamkreation';
+const resetChallengeImageUrl = 'https://drive.google.com/uc?export=view&id=1_eA8j0bDoFbDG2qVLFow4Cie8_Isuq2m';
 const contactEmail = 'mailto:divaglamkreation@gmail.com';
 const dragonflyKeychainUrl = '/dragonfly-keychain';
 const facebookUrl = 'https://www.facebook.com/share/1G9VQrJnaZ/';
@@ -211,12 +212,38 @@ export default function Home() {
 
       <section className="section" id="glowlist">
         <div className="email-box">
-          <p className="eyebrow">Join the DGK Glowlist</p>
-          <h2>A gentle note for your inbox.</h2>
-          <p>Receive new journal prompts, product updates, and behind-the-glow notes.</p>
-          <div className="email-form" aria-label="Glowlist subscription actions">
-            <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Join on Gumroad</a>
-            <a className="button secondary" href="/glowlist">Learn More</a>
+          <div
+            style={{
+              alignItems: 'center',
+              display: 'grid',
+              gap: '2rem',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+              textAlign: 'left',
+            }}
+          >
+            <a href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer" aria-label="Join the free 7-day reset challenge on Gumroad">
+              <img
+                src={resetChallengeImageUrl}
+                alt="Ready to start your reset? Join the free 7-day challenge"
+                style={{
+                  borderRadius: '1.5rem',
+                  display: 'block',
+                  height: 'auto',
+                  maxHeight: '680px',
+                  objectFit: 'cover',
+                  width: '100%',
+                }}
+              />
+            </a>
+            <div>
+              <p className="eyebrow">Join the DGK Glowlist</p>
+              <h2>Ready to start your reset?</h2>
+              <p>Join the free 7-day challenge and receive gentle prompts, product updates, and behind-the-glow notes.</p>
+              <div className="hero-actions">
+                <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Sign Up on Gumroad</a>
+                <a className="button secondary" href="/glowlist">Learn More</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
