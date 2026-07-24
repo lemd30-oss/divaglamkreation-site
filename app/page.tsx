@@ -13,14 +13,18 @@ const products = [
     description: 'A free 3-day guided faith reset journal with reflection pages, prayer space, and gratitude prompts.',
     icon: 'FREE',
     href: gentleResetUrl,
-    priceLabel: 'Free download',
+    priceLabel: 'Free · Digital PDF',
+    buttonLabel: 'Download Free on Gumroad',
+    external: true,
   },
   {
     title: '7-Day Gentle Reset Journal',
     description: 'A soft weekly companion for reflection, faith, planning, and becoming with intention.',
     icon: '07',
     href: sevenDayResetUrl,
-    priceLabel: '$7',
+    priceLabel: '$7 · Digital PDF',
+    buttonLabel: 'View Journal on Gumroad',
+    external: true,
     featured: true,
   },
   {
@@ -28,14 +32,18 @@ const products = [
     description: 'A sparkling Pink or Blue dragonfly charm with gold-tone hardware — a giftable reminder of growth, light, and gentle transformation.',
     icon: 'DF',
     href: dragonflyKeychainUrl,
-    priceLabel: '$9.99 · Limited batch',
+    priceLabel: '$9.99 · Physical item',
+    buttonLabel: 'See Colors & Details',
+    external: false,
   },
   {
     title: 'Gentle Morning Reset Pack',
     description: 'Soft morning pages created to help you begin the day with faith, calm, and care.',
     icon: 'AM',
     href: morningResetUrl,
-    priceLabel: '$7 digital download',
+    priceLabel: '$7 · Digital PDF',
+    buttonLabel: 'View Reset Pack on Gumroad',
+    external: true,
   },
 ];
 
@@ -74,12 +82,12 @@ export default function Home() {
           <p className="eyebrow">Faith • Flow • Flourish</p>
           <h1>Journals and little resets for women who take care of everyone but themselves.</h1>
           <p>
-            I make faith-rooted journals, stickers, and seasonal pieces — the kind of things that
-            sit on your nightstand and quietly remind you it&apos;s okay to stop for a minute.
+            I make faith-rooted journals, gentle gifts, and seasonal encouragement — the kind of things
+            that sit on your nightstand and quietly remind you it&apos;s okay to stop for a minute.
           </p>
           <div className="hero-actions">
             <a className="button" href="#start">Start Here</a>
-            <a className="button secondary" href={gumroadShopUrl}>Shop on Gumroad</a>
+            <a className="button secondary" href="#shop">Browse the DGK Shop</a>
           </div>
         </div>
 
@@ -89,9 +97,11 @@ export default function Home() {
             <h2>Free 3-Day Faith Reset</h2>
             <p>
               Three days. A few pages each. Reflection prompts, a little prayer space, room to put
-              down what&apos;s been heavy. Print it, grab a pen, start tonight if you want.
+              down what&apos;s been heavy. Print it, grab a pen, and begin softly.
             </p>
-            <a className="button" href={gentleResetUrl}>Download Free</a>
+            <a className="button" href={gentleResetUrl} target="_blank" rel="noopener noreferrer">
+              Download Free on Gumroad
+            </a>
           </div>
         </aside>
       </section>
@@ -99,9 +109,7 @@ export default function Home() {
       <section className="section start-section" id="start">
         <p className="eyebrow">Start Here</p>
         <h2>Not sure where to begin?</h2>
-        <p>
-          Start small. Try the free 3-day reset, browse the shop, or read a quiet note with your coffee.
-        </p>
+        <p>Start small. Try the free 3-day reset, browse the shop, or read a quiet note with your coffee.</p>
         <p>There&apos;s no right order — choose what fits this week.</p>
         <div className="hero-actions">
           <a className="button" href="#shop">Browse the Shop</a>
@@ -112,15 +120,22 @@ export default function Home() {
       <section className="section" id="shop">
         <p className="eyebrow">Shop</p>
         <h2>Small tools for real-life pauses.</h2>
-        <p>Printable journals, gentle reminders, and giftable pieces made for everyday use.</p>
+        <p>Digital journals are delivered through Gumroad. The physical charm uses secure GoDaddy checkout.</p>
         <div className="product-grid">
           {products.map((product) => (
             <article className={product.featured ? 'card featured-card' : 'card'} key={product.title}>
-              <div className="card-image">{product.icon}</div>
+              <div className="card-image" aria-hidden="true">{product.icon}</div>
               <p className="eyebrow">{product.priceLabel}</p>
               <h3>{product.title}</h3>
               <p>{product.description}</p>
-              <a className="button secondary" href={product.href}>View Details</a>
+              <a
+                className="button secondary"
+                href={product.href}
+                target={product.external ? '_blank' : undefined}
+                rel={product.external ? 'noopener noreferrer' : undefined}
+              >
+                {product.buttonLabel}
+              </a>
             </article>
           ))}
         </div>
@@ -128,12 +143,9 @@ export default function Home() {
 
       <section className="section split" aria-labelledby="dragonfly-keychain-title">
         <div>
-          <p className="eyebrow">$9.99 · Pink or Blue</p>
+          <p className="eyebrow">$9.99 · Pink or Blue · Physical Item</p>
           <h2 id="dragonfly-keychain-title">Beautiful Dragonfly Rhinestone Keychain</h2>
-          <p>
-            A sparkling little symbol of growth and transformation for your keys, purse, backpack,
-            or journal pouch.
-          </p>
+          <p>A sparkling little symbol of growth and transformation for your keys, purse, backpack, or journal pouch.</p>
           <div className="hero-actions">
             <a className="button" href={dragonflyKeychainUrl}>View Keychain Details</a>
           </div>
@@ -186,7 +198,7 @@ export default function Home() {
           <h2>A gentle note for your inbox.</h2>
           <p>Receive new journal prompts, product updates, and behind-the-glow notes.</p>
           <div className="email-form" aria-label="Glowlist subscription actions">
-            <a className="button" href={gumroadSubscribeUrl}>Join the Glowlist</a>
+            <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Join on Gumroad</a>
             <a className="button secondary" href="/glowlist">Learn More</a>
           </div>
         </div>
@@ -195,7 +207,9 @@ export default function Home() {
       <footer className="footer">
         <p>© {new Date().getFullYear()} DivaglamKreation. Faith. Flow. Flourish.</p>
         <p>
-          <a href={gumroadShopUrl}>Gumroad</a> · <a href="/blog">Blog</a> · <a href="/glowlist">Glowlist</a> · <a href={facebookUrl}>Facebook</a> · <a href={contactEmail}>Email</a>
+          <a href="/contact">Contact</a> · <a href="/policies">Policies</a> · <a href="/blog">Blog</a> ·{' '}
+          <a href="/glowlist">Glowlist</a> · <a href={gumroadShopUrl} target="_blank" rel="noopener noreferrer">Gumroad</a> ·{' '}
+          <a href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a> · <a href={contactEmail}>Email</a>
         </p>
       </footer>
     </main>
