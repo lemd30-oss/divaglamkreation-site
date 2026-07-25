@@ -18,7 +18,7 @@ const products = [
     imageAlt: 'Woman journaling with a warm drink in a calm, faith-rooted setting',
     href: gentleResetUrl,
     priceLabel: 'Free · Digital PDF',
-    buttonLabel: 'Download Free on Gumroad',
+    buttonLabel: 'Download the Free Reset',
     external: true,
   },
   {
@@ -34,8 +34,8 @@ const products = [
     featured: true,
   },
   {
-    title: 'Beautiful Dragonfly Rhinestone Keychain',
-    description: 'A sparkling Pink or Blue dragonfly charm with gold-tone hardware — a giftable reminder of growth, light, and gentle transformation.',
+    title: 'Dragonfly Reminder Charm',
+    description: 'A pink or blue rhinestone dragonfly charm with gold-tone hardware — a giftable reminder of growth, light, and gentle transformation.',
     icon: 'DF',
     href: dragonflyKeychainUrl,
     priceLabel: '$9.99 · Physical item',
@@ -70,7 +70,7 @@ const blogPosts = [
 
 export default function Home() {
   return (
-    <main className="site-shell">
+    <main className="site-shell" id="main-content">
       <header className="header">
         <a className="logo" href="#top" aria-label="DivaglamKreation home">
           <span className="logo-mark">DK</span>
@@ -103,8 +103,10 @@ export default function Home() {
             that sit on your nightstand and quietly remind you it&apos;s okay to stop for a minute.
           </p>
           <div className="hero-actions">
-            <a className="button" href="#start">Start Here</a>
-            <a className="button secondary" href="#shop">Browse the DGK Shop</a>
+            <a className="button" href={gentleResetUrl} target="_blank" rel="noopener noreferrer">
+              Download the Free 3-Day Reset
+            </a>
+            <a className="button secondary" href="#shop">Browse Journals &amp; Gifts</a>
           </div>
         </div>
 
@@ -134,19 +136,33 @@ export default function Home() {
 
       <section className="section start-section" id="start">
         <p className="eyebrow">Start Here</p>
-        <h2>Not sure where to begin?</h2>
-        <p>Start small. Try the free 3-day reset, browse the shop, or read a quiet note with your coffee.</p>
-        <p>There&apos;s no right order — choose what fits this week.</p>
-        <div className="hero-actions">
-          <a className="button" href="#shop">Browse the Shop</a>
-          <a className="button secondary" href="/blog">Read the Blog</a>
+        <h2>Choose the gentle next step that fits today.</h2>
+        <div className="product-grid">
+          <article className="card">
+            <p className="eyebrow">I need a small reset today</p>
+            <h3>Begin with the free 3-day reset.</h3>
+            <p>Use three short days of reflection, prayer, and gratitude to create a little breathing room.</p>
+            <a className="button secondary" href={gentleResetUrl} target="_blank" rel="noopener noreferrer">Get the Free Reset</a>
+          </article>
+          <article className="card">
+            <p className="eyebrow">I want guided reflection</p>
+            <h3>Explore the 7-Day Reset Journal.</h3>
+            <p>Move through a full week with calm prompts for faith, clarity, planning, and becoming.</p>
+            <a className="button secondary" href={sevenDayResetUrl} target="_blank" rel="noopener noreferrer">View the Journal</a>
+          </article>
+          <article className="card">
+            <p className="eyebrow">I need encouragement</p>
+            <h3>Read a quiet note with your coffee.</h3>
+            <p>Visit the DGK blog for gentle reminders and practical ways to begin softly.</p>
+            <a className="button secondary" href="/blog">Read the Blog</a>
+          </article>
         </div>
       </section>
 
       <section className="section" id="shop">
         <p className="eyebrow">Shop</p>
         <h2>Small tools for real-life pauses.</h2>
-        <p>Digital journals are delivered through Gumroad. The physical charm uses secure GoDaddy checkout.</p>
+        <p>Digital journals are delivered instantly through Gumroad. Physical gifts are available through our secure online shop.</p>
         <div className="product-grid">
           {products.map((product) => (
             <article className={product.featured ? 'card featured-card' : 'card'} key={product.title}>
@@ -185,10 +201,10 @@ export default function Home() {
       <section className="section split" aria-labelledby="dragonfly-keychain-title">
         <div>
           <p className="eyebrow">$9.99 · Pink or Blue · Physical Item</p>
-          <h2 id="dragonfly-keychain-title">Beautiful Dragonfly Rhinestone Keychain</h2>
-          <p>A sparkling little symbol of growth and transformation for your keys, purse, backpack, or journal pouch.</p>
+          <h2 id="dragonfly-keychain-title">Dragonfly Reminder Charm</h2>
+          <p>A giftable reminder of growth, light, and gentle transformation for your keys, purse, backpack, or journal pouch.</p>
           <div className="hero-actions">
-            <a className="button" href={dragonflyKeychainUrl}>View Keychain Details</a>
+            <a className="button" href={dragonflyKeychainUrl}>View Charm Details</a>
           </div>
         </div>
         <div className="quote-panel">
@@ -203,9 +219,9 @@ export default function Home() {
           <p className="eyebrow">Behind the Glow</p>
           <h2>Made with heart, faith, and creative purpose.</h2>
           <p>
-            DivaglamKreation creates paper goods and digital pieces for women who need encouragement
-            in ordinary moments. The goal is simple: make useful things that feel warm, thoughtful,
-            and easy to return to.
+            I created DivaglamKreation for women who spend so much time caring for everyone else that
+            they sometimes forget to pause for themselves. Every journal, reminder, and seasonal piece
+            is designed to make that pause feel a little easier.
           </p>
         </div>
         <div className="quote-panel">
@@ -244,7 +260,7 @@ export default function Home() {
               textAlign: 'left',
             }}
           >
-            <a href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer" aria-label="Join the free 7-day reset challenge on Gumroad">
+            <a href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer" aria-label="Join the DGK Glowlist and receive the free 7-day reset challenge">
               <img
                 src={resetChallengeImageUrl}
                 alt="Ready to start your reset? Join the free 7-day challenge"
@@ -260,10 +276,10 @@ export default function Home() {
             </a>
             <div>
               <p className="eyebrow">Join the DGK Glowlist</p>
-              <h2>Ready to start your reset?</h2>
-              <p>Join the free 7-day challenge and receive gentle prompts, product updates, and behind-the-glow notes.</p>
+              <h2>Begin with a free 7-day reset.</h2>
+              <p>Join the Glowlist to receive the challenge, followed by occasional faith-rooted prompts, product news, and behind-the-glow notes.</p>
               <div className="hero-actions">
-                <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Sign Up on Gumroad</a>
+                <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist + Get the Challenge</a>
                 <a className="button secondary" href="/glowlist">Learn More</a>
               </div>
             </div>
