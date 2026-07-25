@@ -85,8 +85,17 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="hero" id="top">
-        <div className="hero-copy">
+      <section
+        className="hero"
+        id="top"
+        style={{
+          alignItems: 'start',
+          minHeight: 0,
+          paddingBottom: '2rem',
+          paddingTop: '0.5rem',
+        }}
+      >
+        <div className="hero-copy" style={{ alignSelf: 'start', paddingTop: '1rem' }}>
           <p className="eyebrow">Faith • Flow • Flourish</p>
           <h1>Journals and little resets for women who take care of everyone but themselves.</h1>
           <p>
@@ -101,8 +110,10 @@ export default function Home() {
 
         <div
           style={{
+            alignSelf: 'start',
             borderRadius: '2rem',
             boxShadow: '0 24px 70px rgba(75, 58, 50, 0.12)',
+            height: 'clamp(320px, 42vw, 520px)',
             overflow: 'hidden',
             width: '100%',
           }}
@@ -113,10 +124,8 @@ export default function Home() {
             style={{
               display: 'block',
               height: '100%',
-              maxHeight: '620px',
-              minHeight: '360px',
               objectFit: 'cover',
-              objectPosition: 'center',
+              objectPosition: '70% center',
               width: '100%',
             }}
           />
