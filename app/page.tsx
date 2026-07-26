@@ -37,6 +37,8 @@ const products = [
     title: 'Dragonfly Reminder Charm',
     description: 'A pink or blue rhinestone dragonfly charm with gold-tone hardware — a giftable reminder of growth, light, and gentle transformation.',
     icon: 'DF',
+    image: '/dgk-dragonfly-pink-website.jpg',
+    imageAlt: 'Pink rhinestone dragonfly reminder charm with gold-tone keyring and clasp',
     href: dragonflyKeychainUrl,
     priceLabel: '$9.99 · Physical item',
     buttonLabel: 'See Colors & Details',
