@@ -6,6 +6,8 @@ export const metadata = {
 
 const orderUrl =
   'https://a85da190-df2c-44b8-9510-5fb19ca1b186.paylinks.godaddy.com/p/8ff7cff0-6da6-4ac1-a31b-c70fd941358e';
+const productImageUrl =
+  'https://raw.githubusercontent.com/lemd30-oss/divaglamkreation-site/main/dgk-dragonfly-blue-website.jpg';
 
 export default function DragonflyKeychainPage() {
   return (
@@ -42,14 +44,19 @@ export default function DragonflyKeychainPage() {
           <p className="trust-note">Available in Pink or Blue while this limited batch lasts.</p>
         </div>
 
-        <aside className="hero-card" aria-label="Dragonfly keychain product highlight">
-          <div className="hero-card-inner">
-            <p className="eyebrow">Pink · Blue · Gold Tone</p>
-            <h2>$9.99</h2>
-            <p>
-              Rhinestone dragonfly charm with a gold-tone keyring and lobster clasp attachment.
-            </p>
-          </div>
+        <aside className="hero-card" aria-label="Blue Dragonfly Keychain product photo">
+          <img
+            src={productImageUrl}
+            alt="Blue rhinestone dragonfly keychain with gold-tone keyring and clasp"
+            style={{
+              display: 'block',
+              width: '100%',
+              height: '100%',
+              maxHeight: '520px',
+              objectFit: 'cover',
+              borderRadius: 'inherit',
+            }}
+          />
         </aside>
       </section>
 
