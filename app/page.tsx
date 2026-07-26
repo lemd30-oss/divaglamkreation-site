@@ -1,3 +1,7 @@
+'use client';
+
+import Image from 'next/image';
+
 const gumroadShopUrl = 'https://lemdo8.gumroad.com/';
 const gumroadSubscribeUrl = 'https://lemdo8.gumroad.com/subscribe';
 const gentleResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
@@ -64,7 +68,7 @@ const blogPosts = [
     href: '/blog/gentle-reset',
   },
   {
-    title: 'Why You Don’t Need to Earn Rest',
+    title: 'Why You Don't Need to Earn Rest',
     description: 'A faith-rooted reminder that rest is not a reward for finishing everything.',
     href: '/blog/why-you-dont-need-to-earn-rest',
   },
@@ -120,17 +124,18 @@ export default function Home() {
             height: 'clamp(320px, 42vw, 520px)',
             overflow: 'hidden',
             width: '100%',
+            position: 'relative',
           }}
         >
-          <img
+          <Image
             src={heroImageUrl}
             alt="Cozy DivaglamKreation journaling scene with books, candle, warm drink, and faith-rooted encouragement"
+            fill
+            priority
+            sizes="(max-width: 820px) 100vw, (max-width: 1120px) 50vw, 560px"
             style={{
-              display: 'block',
-              height: '100%',
               objectFit: 'cover',
               objectPosition: '70% center',
-              width: '100%',
             }}
           />
         </div>
@@ -169,18 +174,28 @@ export default function Home() {
           {products.map((product) => (
             <article className={product.featured ? 'card featured-card' : 'card'} key={product.title}>
               {product.image ? (
-                <img
-                  src={product.image}
-                  alt={product.imageAlt}
+                <div
                   style={{
                     borderRadius: '1rem',
                     display: 'block',
                     height: '180px',
                     marginBottom: '1rem',
-                    objectFit: 'cover',
+                    overflow: 'hidden',
+                    position: 'relative',
                     width: '100%',
                   }}
-                />
+                >
+                  <Image
+                    src={product.image}
+                    alt={product.imageAlt}
+                    fill
+                    loading="lazy"
+                    sizes="(max-width: 820px) 100vw, (max-width: 1120px) 50vw, 33vw"
+                    style={{
+                      objectFit: 'cover',
+                    }}
+                  />
+                </div>
               ) : (
                 <div className="card-image" aria-hidden="true">{product.icon}</div>
               )}
@@ -263,18 +278,29 @@ export default function Home() {
             }}
           >
             <a href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer" aria-label="Join the DGK Glowlist and receive the free 7-day reset challenge">
-              <img
-                src={resetChallengeImageUrl}
-                alt="Ready to start your reset? Join the free 7-day challenge"
+              <div
                 style={{
                   borderRadius: '1.5rem',
                   display: 'block',
                   height: 'auto',
                   maxHeight: '680px',
-                  objectFit: 'cover',
+                  overflow: 'hidden',
+                  position: 'relative',
                   width: '100%',
+                  aspectRatio: '1 / 1.2',
                 }}
-              />
+              >
+                <Image
+                  src={resetChallengeImageUrl}
+                  alt="Ready to start your reset? Join the free 7-day challenge"
+                  fill
+                  loading="lazy"
+                  sizes="(max-width: 820px) 100vw, 350px"
+                  style={{
+                    objectFit: 'cover',
+                  }}
+                />
+              </div>
             </a>
             <div>
               <p className="eyebrow">Join the DGK Glowlist</p>
