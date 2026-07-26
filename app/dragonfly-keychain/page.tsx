@@ -1,17 +1,17 @@
 export const metadata = {
-  title: 'Beautiful Dragonfly Rhinestone Keychain | DivaglamKreation',
+  title: 'Dragonfly Reminder Charm | DivaglamKreation',
   description:
-    'A sparkling gold-tone dragonfly keychain and purse charm available in Pink or Blue. A giftable DGK reminder of growth, light, and gentle transformation.',
+    'A sparkling gold-tone dragonfly reminder charm available in Pink or Blue. A giftable DGK symbol of growth, light, and gentle transformation.',
 };
 
 const orderUrl =
   'https://a85da190-df2c-44b8-9510-5fb19ca1b186.paylinks.godaddy.com/p/8ff7cff0-6da6-4ac1-a31b-c70fd941358e';
-const productImageUrl =
-  'https://raw.githubusercontent.com/lemd30-oss/divaglamkreation-site/main/dgk-dragonfly-blue-website.jpg';
+const pinkImageUrl = '/dgk-dragonfly-pink-website.jpg';
+const blueImageUrl = '/dgk-dragonfly-blue-website.jpg';
 
 export default function DragonflyKeychainPage() {
   return (
-    <main className="site-shell">
+    <main className="site-shell" id="main-content">
       <header className="header">
         <a className="logo" href="/" aria-label="DivaglamKreation home">
           <span className="logo-mark">DK</span>
@@ -28,7 +28,7 @@ export default function DragonflyKeychainPage() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Little Glow Gift · Limited Batch</p>
-          <h1>Beautiful Dragonfly Rhinestone Keychain</h1>
+          <h1>Dragonfly Reminder Charm</h1>
           <p>
             A sparkling carry-with-you reminder of growth, light, and transformation — made for the
             woman learning to move forward without rushing herself.
@@ -44,10 +44,10 @@ export default function DragonflyKeychainPage() {
           <p className="trust-note">Available in Pink or Blue while this limited batch lasts.</p>
         </div>
 
-        <aside className="hero-card" aria-label="Blue Dragonfly Keychain product photo">
+        <aside className="hero-card" aria-label="Pink Dragonfly Reminder Charm product photo">
           <img
-            src={productImageUrl}
-            alt="Blue rhinestone dragonfly keychain with gold-tone keyring and clasp"
+            src={pinkImageUrl}
+            alt="Pink rhinestone dragonfly reminder charm with gold-tone keyring and clasp"
             style={{
               display: 'block',
               width: '100%',
@@ -62,18 +62,40 @@ export default function DragonflyKeychainPage() {
 
       <section className="section featured-product">
         <div>
-          <p className="eyebrow">A Gentle Companion</p>
-          <h2>More than a keychain — a small symbol of becoming.</h2>
+          <p className="eyebrow">Choose Your Color</p>
+          <h2>Pink or blue, with the same gentle meaning.</h2>
           <p>
-            The dragonfly is often connected with change, resilience, and light. This sparkling charm
-            turns that meaning into a useful everyday keepsake you can carry on your keys, purse,
-            backpack, or planner pouch.
+            Both versions feature sparkling rhinestones, delicate wing details, a gold-tone keyring,
+            and an easy-to-use lobster clasp.
           </p>
-          <p>
-            It is a thoughtful little gift for a friend, daughter, teen, coworker, or anyone who could
-            use a beautiful reminder that growth can happen gently.
-          </p>
-          <a className="button" href={orderUrl}>Choose Pink or Blue</a>
+          <div
+            style={{
+              display: 'grid',
+              gap: '1rem',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+              marginTop: '1.5rem',
+            }}
+          >
+            <figure style={{ margin: 0 }}>
+              <img
+                src={pinkImageUrl}
+                alt="Pink Dragonfly Reminder Charm"
+                style={{ borderRadius: '1.25rem', display: 'block', width: '100%' }}
+              />
+              <figcaption className="trust-note">Pink</figcaption>
+            </figure>
+            <figure style={{ margin: 0 }}>
+              <img
+                src={blueImageUrl}
+                alt="Blue Dragonfly Reminder Charm"
+                style={{ borderRadius: '1.25rem', display: 'block', width: '100%' }}
+              />
+              <figcaption className="trust-note">Blue</figcaption>
+            </figure>
+          </div>
+          <div className="hero-actions">
+            <a className="button" href={orderUrl}>Choose Pink or Blue</a>
+          </div>
         </div>
 
         <div className="details-card">
@@ -92,11 +114,16 @@ export default function DragonflyKeychainPage() {
 
       <section className="section split">
         <div>
-          <p className="eyebrow">The Meaning</p>
-          <h2>Transformation does not need hustle.</h2>
+          <p className="eyebrow">A Gentle Companion</p>
+          <h2>More than a keychain — a small symbol of becoming.</h2>
           <p>
-            The dragonfly does not force the journey. She rests, moves, catches the light, and keeps
-            going. Let this charm remind you that your pace can still carry you forward.
+            The dragonfly is often connected with change, resilience, and light. This sparkling charm
+            turns that meaning into a useful everyday keepsake you can carry on your keys, purse,
+            backpack, or planner pouch.
+          </p>
+          <p>
+            It is a thoughtful little gift for a friend, daughter, teen, coworker, or anyone who could
+            use a beautiful reminder that growth can happen gently.
           </p>
         </div>
         <div className="quote-panel">
@@ -111,7 +138,7 @@ export default function DragonflyKeychainPage() {
           <p className="eyebrow">$9.99 · Limited Batch</p>
           <h2 id="dragonfly-order-title">Choose your color and check out.</h2>
           <p>
-            Tap below to open the secure GoDaddy checkout and complete your Dragonfly Keychain order.
+            Open the secure checkout, choose Pink or Blue, and complete your Dragonfly Reminder Charm order.
           </p>
           <div className="email-form">
             <a className="button" href={orderUrl}>Go to Secure Checkout</a>
