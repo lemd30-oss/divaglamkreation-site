@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import { ProductCard } from './components/ProductCard';
 import { blogPosts, images, links, products } from './home-content';
+import './home.css';
 
 export default function Home() {
   return (
