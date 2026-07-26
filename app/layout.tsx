@@ -30,6 +30,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        {/* Preconnect to external domains for faster loading */}
+        <link rel="preconnect" href="https://lemdo8.gumroad.com" />
+        <link rel="preconnect" href="https://www.facebook.com" />
+        {/* DNS prefetch for fallback */}
+        <link rel="dns-prefetch" href="https://lemdo8.gumroad.com" />
+      </head>
       <body>
         {children}
         <Analytics />
