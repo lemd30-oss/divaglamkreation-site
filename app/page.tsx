@@ -2,77 +2,9 @@
 
 import Image from 'next/image';
 
-const gumroadShopUrl = 'https://lemdo8.gumroad.com/';
-const gumroadSubscribeUrl = 'https://lemdo8.gumroad.com/subscribe';
-const gentleResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
-const sevenDayResetUrl = 'https://lemdo8.gumroad.com/l/dgk-7-day-reset-journal';
-const morningResetUrl = 'https://lemdo8.gumroad.com/l/Divaglamkreation';
-const resetChallengeImageUrl = '/images/file_000000006878822f9afa6bda9bae9f6d.png';
-const heroImageUrl = '/images/file_00000000bbfc822fb379f73bd8a3c064.png';
-const contactEmail = 'mailto:divaglamkreation@gmail.com';
-const dragonflyKeychainUrl = '/dragonfly-keychain';
-const facebookUrl = 'https://www.facebook.com/share/1G9VQrJnaZ/';
-
-const products = [
-  {
-    title: 'The Gentle Reset',
-    description: 'A free 3-day guided faith reset journal with reflection pages, prayer space, and gratitude prompts.',
-    icon: 'FREE',
-    image: '/images/file_000000007a0481f59f22529a564a90af.png',
-    imageAlt: 'Woman journaling with a warm drink in a calm, faith-rooted setting',
-    href: gentleResetUrl,
-    priceLabel: 'Free · Digital PDF',
-    buttonLabel: 'Download the Free Reset',
-    external: true,
-  },
-  {
-    title: '7-Day Gentle Reset Journal',
-    description: 'A soft weekly companion for reflection, faith, planning, and becoming with intention.',
-    icon: '07',
-    image: '/images/file_00000000d7fc81f5ab22d6bd2ddeec33.png',
-    imageAlt: '7-Day Gentle Reset Journal clarity reflection page',
-    href: sevenDayResetUrl,
-    priceLabel: '$7 · Digital PDF',
-    buttonLabel: 'View Journal on Gumroad',
-    external: true,
-    featured: true,
-  },
-  {
-    title: 'Dragonfly Reminder Charm',
-    description: 'A pink or blue rhinestone dragonfly charm with gold-tone hardware — a giftable reminder of growth, light, and gentle transformation.',
-    icon: 'DF',
-    image: '/dgk-dragonfly-pink-website.jpg',
-    imageAlt: 'Pink rhinestone dragonfly reminder charm with gold-tone keyring and clasp',
-    href: dragonflyKeychainUrl,
-    priceLabel: '$9.99 · Physical item',
-    buttonLabel: 'See Colors & Details',
-    external: false,
-  },
-  {
-    title: 'Gentle Morning Reset Pack',
-    description: 'Soft morning pages created to help you begin the day with faith, calm, and care.',
-    icon: 'AM',
-    image: '/images/file_00000000340c81f580fa4e9e6704ebf2.png',
-    imageAlt: 'Gentle Morning Reset Pack with five printable reflection pages',
-    href: morningResetUrl,
-    priceLabel: '$7 · Digital PDF',
-    buttonLabel: 'View Reset Pack on Gumroad',
-    external: true,
-  },
-];
-
-const blogPosts = [
-  {
-    title: 'How to Begin a Gentle Reset Routine',
-    description: 'A soft place to begin when life feels full and you need a quieter rhythm.',
-    href: '/blog/gentle-reset',
-  },
-  {
-    title: 'Why You Don't Need to Earn Rest',
-    description: 'A faith-rooted reminder that rest is not a reward for finishing everything.',
-    href: '/blog/why-you-dont-need-to-earn-rest',
-  },
-];
+import { ProductCard } from './components/ProductCard';
+import { blogPosts, images, links, products } from './home-content';
+import './home.css';
 
 export default function Home() {
   return (
@@ -91,17 +23,8 @@ export default function Home() {
         </nav>
       </header>
 
-      <section
-        className="hero"
-        id="top"
-        style={{
-          alignItems: 'start',
-          minHeight: 0,
-          paddingBottom: '2rem',
-          paddingTop: '0.5rem',
-        }}
-      >
-        <div className="hero-copy" style={{ alignSelf: 'start', paddingTop: '1rem' }}>
+      <section className="hero hero-home" id="top">
+        <div className="hero-copy hero-copy-home">
           <p className="eyebrow">Faith • Flow • Flourish</p>
           <h1>Journals and little resets for women who take care of everyone but themselves.</h1>
           <p>
@@ -109,34 +32,21 @@ export default function Home() {
             that sit on your nightstand and quietly remind you it&apos;s okay to stop for a minute.
           </p>
           <div className="hero-actions">
-            <a className="button" href={gentleResetUrl} target="_blank" rel="noopener noreferrer">
+            <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">
               Download the Free 3-Day Reset
             </a>
             <a className="button secondary" href="#shop">Browse Journals &amp; Gifts</a>
           </div>
         </div>
 
-        <div
-          style={{
-            alignSelf: 'start',
-            borderRadius: '2rem',
-            boxShadow: '0 24px 70px rgba(75, 58, 50, 0.12)',
-            height: 'clamp(320px, 42vw, 520px)',
-            overflow: 'hidden',
-            width: '100%',
-            position: 'relative',
-          }}
-        >
+        <div className="hero-image-wrap">
           <Image
-            src={heroImageUrl}
+            src={images.hero}
             alt="Cozy DivaglamKreation journaling scene with books, candle, warm drink, and faith-rooted encouragement"
             fill
             priority
             sizes="(max-width: 820px) 100vw, (max-width: 1120px) 50vw, 560px"
-            style={{
-              objectFit: 'cover',
-              objectPosition: '70% center',
-            }}
+            className="cover-image hero-cover-image"
           />
         </div>
       </section>
@@ -149,13 +59,13 @@ export default function Home() {
             <p className="eyebrow">I need a small reset today</p>
             <h3>Begin with the free 3-day reset.</h3>
             <p>Use three short days of reflection, prayer, and gratitude to create a little breathing room.</p>
-            <a className="button secondary" href={gentleResetUrl} target="_blank" rel="noopener noreferrer">Get the Free Reset</a>
+            <a className="button secondary" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Get the Free Reset</a>
           </article>
           <article className="card">
             <p className="eyebrow">I want guided reflection</p>
             <h3>Explore the 7-Day Reset Journal.</h3>
             <p>Move through a full week with calm prompts for faith, clarity, planning, and becoming.</p>
-            <a className="button secondary" href={sevenDayResetUrl} target="_blank" rel="noopener noreferrer">View the Journal</a>
+            <a className="button secondary" href={links.sevenDayReset} target="_blank" rel="noopener noreferrer">View the Journal</a>
           </article>
           <article className="card">
             <p className="eyebrow">I need encouragement</p>
@@ -171,47 +81,7 @@ export default function Home() {
         <h2>Small tools for real-life pauses.</h2>
         <p>Digital journals are delivered instantly through Gumroad. Physical gifts are available through our secure online shop.</p>
         <div className="product-grid">
-          {products.map((product) => (
-            <article className={product.featured ? 'card featured-card' : 'card'} key={product.title}>
-              {product.image ? (
-                <div
-                  style={{
-                    borderRadius: '1rem',
-                    display: 'block',
-                    height: '180px',
-                    marginBottom: '1rem',
-                    overflow: 'hidden',
-                    position: 'relative',
-                    width: '100%',
-                  }}
-                >
-                  <Image
-                    src={product.image}
-                    alt={product.imageAlt}
-                    fill
-                    loading="lazy"
-                    sizes="(max-width: 820px) 100vw, (max-width: 1120px) 50vw, 33vw"
-                    style={{
-                      objectFit: 'cover',
-                    }}
-                  />
-                </div>
-              ) : (
-                <div className="card-image" aria-hidden="true">{product.icon}</div>
-              )}
-              <p className="eyebrow">{product.priceLabel}</p>
-              <h3>{product.title}</h3>
-              <p>{product.description}</p>
-              <a
-                className="button secondary"
-                href={product.href}
-                target={product.external ? '_blank' : undefined}
-                rel={product.external ? 'noopener noreferrer' : undefined}
-              >
-                {product.buttonLabel}
-              </a>
-            </article>
-          ))}
+          {products.map((product) => <ProductCard product={product} key={product.title} />)}
         </div>
       </section>
 
@@ -221,7 +91,7 @@ export default function Home() {
           <h2 id="dragonfly-keychain-title">Dragonfly Reminder Charm</h2>
           <p>A giftable reminder of growth, light, and gentle transformation for your keys, purse, backpack, or journal pouch.</p>
           <div className="hero-actions">
-            <a className="button" href={dragonflyKeychainUrl}>View Charm Details</a>
+            <a className="button" href={links.dragonflyKeychain}>View Charm Details</a>
           </div>
         </div>
         <div className="quote-panel">
@@ -268,37 +138,16 @@ export default function Home() {
 
       <section className="section" id="glowlist">
         <div className="email-box">
-          <div
-            style={{
-              alignItems: 'center',
-              display: 'grid',
-              gap: '2rem',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-              textAlign: 'left',
-            }}
-          >
-            <a href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer" aria-label="Join the DGK Glowlist and receive the free 7-day reset challenge">
-              <div
-                style={{
-                  borderRadius: '1.5rem',
-                  display: 'block',
-                  height: 'auto',
-                  maxHeight: '680px',
-                  overflow: 'hidden',
-                  position: 'relative',
-                  width: '100%',
-                  aspectRatio: '1 / 1.2',
-                }}
-              >
+          <div className="glowlist-grid">
+            <a href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer" aria-label="Join the DGK Glowlist and receive the free 7-day reset challenge">
+              <div className="glowlist-image-wrap">
                 <Image
-                  src={resetChallengeImageUrl}
+                  src={images.resetChallenge}
                   alt="Ready to start your reset? Join the free 7-day challenge"
                   fill
                   loading="lazy"
                   sizes="(max-width: 820px) 100vw, 350px"
-                  style={{
-                    objectFit: 'cover',
-                  }}
+                  className="cover-image"
                 />
               </div>
             </a>
@@ -307,7 +156,7 @@ export default function Home() {
               <h2>Begin with a free 7-day reset.</h2>
               <p>Join the Glowlist to receive the challenge, followed by occasional faith-rooted prompts, product news, and behind-the-glow notes.</p>
               <div className="hero-actions">
-                <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist + Get the Challenge</a>
+                <a className="button" href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer">Join the Glowlist + Get the Challenge</a>
                 <a className="button secondary" href="/glowlist">Learn More</a>
               </div>
             </div>
@@ -319,8 +168,8 @@ export default function Home() {
         <p>© {new Date().getFullYear()} DivaglamKreation. Faith. Flow. Flourish.</p>
         <p>
           <a href="/contact">Contact</a> · <a href="/policies">Policies</a> · <a href="/blog">Blog</a> ·{' '}
-          <a href="/glowlist">Glowlist</a> · <a href={gumroadShopUrl} target="_blank" rel="noopener noreferrer">Gumroad</a> ·{' '}
-          <a href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a> · <a href={contactEmail}>Email</a>
+          <a href="/glowlist">Glowlist</a> · <a href={links.gumroadShop} target="_blank" rel="noopener noreferrer">Gumroad</a> ·{' '}
+          <a href={links.facebook} target="_blank" rel="noopener noreferrer">Facebook</a> · <a href={links.contactEmail}>Email</a>
         </p>
       </footer>
     </main>
