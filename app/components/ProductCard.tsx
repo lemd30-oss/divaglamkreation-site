@@ -5,6 +5,8 @@ type ProductCardProps = {
 };
 
 export function ProductCard({ product }: ProductCardProps) {
+  const isPaperback = product.title.toLowerCase().includes('paperback');
+
   return (
     <article className={product.featured ? 'card product-card featured-card' : 'card product-card'}>
       <div className="product-image-wrap">
@@ -13,6 +15,16 @@ export function ProductCard({ product }: ProductCardProps) {
           alt={product.imageAlt}
           loading="lazy"
           className="cover-image"
+          style={
+            isPaperback
+              ? {
+                  objectFit: 'contain',
+                  objectPosition: 'center',
+                  padding: '1rem',
+                  background: '#f6efe6',
+                }
+              : undefined
+          }
         />
       </div>
       <div className="product-card-content">
