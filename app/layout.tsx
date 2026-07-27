@@ -4,8 +4,10 @@ import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 import './hero-image-fix.css';
+import './components/site-chrome.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://divaglamkreation.com'),
   title: {
     default: 'DivaglamKreation | Faith-rooted journals and gentle resets',
     template: '%s | DivaglamKreation',
@@ -14,8 +16,10 @@ export const metadata: Metadata = {
     'Faith-rooted journals, gentle gifts, and seasonal encouragement made to help women pause, reflect, and begin softly.',
   applicationName: 'DivaglamKreation',
   keywords: ['faith journal', 'printable journal', 'gentle reset', 'self-care journal', 'DivaglamKreation'],
+  alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
+    url: '/',
     siteName: 'DivaglamKreation',
     title: 'DivaglamKreation | Faith-rooted journals and gentle resets',
     description: 'Journals, gentle gifts, and quiet encouragement for women learning to pause and begin softly.',
@@ -32,10 +36,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* Preconnect to external domains for faster loading */}
         <link rel="preconnect" href="https://lemdo8.gumroad.com" />
         <link rel="preconnect" href="https://www.facebook.com" />
-        {/* DNS prefetch for fallback */}
         <link rel="dns-prefetch" href="https://lemdo8.gumroad.com" />
       </head>
       <body>
