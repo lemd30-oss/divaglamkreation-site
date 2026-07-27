@@ -1,77 +1,63 @@
+import type { Metadata } from 'next';
+
+import { SiteFooter } from '../components/SiteFooter';
+import { SiteHeader } from '../components/SiteHeader';
+
 const gumroadSubscribeUrl = 'https://lemdo8.gumroad.com/subscribe';
-const gumroadShopUrl = 'https://lemdo8.gumroad.com/';
+const gentleResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
+
+export const metadata: Metadata = {
+  title: 'Join the DGK Glowlist',
+  description: 'Join the DGK Glowlist for faith-rooted notes, journaling prompts, product news, and gentle encouragement.',
+  alternates: { canonical: '/glowlist' },
+};
 
 const glowlistNotes = [
-  'Faith-rooted encouragement for your reset season',
-  'Gentle journaling prompts to help you pause and reflect',
-  'Behind-the-glow updates from DivaglamKreation',
-  'Soft reminders for becoming with grace',
+  'Faith-rooted encouragement',
+  'Journaling prompts',
+  'Product and studio updates',
+  'Simple reset reminders',
 ];
 
 export default function GlowlistPage() {
   return (
     <main className="site-shell">
-      <header className="header">
-        <a className="logo" href="/" aria-label="DivaglamKreation home">
-          <span className="logo-mark">DK</span>
-          <span>DivaglamKreation</span>
-        </a>
-        <nav className="nav" aria-label="Main navigation">
-          <a href="/">Home</a>
-          <a href="/#shop">Shop</a>
-          <a href="/#blog">Blog</a>
-          <a href={gumroadSubscribeUrl}>Subscribe</a>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">The DGK Glowlist</p>
-          <h1>A gentle email space for faith, journaling, and soft reset reminders.</h1>
-          <p>
-            Join The DGK Glowlist for faith-rooted notes, journaling prompts, creative updates,
-            and gentle reminders from DivaglamKreation. This space was created to help you pause,
-            reset, and keep becoming with grace.
-          </p>
+          <h1>Gentle encouragement, delivered.</h1>
+          <p>Receive faith-rooted notes, prompts, and product updates from DivaglamKreation.</p>
           <div className="hero-actions">
-            <a className="button" href={gumroadSubscribeUrl}>Join the Glowlist</a>
-            <a className="button secondary" href={gumroadShopUrl}>Download the Free Journal</a>
+            <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
+            <a className="button secondary" href={gentleResetUrl} target="_blank" rel="noopener noreferrer">Download the Free Journal</a>
           </div>
         </div>
 
-        <aside className="hero-card" aria-label="The DGK Glowlist welcome message">
+        <aside className="hero-card" aria-label="Glowlist welcome message">
           <div className="hero-card-inner">
             <p className="eyebrow">Begin Softly</p>
-            <h2>You do not have to rush your growth.</h2>
-            <p>
-              Start with one quiet reminder, one journal prompt, and one faithful next step. The Glowlist
-              is a simple way to stay connected to gentle encouragement and creative updates.
-            </p>
+            <h2>One note. One prompt. One next step.</h2>
+            <p>A simple way to stay connected to encouragement and new DGK releases.</p>
           </div>
         </aside>
       </section>
 
       <section className="section start-section">
         <p className="eyebrow">What You’ll Receive</p>
-        <h2>Gentle notes for your reset season.</h2>
+        <h2>A quieter inbox.</h2>
         <div className="product-grid">
           {glowlistNotes.map((note) => (
-            <article className="card" key={note}>
-              <p>{note}</p>
-            </article>
+            <article className="card" key={note}><p>{note}</p></article>
           ))}
         </div>
         <div className="hero-actions">
-          <a className="button" href={gumroadSubscribeUrl}>Subscribe on Gumroad</a>
+          <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Subscribe on Gumroad</a>
         </div>
       </section>
 
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} DivaglamKreation. Faith. Flow. Flourish.</p>
-        <p>
-          <a href="/">Home</a> · <a href={gumroadShopUrl}>Gumroad</a> · <a href={gumroadSubscribeUrl}>Subscribe</a>
-        </p>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
