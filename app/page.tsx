@@ -3,43 +3,51 @@
 import Image from 'next/image';
 
 import { ProductCard } from './components/ProductCard';
+import { SiteFooter } from './components/SiteFooter';
 import { blogPosts, images, links, products } from './home-content';
 import './home.css';
 
 export default function Home() {
   return (
     <main className="site-shell" id="main-content">
-      <header className="header">
+      <header className="header presentation-header">
         <a className="logo" href="#top" aria-label="DivaglamKreation home">
           <span className="logo-mark">DK</span>
-          <span>DivaglamKreation</span>
+          <span className="logo-copy">
+            <strong>DivaglamKreation</strong>
+            <small>Faith. Flow. Flourish.</small>
+          </span>
         </a>
         <nav className="nav" aria-label="Main navigation">
           <a href="#start">Start Here</a>
           <a href="#shop">Shop</a>
           <a href="#about">About</a>
           <a href="/blog">Blog</a>
-          <a href="/glowlist">Glowlist</a>
+          <a className="nav-cta" href="/glowlist">Join the Glowlist</a>
         </nav>
       </header>
 
-      <section className="hero hero-home" id="top">
+      <section className="hero hero-home presentation-hero" id="top">
         <div className="hero-copy hero-copy-home">
-          <p className="eyebrow">Faith • Flow • Flourish</p>
-          <h1>Journals and little resets for women who take care of everyone but themselves.</h1>
-          <p>
-            I make faith-rooted journals, gentle gifts, and seasonal encouragement — the kind of things
-            that sit on your nightstand and quietly remind you it&apos;s okay to stop for a minute.
+          <p className="eyebrow">Faith-rooted tools for softer days</p>
+          <h1>Pause gently. Begin again with purpose.</h1>
+          <p className="hero-lede">
+            DivaglamKreation creates journals, gentle gifts, and seasonal encouragement for women who need a quiet place to breathe, reflect, and move forward with faith.
           </p>
           <div className="hero-actions">
             <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">
-              Download the Free 3-Day Reset
+              Begin the Free 3-Day Reset
             </a>
-            <a className="button secondary" href="#shop">Browse Journals &amp; Gifts</a>
+            <a className="button secondary" href="#shop">Explore Journals &amp; Gifts</a>
+          </div>
+          <div className="hero-proof" aria-label="Customer benefits">
+            <span>Instant digital delivery</span>
+            <span>Faith-rooted reflection</span>
+            <span>Created with gentle intention</span>
           </div>
         </div>
 
-        <div className="hero-image-wrap">
+        <div className="hero-image-wrap presentation-image-card">
           <Image
             src={images.hero}
             alt="Cozy DivaglamKreation journaling scene with books, candle, warm drink, and faith-rooted encouragement"
@@ -48,101 +56,117 @@ export default function Home() {
             sizes="(max-width: 820px) 100vw, (max-width: 1120px) 50vw, 560px"
             className="cover-image hero-cover-image"
           />
+          <div className="image-note">
+            <p className="eyebrow">A gentle reminder</p>
+            <strong>You are allowed to begin softly.</strong>
+          </div>
         </div>
       </section>
 
-      <section className="section start-section" id="start">
-        <p className="eyebrow">Start Here</p>
-        <h2>Choose the gentle next step that fits today.</h2>
-        <div className="product-grid">
-          <article className="card">
-            <p className="eyebrow">I need a small reset today</p>
-            <h3>Begin with the free 3-day reset.</h3>
-            <p>Use three short days of reflection, prayer, and gratitude to create a little breathing room.</p>
-            <a className="button secondary" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Get the Free Reset</a>
+      <section className="section start-section presentation-panel" id="start">
+        <div className="section-heading-row">
+          <div>
+            <p className="eyebrow">Start Here</p>
+            <h2>Choose the next step that fits today.</h2>
+          </div>
+          <p className="section-intro">No pressure. Just one clear place to begin.</p>
+        </div>
+        <div className="journey-grid">
+          <article className="journey-card">
+            <span className="journey-number">01</span>
+            <p className="eyebrow">I need a small reset</p>
+            <h3>Begin with three quiet days.</h3>
+            <p>Use short reflection, prayer, and gratitude prompts to create a little breathing room.</p>
+            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Get the free reset →</a>
           </article>
-          <article className="card">
+          <article className="journey-card featured-journey">
+            <span className="journey-number">02</span>
             <p className="eyebrow">I want guided reflection</p>
-            <h3>Explore the 7-Day Reset Journal.</h3>
-            <p>Move through a full week with calm prompts for faith, clarity, planning, and becoming.</p>
-            <a className="button secondary" href={links.sevenDayReset} target="_blank" rel="noopener noreferrer">View the Journal</a>
+            <h3>Move through a full week with intention.</h3>
+            <p>Use seven gentle days of prompts for faith, clarity, planning, and becoming.</p>
+            <a className="text-link" href={links.sevenDayReset} target="_blank" rel="noopener noreferrer">Explore the journal →</a>
           </article>
-          <article className="card">
+          <article className="journey-card">
+            <span className="journey-number">03</span>
             <p className="eyebrow">I need encouragement</p>
-            <h3>Read a quiet note with your coffee.</h3>
+            <h3>Read something quiet with your coffee.</h3>
             <p>Visit the DGK blog for gentle reminders and practical ways to begin softly.</p>
-            <a className="button secondary" href="/blog">Read the Blog</a>
+            <a className="text-link" href="/blog">Read the journal notes →</a>
           </article>
         </div>
       </section>
 
       <section className="section shop-section" id="shop">
-        <p className="eyebrow">Shop</p>
-        <h2>Small tools for real-life pauses.</h2>
-        <p className="shop-intro">
-          Begin with a gentle digital reset, or choose a meaningful physical gift to carry with you. Each piece is thoughtfully created to support faith, reflection, and quiet renewal.
-        </p>
+        <div className="section-heading-row">
+          <div>
+            <p className="eyebrow">The Collection</p>
+            <h2>Small tools for real-life pauses.</h2>
+          </div>
+          <p className="section-intro">Digital journals, a printed companion, and meaningful gifts created to help you return to yourself.</p>
+        </div>
         <p className="shop-trust">Instant digital delivery · Secure checkout · Thoughtfully created by DivaglamKreation</p>
         <div className="product-grid shop-grid">
           {products.map((product) => <ProductCard product={product} key={product.title} />)}
         </div>
       </section>
 
-      <section className="section split dragonfly-story" aria-labelledby="dragonfly-keychain-title">
-        <div>
+      <section className="section split dragonfly-story presentation-feature" aria-labelledby="dragonfly-keychain-title">
+        <div className="feature-copy">
           <p className="eyebrow">The Meaning Behind the Charm</p>
-          <h2 id="dragonfly-keychain-title">Carry a Little Light</h2>
+          <h2 id="dragonfly-keychain-title">Carry a little light with you.</h2>
           <p>
-            The dragonfly is a quiet symbol of growth, renewal, and becoming. Keep it close as a gentle reminder that transformation can unfold without pressure.
+            The dragonfly is a quiet symbol of growth, renewal, and becoming. Keep it close as a reminder that transformation can unfold without pressure.
           </p>
           <div className="hero-actions">
             <a className="button" href={links.dragonflyKeychain}>Discover the Dragonfly Charm</a>
           </div>
         </div>
-        <div className="quote-panel">
-          <p className="eyebrow">Carry a Little Light</p>
+        <div className="quote-panel editorial-quote">
+          <p className="eyebrow">Gentle movement still counts</p>
           <h2>Transformation does not need hustle.</h2>
-          <p>Gentle movement still carries you forward.</p>
+          <p>Growth can be quiet, faithful, and beautifully your own.</p>
         </div>
       </section>
 
-      <section className="section split" id="about">
+      <section className="section split about-section" id="about">
         <div>
           <p className="eyebrow">Behind the Glow</p>
           <h2>Made with heart, faith, and creative purpose.</h2>
-          <p>
-            I created DivaglamKreation for women who spend so much time caring for everyone else that
-            they sometimes forget to pause for themselves. Every journal, reminder, and seasonal piece
-            is designed to make that pause feel a little easier.
-          </p>
         </div>
-        <div className="quote-panel">
-          <p className="eyebrow">Gentle Reminder</p>
-          <h2>You are allowed to begin softly.</h2>
-          <p>Sometimes growth starts with a prayer, a page, and one faithful next step.</p>
+        <div className="about-copy">
+          <p>
+            I created DivaglamKreation for women who spend so much time caring for everyone else that they sometimes forget to pause for themselves.
+          </p>
+          <p>
+            Every journal, reminder, and seasonal piece is designed to make that pause feel easier, warmer, and more meaningful.
+          </p>
+          <a className="text-link" href="/contact">Connect with DivaglamKreation →</a>
         </div>
       </section>
 
-      <section className="section" id="blog">
-        <p className="eyebrow">Journal Notes</p>
-        <h2>Something quiet to read with your coffee.</h2>
+      <section className="section blog-section" id="blog">
+        <div className="section-heading-row">
+          <div>
+            <p className="eyebrow">Journal Notes</p>
+            <h2>Something quiet to read with your coffee.</h2>
+          </div>
+          <a className="text-link" href="/blog">Visit the full blog →</a>
+        </div>
         <div className="blog-grid">
-          {blogPosts.map((post) => (
-            <article className="card" key={post.href}>
+          {blogPosts.map((post, index) => (
+            <article className="card editorial-card" key={post.href}>
+              <span className="journey-number">0{index + 1}</span>
               <p className="eyebrow">From the Blog</p>
               <h3>{post.title}</h3>
               <p>{post.description}</p>
-              <a className="button secondary" href={post.href}>Read the Note</a>
+              <a className="text-link" href={post.href}>Read the note →</a>
             </article>
           ))}
         </div>
-        <div className="hero-actions">
-          <a className="button" href="/blog">Visit the Blog</a>
-        </div>
       </section>
 
-      <section className="section" id="glowlist">
-        <div className="email-box">
+      <section className="section glowlist-section" id="glowlist">
+        <div className="email-box presentation-glowlist">
           <div className="glowlist-grid">
             <a href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer" aria-label="Join the DGK Glowlist and receive the free 7-day reset challenge">
               <div className="glowlist-image-wrap">
@@ -158,10 +182,10 @@ export default function Home() {
             </a>
             <div>
               <p className="eyebrow">Join the DGK Glowlist</p>
-              <h2>Begin with a free 7-day reset.</h2>
-              <p>Join the Glowlist to receive the challenge, followed by occasional faith-rooted prompts, product news, and behind-the-glow notes.</p>
+              <h2>Let gentle encouragement meet you in your inbox.</h2>
+              <p>Receive the free 7-day reset challenge, faith-rooted prompts, product news, and behind-the-glow notes.</p>
               <div className="hero-actions">
-                <a className="button" href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer">Join the Glowlist + Get the Challenge</a>
+                <a className="button" href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
                 <a className="button secondary" href="/glowlist">Learn More</a>
               </div>
             </div>
@@ -169,14 +193,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} DivaglamKreation. Faith. Flow. Flourish.</p>
-        <p>
-          <a href="/contact">Contact</a> · <a href="/policies">Policies</a> · <a href="/blog">Blog</a> ·{' '}
-          <a href="/glowlist">Glowlist</a> · <a href={links.gumroadShop} target="_blank" rel="noopener noreferrer">Gumroad</a> ·{' '}
-          <a href={links.facebook} target="_blank" rel="noopener noreferrer">Facebook</a> · <a href={links.contactEmail}>Email</a>
-        </p>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
