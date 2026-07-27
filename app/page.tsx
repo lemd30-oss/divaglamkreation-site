@@ -96,6 +96,23 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section" aria-labelledby="how-it-works-title">
+        <div className="section-heading-row">
+          <div>
+            <p className="eyebrow">How It Works</p>
+            <h2 id="how-it-works-title">A simple path from overwhelmed to grounded.</h2>
+          </div>
+          <p className="section-intro">Choose one resource, make a little room, and return whenever you need another gentle reset.</p>
+        </div>
+        <div className="steps-grid">
+          <article className="step-card"><span>1</span><h3>Choose</h3><p>Select the reset, journal, or reminder that fits your season.</p></article>
+          <article className="step-card"><span>2</span><h3>Receive</h3><p>Digital products arrive instantly. Physical products open securely through their product page.</p></article>
+          <article className="step-card"><span>3</span><h3>Pause</h3><p>Set aside a few quiet minutes for prayer, reflection, and honest check-in.</p></article>
+          <article className="step-card"><span>4</span><h3>Return</h3><p>Come back to the prompts whenever life feels full or your rhythm needs care.</p></article>
+          <article className="step-card"><span>5</span><h3>Grow</h3><p>Carry one faithful next step into the rest of your day.</p></article>
+        </div>
+      </section>
+
       <section className="section shop-section" id="shop">
         <div className="section-heading-row">
           <div>
@@ -114,12 +131,8 @@ export default function Home() {
         <div className="feature-copy">
           <p className="eyebrow">The Meaning Behind the Charm</p>
           <h2 id="dragonfly-keychain-title">Carry a little light with you.</h2>
-          <p>
-            The dragonfly is a quiet symbol of growth, renewal, and becoming. Keep it close as a reminder that transformation can unfold without pressure.
-          </p>
-          <div className="hero-actions">
-            <a className="button" href={links.dragonflyKeychain}>Discover the Dragonfly Charm</a>
-          </div>
+          <p>The dragonfly is a quiet symbol of growth, renewal, and becoming. Keep it close as a reminder that transformation can unfold without pressure.</p>
+          <div className="hero-actions"><a className="button" href={links.dragonflyKeychain}>Discover the Dragonfly Charm</a></div>
         </div>
         <div className="quote-panel editorial-quote">
           <p className="eyebrow">Gentle movement still counts</p>
@@ -134,13 +147,24 @@ export default function Home() {
           <h2>Made with heart, faith, and creative purpose.</h2>
         </div>
         <div className="about-copy">
-          <p>
-            I created DivaglamKreation for women who spend so much time caring for everyone else that they sometimes forget to pause for themselves.
-          </p>
-          <p>
-            Every journal, reminder, and seasonal piece is designed to make that pause feel easier, warmer, and more meaningful.
-          </p>
+          <p>I created DivaglamKreation for women who spend so much time caring for everyone else that they sometimes forget to pause for themselves.</p>
+          <p>Every journal, reminder, and seasonal piece is designed to make that pause feel easier, warmer, and more meaningful.</p>
           <a className="text-link" href="/contact">Connect with DivaglamKreation →</a>
+        </div>
+      </section>
+
+      <section className="section presentation-panel" aria-labelledby="why-dgk-title">
+        <div className="section-heading-row">
+          <div>
+            <p className="eyebrow">Why DivaglamKreation</p>
+            <h2 id="why-dgk-title">Created for real life, not perfect routines.</h2>
+          </div>
+          <p className="section-intro">DGK resources are designed to feel supportive, usable, and easy to return to.</p>
+        </div>
+        <div className="journey-grid">
+          <article className="journey-card"><span className="journey-number">01</span><h3>Faith-rooted</h3><p>Encouragement that makes space for prayer, reflection, and becoming.</p></article>
+          <article className="journey-card featured-journey"><span className="journey-number">02</span><h3>Gentle and practical</h3><p>Simple prompts and tools that work even when your day feels full.</p></article>
+          <article className="journey-card"><span className="journey-number">03</span><h3>Made with intention</h3><p>Every product is shaped with warmth, care, and meaningful purpose.</p></article>
         </div>
       </section>
 
@@ -165,19 +189,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section" aria-labelledby="faq-title">
+        <div className="section-heading-row">
+          <div>
+            <p className="eyebrow">Questions</p>
+            <h2 id="faq-title">A few helpful things to know.</h2>
+          </div>
+        </div>
+        <div className="blog-grid">
+          <article className="card editorial-card"><h3>How do digital products arrive?</h3><p>After checkout, Gumroad provides immediate access to the download and also sends a receipt by email.</p></article>
+          <article className="card editorial-card"><h3>Where do I buy the paperback?</h3><p>The printed Gentle Reset journal is available through Amazon using the View the Paperback button.</p></article>
+          <article className="card editorial-card"><h3>Can I begin for free?</h3><p>Yes. The 3-Day Gentle Reset is a free starting point designed to help you pause without pressure.</p></article>
+        </div>
+      </section>
+
       <section className="section glowlist-section" id="glowlist">
         <div className="email-box presentation-glowlist">
           <div className="glowlist-grid">
             <a href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer" aria-label="Join the DGK Glowlist and receive the free 7-day reset challenge">
               <div className="glowlist-image-wrap">
-                <Image
-                  src={images.resetChallenge}
-                  alt="Ready to start your reset? Join the free 7-day challenge"
-                  fill
-                  loading="lazy"
-                  sizes="(max-width: 820px) 100vw, 350px"
-                  className="cover-image"
-                />
+                <Image src={images.resetChallenge} alt="Ready to start your reset? Join the free 7-day challenge" fill loading="lazy" sizes="(max-width: 820px) 100vw, 350px" className="cover-image" />
               </div>
             </a>
             <div>
