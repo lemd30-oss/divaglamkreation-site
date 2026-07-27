@@ -1,0 +1,12 @@
+.hero-cover-image {
+  object-position: 76% 62%;
+  transform: scale(1.28);
+  transform-origin: center;
+}
+
+@media (max-width: 820px) {
+  .hero-cover-image {
+    object-position: 78% 64%;
+    transform: scale(1.34);
+  }
+}
