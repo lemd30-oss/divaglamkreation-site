@@ -76,28 +76,33 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="shop">
+      <section className="section shop-section" id="shop">
         <p className="eyebrow">Shop</p>
         <h2>Small tools for real-life pauses.</h2>
-        <p>Digital journals are delivered instantly through Gumroad. Physical gifts are available through our secure online shop.</p>
-        <div className="product-grid">
+        <p className="shop-intro">
+          Begin with a gentle digital reset, or choose a meaningful physical gift to carry with you. Each piece is thoughtfully created to support faith, reflection, and quiet renewal.
+        </p>
+        <p className="shop-trust">Instant digital delivery · Secure checkout · Thoughtfully created by DivaglamKreation</p>
+        <div className="product-grid shop-grid">
           {products.map((product) => <ProductCard product={product} key={product.title} />)}
         </div>
       </section>
 
-      <section className="section split" aria-labelledby="dragonfly-keychain-title">
+      <section className="section split dragonfly-story" aria-labelledby="dragonfly-keychain-title">
         <div>
-          <p className="eyebrow">$9.99 · Pink or Blue · Physical Item</p>
-          <h2 id="dragonfly-keychain-title">Dragonfly Reminder Charm</h2>
-          <p>A giftable reminder of growth, light, and gentle transformation for your keys, purse, backpack, or journal pouch.</p>
+          <p className="eyebrow">The Meaning Behind the Charm</p>
+          <h2 id="dragonfly-keychain-title">Carry a Little Light</h2>
+          <p>
+            The dragonfly is a quiet symbol of growth, renewal, and becoming. Keep it close as a gentle reminder that transformation can unfold without pressure.
+          </p>
           <div className="hero-actions">
-            <a className="button" href={links.dragonflyKeychain}>View Charm Details</a>
+            <a className="button" href={links.dragonflyKeychain}>Discover the Dragonfly Charm</a>
           </div>
         </div>
         <div className="quote-panel">
           <p className="eyebrow">Carry a Little Light</p>
           <h2>Transformation does not need hustle.</h2>
-          <p>A small reminder that gentle movement still carries you forward.</p>
+          <p>Gentle movement still carries you forward.</p>
         </div>
       </section>
 
