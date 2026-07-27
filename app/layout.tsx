@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
+import './accessibility.css';
 import './hero-image-fix.css';
 import './components/site-chrome.css';
 
