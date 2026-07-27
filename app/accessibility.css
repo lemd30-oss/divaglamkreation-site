@@ -1,0 +1,46 @@
+.skip-link {
+  background: var(--coffee);
+  border-radius: 0 0 0.75rem 0;
+  color: var(--warm-cream);
+  left: 0;
+  padding: 0.85rem 1.1rem;
+  position: fixed;
+  top: 0;
+  transform: translateY(-120%);
+  transition: transform 160ms ease;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.nav a:not(.nav-cta),
+.text-link {
+  text-underline-offset: 0.22rem;
+}
+
+.nav a:not(.nav-cta):hover,
+.nav a:not(.nav-cta):focus-visible {
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
