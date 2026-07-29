@@ -17,7 +17,7 @@
 }
 
 .logo-copy small {
-  color: var(--gold);
+  color: #765818;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -49,6 +49,20 @@ button:focus-visible,
 input:focus-visible {
   outline: 3px solid var(--gold);
   outline-offset: 3px;
+}
+
+/* Accessible gold tones: darker on light surfaces, lighter on dark surfaces. */
+.eyebrow,
+.journey-number {
+  color: #765818;
+}
+
+.presentation-panel .eyebrow,
+.presentation-panel .journey-number,
+.presentation-feature .eyebrow,
+.site-footer .footer-tagline,
+.site-footer .footer-heading {
+  color: #efd18b;
 }
 
 .compact-steps {
