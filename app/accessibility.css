@@ -30,6 +30,33 @@
   text-decoration: underline;
 }
 
+/* Keep brand gold readable on pale surfaces and use a lighter gold on dark surfaces. */
+.presentation-panel .eyebrow,
+.presentation-panel .journey-number,
+.presentation-feature .eyebrow,
+.site-footer .footer-tagline,
+.site-footer .footer-heading,
+.site-footer .footer-column a:hover,
+.site-footer .footer-bottom a:hover {
+  color: var(--gold-on-dark);
+}
+
+.presentation-panel p,
+.presentation-feature p,
+.site-footer .footer-copy,
+.site-footer .footer-bottom p,
+.site-footer .footer-column a,
+.site-footer .footer-bottom a {
+  color: var(--warm-cream);
+}
+
+.presentation-header .logo-copy small,
+.hero .eyebrow,
+.section:not(.presentation-panel):not(.presentation-feature) .eyebrow,
+.section:not(.presentation-panel):not(.presentation-feature) .journey-number {
+  color: var(--gold);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
