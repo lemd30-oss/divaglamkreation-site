@@ -181,7 +181,7 @@ export default function Home() {
               <p>Receive prompts, product news, and behind-the-glow notes.</p>
               <div className="hero-actions">
                 <a className="button" href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
-                <a className="button secondary" href="/glowlist">Learn More</a>
+                <a className="button secondary" href="/glowlist">Discover the DGK Glowlist</a>
               </div>
             </div>
           </div>
