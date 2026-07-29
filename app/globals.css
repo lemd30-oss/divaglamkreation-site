@@ -3,7 +3,8 @@
   --warm-cream: #fffdf8;
   --coffee: #4b3a32;
   --soft-brown: #75675f;
-  --gold: #c6a15b;
+  --gold: #76551f;
+  --gold-on-dark: #f4d995;
   --rose: #c98f88;
   --sage: #8f9a82;
   --sage-deep: #66705f;
@@ -233,7 +234,7 @@ ul {
 }
 
 .featured-card {
-  border-color: rgba(198, 161, 91, 0.48);
+  border-color: rgba(118, 85, 31, 0.48);
   box-shadow: 0 16px 40px rgba(75, 58, 50, 0.06);
 }
 
@@ -284,7 +285,7 @@ ul {
 
 .quote-panel p,
 .quote-panel .eyebrow {
-  color: #fff4dc;
+  color: var(--gold-on-dark);
 }
 
 .email-box {
