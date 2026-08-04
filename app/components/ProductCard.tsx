@@ -1,12 +1,22 @@
 import type { Product } from '../home-content';
+import './product-trust.css';
 
 type ProductCardProps = {
   product: Product;
 };
 
 export function ProductCard({ product }: ProductCardProps) {
-  const isPaperback = product.title.toLowerCase().includes('paperback');
+  const title = product.title.toLowerCase();
+  const isPaperback = title.includes('paperback');
+  const isDigital = product.priceLabel.toLowerCase().includes('digital');
   const isFree = product.priceLabel.toLowerCase().includes('free');
+  const isPhysical = !isDigital && !isFree;
+
+  const fulfillmentNote = isDigital
+    ? 'Instant digital delivery after checkout.'
+    : isPaperback
+      ? 'Printed and shipped by Amazon; Amazon policies apply.'
+      : 'Physical item shipping details are shown before purchase.';
 
   return (
     <article className={product.featured ? 'card product-card featured-card' : 'card product-card'}>
@@ -40,7 +50,8 @@ export function ProductCard({ product }: ProductCardProps) {
         >
           {product.buttonLabel}
         </a>
-        <div className="product-checkout-proof" aria-label="Secure purchase information">
+
+        <div className="product-checkout-proof" aria-label="Purchase and delivery information">
           <span className="security-note">🔒 {isFree ? 'Secure download' : 'Secure checkout'}</span>
           {!isFree && (
             <div className="payment-methods" aria-label="Common payment methods available through checkout partners">
@@ -51,7 +62,14 @@ export function ProductCard({ product }: ProductCardProps) {
               <span>Apple Pay</span>
             </div>
           )}
-          <small>Payment options may vary by Gumroad, Amazon, or the checkout partner.</small>
+          <p className="fulfillment-note">{fulfillmentNote}</p>
+          {isPhysical && <p className="fulfillment-note">Shipping and return terms are confirmed by the checkout partner before payment.</p>}
+          <small>Payment options vary by Gumroad, Amazon, or the active checkout partner.</small>
+        </div>
+
+        <div className="review-note" aria-label="Customer review information">
+          <span aria-hidden="true">★★★★★</span>
+          <p>Customer reviews will be added as DGK receives verified feedback.</p>
         </div>
       </div>
     </article>
