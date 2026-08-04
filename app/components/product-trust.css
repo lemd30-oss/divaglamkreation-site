@@ -1,0 +1,78 @@
+.product-checkout-proof {
+  border-top: 1px solid rgba(75, 58, 50, 0.12);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.security-note {
+  color: var(--coffee);
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+}
+
+.payment-methods span {
+  align-items: center;
+  background: #fffdf8;
+  border: 1px solid rgba(75, 58, 50, 0.18);
+  border-radius: 0.35rem;
+  color: var(--coffee);
+  display: inline-flex;
+  font-size: 0.67rem;
+  font-weight: 700;
+  min-height: 25px;
+  padding: 0.25rem 0.45rem;
+}
+
+.fulfillment-note {
+  color: var(--soft-brown);
+  font-size: 0.78rem !important;
+  line-height: 1.45;
+  margin: 0.65rem 0 0;
+}
+
+.product-checkout-proof small {
+  color: var(--soft-brown);
+  display: block;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  margin-top: 0.65rem;
+}
+
+.review-note {
+  align-items: flex-start;
+  background: rgba(215, 155, 59, 0.08);
+  border-left: 2px solid var(--gold);
+  display: flex;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+  padding: 0.7rem 0.75rem;
+}
+
+.review-note span {
+  color: var(--gold);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.review-note p {
+  color: var(--soft-brown);
+  font-size: 0.72rem !important;
+  line-height: 1.45;
+  margin: 0;
+}
+
+@media (max-width: 820px) {
+  .payment-methods span {
+    min-height: 28px;
+  }
+}
