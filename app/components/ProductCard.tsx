@@ -6,6 +6,7 @@ type ProductCardProps = {
 
 export function ProductCard({ product }: ProductCardProps) {
   const isPaperback = product.title.toLowerCase().includes('paperback');
+  const isFree = product.priceLabel.toLowerCase().includes('free');
 
   return (
     <article className={product.featured ? 'card product-card featured-card' : 'card product-card'}>
@@ -39,6 +40,19 @@ export function ProductCard({ product }: ProductCardProps) {
         >
           {product.buttonLabel}
         </a>
+        <div className="product-checkout-proof" aria-label="Secure purchase information">
+          <span className="security-note">🔒 {isFree ? 'Secure download' : 'Secure checkout'}</span>
+          {!isFree && (
+            <div className="payment-methods" aria-label="Common payment methods available through checkout partners">
+              <span>Visa</span>
+              <span>MC</span>
+              <span>Amex</span>
+              <span>PayPal</span>
+              <span>Apple Pay</span>
+            </div>
+          )}
+          <small>Payment options may vary by Gumroad, Amazon, or the checkout partner.</small>
+        </div>
       </div>
     </article>
   );
