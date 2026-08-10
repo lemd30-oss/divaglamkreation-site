@@ -11,6 +11,11 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: '7 Gentle Journal Prompts for Releasing What No Longer Serves You',
+    description: 'Seven gentle, faith-rooted prompts for setting down guilt, pressure, and what was never yours to carry.',
+    href: '/blog/7-gentle-journal-prompts-for-releasing-what-no-longer-serves-you',
+  },
+  {
     title: 'A Gentle August Reset for the Woman Who Needs Room to Breathe',
     description: 'A soft August reflection for slowing down, making room to breathe, and beginning again with grace.',
     href: '/blog/gentle-august-reset',
