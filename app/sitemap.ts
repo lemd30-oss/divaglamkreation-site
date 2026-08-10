@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
     '/blog',
+    '/blog/gentle-august-reset',
     '/blog/gentle-reset',
     '/blog/why-you-dont-need-to-earn-rest',
     '/dragonfly-keychain',
