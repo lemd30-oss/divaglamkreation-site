@@ -11,6 +11,11 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: 'A Gentle August Reset for the Woman Who Needs Room to Breathe',
+    description: 'A soft August reflection for slowing down, making room to breathe, and beginning again with grace.',
+    href: '/blog/gentle-august-reset',
+  },
+  {
     title: 'How to Begin a Gentle Reset Routine',
     description: 'A soft, practical place to begin when life feels full and you need a quieter rhythm.',
     href: '/blog/gentle-reset',
