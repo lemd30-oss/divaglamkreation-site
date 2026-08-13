@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Policies',
   description: 'DivaglamKreation policies for digital downloads, physical orders, privacy, refunds, and customer support.',
+  alternates: { canonical: '/policies' },
 };
 
 export default function PoliciesPage() {
