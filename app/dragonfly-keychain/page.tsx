@@ -2,6 +2,7 @@ export const metadata = {
   title: 'Dragonfly Reminder Charm | DivaglamKreation',
   description:
     'A sparkling gold-tone dragonfly reminder charm available in Pink or Blue. A giftable DGK symbol of growth, light, and gentle transformation.',
+  alternates: { canonical: '/dragonfly-keychain' },
 };
 
 const orderUrl =
