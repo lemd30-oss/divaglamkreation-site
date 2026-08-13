@@ -4,6 +4,7 @@ export const metadata = {
   title: "Why You Don't Need to Earn Rest | DivaglamKreation",
   description:
     'A gentle, faith-rooted reminder that rest is not a reward for exhaustion. Pause, release guilt, and begin again with grace.',
+  alternates: { canonical: '/blog/why-you-dont-need-to-earn-rest' },
 };
 
 export default function EarnRestBlogPage() {
