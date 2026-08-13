@@ -4,6 +4,7 @@ export const metadata = {
   title: '7 Gentle Journal Prompts for Releasing What No Longer Serves You | DivaglamKreation',
   description:
     'Feeling weighed down by things that were never yours to carry? These seven gentle, faith-rooted journal prompts help you release guilt and pressure one small letting-go at a time.',
+  alternates: { canonical: '/blog/7-gentle-journal-prompts-for-releasing-what-no-longer-serves-you' },
 };
 
 const prompts = [
