@@ -78,21 +78,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section compact-process" aria-labelledby="how-it-works-title">
-        <div className="section-heading-row">
-          <div>
-            <p className="eyebrow">How It Works</p>
-            <h2 id="how-it-works-title">Choose. Pause. Return.</h2>
-          </div>
-          <p className="section-intro">Select one resource and use it in the rhythm that works for you.</p>
-        </div>
-        <div className="steps-grid compact-steps">
-          <article className="step-card"><span>1</span><h3>Choose</h3><p>Select a journal, reset, or reminder.</p></article>
-          <article className="step-card"><span>2</span><h3>Pause</h3><p>Make a little room for reflection.</p></article>
-          <article className="step-card"><span>3</span><h3>Return</h3><p>Come back whenever you need support.</p></article>
-        </div>
-      </section>
-
       <section className="section shop-section" id="shop">
         <div className="section-heading-row">
           <div>
@@ -107,17 +92,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section split dragonfly-story presentation-feature" aria-labelledby="dragonfly-keychain-title">
+      <section className="section dragonfly-story presentation-feature" aria-labelledby="dragonfly-keychain-title">
         <div className="feature-copy">
           <p className="eyebrow">The Meaning Behind the Charm</p>
           <h2 id="dragonfly-keychain-title">Carry a little light with you.</h2>
           <p>The dragonfly is a symbol of growth, renewal, and becoming.</p>
           <div className="hero-actions"><a className="button" href={links.dragonflyKeychain}>Discover the Dragonfly Charm</a></div>
-        </div>
-        <div className="quote-panel editorial-quote">
-          <p className="eyebrow">Gentle movement still counts</p>
-          <h2>Growth can be quiet.</h2>
-          <p>Transformation does not need pressure.</p>
         </div>
       </section>
 
@@ -142,7 +122,7 @@ export default function Home() {
           <a className="text-link" href="/blog">Visit the full blog →</a>
         </div>
         <div className="blog-grid">
-          {blogPosts.map((post, index) => (
+          {blogPosts.slice(0, 1).map((post, index) => (
             <article className="card editorial-card" key={post.href}>
               <span className="journey-number">0{index + 1}</span>
               <h3>{post.title}</h3>
@@ -150,20 +130,6 @@ export default function Home() {
               <a className="text-link" href={post.href}>Read the note →</a>
             </article>
           ))}
-        </div>
-      </section>
-
-      <section className="section compact-faq" aria-labelledby="faq-title">
-        <div className="section-heading-row">
-          <div>
-            <p className="eyebrow">Helpful Details</p>
-            <h2 id="faq-title">Before you begin.</h2>
-          </div>
-        </div>
-        <div className="blog-grid faq-grid">
-          <article className="card"><h3>Digital products</h3><p>Downloads are delivered through Gumroad after checkout.</p></article>
-          <article className="card"><h3>Paperback journal</h3><p>The printed journal is available through Amazon.</p></article>
-          <article className="card"><h3>Free starting point</h3><p>The 3-Day Gentle Reset is free.</p></article>
         </div>
       </section>
 
@@ -181,7 +147,6 @@ export default function Home() {
               <p>Receive prompts, product news, and behind-the-glow notes.</p>
               <div className="hero-actions">
                 <a className="button" href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
-                <a className="button secondary" href="/glowlist">Discover the DGK Glowlist</a>
               </div>
             </div>
           </div>
