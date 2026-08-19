@@ -16,7 +16,7 @@ export function ProductCard({ product }: ProductCardProps) {
     ? 'Instant digital delivery after checkout.'
     : isPaperback
       ? 'Printed and shipped by Amazon; Amazon policies apply.'
-      : 'Physical item shipping details are shown before purchase.';
+      : 'Shipping costs and return terms are shown by our secure checkout partner before payment.';
 
   return (
     <article className={product.featured ? 'card product-card featured-card' : 'card product-card'}>
@@ -63,13 +63,11 @@ export function ProductCard({ product }: ProductCardProps) {
             </div>
           )}
           <p className="fulfillment-note">{fulfillmentNote}</p>
-          {isPhysical && <p className="fulfillment-note">Shipping and return terms are confirmed by the checkout partner before payment.</p>}
           <small>Payment options vary by Gumroad, Amazon, or the active checkout partner.</small>
         </div>
 
-        <div className="review-note" aria-label="Customer review information">
-          <span aria-hidden="true">★★★★★</span>
-          <p>Customer reviews will be added as DGK receives verified feedback.</p>
+        <div className="review-note" aria-label="DivaglamKreation care note">
+          <p>Made with care by DivaglamKreation.</p>
         </div>
       </div>
     </article>
