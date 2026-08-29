@@ -7,6 +7,7 @@ import { SiteFooter } from './components/SiteFooter';
 import { SiteHeader } from './components/SiteHeader';
 import { blogPosts, images, links, products } from './home-content';
 import './home.css';
+import './editorial-refresh.css';
 
 export default function Home() {
   return (
