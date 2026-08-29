@@ -16,9 +16,9 @@ export default function Home() {
       <section className="hero hero-home presentation-hero" id="top">
         <div className="hero-copy hero-copy-home">
           <p className="eyebrow">Faith-rooted tools for softer days</p>
-          <h1>Pause gently. Begin again with purpose.</h1>
+          <h1 className="statement-hero">You matter<span className="gold-period">.</span></h1>
           <p className="hero-lede">
-            Faith-rooted journals, meaningful gifts, and encouragement created to help you pause, reflect, and move forward.
+            You do not have to rush your becoming. DivaglamKreation creates gentle journals, meaningful gifts, and quiet encouragement to help you pause, reflect, and begin again with purpose.
           </p>
           <div className="hero-actions">
             <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">
@@ -27,8 +27,8 @@ export default function Home() {
             <a className="button secondary" href="#shop">Explore Journals &amp; Gifts</a>
           </div>
           <div className="hero-proof" aria-label="Customer benefits">
-            <span>Instant digital delivery</span>
             <span>Faith-rooted reflection</span>
+            <span>Gentle guidance</span>
             <span>Made with intention</span>
           </div>
         </div>
@@ -52,28 +52,30 @@ export default function Home() {
       <section className="section start-section presentation-panel" id="start">
         <div className="section-heading-row">
           <div>
-            <p className="eyebrow">Start Here</p>
-            <h2>Choose what fits today.</h2>
+            <p className="eyebrow">Choose Your Path</p>
+            <h2>Start with what you need today.</h2>
           </div>
+          <p className="section-intro">A free first step, a guided week, or a quiet note to return to.</p>
         </div>
         <div className="journey-grid">
           <article className="journey-card">
             <span className="journey-number">01</span>
-            <h3>Begin with three quiet days.</h3>
-            <p>Short prompts for reflection, prayer, and gratitude.</p>
-            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Get the free reset →</a>
+            <h3>3-Day Mini Reset</h3>
+            <p>A free, gentle beginning with reflection, prayer, and gratitude prompts.</p>
+            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Begin free →</a>
           </article>
           <article className="journey-card featured-journey">
             <span className="journey-number">02</span>
-            <h3>Move through a full week.</h3>
-            <p>Seven days of guided reflection, faith, and planning.</p>
+            <p className="bridge-label">Go a little deeper</p>
+            <h3>7-Day Guided Journal</h3>
+            <p>Seven days of guided reflection, faith, and planning for a steadier reset.</p>
             <a className="text-link" href={links.sevenDayReset} target="_blank" rel="noopener noreferrer">Explore the journal →</a>
           </article>
           <article className="journey-card">
             <span className="journey-number">03</span>
-            <h3>Read a quiet reminder.</h3>
-            <p>Faith-rooted notes for fuller weeks and slower mornings.</p>
-            <a className="text-link" href="/blog">Read the journal notes →</a>
+            <h3>Journal Notes</h3>
+            <p>Faith-rooted reminders for fuller weeks, slower mornings, and everyday becoming.</p>
+            <a className="text-link" href="/blog">Read a quiet note →</a>
           </article>
         </div>
       </section>
@@ -101,14 +103,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section split about-section" id="about">
-        <div>
+      <section className="section story-section" id="about" aria-labelledby="story-question">
+        <div className="story-question-wrap">
+          <span className="story-rule" aria-hidden="true" />
           <p className="eyebrow">Behind the Glow</p>
-          <h2>Made with heart, faith, and purpose.</h2>
+          <h2 id="story-question">Who are you becoming?</h2>
+          <span className="story-rule" aria-hidden="true" />
         </div>
-        <div className="about-copy">
+        <div className="story-copy">
           <p>DivaglamKreation was created for women who need a simple place to pause, reflect, and reconnect.</p>
-          <p>Each product is designed to feel warm, useful, and easy to return to.</p>
+          <p>You do not need to have everything figured out. You only need a little room to hear yourself again and move forward with faith.</p>
           <a className="text-link" href="/contact">Connect with DivaglamKreation →</a>
         </div>
       </section>
@@ -133,7 +137,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section glowlist-section" id="glowlist">
+      <section className="section glowlist-section glowlist-band" id="glowlist">
         <div className="email-box presentation-glowlist">
           <div className="glowlist-grid">
             <a href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer" aria-label="Join the DGK Glowlist">
