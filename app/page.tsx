@@ -138,13 +138,13 @@ export default function Home() {
           <div className="glowlist-grid">
             <a href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer" aria-label="Join the DGK Glowlist">
               <div className="glowlist-image-wrap">
-                <Image src={images.resetChallenge} alt="Join the free 7-day reset challenge" fill loading="lazy" sizes="(max-width: 820px) 100vw, 350px" className="cover-image" />
+                <Image src={images.glowlist} alt="A calm journaling scene inviting readers to join the DGK Glowlist" fill loading="lazy" sizes="(max-width: 820px) 100vw, 350px" className="cover-image" />
               </div>
             </a>
             <div>
               <p className="eyebrow">Join the DGK Glowlist</p>
               <h2>Gentle encouragement, delivered.</h2>
-              <p>Receive prompts, product news, and behind-the-glow notes.</p>
+              <p>Receive gentle reflection prompts, seasonal product updates, and behind-the-glow notes from DivaglamKreation.</p>
               <div className="hero-actions">
                 <a className="button" href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
               </div>
