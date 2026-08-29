@@ -23,7 +23,7 @@ export const links = {
 } as const;
 
 export const images = {
-  resetChallenge: '/images/file_000000006878822f9afa6bda9bae9f6d.png',
+  glowlist: '/images/file_000000006878822f9afa6bda9bae9f6d.png',
   hero: '/images/file_00000000bbfc822fb379f73bd8a3c064.png',
 } as const;
 
