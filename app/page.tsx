@@ -95,15 +95,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section dragonfly-story presentation-feature" aria-labelledby="dragonfly-keychain-title">
-        <div className="feature-copy">
-          <p className="eyebrow">The Meaning Behind the Charm</p>
-          <h2 id="dragonfly-keychain-title">Carry a little light with you.</h2>
-          <p>The dragonfly is a symbol of growth, renewal, and becoming.</p>
-          <div className="hero-actions"><a className="button" href={links.dragonflyKeychain}>Discover the Dragonfly Charm</a></div>
-        </div>
-      </section>
-
       <section className="section story-section" id="about" aria-labelledby="story-question">
         <div className="story-question-wrap">
           <span className="story-rule" aria-hidden="true" />
