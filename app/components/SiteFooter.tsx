@@ -26,7 +26,6 @@ export function SiteFooter() {
         <div className="footer-column">
           <p className="footer-heading">Shop</p>
           <a href={links.gentleReset} target="_blank" rel="noopener noreferrer">Free Reset</a>
-          <a href={links.sevenDayReset} target="_blank" rel="noopener noreferrer">7-Day Journal</a>
           <a href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Paperback</a>
           <a href={links.dragonflyKeychain}>Dragonfly Charm</a>
         </div>
