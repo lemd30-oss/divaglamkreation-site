@@ -56,7 +56,7 @@ export default function Home() {
             <p className="eyebrow">Choose Your Path</p>
             <h2>Start with what you need today.</h2>
           </div>
-          <p className="section-intro">A free first step, a guided week, or a quiet note to return to.</p>
+          <p className="section-intro">A free first step or a quiet note to return to.</p>
         </div>
         <div className="journey-grid">
           <article className="journey-card">
@@ -65,15 +65,8 @@ export default function Home() {
             <p>A free, gentle beginning with reflection, prayer, and gratitude prompts.</p>
             <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Begin free →</a>
           </article>
-          <article className="journey-card featured-journey">
-            <span className="journey-number">02</span>
-            <p className="bridge-label">Go a little deeper</p>
-            <h3>7-Day Guided Journal</h3>
-            <p>Seven days of guided reflection, faith, and planning for a steadier reset.</p>
-            <a className="text-link" href={links.sevenDayReset} target="_blank" rel="noopener noreferrer">Explore the journal →</a>
-          </article>
           <article className="journey-card">
-            <span className="journey-number">03</span>
+            <span className="journey-number">02</span>
             <h3>Journal Notes</h3>
             <p>Faith-rooted reminders for fuller weeks, slower mornings, and everyday becoming.</p>
             <a className="text-link" href="/blog">Read a quiet note →</a>
@@ -91,7 +84,7 @@ export default function Home() {
         </div>
         <p className="shop-trust">Instant digital delivery · Secure checkout · Thoughtfully created by DivaglamKreation</p>
         <div className="product-grid shop-grid">
-          {products.map((product) => <ProductCard product={product} key={product.title} />)}
+          {products.filter((product) => product.title !== '7-Day Gentle Reset Journal').map((product) => <ProductCard product={product} key={product.title} />)}
         </div>
       </section>
 
