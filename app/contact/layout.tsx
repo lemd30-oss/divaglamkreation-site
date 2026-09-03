@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     siteName: 'DivaglamKreation',
     title: 'Contact | DivaglamKreation',
     description: 'Contact DivaglamKreation for help with digital downloads, physical orders, or general questions.',
+    images: [{ url: '/images/gentle-morning-reset-pack.jpg', alt: 'DivaglamKreation gentle reset journal and encouragement' }],
   },
 };
 
