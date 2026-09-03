@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     siteName: 'DivaglamKreation',
     title: 'Dragonfly Reminder Charm | DivaglamKreation',
     description: 'A sparkling gold-tone dragonfly reminder charm in Pink or Blue, created as a gentle DGK symbol of growth, light, and transformation.',
+    images: [{ url: '/dgk-dragonfly-pink-website%20(1).jpg', alt: 'Pink DivaglamKreation Dragonfly Reminder Charm' }],
   },
 };
 
