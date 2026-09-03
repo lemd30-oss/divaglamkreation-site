@@ -1,6 +1,15 @@
 export const metadata = {
-  title: 'Return & Refund Policy | DivaglamKreation',
-  description: 'DivaglamKreation return and refund policy for digital downloads and eligible physical products.',
+  title: 'Return & Refund Policy',
+  description: 'Read the DivaglamKreation return and refund policy for digital downloads, eligible physical products, damaged orders, cancellations, and replacements.',
+  alternates: { canonical: '/return-policy' },
+  openGraph: {
+    type: 'website',
+    url: '/return-policy',
+    siteName: 'DivaglamKreation',
+    title: 'Return & Refund Policy | DivaglamKreation',
+    description: 'Return and refund guidance for DivaglamKreation digital downloads, physical products, damaged orders, cancellations, and replacements.',
+    images: [{ url: '/images/gentle-morning-reset-pack.jpg', alt: 'DivaglamKreation customer care and product support' }],
+  },
 };
 
 export default function ReturnPolicyPage() {
