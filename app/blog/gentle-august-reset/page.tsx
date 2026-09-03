@@ -1,7 +1,7 @@
 const freeResetUrl = 'https://lemdo8.gumroad.com/';
 
 export const metadata = {
-  title: 'A Gentle August Reset for the Woman Who Needs Room to Breathe | DivaglamKreation',
+  title: 'A Gentle August Reset',
   description:
     'A soft, faith-rooted August reflection for slowing down, making room to breathe, and returning to peace one gentle step at a time.',
   alternates: { canonical: '/blog/gentle-august-reset' },
