@@ -21,6 +21,9 @@ export function SiteFooter() {
           <a href="/#shop">Shop</a>
           <a href="/#about">About</a>
           <a href="/blog">Blog</a>
+          <a href="/blog/7-gentle-journal-prompts-for-releasing-what-no-longer-serves-you">Journal Prompts</a>
+          <a href="/blog/gentle-august-reset">August Reset</a>
+          <a href="/blog/why-you-dont-need-to-earn-rest">Rest & Grace</a>
         </div>
 
         <div className="footer-column">
