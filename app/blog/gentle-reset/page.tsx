@@ -1,7 +1,7 @@
 const gumroadShopUrl = 'https://lemdo8.gumroad.com/';
 
 export const metadata = {
-  title: "When You've Lost Your Rhythm: A Gentle Sunday Reset | DivaglamKreation",
+  title: 'A Gentle Sunday Reset',
   description:
     'A gentle Sunday reset for women who feel tired, depleted, and ready to return to rest, reflection, and faith-rooted renewal.',
   alternates: { canonical: '/blog/gentle-reset' },
