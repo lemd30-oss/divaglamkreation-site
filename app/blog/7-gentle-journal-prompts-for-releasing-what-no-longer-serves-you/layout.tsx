@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     siteName: 'DivaglamKreation',
     title: '7 Gentle Journal Prompts for Releasing What No Longer Serves You',
     description: 'Seven gentle, faith-rooted prompts for setting down guilt, pressure, and what was never yours to carry.',
+    images: [{ url: '/images/gentle-morning-reset-pack.jpg', alt: 'Gentle journal prompts from DivaglamKreation' }],
   },
 };
 
