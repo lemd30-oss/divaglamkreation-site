@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     siteName: 'DivaglamKreation',
     title: "Why You Don't Need to Earn Rest",
     description: 'A gentle, faith-rooted reminder that rest is not a reward for exhaustion. Pause, release guilt, and begin again with grace.',
+    images: [{ url: '/images/gentle-morning-reset-pack.jpg', alt: 'A faith-rooted reminder about rest from DivaglamKreation' }],
   },
 };
 
