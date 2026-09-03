@@ -24,11 +24,18 @@ export const metadata: Metadata = {
     siteName: 'DivaglamKreation',
     title: 'DivaglamKreation | Faith-rooted journals and gentle resets',
     description: 'Journals, gentle gifts, and quiet encouragement for women learning to pause and begin softly.',
+    images: [
+      {
+        url: '/images/gentle-morning-reset-pack.jpg',
+        alt: 'DivaglamKreation gentle reset journal and encouragement',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'DivaglamKreation',
     description: 'Faith-rooted journals, gentle gifts, and quiet encouragement.',
+    images: ['/images/gentle-morning-reset-pack.jpg'],
   },
   robots: { index: true, follow: true },
 };
