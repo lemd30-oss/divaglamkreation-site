@@ -5,7 +5,7 @@ import { SiteHeader } from '../components/SiteHeader';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Contact DivaglamKreation for help with digital downloads, physical orders, or general questions.',
+  description: 'Contact DivaglamKreation for friendly help with digital downloads, physical orders, product questions, order concerns, and general customer support.',
   alternates: { canonical: '/contact' },
 };
 
