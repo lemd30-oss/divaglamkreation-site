@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     siteName: 'DivaglamKreation',
     title: 'Journal Notes | DivaglamKreation',
     description: 'Faith-rooted reflections, journaling encouragement, and quiet reminders from DivaglamKreation.',
+    images: [{ url: '/images/gentle-morning-reset-pack.jpg', alt: 'DivaglamKreation journal notes and gentle reset encouragement' }],
   },
 };
 
