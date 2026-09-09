@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
@@ -10,6 +9,11 @@ export const metadata: Metadata = {
 };
 
 const posts = [
+  {
+    title: 'The Art of Beginning Again',
+    description: 'Beginning again does not require a dramatic overhaul—only one small, faithful turn toward what matters.',
+    href: '/blog/the-art-of-beginning-again',
+  },
   {
     title: '7 Gentle Journal Prompts for Releasing What No Longer Serves You',
     description: 'Seven gentle, faith-rooted prompts for setting down guilt, pressure, and what was never yours to carry.',
@@ -36,7 +40,6 @@ export default function BlogPage() {
   return (
     <main className="site-shell">
       <SiteHeader />
-
       <section className="hero">
         <div className="hero-copy">
           <p className="eyebrow">Journal Notes</p>
@@ -51,7 +54,6 @@ export default function BlogPage() {
           </div>
         </aside>
       </section>
-
       <section className="section">
         <div className="blog-grid">
           {posts.map((post) => (
@@ -64,7 +66,6 @@ export default function BlogPage() {
           ))}
         </div>
       </section>
-
       <SiteFooter />
     </main>
   );
