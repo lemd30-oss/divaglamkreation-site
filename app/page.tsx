@@ -74,6 +74,28 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section reset-feature-section" id="glow-reset" aria-labelledby="glow-reset-title">
+        <div className="reset-feature-image-wrap">
+          <Image
+            src="/images/the-gentle-reset-book-cover.svg"
+            alt="Grace Notes 7-Day Gentle Reset journal cover"
+            width={760}
+            height={980}
+            className="reset-feature-image"
+          />
+        </div>
+        <div className="reset-feature-copy">
+          <p className="eyebrow">Meet the Glow Reset Journal</p>
+          <h2 id="glow-reset-title">A gentle 7-day journal made for the woman who needs permission to slow down.</h2>
+          <p className="reset-feature-lede">Pause. Reflect. Pray. Begin again with a little more room to hear yourself, reconnect with God, and move forward with intention.</p>
+          <p className="reset-feature-note">Small moments of reflection can create lasting change.</p>
+          <div className="hero-actions">
+            <a className="button" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Learn More</a>
+            <a className="button secondary" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Paperback Edition</a>
+          </div>
+        </div>
+      </section>
+
       <section className="section shop-section" id="shop">
         <div className="section-heading-row">
           <div>
