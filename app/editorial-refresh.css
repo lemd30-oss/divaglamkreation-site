@@ -101,55 +101,6 @@
   padding-left: 1rem;
 }
 
-.sticker-section {
-  background: #f7f0e7;
-  border-bottom: 1px solid rgba(75, 58, 50, 0.08);
-  border-top: 1px solid rgba(75, 58, 50, 0.08);
-  padding-bottom: clamp(4rem, 7vw, 6rem);
-  padding-top: clamp(4rem, 7vw, 6rem);
-}
-
-.sticker-grid {
-  display: grid;
-  gap: 1.15rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 2.25rem;
-}
-
-.sticker-card {
-  background: rgba(255, 253, 248, 0.72);
-  border: 1px solid rgba(75, 58, 50, 0.1);
-  border-radius: 22px;
-  padding: 1.75rem;
-}
-
-.sticker-card h3 {
-  color: var(--coffee);
-  font-size: 1.35rem;
-  margin: 0.85rem 0 0.8rem;
-}
-
-.sticker-card p {
-  color: var(--soft-brown);
-  line-height: 1.7;
-  margin-bottom: 0;
-}
-
-.sticker-status {
-  color: var(--gold);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-}
-
-.sticker-footnote {
-  color: var(--soft-brown);
-  font-size: 0.95rem;
-  margin: 1.5rem 0 0;
-  max-width: 720px;
-}
-
 .story-section {
   padding-bottom: 6rem;
   padding-top: 6rem;
@@ -238,10 +189,6 @@
 
   .reset-feature-copy h2 {
     font-size: clamp(2.35rem, 11vw, 3.8rem);
-  }
-
-  .sticker-grid {
-    grid-template-columns: 1fr;
   }
 
   .story-section {
