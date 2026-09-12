@@ -108,6 +108,9 @@ export default function Home() {
         <div className="product-grid shop-grid">
           {products.filter((product) => product.title !== '7-Day Gentle Reset Journal').map((product) => <ProductCard product={product} key={product.title} />)}
         </div>
+        <p style={{ marginTop: '1.75rem' }}>
+          <a className="text-link" href="/sticker-archive">View the DGK Sticker Archive →</a>
+        </p>
       </section>
 
       <section className="section story-section" id="about" aria-labelledby="story-question">
