@@ -9,8 +9,6 @@ const orderUrl =
   'https://a85da190-df2c-44b8-9510-5fb19ca1b186.paylinks.godaddy.com/p/8ff7cff0-6da6-4ac1-a31b-c70fd941358e';
 const pinkImageUrl =
   'https://raw.githubusercontent.com/lemd30-oss/divaglamkreation-site/main/dgk-dragonfly-pink-website.jpg';
-const blueImageUrl =
-  'https://raw.githubusercontent.com/lemd30-oss/divaglamkreation-site/main/dgk-dragonfly-blue-website.jpg';
 
 export default function DragonflyKeychainPage() {
   return (
@@ -28,19 +26,39 @@ export default function DragonflyKeychainPage() {
         </nav>
       </header>
 
-      <section className="hero" id="top">
+      <section className="hero" id="top" style={{ alignItems: 'center' }}>
         <div className="hero-copy">
-          <p className="eyebrow">Little Glow Gift · Limited Batch</p>
-          <h1>Dragonfly Reminder Charm</h1>
-          <p>
-            A sparkling carry-with-you reminder of growth, light, and transformation — made for the
-            woman learning to move forward without rushing herself.
+          <h1 style={{ fontSize: 'clamp(2.75rem, 6vw, 4.75rem)', lineHeight: 0.98 }}>
+            Dragonfly Reminder Charm
+          </h1>
+          <p style={{ maxWidth: '620px' }}>
+            A sparkling little reminder to keep growing—gently and in your own time.
           </p>
-          <div className="hero-actions">
-            <a className="button" href={orderUrl}>Buy Now for $9.99</a>
-            <a className="button secondary" href="/#shop">Return to the Collection</a>
+
+          <p
+            aria-label="Price: 9 dollars and 99 cents"
+            style={{
+              color: 'var(--ink, #4b382f)',
+              fontFamily: 'Georgia, serif',
+              fontSize: '1.65rem',
+              fontWeight: 700,
+              margin: '1.25rem 0 0',
+            }}
+          >
+            $9.99
+          </p>
+
+          <p className="trust-note" style={{ marginTop: '0.65rem' }}>
+            Available in Pink or Blue. Choose your color at checkout.
+          </p>
+
+          <div className="hero-actions" style={{ marginTop: '1.25rem' }}>
+            <a className="button" href={orderUrl}>
+              Choose Pink or Blue
+            </a>
           </div>
-          <p className="trust-note">Available in Pink or Blue while this limited batch lasts.</p>
+
+          <p className="trust-note">Limited quantities available.</p>
         </div>
 
         <aside className="hero-card" aria-label="Pink Dragonfly Reminder Charm product photo">
@@ -50,8 +68,7 @@ export default function DragonflyKeychainPage() {
             style={{
               display: 'block',
               width: '100%',
-              height: '100%',
-              maxHeight: '520px',
+              maxHeight: '460px',
               objectFit: 'cover',
               borderRadius: 'inherit',
             }}
@@ -59,58 +76,25 @@ export default function DragonflyKeychainPage() {
         </aside>
       </section>
 
-      <section className="section">
-        <p className="eyebrow">Choose Your Color</p>
-        <h2>Pink or blue, with the same gentle meaning.</h2>
-        <div
-          style={{
-            display: 'grid',
-            gap: '1rem',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-            marginTop: '1.5rem',
-            maxWidth: '760px',
-          }}
-        >
-          <figure style={{ margin: 0 }}>
-            <img
-              src={pinkImageUrl}
-              alt="Pink Dragonfly Reminder Charm"
-              style={{ borderRadius: '1.25rem', display: 'block', width: '100%' }}
-            />
-            <figcaption className="trust-note">Pink</figcaption>
-          </figure>
-          <figure style={{ margin: 0 }}>
-            <img
-              src={blueImageUrl}
-              alt="Blue Dragonfly Reminder Charm"
-              style={{ borderRadius: '1.25rem', display: 'block', width: '100%' }}
-            />
-            <figcaption className="trust-note">Blue</figcaption>
-          </figure>
-        </div>
-        <p className="trust-note" style={{ marginTop: '1.25rem' }}>
-          Pink or Blue · Gold-tone hardware · Lightweight charm
-        </p>
-      </section>
-
-      <section className="section">
-        <p className="eyebrow">A Gentle Companion</p>
-        <h2>More than a keychain — a small symbol of becoming.</h2>
+      <section className="section" aria-labelledby="dragonfly-details-title">
+        <p className="eyebrow">A Meaningful Little Gift</p>
+        <h2 id="dragonfly-details-title">A gentle reminder for the journey.</h2>
         <p style={{ maxWidth: '680px' }}>
-          The dragonfly is often connected with change, resilience, and light. Carry this sparkling charm
-          on your keys, purse, backpack, or journal pouch as a gentle reminder that growth can happen softly.
+          Carry it on your keys, purse, backpack, or journal pouch as a small symbol of growth,
+          light, and transformation.
         </p>
-      </section>
-
-      <section className="section" aria-labelledby="dragonfly-order-title">
-        <div className="email-box">
-          <p className="eyebrow">$9.99 · Limited Batch</p>
-          <h2 id="dragonfly-order-title">Choose your color and check out.</h2>
-          <p>Open the secure checkout, choose Pink or Blue, and complete your order.</p>
-          <div className="email-form">
-            <a className="button" href={orderUrl}>Go to Secure Checkout</a>
-          </div>
-        </div>
+        <ul style={{ lineHeight: 1.9, marginTop: '1rem', paddingLeft: '1.25rem' }}>
+          <li>Sparkling dragonfly design</li>
+          <li>Gold-tone keyring and lobster clasp</li>
+          <li>Available in Pink or Blue</li>
+          <li>Lightweight and giftable</li>
+        </ul>
+        <p style={{ fontStyle: 'italic', marginTop: '1.5rem' }}>
+          You mattered before anyone was looking.
+        </p>
+        <p style={{ marginTop: '1.5rem' }}>
+          <a href="/#shop">← Continue shopping</a>
+        </p>
       </section>
 
       <footer className="footer">
