@@ -102,12 +102,40 @@ export default function Home() {
             <p className="eyebrow">The Collection</p>
             <h2>Tools for real-life pauses.</h2>
           </div>
-          <p className="section-intro">Digital journals, a printed companion, and meaningful gifts.</p>
+          <p className="section-intro">Digital journals, a printed companion, meaningful gifts, and gentle reminders.</p>
         </div>
         <p className="shop-trust">Instant digital delivery · Secure checkout · Thoughtfully created by DivaglamKreation</p>
         <div className="product-grid shop-grid">
           {products.filter((product) => product.title !== '7-Day Gentle Reset Journal').map((product) => <ProductCard product={product} key={product.title} />)}
         </div>
+      </section>
+
+      <section className="section sticker-section" id="stickers" aria-labelledby="stickers-title">
+        <div className="section-heading-row">
+          <div>
+            <p className="eyebrow">Stickers &amp; Gentle Reminders</p>
+            <h2 id="stickers-title">Little words to carry with you.</h2>
+          </div>
+          <p className="section-intro">A returning part of the DGK story—small reminders for journals, planners, gifts, and everyday spaces.</p>
+        </div>
+        <div className="sticker-grid">
+          <article className="sticker-card">
+            <span className="sticker-status">Coming Soon</span>
+            <h3>Gentle Reminders</h3>
+            <p>Soft encouragement designed to help you pause, breathe, remember who you are, and keep moving with grace.</p>
+          </article>
+          <article className="sticker-card">
+            <span className="sticker-status">Coming Soon</span>
+            <h3>Faith · Pray · Hope · Trust</h3>
+            <p>Faith-rooted words for journaling, prayer pages, planners, and the places where you need a quiet reminder.</p>
+          </article>
+          <article className="sticker-card">
+            <span className="sticker-status">Coming Soon</span>
+            <h3>Seasonal DGK Sticker Sheets</h3>
+            <p>Cozy, reflective designs that follow the seasons while staying rooted in the heart of DivaglamKreation.</p>
+          </article>
+        </div>
+        <p className="sticker-footnote">The sticker collection is being thoughtfully refreshed. Join the Glowlist to hear when the first designs return.</p>
       </section>
 
       <section className="section story-section" id="about" aria-labelledby="story-question">
