@@ -2,6 +2,17 @@
 
 A soft, faith-rooted website for DivaglamKreation, built with Next.js and optimized for speed on Vercel.
 
+## Production source of truth
+
+- **GitHub repository:** `lemd30-oss/divaglamkreation-site`
+- **Production branch:** `main`
+- **Production Vercel project:** `lemd30-oss-divaglamkreation-site`
+- **Production Vercel project ID:** `prj_aiFrQ4uTjtf2MEA3JRYoq7hL7y4N`
+- **Primary domain:** `https://divaglamkreation.com`
+- **Secondary domain:** `https://www.divaglamkreation.com`
+
+The older Vercel project named `divaglamkreation-site` (`prj_Ay4aRabnd69yHiPGHLhN7UAgHVDF`) is a duplicate and is **not** the DGK production source of truth. Do not use it for production status, logs, deployment verification, or future DGK website decisions. Remove or disconnect it in Vercel when account-level project deletion controls are available.
+
 ## Current structure
 
 - `app/page.tsx` — homepage with hero, featured products, about, blog preview, Glowlist signup, and footer
@@ -24,18 +35,17 @@ A soft, faith-rooted website for DivaglamKreation, built with Next.js and optimi
 
 ### 2. **Next.js Configuration Enhancements**
 - ✅ Remote image patterns configured for Gumroad and external sources
-- ✅ SWC minification enabled for faster builds
 - ✅ Production source maps disabled to reduce bundle size
 - ✅ Aggressive image caching for CDN (31,536,000 seconds = 1 year)
 
-**Impact**: Builds are 10-15% faster, bundle size reduced by ~5%.
+**Impact**: Builds stay streamlined while image delivery is handled through Next.js and Vercel.
 
 ### 3. **Connection Optimization**
 - ✅ `preconnect` hints for Gumroad and Facebook domains
 - ✅ `dns-prefetch` fallback for older browsers
 - ✅ Eliminates DNS lookup and TCP handshake delays for external links
 
-**Impact**: External link loads ~300-500ms faster on first visit.
+**Impact**: External links load faster on first visit.
 
 ### 4. **Vercel Performance Monitoring**
 - ✅ `@vercel/analytics` — Real-time performance insights
@@ -59,9 +69,9 @@ Then open the local development URL shown in the terminal.
 
 ## Deploying on Vercel
 
-1. Import this GitHub repository into Vercel.
-2. Use the default Next.js framework settings.
-3. Deploy from the `main` branch.
+1. Push approved changes to the `main` branch of `lemd30-oss/divaglamkreation-site`.
+2. Verify the deployment under the **`lemd30-oss-divaglamkreation-site`** Vercel project.
+3. Confirm `https://divaglamkreation.com` returns the updated site successfully.
 
 Vercel automatically handles:
 - Image optimization and CDN caching
@@ -88,10 +98,10 @@ Access these metrics in your Vercel dashboard under **Analytics** > **Speed Insi
 
 ## Next content updates
 
-- Replace placeholder product buttons with Gumroad, Etsy, or shop links.
-- Connect the Glowlist form to an email provider.
+- Keep product buttons connected to the correct Gumroad or DGK website destinations.
+- Keep the free 3-Day Reset → Grace Notes 7-Day Reset customer path consistent across the homepage and Gumroad.
+- Connect the Glowlist form to the chosen email workflow when ready.
 - Add real product images or Canva exports (optimize to < 200KB per image).
-- Add dedicated pages for Shop, Blog, About, and Contact when ready.
 - Monitor Core Web Vitals monthly and adjust as needed.
 
 ---
