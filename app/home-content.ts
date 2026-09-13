@@ -30,12 +30,12 @@ export const images = {
 export const products: Product[] = [
   {
     title: 'The Gentle Reset — 3-Day Mini Journal',
-    description: 'A free three-day faith-centered reset with reflection, prayer, and gratitude prompts for a softer return to yourself.',
+    description: 'A free three-day faith-rooted pause with reflection, prayer, and gratitude prompts to help you slow down, listen inward, and begin again with intention.',
     image: '/images/file_000000007a0481f59f22529a564a90af.png',
     imageAlt: 'Open Gentle Reset journal beside a pinecone and neutral stationery',
     href: links.gentleReset,
     priceLabel: 'Free · Digital journal',
-    buttonLabel: 'Begin the Free Reset',
+    buttonLabel: 'Start the Free 3-Day Reset',
     external: true,
   },
   {
