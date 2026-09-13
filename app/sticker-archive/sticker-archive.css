@@ -169,6 +169,17 @@
   margin: 0;
 }
 
+.archive-availability {
+  border-top: 1px solid rgba(75, 58, 50, 0.1);
+  color: var(--coffee) !important;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-top: 1.15rem !important;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
 .archive-note {
   background: rgba(238, 226, 209, 0.55);
   border-left: 2px solid var(--gold);
