@@ -67,9 +67,9 @@ export default function Home() {
           </article>
           <article className="journey-card">
             <span className="journey-number">02</span>
-            <h3>Journal Notes</h3>
-            <p>Faith-rooted reminders for fuller weeks, slower mornings, and everyday becoming.</p>
-            <a className="text-link" href="/blog">Read a quiet note →</a>
+            <h3>Ready to go deeper?</h3>
+            <p>Continue the rhythm with Grace Notes, a full seven-day guided reset for prayer, reflection, gratitude, and gentle renewal.</p>
+            <a className="text-link" href="#glow-reset">Continue into 7 days →</a>
           </article>
         </div>
       </section>
@@ -85,13 +85,13 @@ export default function Home() {
           />
         </div>
         <div className="reset-feature-copy">
-          <p className="eyebrow">Meet the Glow Reset Journal</p>
-          <h2 id="glow-reset-title">A gentle 7-day journal made for the woman who needs permission to slow down.</h2>
-          <p className="reset-feature-lede">Pause. Reflect. Pray. Begin again with a little more room to hear yourself, reconnect with God, and move forward with intention.</p>
-          <p className="reset-feature-note">Small moments of reflection can create lasting change.</p>
+          <p className="eyebrow">Your next gentle step</p>
+          <h2 id="glow-reset-title">If three days helped you pause, give yourself seven days to listen more deeply.</h2>
+          <p className="reset-feature-lede">Grace Notes: 7-Day Gentle Reset continues the same faith-rooted rhythm with more room for prayer, reflection, gratitude, and the question at the heart of DGK: Who are you becoming?</p>
+          <p className="reset-feature-note">Begin free. Continue when you are ready. No rushing your becoming.</p>
           <div className="hero-actions">
-            <a className="button" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Learn More</a>
-            <a className="button secondary" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Paperback Edition</a>
+            <a className="button" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Continue with the Digital Journal</a>
+            <a className="button secondary" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Choose the Paperback</a>
           </div>
         </div>
       </section>
