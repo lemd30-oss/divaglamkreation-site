@@ -16,21 +16,21 @@ export default function Home() {
 
       <section className="hero hero-home presentation-hero" id="top">
         <div className="hero-copy hero-copy-home">
-          <p className="eyebrow">Faith-rooted tools for softer days</p>
-          <h1 className="statement-hero">You matter<span className="gold-period">.</span></h1>
+          <p className="eyebrow">Faith · Creativity · Gentle encouragement</p>
+          <h1 className="statement-hero">Who are you<span className="gold-period">?</span></h1>
           <p className="hero-lede">
-            You do not have to rush your becoming. DivaglamKreation creates gentle journals, meaningful gifts, and quiet encouragement to help you pause, reflect, and begin again with purpose.
+            You mattered before anyone was looking. DivaglamKreation grew from quiet moments of coffee, creativity, reflection, and faith into journals, meaningful gifts, and gentle reminders made to help you remember who you are becoming.
           </p>
           <div className="hero-actions">
             <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">
               Begin the Free 3-Day Reset
             </a>
-            <a className="button secondary" href="#shop">Explore Journals &amp; Gifts</a>
+            <a className="button secondary" href="#shop">Explore DGK</a>
           </div>
-          <div className="hero-proof" aria-label="Customer benefits">
+          <div className="hero-proof" aria-label="DivaglamKreation values">
+            <span>Every woman matters</span>
             <span>Faith-rooted reflection</span>
-            <span>Gentle guidance</span>
-            <span>Made with intention</span>
+            <span>Created with intention</span>
           </div>
         </div>
 
@@ -45,7 +45,7 @@ export default function Home() {
           />
           <div className="image-note">
             <p className="eyebrow">A gentle reminder</p>
-            <strong>You are allowed to begin softly.</strong>
+            <strong>You matter before the world notices.</strong>
           </div>
         </div>
       </section>
@@ -53,17 +53,17 @@ export default function Home() {
       <section className="section start-section presentation-panel" id="start">
         <div className="section-heading-row">
           <div>
-            <p className="eyebrow">Choose Your Path</p>
-            <h2>Start with what you need today.</h2>
+            <p className="eyebrow">Begin Here</p>
+            <h2>Give yourself three quiet days to return to what matters.</h2>
           </div>
-          <p className="section-intro">A free first step or a quiet note to return to.</p>
+          <p className="section-intro">Start free with a faith-rooted pause for reflection, prayer, and gratitude.</p>
         </div>
         <div className="journey-grid">
           <article className="journey-card">
             <span className="journey-number">01</span>
             <h3>3-Day Mini Reset</h3>
-            <p>A free, gentle beginning with reflection, prayer, and gratitude prompts.</p>
-            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Begin free →</a>
+            <p>A free digital journal for slowing down, listening inward, reconnecting with God, and beginning again with intention.</p>
+            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Start your free reset →</a>
           </article>
           <article className="journey-card">
             <span className="journey-number">02</span>
@@ -117,12 +117,12 @@ export default function Home() {
         <div className="story-question-wrap">
           <span className="story-rule" aria-hidden="true" />
           <p className="eyebrow">Behind the Glow</p>
-          <h2 id="story-question">Who are you becoming?</h2>
+          <h2 id="story-question">Who are you?</h2>
           <span className="story-rule" aria-hidden="true" />
         </div>
         <div className="story-copy">
-          <p>DivaglamKreation was created for women who need a simple place to pause, reflect, and reconnect.</p>
-          <p>You do not need to have everything figured out. You only need a little room to hear yourself again and move forward with faith.</p>
+          <p>DivaglamKreation began with a quiet creative woman, a cup of coffee, room to sketch and reflect, and one enduring question: Who are you?</p>
+          <p>The Glow Owl became a companion to that question, and the answer became a truth worth carrying forward: every woman matters.</p>
           <a className="text-link" href="/contact">Connect with DivaglamKreation →</a>
         </div>
       </section>
