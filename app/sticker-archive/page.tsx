@@ -7,27 +7,30 @@ import './sticker-archive.css';
 export const metadata: Metadata = {
   title: 'Sticker Archive | DivaglamKreation',
   description:
-    'Explore archived DivaglamKreation sticker designs from earlier collections and color palettes. These designs are preserved as part of the DGK creative story and are not part of the current collection.',
+    'Explore archived DivaglamKreation sticker designs from earlier collections and color palettes. These designs are preserved as part of the DGK creative story and are separate from the current collection.',
 };
 
 const archivedCollections = [
   {
-    name: 'Gentle Reminders',
-    note: 'Earlier collection',
+    name: 'Coffee First. Then Soul Work.',
+    note: 'Archived design · previous DGK palette',
+    status: 'Physical sticker on hand',
     description:
-      'Encouraging sticker designs created during an earlier DGK season, before the current soft neutral palette took shape.',
+      'A gentle reminder for slow mornings and meaningful reflection. This earlier DGK design pairs coffee with the deeper work of pausing, listening, and tending to your inner life.',
   },
   {
-    name: 'Faith · Pray · Hope · Trust',
-    note: 'Earlier palette',
+    name: 'Sip. Create. Inspire.',
+    note: 'Archived design · previous DGK palette',
+    status: 'Physical sticker on hand',
     description:
-      'Faith-rooted words designed for journals, planners, prayer pages, and everyday reminders in a previous DGK color story.',
+      'Coffee, creativity, and encouragement came together in this cheerful DGK design—an early reminder to make space for the ideas and inspiration already within you.',
   },
   {
-    name: 'Seasonal Sticker Sheets',
-    note: 'Past collections',
+    name: 'Owl Always Choose Me',
+    note: 'Archived design · previous DGK palette',
+    status: 'Physical sticker on hand',
     description:
-      'Seasonal sticker sheets from earlier DivaglamKreation collections, preserved here as part of the brand’s creative history.',
+      'A bright, playful piece from an earlier DGK season centered on self-worth and choosing yourself. The owl wording also connects naturally to the early identity language that became part of the DivaglamKreation story.',
   },
 ];
 
@@ -40,7 +43,7 @@ export default function StickerArchivePage() {
         <p className="archive-eyebrow">From the DGK Archive</p>
         <h1>Sticker Archive</h1>
         <p className="archive-intro">
-          These sticker designs are part of DivaglamKreation’s earlier creative journey. They reflect previous seasonal styles and color palettes and are preserved here as part of the story—not as the current DGK collection.
+          Earlier pieces from the DivaglamKreation creative journey. These designs come from previous DGK seasons and color palettes. They are preserved here as part of the brand story and are separate from the current product collection.
         </p>
         <a className="archive-back-link" href="/#shop">← Return to the current collection</a>
       </section>
@@ -61,16 +64,17 @@ export default function StickerArchivePage() {
                 <span className="archive-wordmark">DK</span>
               </div>
               <div className="archive-card-copy">
-                <span className="archive-status">Archived · {item.note}</span>
+                <span className="archive-status">{item.note}</span>
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
+                <p className="archive-availability">{item.status}</p>
               </div>
             </article>
           ))}
         </div>
 
         <div className="archive-note">
-          <strong>Archive note:</strong> Some of these designs may still appear in older social posts, search results, or saved product references. That does not mean they are part of the current DGK product line.
+          <strong>From the DGK Archive:</strong> These pieces are shown as part of DivaglamKreation’s creative history. Colors, typography, and styling may differ from the current DGK collection as the brand has continued to grow and evolve.
         </div>
       </section>
 
