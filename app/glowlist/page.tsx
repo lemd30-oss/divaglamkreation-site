@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-const gumroadSubscribeUrl = 'https://lemdo8.gumroad.com/subscribe';
+const gumroadSubscribeUrl = 'https://divaglamkreation.myflodesk.com';
 const gentleResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
 
 export const metadata: Metadata = {
@@ -53,7 +53,7 @@ export default function GlowlistPage() {
           ))}
         </div>
         <div className="hero-actions">
-          <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Subscribe on Gumroad</a>
+          <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
         </div>
       </section>
 
