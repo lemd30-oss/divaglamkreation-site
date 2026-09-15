@@ -330,7 +330,7 @@ These are live customer-facing destinations defined in `app/home-content.ts`. A 
 3. Never edit a commerce URL as a side effect of another task.
 4. After any approved change reaches production, open the link and confirm it resolves to the correct product at the correct price.
 5. `app/product-links.ts` is not a commerce source. See "Known traps."
-6. The live Glowlist signup currently routes to Gumroad subscribe. Flodesk appears only in legacy root HTML history. Do not assume Flodesk is wired into the live app without verifying.
+6. The live Glowlist signup routes to Flodesk (`https://divaglamkreation.myflodesk.com`). The variable in `app/home-content.ts` is still named `gumroadSubscribe` even though it points to Flodesk. Verify the destination, not the variable name.
 
 ## Deployment safety
 
@@ -400,3 +400,4 @@ Tracked, not yet approved. Do not act on these.
 3. Stand up `dgk-brand-os`.
 4. Confirm what `divaglamkreation-site.vercel.app` serves and what the deployment protection settings are.
 5. Audit whether `UNSPLASH_ACCESS_KEY` and `NOTION_TOKEN` are still set in Vercel and whether they can be retired.
+6. Resolve the font gap. The live site renders in Georgia / Times New Roman system serifs. The DGK canonical file in Drive names Playfair Display, Lora, Dancing Script, and Montserrat. Confirm whether the system-serif choice is deliberate (Google Fonts CDN avoidance) before changing anything.
