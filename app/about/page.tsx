@@ -22,8 +22,8 @@ export default function AboutPage() {
           <p className="eyebrow">Behind the Glow</p>
           <h1 className="statement-hero">Who are you<span className="gold-period">?</span></h1>
           <p className="hero-lede">
-            DivaglamKreation began in quiet moments: coffee nearby, something to sketch or write with,
-            room to reflect, and a question that kept returning. Who are you when the noise gets quiet?
+            DivaglamKreation began in quiet moments with coffee nearby, something to sketch or write with,
+            room to reflect, and one question that kept returning: Who are you when the noise gets quiet?
           </p>
           <div className="hero-proof" aria-label="DivaglamKreation foundations">
             <span>Every woman matters</span>
@@ -51,9 +51,9 @@ export default function AboutPage() {
         </div>
         <div className="story-copy">
           <p>
-            DGK grew from the kind of moments that can look small from the outside: a warm drink,
-            a page waiting to be filled, a little space for self-care, and time to listen inward.
-            Those moments became a way of returning to faith, creativity, and identity without rushing.
+            DGK grew from coffee, sketching, reflection, self-care, and faith — the kind of small, quiet moments
+            that create room to listen inward. Those moments became a way of returning to creativity, identity,
+            and God without rushing.
           </p>
           <p>
             The question <strong>“Who are you?”</strong> became part of that rhythm. Not who you are expected
@@ -66,25 +66,32 @@ export default function AboutPage() {
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">The Glow Owl</p>
-            <h2 id="owl-title">A companion to the question.</h2>
+            <h2 id="owl-title">A quiet companion to the question.</h2>
           </div>
           <p className="section-intro">A gentle reminder to know HOO you are.</p>
+        </div>
+        <div className="story-copy" style={{ marginBottom: '1.5rem' }}>
+          <p>
+            The Glow Owl grew alongside DGK as a reminder to pause, notice, and remember who you are beneath the noise.
+            It carries the playful truth behind <strong>“know HOO you are”</strong> — that identity is worth tending to,
+            even in quiet seasons when no one else is watching.
+          </p>
         </div>
         <div className="journey-grid">
           <article className="journey-card">
             <span className="journey-number">01</span>
             <h3>Pause</h3>
-            <p>Make enough room to hear your own thoughts, notice what you need, and reconnect with God.</p>
+            <p>Make space for coffee, prayer, reflection, and the thoughts you usually rush past.</p>
           </article>
           <article className="journey-card">
             <span className="journey-number">02</span>
             <h3>Remember</h3>
-            <p>The Glow Owl became a quiet companion to the reminder that identity does not need an audience to be real.</p>
+            <p>Return to the truth that your worth existed before recognition, productivity, or applause.</p>
           </article>
           <article className="journey-card">
             <span className="journey-number">03</span>
             <h3>Become</h3>
-            <p>DGK creates space for gentle growth through journals, reflection, meaningful gifts, and encouragement.</p>
+            <p>Keep growing gently through faith, creativity, reflection, and intentional care.</p>
           </article>
         </div>
       </section>
