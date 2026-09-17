@@ -149,9 +149,9 @@ export default function Home() {
 
       <section className="section glowlist-section glowlist-band" id="glowlist">
         <div className="email-box presentation-glowlist glowlist-copy-only">
-          <p className="eyebrow">Join the DGK Glowlist</p>
-          <h2>Gentle encouragement, delivered.</h2>
-          <p>Receive gentle reflection prompts, seasonal product updates, and behind-the-glow notes from DivaglamKreation.</p>
+          <p className="eyebrow">Stay close to the glow</p>
+          <h2>Your reset doesn’t have to end here.</h2>
+          <p>Join the DGK Glowlist for gentle reflection prompts, faith-rooted encouragement, behind-the-glow notes, and quiet reminders to keep making space for who you are becoming.</p>
           <div className="hero-actions">
             <a className="button" href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
           </div>
