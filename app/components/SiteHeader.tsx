@@ -33,7 +33,7 @@ export function SiteHeader() {
         <nav id="site-navigation" className={open ? 'nav nav-open' : 'nav'} aria-label="Main navigation">
           <a href="/" onClick={closeMenu}>Home</a>
           <a href="/#shop" onClick={closeMenu}>Shop</a>
-          <a href="/#about" onClick={closeMenu}>About</a>
+          <a href="/about" onClick={closeMenu}>About</a>
           <a href="/blog" onClick={closeMenu}>Blog</a>
           <a href="/contact" onClick={closeMenu}>Contact</a>
           <a className="nav-cta" href="/glowlist" onClick={closeMenu}>Join the Glowlist</a>
