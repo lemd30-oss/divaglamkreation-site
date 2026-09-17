@@ -8,15 +8,15 @@ const gentleResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
 
 export const metadata: Metadata = {
   title: 'Join the DGK Glowlist',
-  description: 'Join the DGK Glowlist for faith-rooted notes, journaling prompts, product news, and gentle encouragement.',
+  description: 'Join the DGK Glowlist for gentle reflection prompts, faith-rooted encouragement, behind-the-glow notes, and quiet reminders for your becoming.',
   alternates: { canonical: '/glowlist' },
 };
 
 const glowlistNotes = [
+  'Gentle reflection prompts',
   'Faith-rooted encouragement',
-  'Journaling prompts',
-  'Product and studio updates',
-  'Simple reset reminders',
+  'Behind-the-glow notes',
+  'Quiet reset reminders',
 ];
 
 export default function GlowlistPage() {
@@ -26,27 +26,27 @@ export default function GlowlistPage() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">The DGK Glowlist</p>
-          <h1>Gentle encouragement, delivered.</h1>
-          <p>Receive faith-rooted notes, prompts, and product updates from DivaglamKreation.</p>
+          <p className="eyebrow">Stay close to the glow</p>
+          <h1>Your reset doesn’t have to end here.</h1>
+          <p>Join the DGK Glowlist for gentle reflection prompts, faith-rooted encouragement, behind-the-glow notes, and quiet reminders to keep making space for who you are becoming.</p>
           <div className="hero-actions">
             <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
-            <a className="button secondary" href={gentleResetUrl} target="_blank" rel="noopener noreferrer">Download the Free Journal</a>
+            <a className="button secondary" href={gentleResetUrl} target="_blank" rel="noopener noreferrer">Begin the Free 3-Day Reset</a>
           </div>
         </div>
 
         <aside className="hero-card" aria-label="Glowlist welcome message">
           <div className="hero-card-inner">
-            <p className="eyebrow">Begin Softly</p>
-            <h2>One note. One prompt. One next step.</h2>
-            <p>A simple way to stay connected to encouragement and new DGK releases.</p>
+            <p className="eyebrow">A gentle place to return</p>
+            <h2>One note. One prompt. One quiet reminder.</h2>
+            <p>A simple way to stay connected to faith, reflection, creativity, and the woman you are becoming.</p>
           </div>
         </aside>
       </section>
 
       <section className="section start-section">
         <p className="eyebrow">What You’ll Receive</p>
-        <h2>A quieter inbox.</h2>
+        <h2>Encouragement with room to breathe.</h2>
         <div className="product-grid">
           {glowlistNotes.map((note) => (
             <article className="card" key={note}><p>{note}</p></article>
