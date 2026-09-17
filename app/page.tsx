@@ -123,7 +123,7 @@ export default function Home() {
         <div className="story-copy">
           <p>DivaglamKreation began with a quiet creative woman, a cup of coffee, room to sketch and reflect, and one enduring question: Who are you?</p>
           <p>The Glow Owl became a companion to that question, and the answer became a truth worth carrying forward: every woman matters.</p>
-          <a className="text-link" href="/contact">Connect with DivaglamKreation →</a>
+          <a className="text-link" href="/about">Read the full DGK story →</a>
         </div>
       </section>
 
