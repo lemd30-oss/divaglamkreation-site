@@ -13,7 +13,7 @@ export type Product = {
 export const links = {
   gumroadShop: 'https://lemdo8.gumroad.com/',
   gumroadSubscribe: 'https://divaglamkreation.myflodesk.com',
-  gentleReset: 'https://lemdo8.gumroad.com/l/dgk-gentle-pause',
+  gentleReset: 'https://divaglamkreation.myflodesk.com',
   graceNotesDigital: 'https://lemdo8.gumroad.com/l/dgk-7-day-reset-journal',
   theGentleResetBook: 'https://www.amazon.com/dp/B0HBN6X699',
   morningReset: 'https://lemdo8.gumroad.com/l/Divaglamkreation',
