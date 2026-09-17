@@ -3,8 +3,7 @@ import type { Metadata } from 'next';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-const gumroadSubscribeUrl = 'https://divaglamkreation.myflodesk.com';
-const gentleResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
+const glowlistSignupUrl = 'https://divaglamkreation.myflodesk.com';
 
 export const metadata: Metadata = {
   title: 'Join the DGK Glowlist',
@@ -30,8 +29,8 @@ export default function GlowlistPage() {
           <h1>Gentle encouragement, delivered.</h1>
           <p>Receive faith-rooted notes, prompts, and product updates from DivaglamKreation.</p>
           <div className="hero-actions">
-            <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
-            <a className="button secondary" href={gentleResetUrl} target="_blank" rel="noopener noreferrer">Download the Free Journal</a>
+            <a className="button" href={glowlistSignupUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
+            <a className="button secondary" href={glowlistSignupUrl} target="_blank" rel="noopener noreferrer">Get the Free 3-Day Reset</a>
           </div>
         </div>
 
@@ -53,7 +52,7 @@ export default function GlowlistPage() {
           ))}
         </div>
         <div className="hero-actions">
-          <a className="button" href={gumroadSubscribeUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
+          <a className="button" href={glowlistSignupUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
         </div>
       </section>
 
