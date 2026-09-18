@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: '%s | DivaglamKreation',
   },
   description:
-    'Faith-rooted journals, gentle gifts, and seasonal encouragement made to help women pause, reflect, and begin softly.',
+    'Faith-rooted journals, gentle gifts, and quiet encouragement made to help women pause, reflect, and begin softly.',
   applicationName: 'DivaglamKreation',
   keywords: ['faith journal', 'printable journal', 'gentle reset', 'self-care journal', 'DivaglamKreation'],
   alternates: { canonical: '/' },
