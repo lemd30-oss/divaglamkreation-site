@@ -1,4 +1,6 @@
-const freeResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
+import { SiteFooter } from '../../components/SiteFooter';
+import { SiteHeader } from '../../components/SiteHeader';
+import { links } from '../../home-content';
 
 export const metadata = {
   title: 'The Art of Beginning Again',
@@ -8,7 +10,8 @@ export const metadata = {
 
 export default function BeginningAgainBlogPage() {
   return (
-    <main className="blog-page-shell">
+    <main className="blog-page-shell" id="main-content">
+      <SiteHeader />
       <article className="dgk-blog-paper">
         <header className="blog-hero-paper">
           <p className="blog-brand">DIVAGLAMKREATION</p>
@@ -67,9 +70,10 @@ export default function BeginningAgainBlogPage() {
           <p className="eyebrow">A Gentle Place to Start</p>
           <h2>Begin your free 3-Day Mini Reset.</h2>
           <p>Three days of grounding reflections, gentle journal prompts, and simple steps to help you pause and return to yourself—without pressure, streaks, or hustle.</p>
-          <a className="button" href={freeResetUrl}>Begin Your Free 3-Day Mini Reset</a>
+          <a className="button" href={links.gentleReset}>Begin Your Free 3-Day Mini Reset</a>
         </section>
       </article>
+      <SiteFooter />
     </main>
   );
 }

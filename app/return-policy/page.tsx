@@ -1,3 +1,6 @@
+import { SiteFooter } from '../components/SiteFooter';
+import { SiteHeader } from '../components/SiteHeader';
+
 export const metadata = {
   title: 'Return & Refund Policy',
   description: 'Read the DivaglamKreation return and refund policy for digital downloads, eligible physical products, damaged orders, cancellations, and replacements.',
@@ -14,19 +17,8 @@ export const metadata = {
 
 export default function ReturnPolicyPage() {
   return (
-    <main className="site-shell">
-      <header className="header">
-        <a className="logo" href="/" aria-label="DivaglamKreation home">
-          <span className="logo-mark">DK</span>
-          <span>DivaglamKreation</span>
-        </a>
-        <nav className="nav" aria-label="Main navigation">
-          <a href="/">Home</a>
-          <a href="/#shop">Shop</a>
-          <a href="/contact">Contact</a>
-          <a href="/blog">Blog</a>
-        </nav>
-      </header>
+    <main className="site-shell" id="main-content">
+      <SiteHeader />
 
       <section className="section policy-page">
         <p className="eyebrow">Customer Care</p>
@@ -131,13 +123,7 @@ export default function ReturnPolicyPage() {
         </div>
       </section>
 
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} DivaglamKreation. Faith. Flow. Flourish.</p>
-        <p>
-          <a href="/">Home</a> · <a href="/contact">Contact</a> · <a href="/blog">Blog</a> ·{' '}
-          <a href="/policies">Policies</a>
-        </p>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

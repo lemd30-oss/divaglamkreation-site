@@ -1,4 +1,6 @@
-const freeResetUrl = 'https://lemdo8.gumroad.com/';
+import { SiteFooter } from '../../components/SiteFooter';
+import { SiteHeader } from '../../components/SiteHeader';
+import { links } from '../../home-content';
 
 export const metadata = {
   title: 'A Gentle August Reset',
@@ -9,7 +11,8 @@ export const metadata = {
 
 export default function GentleAugustResetBlogPage() {
   return (
-    <main className="blog-page-shell">
+    <main className="blog-page-shell" id="main-content">
+      <SiteHeader />
       <article className="dgk-blog-paper">
         <header className="blog-hero-paper">
           <p className="blog-brand">DIVAGLAMKREATION</p>
@@ -127,9 +130,10 @@ export default function GentleAugustResetBlogPage() {
             If August is asking you to slow down and return to peace, the free 3-Day Reset Journal
             gives you a soft place to begin with reflection, prayer, and gentle prompts.
           </p>
-          <a className="button" href={freeResetUrl}>Get the Free 3-Day Reset Journal</a>
+          <a className="button" href={links.gentleReset}>Get the Free 3-Day Reset Journal</a>
         </section>
       </article>
+      <SiteFooter />
     </main>
   );
 }

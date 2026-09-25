@@ -1,3 +1,6 @@
+import { SiteFooter } from '../components/SiteFooter';
+import { SiteHeader } from '../components/SiteHeader';
+
 export const metadata = {
   title: 'Dragonfly Reminder Charm',
   description:
@@ -13,18 +16,7 @@ const pinkImageUrl =
 export default function DragonflyKeychainPage() {
   return (
     <main className="site-shell" id="main-content">
-      <header className="header">
-        <a className="logo" href="/" aria-label="DivaglamKreation home">
-          <span className="logo-mark">DK</span>
-          <span>DivaglamKreation</span>
-        </a>
-        <nav className="nav" aria-label="Main navigation">
-          <a href="/">Home</a>
-          <a href="/#shop">Shop</a>
-          <a href="/#about">About</a>
-          <a href="/glowlist">Glowlist</a>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <section className="hero" id="top" style={{ alignItems: 'center' }}>
         <div className="hero-copy">
@@ -97,13 +89,7 @@ export default function DragonflyKeychainPage() {
         </p>
       </section>
 
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} DivaglamKreation. Faith. Flow. Flourish.</p>
-        <p>
-          <a href="/">Home</a> · <a href="/#shop">Shop</a> · <a href="/glowlist">Glowlist</a> ·{' '}
-          <a href="mailto:divaglamkreation@gmail.com">Email</a>
-        </p>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

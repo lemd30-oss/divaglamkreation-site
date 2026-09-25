@@ -16,7 +16,6 @@ export default function Home() {
 
       <section className="hero hero-home presentation-hero" id="top">
         <div className="hero-copy hero-copy-home">
-          <p className="eyebrow">Faith · Creativity · Gentle encouragement</p>
           <h1 className="statement-hero">Who are you<span className="gold-period">?</span></h1>
           <p className="hero-lede">
             You mattered before anyone was looking. DivaglamKreation grew from quiet moments of coffee, creativity, reflection, and faith into journals, meaningful gifts, and gentle reminders made to help you remember who you are becoming.
@@ -37,15 +36,14 @@ export default function Home() {
         <div className="hero-image-wrap presentation-image-card">
           <Image
             src={images.hero}
-            alt="Cozy journaling scene with a vase, warm drink, candle, and journal"
+            alt="A Faith. Flow. Flourish. mug of coffee, a lit candle, and an open journal that reads Be still, God is working"
             fill
             priority
             sizes="(max-width: 820px) 100vw, (max-width: 1120px) 50vw, 560px"
             className="cover-image hero-cover-image"
           />
           <div className="image-note">
-            <p className="eyebrow">A gentle reminder</p>
-            <strong>Faith. Flow. Flourish.</strong>
+            <strong className="script-accent">Faith. Flow. Flourish.</strong>
           </div>
         </div>
       </section>
@@ -80,6 +78,20 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section story-section" id="about" aria-labelledby="story-question">
+        <div className="story-question-wrap">
+          <span className="story-rule" aria-hidden="true" />
+          <p className="eyebrow">Behind the Glow</p>
+          <h2 id="story-question">Who are you?</h2>
+          <span className="story-rule" aria-hidden="true" />
+        </div>
+        <div className="story-copy">
+          <p>DivaglamKreation began with a quiet creative woman, a cup of coffee, room to sketch and reflect, and one enduring question: Who are you?</p>
+          <p>The Glow Owl became a companion to that question, and the answer became a truth worth carrying forward: every woman matters.</p>
+          <a className="text-link" href="/about">Read the full DGK story →</a>
+        </div>
+      </section>
+
       <section className="section reset-feature-section" id="glow-reset" aria-labelledby="glow-reset-title">
         <div className="reset-feature-image-wrap">
           <Image
@@ -91,7 +103,6 @@ export default function Home() {
           />
         </div>
         <div className="reset-feature-copy">
-          <p className="eyebrow">Your next gentle step</p>
           <h2 id="glow-reset-title">Three days helped you pause. Seven will help you listen.</h2>
           <p className="reset-feature-lede">The Gentle Reset continues the same faith-rooted rhythm with more room for prayer, reflection, gratitude, and the question at the heart of DGK: Who are you becoming?</p>
           <p className="reset-feature-note">Begin free. Continue when you are ready. No rushing your becoming.</p>
@@ -119,24 +130,9 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="section story-section" id="about" aria-labelledby="story-question">
-        <div className="story-question-wrap">
-          <span className="story-rule" aria-hidden="true" />
-          <p className="eyebrow">Behind the Glow</p>
-          <h2 id="story-question">Who are you?</h2>
-          <span className="story-rule" aria-hidden="true" />
-        </div>
-        <div className="story-copy">
-          <p>DivaglamKreation began with a quiet creative woman, a cup of coffee, room to sketch and reflect, and one enduring question: Who are you?</p>
-          <p>The Glow Owl became a companion to that question, and the answer became a truth worth carrying forward: every woman matters.</p>
-          <a className="text-link" href="/about">Read the full DGK story →</a>
-        </div>
-      </section>
-
       <section className="section blog-section" id="blog">
         <div className="section-heading-row">
           <div>
-            <p className="eyebrow">Journal Notes</p>
             <h2>Something quiet to read with your coffee.</h2>
           </div>
           <a className="text-link" href="/blog">Visit the full blog →</a>
@@ -155,7 +151,7 @@ export default function Home() {
 
       <section className="section glowlist-section glowlist-band" id="glowlist">
         <div className="email-box presentation-glowlist glowlist-copy-only">
-          <p className="eyebrow">Stay close to the glow</p>
+          <p className="script-accent">Stay close to the glow</p>
           <h2>Your reset doesn’t have to end here.</h2>
           <p>Join the DGK Glowlist for gentle reflection prompts, faith-rooted encouragement, behind-the-glow notes, and quiet reminders to keep making space for who you are becoming.</p>
           <div className="hero-actions">

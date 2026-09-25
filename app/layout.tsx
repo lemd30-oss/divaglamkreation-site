@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Great_Vibes, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 import type { ReactNode } from 'react';
 import { Analytics } from '@vercel/analytics/next';
@@ -7,6 +8,19 @@ import './globals.css';
 import './accessibility.css';
 import './hero-image-fix.css';
 import './components/site-chrome.css';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-heading',
+});
+
+const greatVibes = Great_Vibes({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-script',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://divaglamkreation.com'),
@@ -43,7 +57,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${playfair.variable} ${greatVibes.variable}`}>
       <head>
         <link rel="preconnect" href="https://lemdo8.gumroad.com" />
         <link rel="preconnect" href="https://www.facebook.com" />

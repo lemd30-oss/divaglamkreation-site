@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import { links } from '../home-content';
 
 export function SiteFooter() {
@@ -5,10 +7,16 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <div className="footer-mark">DK</div>
+          <div className="footer-logo-card">
+            <Image
+              src="/images/brand/logo-full.png"
+              alt="DivaglamKreation: Faith. Flow. Flourish."
+              width={753}
+              height={475}
+              sizes="220px"
+            />
+          </div>
           <div>
-            <p className="footer-name">DivaglamKreation</p>
-            <p className="footer-tagline">Faith. Flow. Flourish.</p>
             <p className="footer-copy">
               Faith-rooted journals, gentle gifts, and quiet encouragement for women learning to pause and begin softly.
             </p>

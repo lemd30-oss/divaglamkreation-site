@@ -1,0 +1,176 @@
+/* Blog post reading layout (app/blog/<slug>/page.tsx). Palette tokens live in globals.css. */
+.blog-page-shell {
+  min-height: 100vh;
+}
+
+.dgk-blog-paper {
+  margin: 0 auto;
+  max-width: 760px;
+  padding: clamp(2.5rem, 6vw, 4.5rem) 1.25rem clamp(3.5rem, 8vw, 6rem);
+}
+
+/* Title block */
+.blog-hero-paper {
+  text-align: center;
+}
+
+.blog-brand {
+  color: var(--dgk-plum);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  margin-bottom: 0.2rem;
+}
+
+.blog-tagline {
+  color: var(--dgk-gold-text);
+  font-family: var(--font-script), 'Brush Script MT', cursive;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 1.75rem;
+}
+
+.blog-hero-title h1 {
+  font-size: clamp(2.3rem, 6vw, 3.9rem);
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+  margin-bottom: 1.5rem;
+}
+
+.blog-hero-title h1 span,
+.blog-hero-title h1 em {
+  display: block;
+}
+
+.blog-hero-title h1 em {
+  color: var(--dgk-plum);
+  font-style: italic;
+}
+
+.blog-gold-line {
+  background: var(--dgk-gold-text);
+  height: 2px;
+  margin: 0 auto 2.25rem;
+  width: 88px;
+}
+
+.blog-intro-copy {
+  margin: 0 auto;
+  max-width: 640px;
+  text-align: left;
+}
+
+.blog-intro-copy p {
+  font-size: clamp(1.08rem, 1.6vw, 1.2rem);
+  line-height: 1.85;
+}
+
+.blog-quote-card {
+  background: var(--dgk-sand);
+  border-left: 3px solid var(--dgk-plum);
+  border-radius: 0 1rem 1rem 0;
+  color: var(--dgk-brown);
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+  font-style: italic;
+  line-height: 1.5;
+  margin: 2.5rem auto 0;
+  max-width: 640px;
+  padding: 1.5rem 1.75rem;
+  text-align: left;
+}
+
+/* Body */
+.blog-reading-card {
+  margin: 3.5rem auto 0;
+  max-width: 640px;
+}
+
+.blog-section-block + .blog-section-block {
+  margin-top: 2.75rem;
+}
+
+.blog-section-block h2 {
+  font-size: clamp(1.6rem, 3.2vw, 2.1rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.blog-section-block h3 {
+  font-size: 1.25rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.blog-reading-card p {
+  font-size: 1.08rem;
+  line-height: 1.85;
+}
+
+.blog-reading-card strong {
+  color: var(--dgk-brown);
+}
+
+.blog-prayer-card {
+  background: var(--dgk-plum);
+  border-radius: 1.25rem;
+  margin: 3rem 0;
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.blog-prayer-card h3 {
+  color: var(--dgk-gold);
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-reading-card .blog-prayer-card p {
+  color: var(--dgk-ivory);
+  margin-bottom: 0;
+}
+
+.blog-divider {
+  background: rgba(107, 63, 42, 0.25);
+  height: 1px;
+  margin: 3rem auto;
+  width: 120px;
+}
+
+.blog-soft-signature {
+  border-top: 1px solid rgba(107, 63, 42, 0.15);
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.blog-reading-card .blog-soft-signature p:first-child {
+  color: var(--dgk-plum);
+  font-family: var(--font-script), 'Brush Script MT', cursive;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.blog-reading-card .blog-soft-signature p:last-child {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Closing invitation */
+.blog-soft-cta {
+  background: var(--dgk-sand);
+  border-radius: 1.5rem;
+  margin: 4rem auto 0;
+  max-width: 680px;
+  padding: clamp(2rem, 5vw, 3rem);
+  text-align: center;
+}
+
+.blog-soft-cta h2 {
+  font-size: clamp(1.7rem, 3.5vw, 2.3rem);
+  line-height: 1.15;
+}
+
+.blog-soft-cta p:not(.eyebrow) {
+  margin: 0 auto 1.5rem;
+  max-width: 520px;
+}

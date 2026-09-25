@@ -1,4 +1,6 @@
-const gumroadShopUrl = 'https://lemdo8.gumroad.com/';
+import { SiteFooter } from '../../components/SiteFooter';
+import { SiteHeader } from '../../components/SiteHeader';
+import { links } from '../../home-content';
 
 export const metadata = {
   title: 'A Gentle Sunday Reset',
@@ -9,7 +11,8 @@ export const metadata = {
 
 export default function GentleResetBlogPage() {
   return (
-    <main className="blog-page-shell">
+    <main className="blog-page-shell" id="main-content">
+      <SiteHeader />
       <article className="dgk-blog-paper">
         <header className="blog-hero-paper">
           <p className="blog-brand">DIVAGLAMKREATION</p>
@@ -123,9 +126,10 @@ export default function GentleResetBlogPage() {
             Journal for you. It is a simple faith-rooted printable journal designed for rest,
             reflection, and renewal — one quiet page at a time.
           </p>
-          <a className="button" href={gumroadShopUrl}>Download the Free 3-Day Reset Journal</a>
+          <a className="button" href={links.gentleReset}>Download the Free 3-Day Reset Journal</a>
         </section>
       </article>
+      <SiteFooter />
     </main>
   );
 }
