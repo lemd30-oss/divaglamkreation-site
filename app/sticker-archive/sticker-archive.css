@@ -91,54 +91,19 @@
 
 .archive-card-art {
   align-items: center;
-  background: linear-gradient(145deg, #ead6c2, #d8b48f);
+  background: #f6efe7;
   display: flex;
-  height: 220px;
+  height: 300px;
   justify-content: center;
   overflow: hidden;
-  position: relative;
+  padding: 0.85rem;
 }
 
-.archive-wordmark {
-  color: rgba(75, 58, 50, 0.72);
-  font-family: Georgia, serif;
-  font-size: 3.2rem;
-  font-weight: 700;
-  letter-spacing: -0.08em;
-  position: relative;
-  z-index: 2;
-}
-
-.archive-dot {
-  border-radius: 999px;
-  position: absolute;
-}
-
-.archive-dot-one {
-  background: #bf533b;
-  height: 84px;
-  left: 14%;
-  opacity: 0.7;
-  top: 18%;
-  width: 84px;
-}
-
-.archive-dot-two {
-  background: #d79b3b;
-  bottom: 15%;
-  height: 110px;
-  opacity: 0.62;
-  right: 8%;
-  width: 110px;
-}
-
-.archive-dot-three {
-  background: #2d6869;
-  height: 62px;
-  opacity: 0.52;
-  right: 33%;
-  top: 12%;
-  width: 62px;
+.archive-product-image {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
 .archive-card-copy {
@@ -217,6 +182,6 @@
   }
 
   .archive-card-art {
-    height: 190px;
+    height: 280px;
   }
 }
