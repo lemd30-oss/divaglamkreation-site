@@ -76,7 +76,7 @@ export const products: Product[] = [
     image: 'https://raw.githubusercontent.com/lemd30-oss/divaglamkreation-site/main/dgk-dragonfly-pink-website.jpg',
     imageAlt: 'Pink rhinestone dragonfly reminder charm with gold-tone keyring and clasp',
     href: links.dragonflyKeychain,
-    priceLabel: '$9.99 · Physical gift',
+    priceLabel: '$9.99 · gift',
     buttonLabel: 'Choose Your Charm',
     external: false,
   },
