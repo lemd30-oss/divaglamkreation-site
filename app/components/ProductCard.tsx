@@ -28,7 +28,8 @@ export function ProductCard({ product }: ProductCardProps) {
         />
       </div>
       <div className="product-card-content">
-        <p className="eyebrow">{product.priceLabel}</p>
+        {product.stepLabel ? <p className="eyebrow">{product.stepLabel}</p> : null}
+        <p className={product.stepLabel ? 'trust-note' : 'eyebrow'}>{product.priceLabel}</p>
         <h3>{product.title}</h3>
         <p>{product.description}</p>
         <a
