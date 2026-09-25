@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 export function SiteHeader() {
@@ -12,11 +13,22 @@ export function SiteHeader() {
       <a className="skip-link" href="#main-content">Skip to main content</a>
       <header className="header presentation-header">
         <a className="logo" href="/" aria-label="DivaglamKreation home" onClick={closeMenu}>
-          <span className="logo-mark">DK</span>
-          <span className="logo-copy">
-            <strong>DivaglamKreation</strong>
-            <small>Faith. Flow. Flourish.</small>
-          </span>
+          <Image
+            className="logo-img logo-img-full"
+            src="/images/brand/logo-horizontal.png"
+            alt=""
+            width={799}
+            height={213}
+            priority
+          />
+          <Image
+            className="logo-img logo-img-mono"
+            src="/images/brand/logo-monogram.png"
+            alt=""
+            width={607}
+            height={506}
+            priority
+          />
         </a>
 
         <button
