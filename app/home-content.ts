@@ -8,6 +8,7 @@ export type Product = {
   buttonLabel: string;
   external: boolean;
   featured?: boolean;
+  stepLabel?: string;
 };
 
 export const links = {
@@ -29,14 +30,15 @@ export const images = {
 
 export const products: Product[] = [
   {
-    title: 'The Gentle Reset — 3-Day Mini Journal',
+    title: 'The 3-Day Pause',
     description: 'A free three-day faith-rooted pause with reflection, prayer, and gratitude prompts to help you slow down, listen inward, and begin again with intention.',
     image: '/images/file_000000007a0481f59f22529a564a90af.png',
-    imageAlt: 'Open Gentle Reset journal beside a pinecone and neutral stationery',
+    imageAlt: 'Open The 3-Day Pause journal beside a pinecone and neutral stationery',
     href: links.gentleReset,
     priceLabel: 'Free · Digital journal',
-    buttonLabel: 'Start the Free 3-Day Reset',
+    buttonLabel: 'Begin The 3-Day Pause',
     external: true,
+    stepLabel: 'Step 1 · Free',
   },
   {
     title: 'Gentle Morning Reset Pack',
@@ -47,28 +49,31 @@ export const products: Product[] = [
     priceLabel: '$7 · Digital PDF',
     buttonLabel: 'Explore the Morning Reset',
     external: true,
+    stepLabel: 'Anytime',
   },
   {
-    title: 'Grace Notes: 7-Day Gentle Reset — Digital Edition',
-    description: 'The natural next step after the free 3-Day Reset: seven faith-rooted days of prayer, reflection, gratitude, and gentle renewal with more room to listen, reconnect, and move forward intentionally.',
+    title: 'The Gentle Reset — Digital Edition',
+    description: 'The natural next step after The 3-Day Pause: seven faith-rooted days of prayer, reflection, gratitude, and gentle renewal with more room to listen, reconnect, and move forward intentionally.',
     image: '/images/the-gentle-reset-book-cover.svg',
-    imageAlt: 'Grace Notes 7-Day Gentle Reset digital journal',
+    imageAlt: 'The Gentle Reset 7-day digital journal',
     href: links.graceNotesDigital,
     priceLabel: '$9 · Digital PDF',
-    buttonLabel: 'Continue with 7 Days',
+    buttonLabel: 'Continue with The Gentle Reset',
     external: true,
     featured: true,
+    stepLabel: 'Step 2 · Go deeper',
   },
   {
-    title: 'Grace Notes: 7-Day Gentle Reset — Paperback',
+    title: 'The Gentle Reset — Paperback',
     description: 'The same seven-day faith-rooted reset in a printed, screen-free format for quiet mornings, coffee-side reflection, prayer, and gentle renewal.',
     image: '/images/the-gentle-reset-book-cover.svg',
-    imageAlt: 'Grace Notes 7-Day Gentle Reset paperback journal',
+    imageAlt: 'The Gentle Reset 7-day paperback journal',
     href: links.theGentleResetBook,
     priceLabel: '$9.99 · Paperback',
     buttonLabel: 'Choose the Paperback',
     external: true,
     featured: true,
+    stepLabel: 'Step 2 · Go deeper',
   },
   {
     title: 'Dragonfly Reminder Charm',
