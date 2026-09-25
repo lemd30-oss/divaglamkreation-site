@@ -5,7 +5,7 @@ type ProductCardProps = {
 };
 
 export function ProductCard({ product }: ProductCardProps) {
-  const isPaperback = product.title.toLowerCase().includes('paperback');
+  const isBookCover = product.imageFit === 'contain' || product.title.toLowerCase().includes('paperback');
 
   return (
     <article className={product.featured ? 'card product-card featured-card' : 'card product-card'}>
@@ -16,7 +16,7 @@ export function ProductCard({ product }: ProductCardProps) {
           loading="lazy"
           className="cover-image"
           style={
-            isPaperback
+            isBookCover
               ? {
                   objectFit: 'contain',
                   objectPosition: 'center',
@@ -32,14 +32,26 @@ export function ProductCard({ product }: ProductCardProps) {
         <p className={product.stepLabel ? 'trust-note' : 'eyebrow'}>{product.priceLabel}</p>
         <h3>{product.title}</h3>
         <p>{product.description}</p>
-        <a
-          className="button secondary product-card-button"
-          href={product.href}
-          target={product.external ? '_blank' : undefined}
-          rel={product.external ? 'noopener noreferrer' : undefined}
-        >
-          {product.buttonLabel}
-        </a>
+        <div className="product-card-actions">
+          <a
+            className="button secondary product-card-button"
+            href={product.href}
+            target={product.external ? '_blank' : undefined}
+            rel={product.external ? 'noopener noreferrer' : undefined}
+          >
+            {product.buttonLabel}
+          </a>
+          {product.secondaryAction ? (
+            <a
+              className="button secondary product-card-button"
+              href={product.secondaryAction.href}
+              target={product.external ? '_blank' : undefined}
+              rel={product.external ? 'noopener noreferrer' : undefined}
+            >
+              {product.secondaryAction.buttonLabel}
+            </a>
+          ) : null}
+        </div>
       </div>
     </article>
   );

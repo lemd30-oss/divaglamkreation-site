@@ -9,6 +9,8 @@ export type Product = {
   external: boolean;
   featured?: boolean;
   stepLabel?: string;
+  imageFit?: 'contain';
+  secondaryAction?: { href: string; buttonLabel: string };
 };
 
 export const links = {
@@ -17,6 +19,7 @@ export const links = {
   gentleReset: 'https://divaglamkreation.myflodesk.com',
   graceNotesDigital: 'https://lemdo8.gumroad.com/l/dgk-7-day-reset-journal',
   theGentleResetBook: 'https://www.amazon.com/dp/B0HBN6X699',
+  reflectionsHardcover: 'https://www.amazon.com/dp/B0HK1G42HF',
   morningReset: 'https://lemdo8.gumroad.com/l/Divaglamkreation',
   contactEmail: 'mailto:divaglamkreation@gmail.com',
   dragonflyKeychain: '/dragonfly-keychain',
@@ -31,7 +34,7 @@ export const images = {
 export const products: Product[] = [
   {
     title: 'The 3-Day Pause',
-    description: 'A free three-day faith-rooted pause with reflection, prayer, and gratitude prompts to help you slow down, listen inward, and begin again with intention.',
+    description: 'Free. Three days of short prompts to slow down and begin again.',
     image: '/images/file_000000007a0481f59f22529a564a90af.png',
     imageAlt: 'Open The 3-Day Pause journal beside a pinecone and neutral stationery',
     href: links.gentleReset,
@@ -52,28 +55,29 @@ export const products: Product[] = [
     stepLabel: 'Anytime',
   },
   {
-    title: 'The Gentle Reset — Digital Edition',
-    description: 'The natural next step after The 3-Day Pause: seven faith-rooted days of prayer, reflection, gratitude, and gentle renewal with more room to listen, reconnect, and move forward intentionally.',
+    title: 'The Gentle Reset',
+    description: 'Seven guided days to keep the rhythm going, as an instant download or on paper for mornings away from your screen.',
     image: '/images/the-gentle-reset-book-cover.svg',
-    imageAlt: 'The Gentle Reset 7-day digital journal',
+    imageAlt: 'The Gentle Reset 7-day guided journal cover',
     href: links.graceNotesDigital,
-    priceLabel: '$9 · Digital PDF',
-    buttonLabel: 'Continue with The Gentle Reset',
+    priceLabel: '$9 Digital PDF · $9.99 Paperback',
+    buttonLabel: 'Digital Edition · $9',
     external: true,
     featured: true,
     stepLabel: 'Step 2 · Go deeper',
+    imageFit: 'contain',
+    secondaryAction: { href: links.theGentleResetBook, buttonLabel: 'Paperback · $9.99' },
   },
   {
-    title: 'The Gentle Reset — Paperback',
-    description: 'The same seven-day faith-rooted reset in a printed, screen-free format for quiet mornings, coffee-side reflection, prayer, and gentle renewal.',
-    image: '/images/the-gentle-reset-book-cover.svg',
-    imageAlt: 'The Gentle Reset 7-day paperback journal',
-    href: links.theGentleResetBook,
-    priceLabel: '$9.99 · Paperback',
-    buttonLabel: 'Choose the Paperback',
+    title: 'Reflections',
+    description: 'A 144-page hardcover journal with 63 prompts for rest, reset, and renewal, with the Glow Owl beside you through each season.',
+    image: '/images/reflections-hardcover-cover.jpg',
+    imageAlt: 'Reflections hardcover journal cover with the Glow Owl, Rest · Reset · Renewal',
+    href: links.reflectionsHardcover,
+    priceLabel: 'Hardcover',
+    buttonLabel: 'Choose the Hardcover',
     external: true,
-    featured: true,
-    stepLabel: 'Step 2 · Go deeper',
+    imageFit: 'contain',
   },
   {
     title: 'Dragonfly Reminder Charm',

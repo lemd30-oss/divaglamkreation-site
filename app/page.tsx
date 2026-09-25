@@ -16,20 +16,16 @@ export default function Home() {
 
       <section className="hero hero-home presentation-hero" id="top">
         <div className="hero-copy hero-copy-home">
+          <Image className="hero-owl" src="/images/brand/glow-owl.png" alt="" width={855} height={1186} sizes="64px" priority />
           <h1 className="statement-hero">Who are you<span className="gold-period">?</span></h1>
           <p className="hero-lede">
-            You mattered before anyone was looking. DivaglamKreation grew from quiet moments of coffee, creativity, reflection, and faith into journals, meaningful gifts, and gentle reminders made to help you remember who you are becoming.
+            You mattered before anyone was looking. DivaglamKreation makes journals and meaningful gifts to help you remember it.
           </p>
           <div className="hero-actions">
             <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">
               Begin The 3-Day Pause
             </a>
             <a className="button secondary" href="#shop">Explore DGK</a>
-          </div>
-          <div className="hero-proof" aria-label="DivaglamKreation values">
-            <span>Every woman matters</span>
-            <span>Faith-rooted reflection</span>
-            <span>Created with intention</span>
           </div>
         </div>
 
@@ -52,42 +48,37 @@ export default function Home() {
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">Begin Here</p>
-            <h2>Give yourself three quiet days to return to what matters.</h2>
+            <h2>Start with three quiet days.</h2>
           </div>
-          <p className="section-intro">Start free with a faith-rooted pause for reflection, prayer, and gratitude.</p>
+          <p className="section-intro">Free. No pressure. Just you, your coffee, and God.</p>
         </div>
-        <div className="journey-grid">
+        <div className="journey-grid journey-grid-two">
           <article className="journey-card">
             <span className="journey-number">Step 1 · Free</span>
             <h3>The 3-Day Pause</h3>
-            <p>A free digital journal for slowing down, listening inward, reconnecting with God, and beginning again with intention.</p>
+            <p>Short daily prompts to slow down and hear yourself again.</p>
             <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Begin The 3-Day Pause →</a>
           </article>
           <article className="journey-card">
             <span className="journey-number">Step 2 · Go deeper</span>
             <h3>The Gentle Reset</h3>
-            <p>Continue the rhythm with a full seven-day guided reset for prayer, reflection, gratitude, and gentle renewal.</p>
+            <p>Seven days, when you’re ready for more room.</p>
             <a className="text-link" href="#glow-reset">Continue into 7 days →</a>
-          </article>
-          <article className="journey-card">
-            <span className="journey-number">Step 3 · Stay connected</span>
-            <h3>Join the Glowlist</h3>
-            <p>Receive faith-rooted notes, gentle reflection prompts, and quiet DGK reminders for the days after your reset.</p>
-            <a className="text-link" href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer">Join the Glowlist →</a>
           </article>
         </div>
       </section>
 
       <section className="section story-section" id="about" aria-labelledby="story-question">
         <div className="story-question-wrap">
+          <Image className="story-owl" src="/images/brand/glow-owl.png" alt="The Glow Owl" width={855} height={1186} sizes="(max-width: 820px) 150px, 200px" />
           <span className="story-rule" aria-hidden="true" />
           <p className="eyebrow">Behind the Glow</p>
-          <h2 id="story-question">Who are you?</h2>
+          <h2 id="story-question">It started with an owl.</h2>
           <span className="story-rule" aria-hidden="true" />
         </div>
         <div className="story-copy">
-          <p>DivaglamKreation began with a quiet creative woman, a cup of coffee, room to sketch and reflect, and one enduring question: Who are you?</p>
-          <p>The Glow Owl became a companion to that question, and the answer became a truth worth carrying forward: every woman matters.</p>
+          <p>An owl canvas asked me a question I couldn’t stop thinking about: Who are you?</p>
+          <p>The Glow Owl became my companion to that question, and the answer became the heart of everything I make: every woman matters.</p>
           <a className="text-link" href="/about">Read the full DGK story →</a>
         </div>
       </section>
@@ -104,8 +95,8 @@ export default function Home() {
         </div>
         <div className="reset-feature-copy">
           <h2 id="glow-reset-title">Three days helped you pause. Seven will help you listen.</h2>
-          <p className="reset-feature-lede">The Gentle Reset continues the same faith-rooted rhythm with more room for prayer, reflection, gratitude, and the question at the heart of DGK: Who are you becoming?</p>
-          <p className="reset-feature-note">Begin free. Continue when you are ready. No rushing your becoming.</p>
+          <p className="reset-feature-lede">Same rhythm, more room. For when three days opened something you want to keep exploring.</p>
+          <p className="reset-feature-note">No rushing your becoming.</p>
           <div className="hero-actions">
             <a className="button" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Continue with the Digital Edition</a>
             <a className="button secondary" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Choose the Paperback</a>
@@ -153,7 +144,7 @@ export default function Home() {
         <div className="email-box presentation-glowlist glowlist-copy-only">
           <p className="script-accent">Stay close to the glow</p>
           <h2>Your reset doesn’t have to end here.</h2>
-          <p>Join the DGK Glowlist for gentle reflection prompts, faith-rooted encouragement, behind-the-glow notes, and quiet reminders to keep making space for who you are becoming.</p>
+          <p>Letters from me, a prompt for the week, and first look at new journals.</p>
           <div className="hero-actions">
             <a className="button" href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
           </div>
