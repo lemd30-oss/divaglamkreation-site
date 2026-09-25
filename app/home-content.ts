@@ -10,6 +10,7 @@ export type Product = {
   featured?: boolean;
   stepLabel?: string;
   imageFit?: 'contain';
+  secondaryAction?: { href: string; buttonLabel: string };
 };
 
 export const links = {
@@ -54,28 +55,18 @@ export const products: Product[] = [
     stepLabel: 'Anytime',
   },
   {
-    title: 'The Gentle Reset — Digital Edition',
-    description: 'Seven guided days to keep the rhythm going. Instant download.',
+    title: 'The Gentle Reset',
+    description: 'Seven guided days to keep the rhythm going, as an instant download or on paper for mornings away from your screen.',
     image: '/images/the-gentle-reset-book-cover.svg',
-    imageAlt: 'The Gentle Reset 7-day digital journal',
+    imageAlt: 'The Gentle Reset 7-day guided journal cover',
     href: links.graceNotesDigital,
-    priceLabel: '$9 · Digital PDF',
-    buttonLabel: 'Continue with The Gentle Reset',
+    priceLabel: '$9 Digital PDF · $9.99 Paperback',
+    buttonLabel: 'Digital Edition · $9',
     external: true,
     featured: true,
     stepLabel: 'Step 2 · Go deeper',
-  },
-  {
-    title: 'The Gentle Reset — Paperback',
-    description: 'The same seven days on paper, for mornings away from your screen.',
-    image: '/images/the-gentle-reset-book-cover.svg',
-    imageAlt: 'The Gentle Reset 7-day paperback journal',
-    href: links.theGentleResetBook,
-    priceLabel: '$9.99 · Paperback',
-    buttonLabel: 'Choose the Paperback',
-    external: true,
-    featured: true,
-    stepLabel: 'Step 2 · Go deeper',
+    imageFit: 'contain',
+    secondaryAction: { href: links.theGentleResetBook, buttonLabel: 'Paperback · $9.99' },
   },
   {
     title: 'Reflections',
