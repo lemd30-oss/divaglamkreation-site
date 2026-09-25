@@ -1,3 +1,4 @@
+/* Homepage polish · September 25, 2026 */
 :root {
   --dgk-plum: #6b4f59;
   --dgk-sand: #eee2d1;
@@ -26,6 +27,11 @@
 }
 
 .presentation-panel .text-link {
+  color: var(--coffee);
+}
+
+.presentation-panel .eyebrow,
+.presentation-panel .journey-number {
   color: var(--coffee);
 }
 

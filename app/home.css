@@ -72,9 +72,7 @@
 }
 
 .hero-proof span:not(:last-child)::after {
-  color: var(--gold);
-  content: '•';
-  margin-left: 1.3rem;
+  content: none;
 }
 
 .hero-image-wrap {
@@ -117,7 +115,7 @@
 }
 
 .hero-cover-image {
-  object-position: 70% center;
+  object-position: 84% center;
 }
 
 .presentation-panel {

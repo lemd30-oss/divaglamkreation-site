@@ -45,7 +45,7 @@ export default function Home() {
           />
           <div className="image-note">
             <p className="eyebrow">A gentle reminder</p>
-            <strong>You matter before the world notices.</strong>
+            <strong>Faith. Flow. Flourish.</strong>
           </div>
         </div>
       </section>
@@ -71,6 +71,12 @@ export default function Home() {
             <p>Continue the rhythm with a full seven-day guided reset for prayer, reflection, gratitude, and gentle renewal.</p>
             <a className="text-link" href="#glow-reset">Continue into 7 days →</a>
           </article>
+          <article className="journey-card">
+            <span className="journey-number">Step 3 · Stay connected</span>
+            <h3>Join the Glowlist</h3>
+            <p>Receive faith-rooted notes, gentle reflection prompts, and quiet DGK reminders for the days after your reset.</p>
+            <a className="text-link" href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer">Join the Glowlist →</a>
+          </article>
         </div>
       </section>
 
@@ -86,7 +92,7 @@ export default function Home() {
         </div>
         <div className="reset-feature-copy">
           <p className="eyebrow">Your next gentle step</p>
-          <h2 id="glow-reset-title">If three days helped you pause, give yourself seven days to listen more deeply.</h2>
+          <h2 id="glow-reset-title">Three days helped you pause. Seven will help you listen.</h2>
           <p className="reset-feature-lede">The Gentle Reset continues the same faith-rooted rhythm with more room for prayer, reflection, gratitude, and the question at the heart of DGK: Who are you becoming?</p>
           <p className="reset-feature-note">Begin free. Continue when you are ready. No rushing your becoming.</p>
           <div className="hero-actions">
