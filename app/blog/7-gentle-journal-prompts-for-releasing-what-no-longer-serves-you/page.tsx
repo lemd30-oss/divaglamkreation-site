@@ -1,7 +1,6 @@
 import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
-
-const freeResetUrl = 'https://lemdo8.gumroad.com/';
+import { links } from '../../home-content';
 
 export const metadata = {
   title: '7 Gentle Journal Prompts for Letting Go',
@@ -105,7 +104,7 @@ export default function GentleReleasePromptsBlogPage() {
             Journal, coming soon. Until then, the free 3-Day Mini Reset is a gentle place to start —
             one grounding thought, one reflection, one small step a day.
           </p>
-          <a className="button" href={freeResetUrl}>Grab the Free 3-Day Mini Reset</a>
+          <a className="button" href={links.gentleReset}>Grab the Free 3-Day Mini Reset</a>
         </section>
       </article>
       <SiteFooter />

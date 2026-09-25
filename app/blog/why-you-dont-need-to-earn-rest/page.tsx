@@ -1,7 +1,6 @@
 import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
-
-const freeResetUrl = 'https://lemdo8.gumroad.com/';
+import { links } from '../../home-content';
 
 export const metadata = {
   title: "Why You Don't Need to Earn Rest",
@@ -120,7 +119,7 @@ export default function EarnRestBlogPage() {
             The free 3-Day Reset Journal offers a soft, faith-rooted space to pause, reflect, and
             return to what matters—one gentle page at a time.
           </p>
-          <a className="button" href={freeResetUrl}>Get the Free 3-Day Reset Journal</a>
+          <a className="button" href={links.gentleReset}>Get the Free 3-Day Reset Journal</a>
         </section>
       </article>
       <SiteFooter />

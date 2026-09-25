@@ -1,7 +1,6 @@
 import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
-
-const gumroadShopUrl = 'https://lemdo8.gumroad.com/';
+import { links } from '../../home-content';
 
 export const metadata = {
   title: 'A Gentle Sunday Reset',
@@ -127,7 +126,7 @@ export default function GentleResetBlogPage() {
             Journal for you. It is a simple faith-rooted printable journal designed for rest,
             reflection, and renewal — one quiet page at a time.
           </p>
-          <a className="button" href={gumroadShopUrl}>Download the Free 3-Day Reset Journal</a>
+          <a className="button" href={links.gentleReset}>Download the Free 3-Day Reset Journal</a>
         </section>
       </article>
       <SiteFooter />
