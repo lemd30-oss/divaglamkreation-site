@@ -1,3 +1,4 @@
+import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
 export const metadata = {
@@ -122,13 +123,7 @@ export default function ReturnPolicyPage() {
         </div>
       </section>
 
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} DivaglamKreation. Faith. Flow. Flourish.</p>
-        <p>
-          <a href="/">Home</a> · <a href="/contact">Contact</a> · <a href="/blog">Blog</a> ·{' '}
-          <a href="/policies">Policies</a>
-        </p>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

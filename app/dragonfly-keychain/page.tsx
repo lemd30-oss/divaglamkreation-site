@@ -1,3 +1,4 @@
+import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
 export const metadata = {
@@ -88,13 +89,7 @@ export default function DragonflyKeychainPage() {
         </p>
       </section>
 
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} DivaglamKreation. Faith. Flow. Flourish.</p>
-        <p>
-          <a href="/">Home</a> · <a href="/#shop">Shop</a> · <a href="/glowlist">Glowlist</a> ·{' '}
-          <a href="mailto:divaglamkreation@gmail.com">Email</a>
-        </p>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
