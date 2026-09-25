@@ -105,7 +105,7 @@ export default function Home() {
         <div className="reset-feature-copy">
           <h2 id="glow-reset-title">Three days helped you pause. Seven will help you listen.</h2>
           <p className="reset-feature-lede">The Gentle Reset continues the same faith-rooted rhythm with more room for prayer, reflection, gratitude, and the question at the heart of DGK: Who are you becoming?</p>
-          <p className="reset-feature-note">Begin free. Continue when you are ready. No rushing your becoming.</p>
+          <p className="reset-feature-note">The 3-Day Pause is free. The Gentle Reset is here when you’re ready to go deeper. No rushing your becoming.</p>
           <div className="hero-actions">
             <a className="button" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Continue with the Digital Edition</a>
             <a className="button secondary" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Choose the Paperback</a>
