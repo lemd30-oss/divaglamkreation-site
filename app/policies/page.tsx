@@ -1,3 +1,5 @@
+import { SiteHeader } from '../components/SiteHeader';
+
 export const metadata = {
   title: 'Policies',
   description: 'Read DivaglamKreation policies for digital downloads, physical orders, shipping, refunds, privacy, customer support, and personal-use product terms.',
@@ -6,19 +8,8 @@ export const metadata = {
 
 export default function PoliciesPage() {
   return (
-    <main className="site-shell">
-      <header className="header">
-        <a className="logo" href="/" aria-label="DivaglamKreation home">
-          <span className="logo-mark">DK</span>
-          <span>DivaglamKreation</span>
-        </a>
-        <nav className="nav" aria-label="Main navigation">
-          <a href="/">Home</a>
-          <a href="/#shop">Shop</a>
-          <a href="/contact">Contact</a>
-          <a href="/blog">Blog</a>
-        </nav>
-      </header>
+    <main className="site-shell" id="main-content">
+      <SiteHeader />
 
       <section className="section policy-page">
         <p className="eyebrow">Customer Information</p>

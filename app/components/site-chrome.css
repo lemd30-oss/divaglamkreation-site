@@ -160,6 +160,13 @@
   width: 44px;
 }
 
+.menu-toggle:hover,
+.menu-toggle[aria-expanded='true'] {
+  background: rgba(91, 42, 94, 0.08);
+  color: var(--dgk-plum);
+  transform: none;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
