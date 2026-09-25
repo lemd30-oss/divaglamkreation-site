@@ -98,6 +98,13 @@
   object-position: center;
 }
 
+/* Small screens: keep the open journal ("Be still, God is working") in frame. */
+@media (max-width: 820px) {
+  .hero-cover-image {
+    object-position: center 80%;
+  }
+}
+
 .presentation-panel {
   background: var(--coffee);
   border: 0;

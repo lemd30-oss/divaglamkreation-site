@@ -31,7 +31,7 @@ export const images = {
 export const products: Product[] = [
   {
     title: 'The 3-Day Pause',
-    description: 'A free three-day faith-rooted pause with reflection, prayer, and gratitude prompts to help you slow down, listen inward, and begin again with intention.',
+    description: 'Free. Three days of short prompts to slow down and begin again.',
     image: '/images/file_000000007a0481f59f22529a564a90af.png',
     imageAlt: 'Open The 3-Day Pause journal beside a pinecone and neutral stationery',
     href: links.gentleReset,
@@ -53,7 +53,7 @@ export const products: Product[] = [
   },
   {
     title: 'The Gentle Reset — Digital Edition',
-    description: 'The natural next step after The 3-Day Pause: seven faith-rooted days of prayer, reflection, gratitude, and gentle renewal with more room to listen, reconnect, and move forward intentionally.',
+    description: 'Seven guided days to keep the rhythm going. Instant download.',
     image: '/images/the-gentle-reset-book-cover.svg',
     imageAlt: 'The Gentle Reset 7-day digital journal',
     href: links.graceNotesDigital,
@@ -65,7 +65,7 @@ export const products: Product[] = [
   },
   {
     title: 'The Gentle Reset — Paperback',
-    description: 'The same seven-day faith-rooted reset in a printed, screen-free format for quiet mornings, coffee-side reflection, prayer, and gentle renewal.',
+    description: 'The same seven days on paper, for mornings away from your screen.',
     image: '/images/the-gentle-reset-book-cover.svg',
     imageAlt: 'The Gentle Reset 7-day paperback journal',
     href: links.theGentleResetBook,
