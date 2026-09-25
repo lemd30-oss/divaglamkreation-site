@@ -9,6 +9,7 @@ export type Product = {
   external: boolean;
   featured?: boolean;
   stepLabel?: string;
+  imageFit?: 'contain';
 };
 
 export const links = {
@@ -17,6 +18,7 @@ export const links = {
   gentleReset: 'https://divaglamkreation.myflodesk.com',
   graceNotesDigital: 'https://lemdo8.gumroad.com/l/dgk-7-day-reset-journal',
   theGentleResetBook: 'https://www.amazon.com/dp/B0HBN6X699',
+  reflectionsHardcover: 'https://www.amazon.com/dp/B0HK1G42HF',
   morningReset: 'https://lemdo8.gumroad.com/l/Divaglamkreation',
   contactEmail: 'mailto:divaglamkreation@gmail.com',
   dragonflyKeychain: '/dragonfly-keychain',
@@ -74,6 +76,17 @@ export const products: Product[] = [
     external: true,
     featured: true,
     stepLabel: 'Step 2 · Go deeper',
+  },
+  {
+    title: 'Reflections',
+    description: 'A 144-page hardcover journal with 63 prompts for rest, reset, and renewal, with the Glow Owl beside you through each season.',
+    image: '/images/reflections-hardcover-cover.jpg',
+    imageAlt: 'Reflections hardcover journal cover with the Glow Owl, Rest · Reset · Renewal',
+    href: links.reflectionsHardcover,
+    priceLabel: 'Hardcover',
+    buttonLabel: 'Choose the Hardcover',
+    external: true,
+    imageFit: 'contain',
   },
   {
     title: 'Dragonfly Reminder Charm',

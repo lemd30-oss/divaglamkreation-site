@@ -16,6 +16,7 @@ export default function Home() {
 
       <section className="hero hero-home presentation-hero" id="top">
         <div className="hero-copy hero-copy-home">
+          <Image className="hero-owl" src="/images/brand/glow-owl.png" alt="" width={855} height={1186} sizes="64px" priority />
           <h1 className="statement-hero">Who are you<span className="gold-period">?</span></h1>
           <p className="hero-lede">
             You mattered before anyone was looking. DivaglamKreation makes journals and meaningful gifts to help you remember it.
@@ -69,6 +70,7 @@ export default function Home() {
 
       <section className="section story-section" id="about" aria-labelledby="story-question">
         <div className="story-question-wrap">
+          <Image className="story-owl" src="/images/brand/glow-owl.png" alt="The Glow Owl" width={855} height={1186} sizes="(max-width: 820px) 150px, 200px" />
           <span className="story-rule" aria-hidden="true" />
           <p className="eyebrow">Behind the Glow</p>
           <h2 id="story-question">It started with an owl.</h2>
