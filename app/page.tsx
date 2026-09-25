@@ -23,7 +23,7 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">
-              Begin the Free 3-Day Reset
+              Begin The 3-Day Pause
             </a>
             <a className="button secondary" href="#shop">Explore DGK</a>
           </div>
@@ -60,15 +60,15 @@ export default function Home() {
         </div>
         <div className="journey-grid">
           <article className="journey-card">
-            <span className="journey-number">01</span>
-            <h3>3-Day Mini Reset</h3>
+            <span className="journey-number">Step 1 · Free</span>
+            <h3>The 3-Day Pause</h3>
             <p>A free digital journal for slowing down, listening inward, reconnecting with God, and beginning again with intention.</p>
-            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Start your free reset →</a>
+            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Begin The 3-Day Pause →</a>
           </article>
           <article className="journey-card">
-            <span className="journey-number">02</span>
-            <h3>Ready to go deeper?</h3>
-            <p>Continue the rhythm with Grace Notes, a full seven-day guided reset for prayer, reflection, gratitude, and gentle renewal.</p>
+            <span className="journey-number">Step 2 · Go deeper</span>
+            <h3>The Gentle Reset</h3>
+            <p>Continue the rhythm with a full seven-day guided reset for prayer, reflection, gratitude, and gentle renewal.</p>
             <a className="text-link" href="#glow-reset">Continue into 7 days →</a>
           </article>
         </div>
@@ -78,7 +78,7 @@ export default function Home() {
         <div className="reset-feature-image-wrap">
           <Image
             src="/images/the-gentle-reset-book-cover.svg"
-            alt="Grace Notes 7-Day Gentle Reset journal cover"
+            alt="The Gentle Reset 7-day journal cover"
             width={760}
             height={980}
             className="reset-feature-image"
@@ -87,10 +87,10 @@ export default function Home() {
         <div className="reset-feature-copy">
           <p className="eyebrow">Your next gentle step</p>
           <h2 id="glow-reset-title">If three days helped you pause, give yourself seven days to listen more deeply.</h2>
-          <p className="reset-feature-lede">Grace Notes: 7-Day Gentle Reset continues the same faith-rooted rhythm with more room for prayer, reflection, gratitude, and the question at the heart of DGK: Who are you becoming?</p>
+          <p className="reset-feature-lede">The Gentle Reset continues the same faith-rooted rhythm with more room for prayer, reflection, gratitude, and the question at the heart of DGK: Who are you becoming?</p>
           <p className="reset-feature-note">Begin free. Continue when you are ready. No rushing your becoming.</p>
           <div className="hero-actions">
-            <a className="button" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Continue with the Digital Journal</a>
+            <a className="button" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Continue with the Digital Edition</a>
             <a className="button secondary" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Choose the Paperback</a>
           </div>
         </div>
