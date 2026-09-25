@@ -15,6 +15,8 @@ const archivedCollections = [
     name: 'Coffee First. Then Soul Work.',
     note: 'Archived design · previous DGK palette',
     status: 'Physical sticker on hand',
+    image: '/images/dgk-sticker-coffee.jpg',
+    imageAlt: 'Coffee First. Then soul work. DivaglamKreation sticker',
     description:
       'A gentle reminder for slow mornings and meaningful reflection. This earlier DGK design pairs coffee with the deeper work of pausing, listening, and tending to your inner life.',
   },
@@ -22,6 +24,8 @@ const archivedCollections = [
     name: 'Sip. Create. Inspire.',
     note: 'Archived design · previous DGK palette',
     status: 'Physical sticker on hand',
+    image: '/images/dgk-sticker-sip.jpg',
+    imageAlt: 'Sip. Create. Inspire. DivaglamKreation sticker',
     description:
       'Coffee, creativity, and encouragement came together in this cheerful DGK design—an early reminder to make space for the ideas and inspiration already within you.',
   },
@@ -29,6 +33,8 @@ const archivedCollections = [
     name: 'Owl Always Choose Me',
     note: 'Archived design · previous DGK palette',
     status: 'Physical sticker on hand',
+    image: '/images/dgk-sticker-owl.jpg',
+    imageAlt: 'Owl always choose me DivaglamKreation sticker',
     description:
       'A bright, playful piece from an earlier DGK season centered on self-worth and choosing yourself. The owl wording also connects naturally to the early identity language that became part of the DivaglamKreation story.',
   },
@@ -57,11 +63,8 @@ export default function StickerArchivePage() {
         <div className="archive-grid">
           {archivedCollections.map((item) => (
             <article className="archive-card" key={item.name}>
-              <div className="archive-card-art" aria-hidden="true">
-                <span className="archive-dot archive-dot-one" />
-                <span className="archive-dot archive-dot-two" />
-                <span className="archive-dot archive-dot-three" />
-                <span className="archive-wordmark">DK</span>
+              <div className="archive-card-art">
+                <img className="archive-product-image" src={item.image} alt={item.imageAlt} />
               </div>
               <div className="archive-card-copy">
                 <span className="archive-status">{item.note}</span>
