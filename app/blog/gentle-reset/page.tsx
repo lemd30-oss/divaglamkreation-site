@@ -1,3 +1,6 @@
+import { SiteFooter } from '../../components/SiteFooter';
+import { SiteHeader } from '../../components/SiteHeader';
+
 const gumroadShopUrl = 'https://lemdo8.gumroad.com/';
 
 export const metadata = {
@@ -9,7 +12,8 @@ export const metadata = {
 
 export default function GentleResetBlogPage() {
   return (
-    <main className="blog-page-shell">
+    <main className="blog-page-shell" id="main-content">
+      <SiteHeader />
       <article className="dgk-blog-paper">
         <header className="blog-hero-paper">
           <p className="blog-brand">DIVAGLAMKREATION</p>
@@ -126,6 +130,7 @@ export default function GentleResetBlogPage() {
           <a className="button" href={gumroadShopUrl}>Download the Free 3-Day Reset Journal</a>
         </section>
       </article>
+      <SiteFooter />
     </main>
   );
 }

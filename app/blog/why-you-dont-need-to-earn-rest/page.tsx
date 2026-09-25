@@ -1,3 +1,6 @@
+import { SiteFooter } from '../../components/SiteFooter';
+import { SiteHeader } from '../../components/SiteHeader';
+
 const freeResetUrl = 'https://lemdo8.gumroad.com/';
 
 export const metadata = {
@@ -9,7 +12,8 @@ export const metadata = {
 
 export default function EarnRestBlogPage() {
   return (
-    <main className="blog-page-shell">
+    <main className="blog-page-shell" id="main-content">
+      <SiteHeader />
       <article className="dgk-blog-paper">
         <header className="blog-hero-paper">
           <p className="blog-brand">DIVAGLAMKREATION</p>
@@ -119,6 +123,7 @@ export default function EarnRestBlogPage() {
           <a className="button" href={freeResetUrl}>Get the Free 3-Day Reset Journal</a>
         </section>
       </article>
+      <SiteFooter />
     </main>
   );
 }

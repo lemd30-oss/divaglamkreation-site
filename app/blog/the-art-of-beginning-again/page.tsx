@@ -1,3 +1,6 @@
+import { SiteFooter } from '../../components/SiteFooter';
+import { SiteHeader } from '../../components/SiteHeader';
+
 const freeResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
 
 export const metadata = {
@@ -8,7 +11,8 @@ export const metadata = {
 
 export default function BeginningAgainBlogPage() {
   return (
-    <main className="blog-page-shell">
+    <main className="blog-page-shell" id="main-content">
+      <SiteHeader />
       <article className="dgk-blog-paper">
         <header className="blog-hero-paper">
           <p className="blog-brand">DIVAGLAMKREATION</p>
@@ -70,6 +74,7 @@ export default function BeginningAgainBlogPage() {
           <a className="button" href={freeResetUrl}>Begin Your Free 3-Day Mini Reset</a>
         </section>
       </article>
+      <SiteFooter />
     </main>
   );
 }
