@@ -29,6 +29,11 @@
   color: var(--coffee);
 }
 
+.presentation-panel .eyebrow,
+.presentation-panel .journey-number {
+  color: var(--coffee);
+}
+
 .presentation-panel .journey-card {
   border-left-color: rgba(75, 58, 50, 0.15);
 }
