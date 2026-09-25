@@ -25,7 +25,7 @@ export const links = {
 
 export const images = {
   glowlist: '/images/file_000000006878822f9afa6bda9bae9f6d.png',
-  hero: '/images/file_00000000bbfc822fb379f73bd8a3c064.png',
+  hero: '/images/hero-mug-candle-journal.jpg',
 } as const;
 
 export const products: Product[] = [

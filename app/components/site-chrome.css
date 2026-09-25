@@ -1,5 +1,5 @@
 .presentation-header {
-  background: rgba(251, 247, 240, 0.96);
+  background: rgba(255, 247, 236, 0.96);
   border-bottom: 1px solid rgba(75, 58, 50, 0.08);
   max-width: none;
   padding-left: max(1.25rem, calc((100vw - 1120px) / 2));
@@ -16,17 +16,24 @@
   line-height: 1.05;
 }
 
+.logo-copy strong {
+  color: var(--dgk-plum);
+  font-family: var(--font-script), 'Brush Script MT', cursive;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
 .logo-copy small {
-  color: #765818;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  margin-top: 0.25rem;
-  text-transform: uppercase;
+  color: var(--dgk-gold-text);
+  font-family: var(--font-script), 'Brush Script MT', cursive;
+  font-size: 1.05rem;
+  margin-top: 0.1rem;
 }
 
 .nav-cta {
-  border: 1px solid rgba(75, 58, 50, 0.2);
+  border: 1px solid rgba(91, 42, 94, 0.45);
+  color: var(--dgk-plum);
   border-radius: 999px;
   padding: 0.65rem 1rem;
 }
@@ -47,22 +54,20 @@
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
-  outline: 3px solid var(--gold);
+  outline: 3px solid var(--dgk-plum);
   outline-offset: 3px;
 }
 
-/* Accessible gold tones: darker on light surfaces, lighter on dark surfaces. */
+/* Eyebrows and step labels: plum on light surfaces (≥ 9:1 on ivory and sand). */
 .eyebrow,
 .journey-number {
-  color: #765818;
+  color: var(--dgk-plum);
 }
 
-.presentation-panel .eyebrow,
-.presentation-panel .journey-number,
 .presentation-feature .eyebrow,
 .site-footer .footer-tagline,
 .site-footer .footer-heading {
-  color: #efd18b;
+  color: var(--dgk-gold);
 }
 
 .compact-steps {

@@ -16,7 +16,7 @@
 }
 
 :where(a, button, input, select, textarea):focus-visible {
-  outline: 3px solid var(--gold);
+  outline: 3px solid var(--dgk-plum);
   outline-offset: 3px;
 }
 
@@ -28,33 +28,34 @@
 .nav a:not(.nav-cta):hover,
 .nav a:not(.nav-cta):focus-visible {
   text-decoration: underline;
+  text-decoration-color: var(--dgk-plum);
+  text-decoration-thickness: 2px;
 }
 
-/* Keep brand gold readable on pale surfaces and use a lighter gold on dark surfaces. */
-.presentation-panel .eyebrow,
-.presentation-panel .journey-number,
-.presentation-feature .eyebrow,
+/* Brand Signature contrast: plum on light surfaces, gold #D4AF37 only on plum or dark surfaces. */
 .site-footer .footer-tagline,
 .site-footer .footer-heading,
 .site-footer .footer-column a:hover,
-.site-footer .footer-bottom a:hover {
+.site-footer .footer-bottom a:hover,
+.glowlist-band .script-accent {
+  color: var(--dgk-gold);
+}
+
+.presentation-feature .eyebrow {
   color: var(--gold-on-dark);
 }
 
-.presentation-panel p,
 .presentation-feature p,
 .site-footer .footer-copy,
 .site-footer .footer-bottom p,
 .site-footer .footer-column a,
 .site-footer .footer-bottom a {
-  color: var(--warm-cream);
+  color: var(--dgk-ivory);
 }
 
-.presentation-header .logo-copy small,
-.hero .eyebrow,
-.section:not(.presentation-panel):not(.presentation-feature) .eyebrow,
-.section:not(.presentation-panel):not(.presentation-feature) .journey-number {
-  color: var(--gold);
+.site-footer :where(a, button):focus-visible,
+.glowlist-band :where(a, button):focus-visible {
+  outline-color: var(--dgk-gold);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,8 +1,4 @@
-/* Homepage polish · September 25, 2026 */
-:root {
-  --dgk-plum: #6b4f59;
-  --dgk-sand: #eee2d1;
-}
+/* Homepage polish · September 25, 2026 (palette tokens live in globals.css) */
 
 .statement-hero {
   max-width: 680px;
@@ -32,7 +28,7 @@
 
 .presentation-panel .eyebrow,
 .presentation-panel .journey-number {
-  color: var(--coffee);
+  color: var(--dgk-plum);
 }
 
 .presentation-panel .journey-card {
@@ -40,7 +36,7 @@
 }
 
 .presentation-panel .featured-journey {
-  background: rgba(255, 253, 248, 0.5);
+  background: rgba(255, 247, 236, 0.6);
 }
 
 .bridge-label {
@@ -85,7 +81,7 @@
 
 .reset-feature-copy h2 {
   font-size: clamp(2.4rem, 5vw, 4.7rem);
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   line-height: 0.98;
   margin: 0.85rem 0 1.4rem;
 }
@@ -124,7 +120,7 @@
 
 .story-question-wrap h2 {
   font-size: clamp(3rem, 7vw, 6rem);
-  letter-spacing: -0.045em;
+  letter-spacing: -0.02em;
   line-height: 0.92;
   margin: 1.5rem auto;
 }
@@ -163,13 +159,19 @@
   color: var(--warm-cream);
 }
 
-.glowlist-band .presentation-glowlist .eyebrow {
-  color: #e1bf78;
+.glowlist-band .presentation-glowlist .script-accent {
+  color: var(--dgk-gold);
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  margin-bottom: 0.5rem;
 }
 
 .glowlist-band .presentation-glowlist .button {
-  background: var(--warm-cream);
-  color: var(--coffee);
+  background: var(--dgk-ivory);
+  color: var(--dgk-plum);
+}
+
+.glowlist-band .presentation-glowlist .button:hover {
+  background: var(--dgk-sand);
 }
 
 .glowlist-band .glowlist-image-wrap {

@@ -1,5 +1,5 @@
 .presentation-header {
-  background: rgba(251, 247, 240, 0.94);
+  background: rgba(255, 247, 236, 0.94);
   border-bottom: 1px solid rgba(75, 58, 50, 0.08);
   max-width: none;
   padding-left: max(1.25rem, calc((100vw - 1120px) / 2));
@@ -14,21 +14,6 @@
   display: flex;
   flex-direction: column;
   line-height: 1.05;
-}
-
-.logo-copy small {
-  color: var(--gold);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  margin-top: 0.25rem;
-  text-transform: uppercase;
-}
-
-.nav-cta {
-  border: 1px solid rgba(75, 58, 50, 0.2);
-  border-radius: 999px;
-  padding: 0.65rem 1rem;
 }
 
 .hero-home {
@@ -48,7 +33,7 @@
 
 .hero-copy-home h1 {
   font-size: clamp(3.2rem, 7vw, 6.6rem);
-  letter-spacing: -0.045em;
+  letter-spacing: -0.02em;
   line-height: 0.9;
   max-width: 760px;
 }
@@ -96,7 +81,7 @@
 }
 
 .image-note {
-  background: rgba(255, 253, 248, 0.92);
+  background: rgba(255, 247, 236, 0.94);
   bottom: 1.5rem;
   left: 1.5rem;
   max-width: 270px;
@@ -110,12 +95,13 @@
 }
 
 .image-note strong {
-  font-size: 1.12rem;
-  line-height: 1.25;
+  color: var(--dgk-plum);
+  display: block;
+  font-size: clamp(1.45rem, 2.2vw, 1.85rem);
 }
 
 .hero-cover-image {
-  object-position: 84% center;
+  object-position: center;
 }
 
 .presentation-panel {
@@ -175,15 +161,16 @@
 }
 
 .journey-number {
-  color: var(--gold);
+  color: var(--dgk-plum);
   display: block;
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   margin-bottom: 2rem;
 }
 
 .text-link {
-  border-bottom: 1px solid currentColor;
+  border-bottom: 2px solid var(--dgk-plum);
   color: var(--coffee);
   display: inline-block;
   font-size: 0.96rem;
@@ -352,7 +339,7 @@
 }
 
 .site-footer {
-  background: var(--coffee);
+  background: var(--dgk-brown-deep);
   color: var(--warm-cream);
   margin-top: 0;
   padding: 4.5rem max(1.25rem, calc((100vw - 1120px) / 2)) 1.5rem;
@@ -382,13 +369,21 @@
 }
 
 .footer-name {
-  color: var(--warm-cream);
-  font-size: 1.3rem;
-  font-weight: 700;
+  color: var(--dgk-ivory);
+  font-family: var(--font-script), 'Brush Script MT', cursive;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.1;
   margin-bottom: 0.25rem;
 }
 
-.footer-tagline,
+.footer-tagline {
+  color: var(--dgk-gold);
+  font-family: var(--font-script), 'Brush Script MT', cursive;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
 .footer-heading {
   color: var(--gold);
   font-size: 0.76rem;
@@ -418,7 +413,7 @@
 
 .footer-column a:hover,
 .footer-bottom a:hover {
-  color: var(--gold);
+  color: var(--dgk-gold);
 }
 
 .footer-bottom {
@@ -467,6 +462,12 @@
 
   .hero-copy-home h1 {
     font-size: clamp(3rem, 15vw, 4.6rem);
+  }
+
+  .image-note {
+    bottom: 1.25rem;
+    left: 1.25rem;
+    padding: 0.7rem 0.95rem;
   }
 
   .hero-proof {
