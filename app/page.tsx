@@ -95,10 +95,11 @@ export default function Home() {
         </div>
         <div className="reset-feature-copy">
           <h2 id="glow-reset-title">Three days helped you pause. Seven will help you listen.</h2>
-          <p className="reset-feature-lede">Same rhythm, more room. A 7-day digital PDF journal for when three days opened something you want to keep exploring.</p>
+          <p className="reset-feature-lede">Same rhythm, more room. A 7-day guided journal for when three days opened something you want to keep exploring—available as a digital PDF or a printed Amazon edition.</p>
           <p className="reset-feature-note">No rushing your becoming.</p>
           <div className="hero-actions">
             <a className="button" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Get the Digital Journal · $9</a>
+            <a className="button secondary" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Choose the Printed Edition on Amazon</a>
           </div>
         </div>
       </section>
@@ -109,7 +110,7 @@ export default function Home() {
             <p className="eyebrow">The Collection</p>
             <h2>Tools for real-life pauses.</h2>
           </div>
-          <p className="section-intro">Digital journals, the Reflections hardcover, and meaningful gifts.</p>
+          <p className="section-intro">Digital and printed journals, the Reflections hardcover, and meaningful gifts.</p>
         </div>
         <p className="shop-trust">Instant digital delivery · Secure checkout · Thoughtfully created by DivaglamKreation</p>
         <div className="product-grid shop-grid">
