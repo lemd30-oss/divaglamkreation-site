@@ -4,6 +4,7 @@ import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
 const glowlistSignupUrl = 'https://divaglamkreation.myflodesk.com';
+const freeResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
 
 export const metadata: Metadata = {
   title: 'Join the DGK Glowlist',
@@ -30,7 +31,7 @@ export default function GlowlistPage() {
           <p>Receive faith-rooted notes, prompts, and product updates from DivaglamKreation.</p>
           <div className="hero-actions">
             <a className="button" href={glowlistSignupUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
-            <a className="button secondary" href={glowlistSignupUrl} target="_blank" rel="noopener noreferrer">Get The 3-Day Pause</a>
+            <a className="button secondary" href={freeResetUrl} target="_blank" rel="noopener noreferrer">Get The 3-Day Pause</a>
           </div>
         </div>
 
