@@ -56,7 +56,7 @@ export const products: Product[] = [
   },
   {
     title: 'The Gentle Reset',
-    description: 'Seven guided days for quiet reflection, prayer, and renewal—available as an instant digital PDF or a printed Amazon edition.',
+    description: 'Seven guided days to keep the rhythm going as an instant digital PDF download for quiet reflection, prayer, and renewal.',
     image: '/images/the-gentle-reset-book-cover.svg',
     imageAlt: 'The Gentle Reset 7-day guided journal cover',
     href: links.graceNotesDigital,
@@ -66,7 +66,6 @@ export const products: Product[] = [
     featured: true,
     stepLabel: 'Step 2 · Go deeper',
     imageFit: 'contain',
-    secondaryAction: { href: links.theGentleResetBook, buttonLabel: 'Choose the Printed Edition on Amazon' },
   },
   {
     title: 'Reflections',
