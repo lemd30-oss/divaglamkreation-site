@@ -33,12 +33,9 @@ export default function ReturnPolicyPage() {
           <article className="details-card" id="digital-products">
             <h2>Digital products</h2>
             <p>
-              Because digital products are delivered electronically and cannot be physically returned, digital
-              downloads are generally non-refundable once the files have been accessed or downloaded.
-            </p>
-            <p>
-              If you experience a technical issue, receive the wrong file, or are unable to access your purchase,
-              please contact us so we can help resolve the issue. Refunds will also be provided where required by
+              Digital purchases are generally final because the files are delivered immediately. If you are
+              charged twice, receive the wrong file, or cannot access your purchase, please contact
+              DivaglamKreation so we can review the issue and help. Refunds will be provided where required by
               applicable law.
             </p>
           </article>
@@ -69,7 +66,7 @@ export default function ReturnPolicyPage() {
           <article className="details-card" id="non-returnable">
             <h2>Non-returnable items</h2>
             <p>
-              Certain products may not be eligible for return, including downloaded digital products, personalized
+              Certain products may not be eligible for return, including digital products, personalized
               or custom-made items, items marked final sale, and products that have been used or damaged after
               delivery. Any exceptions required by applicable law still apply.
             </p>

@@ -37,9 +37,10 @@ export default function PoliciesPage() {
           <article className="details-card" id="refunds">
             <h2>Refunds and order concerns</h2>
             <p>
-              Because digital products are delivered immediately, digital purchases are generally non-refundable
-              once the files have been accessed or downloaded. If you are charged twice, receive the wrong file,
-              or cannot access your purchase, please contact DivaglamKreation so we can help.
+              Digital purchases are generally final because the files are delivered immediately. If you are
+              charged twice, receive the wrong file, or cannot access your purchase, please contact
+              DivaglamKreation so we can review the issue and help. Refunds will be provided where required by
+              applicable law.
             </p>
             <p>
               For a physical item that arrives damaged, defective, or incorrect, email within seven days of
