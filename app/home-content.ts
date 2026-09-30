@@ -81,7 +81,7 @@ export const products: Product[] = [
   {
     title: 'Dragonfly Reminder Charm',
     description: 'A giftable symbol of growth, light, and transformation for keys, handbags, planners, or journal pouches.',
-    image: 'https://raw.githubusercontent.com/lemd30-oss/divaglamkreation-site/main/dgk-dragonfly-pink-website.jpg',
+    image: '/images/dgk-dragonfly-pink-website.jpg',
     imageAlt: 'Pink rhinestone dragonfly reminder charm with gold-tone keyring and clasp',
     href: links.dragonflyKeychain,
     priceLabel: '$9.99 · gift',
