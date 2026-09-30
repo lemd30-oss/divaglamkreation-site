@@ -120,13 +120,13 @@ export default function GentleResetBlogPage() {
 
         <section className="blog-soft-cta">
           <p className="eyebrow">Start with a Soft Place to Land</p>
-          <h2>Download the free 3-Day Reset Journal.</h2>
+          <h2>Download the free 3-Day Pause.</h2>
           <p>
-            If your heart has been needing a gentle place to begin, I created the free 3-Day Reset
-            Journal for you. It is a simple faith-rooted printable journal designed for rest,
+            If your heart has been needing a gentle place to begin, I created the free 3-Day Pause
+            for you. It is a simple faith-rooted printable journal designed for rest,
             reflection, and renewal — one quiet page at a time.
           </p>
-          <a className="button" href={links.gentleReset}>Download the Free 3-Day Reset Journal</a>
+          <a className="button" href={links.gentleReset}>Download the Free 3-Day Pause</a>
         </section>
       </article>
       <SiteFooter />
