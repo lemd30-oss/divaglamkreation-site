@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
+import { links } from '../home-content';
 
-const glowlistSignupUrl = 'https://divaglamkreation.myflodesk.com';
-const freeResetUrl = 'https://lemdo8.gumroad.com/l/dgk-gentle-pause';
+const glowlistSignupUrl = links.gumroadSubscribe;
+const freeResetUrl = links.gentleReset;
 
 export const metadata: Metadata = {
   title: 'Join the DGK Glowlist',

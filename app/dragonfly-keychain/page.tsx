@@ -10,8 +10,7 @@ export const metadata = {
 
 const orderUrl =
   'https://a85da190-df2c-44b8-9510-5fb19ca1b186.paylinks.godaddy.com/p/8ff7cff0-6da6-4ac1-a31b-c70fd941358e';
-const pinkImageUrl =
-  'https://raw.githubusercontent.com/lemd30-oss/divaglamkreation-site/main/dgk-dragonfly-pink-website.jpg';
+const pinkImageUrl = '/images/dgk-dragonfly-pink-website.jpg';
 
 export default function DragonflyKeychainPage() {
   return (

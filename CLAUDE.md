@@ -51,7 +51,7 @@ Primary Next.js files:
 - `app/glowlist/`, `app/contact/`, `app/policies/`, `app/dragonfly-keychain/` - site pages
 - `public/images/` - site image assets
 
-Legacy/static files also exist at the repository root, including `index.html`, `blog.html`, `shop.html`, and other `.html` pages. Do not delete, replace, or assume these are unused without verifying the current Vercel routing and live-site behavior.
+Legacy static files (`index.html`, `blog.html`, `shop.html`, `style.css`, and other `.html` pages) now live in `legacy/`. See `legacy/README.md`. Do not delete or edit them for production changes, and do not assume they are unused without verifying the current Vercel routing and live-site behavior. Root `api/*.js` handlers are also legacy.
 
 ## Deployment notes
 
@@ -60,7 +60,7 @@ Legacy/static files also exist at the repository root, including `index.html`, `
 - The project is intended to deploy on Vercel.
 - `vercel.json` defines clean URLs, no trailing slash, and security/referrer headers.
 
-There is an old `.github/workflows/jekyll-docker.yml` workflow. The presence of that file does not mean the current site is a Jekyll project. Treat it as legacy until verified.
+The old Jekyll workflow (`.github/workflows/jekyll-docker.yml`) is no longer in the repository. This is not a Jekyll site.
 
 Before changing deployment configuration, verify:
 
@@ -127,29 +127,43 @@ The specific rules for what an agent may do without approval are in the
 "Global execution rule" and "DGK agent permission model" sections below.
 Those rules are binding.
 
-Relevant tools in the broader DGK operating system may include GitHub, Vercel, Notion, Later, Canva, Google Workspace, and Etsy. Integrations should be explicit, permission-aware, and reversible.
+The broader DGK operating system uses these tools. Integrations should be explicit, permission-aware, and reversible.
+
+| Tool | Role |
+| --- | --- |
+| Notion | Planning and brand OS |
+| Google Drive | Operational master |
+| Canva | Visual production |
+| Metricool | Social scheduling and proof |
+| Vercel / GitHub | Website |
+| Gumroad / Amazon | Verified purchase destinations |
+| Flodesk | Glow Letter and Glowlist signup |
+
+Status rule: **Ready is not Scheduled.** Only a post visibly queued in Metricool is Scheduled. Website and product changes follow edit, preview deployment, review, then production. Never claim a Gumroad or Amazon listing is live unless the link has been verified.
 
 ## Canonical application source
 
-**Verified 2026-09-12.** The live homepage at `divaglamkreation.com` renders the hero headline "You matter." That headline is produced by `app/page.tsx`. The Next.js App Router implementation in `app/` is the canonical live production website.
+**Verified 2026-09-12.** The live homepage at `divaglamkreation.com` was produced by `app/page.tsx`, which then carried the hero headline "You matter." The Next.js App Router implementation in `app/` is the canonical live production website.
+
+**Updated 2026-09-30.** The hero anchor is now **"Who are you?"**, with the supporting line "A quiet invitation to pause, reflect, and remember that you matter." "You matter." and "You mattered before anyone was looking." remain core brand language. Confirm the live hero after the update ships.
 
 Three generations of the site coexist in this repository. Only one is served.
 
 | Layer | Files | Served in production |
 | --- | --- | --- |
 | Next.js App Router | `app/` | **Yes — canonical** |
-| Legacy static site | Root `.html` files, `style.css` | No |
+| Legacy static site | `legacy/` (`.html` files, `style.css`, `j.s`) | No |
 | Legacy serverless functions | Root `api/*.js` | No |
 
 Why the legacy layers are unreachable:
 
-- Next.js serves static files only from `public/`. Files at the repository root such as `index.html`, `blog.html`, `shop.html`, `about.html`, `journal.html`, `rhythm.html`, `glowlist.html`, and `test-complete.html` are not routable in production.
+- Next.js serves static files only from `public/`. Files in `legacy/` such as `index.html`, `blog.html`, `shop.html`, `about.html`, `journal.html`, `rhythm.html`, `glowlist.html`, and `test-complete.html` are not routable in production.
 - Vercel's root `/api` directory convention applies to non-framework projects. Once Next.js is detected, API routes must live in `app/api/`. Treat `api/unsplash.js` and `api/notion/tasks/complete.js` as inactive code.
 
 **Rules:**
 
-1. Make website content changes in `app/`. Never in root `.html` files, unless Divag explicitly instructs otherwise.
-2. Editing `blog.html` does not change the live blog. Editing `index.html` does not change the live homepage. A root file and an `app/` route can share a name and have nothing to do with each other.
+1. Make website content changes in `app/`. Never in `legacy/` files, unless Divag explicitly instructs otherwise.
+2. Editing `legacy/blog.html` does not change the live blog. Editing `legacy/index.html` does not change the live homepage. A legacy file and an `app/` route can share a name and have nothing to do with each other.
 3. Legacy files are still under the no-deletion rule. Identifying a file as legacy is not authorization to remove it.
 4. If a task seems to require touching a legacy file, stop and ask.
 
@@ -186,7 +200,7 @@ Every link in it points to `'#glowlist'`. Its prices disagree with `home-content
 Style files named `hero-image-fix.css` and `editorial-refresh.css` are patch layers added over time. Cascade order is set by the import order in `app/layout.tsx` and `app/page.tsx`. Check that order before assuming a rule will apply.
 
 **Duplicate filenames.**
-Many root `.html` files mirror an `app/` route name. Same name, different file, different reality.
+Many `legacy/` `.html` files mirror an `app/` route name. Same name, different file, different reality.
 
 ## Documentation trust hierarchy
 
@@ -213,7 +227,6 @@ Do not follow these without verifying against code first.
 | `.github/RESOLUTION.md` | **Outdated.** Describes a CDN script for Speed Insights. Actual implementation is the npm package mounted in `app/layout.tsx`. |
 | `SOCIAL_MEDIA_INTEGRATION.md` | **Outdated.** References `index.html` line numbers in the legacy layer. |
 | `README.md` | **Partly outdated.** The performance notes are accurate. The "Next content updates" list describes work largely already done. |
-| `.github/workflows/jekyll-docker.yml` | **Wrong stack.** Runs a Jekyll build on every push and PR to `main`. This is not a Jekyll site. Pending cleanup approval. |
 | `PRODUCTION_CHECKLIST.md`, `DGK_LAUNCH_CHECKLIST.md` | **Usable.** Structure is sound; unchecked boxes may already be complete. Verify before acting. |
 
 ## Global execution rule
@@ -285,7 +298,7 @@ No exception for urgency, convenience, or confidence.
 The DGK foundation. Preserve these. They are not placeholder copy.
 
 - **"Who are you?"** — the founding question the brand returns to
-- **"You matter."** — the core statement, currently the live homepage hero
+- **"You matter."** — the core statement. The homepage hero anchor is now "Who are you?" (see "Canonical application source")
 - **Every woman matters**
 - **"You mattered before anyone was looking."**
 - Coffee, creativity, reflection, gentle self-care
@@ -317,8 +330,9 @@ These are live customer-facing destinations defined in `app/home-content.ts`. A 
 | Gumroad shop | `links.gumroadShop` |
 | Gumroad subscribe (Glowlist signup) | `links.gumroadSubscribe` |
 | The Gentle Reset, 3-Day Mini (free) | `links.gentleReset` |
-| Grace Notes 7-Day, digital | `links.graceNotesDigital` |
-| Grace Notes 7-Day, paperback (Amazon) | `links.theGentleResetBook` |
+| The Gentle Reset, 7-Day, digital PDF | `links.graceNotesDigital` |
+| Reflections, hardcover journal (Amazon) | `links.reflectionsHardcover` |
+| The Gentle Reset paperback (Amazon) | `links.theGentleResetBook`. Kept but unused. No longer offered on the homepage or footer. |
 | Gentle Morning Reset Pack | `links.morningReset` |
 | Dragonfly Reminder Charm | `/dragonfly-keychain` (internal route) |
 | Contact email | `links.contactEmail` |
@@ -395,9 +409,15 @@ The broader DivaglamKreation operating system belongs in a separate repository, 
 
 Tracked, not yet approved. Do not act on these.
 
-1. Repository cleanup: remove the Jekyll workflow, gitignore `tsconfig.tsbuildinfo`, remove the stray `j.s` file, move root `.html` files into `/legacy/`, resolve `app/product-links.ts`.
+1. Repository cleanup. Done: the Jekyll workflow is removed, and root `.html` files, `style.css`, and `j.s` moved into `legacy/`. Still open: gitignore `tsconfig.tsbuildinfo`, resolve `app/product-links.ts`.
 2. Split `docs/` into `docs/architecture.md`, `docs/content-editing.md`, `docs/commerce-inventory.md`, `docs/deployment.md`, and a dated `docs/decisions/` log.
 3. Stand up `dgk-brand-os`.
 4. Confirm what `divaglamkreation-site.vercel.app` serves and what the deployment protection settings are.
 5. Audit whether `UNSPLASH_ACCESS_KEY` and `NOTION_TOKEN` are still set in Vercel and whether they can be retired.
 6. Resolve the font gap. The live site renders in Georgia / Times New Roman system serifs. The DGK canonical file in Drive names Playfair Display, Lora, Dancing Script, and Montserrat. Confirm whether the system-serif choice is deliberate (Google Fonts CDN avoidance) before changing anything.
+
+## Recorded decisions
+
+- 2026-09-30: `/sticker-archive` stays unlinked from the homepage and off the customer journey for now. It is not in the sitemap.
+- 2026-09-30: The blog post `/blog/who-are-you-now` is held until the Oct 26–30 story close. Its sitemap line ships with the page when it goes public.
+- 2026-09-30: The paperback link was removed from the footer. Do not restore it unless Divag confirms the listing is live.

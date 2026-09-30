@@ -19,7 +19,8 @@ export default function Home() {
           <Image className="hero-owl" src="/images/brand/glow-owl.png" alt="" width={855} height={1186} sizes="64px" priority />
           <h1 className="statement-hero">Who are you<span className="gold-period">?</span></h1>
           <p className="hero-lede">
-            You mattered before anyone was looking. DivaglamKreation makes journals and meaningful gifts to help you remember it.
+            A quiet invitation to pause, reflect, and remember that you matter.
+            Faith-rooted journals, gentle reminders, and meaningful pieces for the woman you are becoming.
           </p>
           <div className="hero-actions">
             <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">
@@ -115,9 +116,6 @@ export default function Home() {
         <div className="product-grid shop-grid">
           {products.filter((product) => product.title !== '7-Day Gentle Reset Journal').map((product) => <ProductCard product={product} key={product.title} />)}
         </div>
-        <p style={{ marginTop: '1.75rem' }}>
-          <a className="text-link" href="/sticker-archive">View the DGK Sticker Archive →</a>
-        </p>
       </section>
 
       <section className="section blog-section" id="blog">
