@@ -128,7 +128,7 @@ export default function AboutPage() {
           </p>
           <p className="reset-feature-note">Faith. Flow. Flourish.</p>
           <div className="hero-actions">
-            <a className="button" href="/#start">Begin the Free 3-Day Reset</a>
+            <a className="button" href="/#start">Begin The 3-Day Pause</a>
             <a className="button secondary" href="/glowlist">Join the Glowlist</a>
           </div>
         </div>
