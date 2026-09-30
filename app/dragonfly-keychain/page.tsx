@@ -49,7 +49,7 @@ export default function DragonflyKeychainPage() {
             </a>
           </div>
 
-          <p className="trust-note">Limited quantities available.</p>
+          <p className="trust-note">A small reminder, ready when you are.</p>
         </div>
 
         <aside className="hero-card" aria-label="Pink Dragonfly Reminder Charm product photo">
