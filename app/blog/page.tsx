@@ -38,7 +38,7 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <main className="site-shell">
+    <main className="site-shell" id="main-content">
       <SiteHeader />
       <section className="hero">
         <div className="hero-copy">

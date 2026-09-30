@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="site-shell">
+    <main className="site-shell" id="main-content">
       <SiteHeader />
 
       <section className="section policy-page">

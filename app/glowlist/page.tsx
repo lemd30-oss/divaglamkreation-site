@@ -22,7 +22,7 @@ const glowlistNotes = [
 
 export default function GlowlistPage() {
   return (
-    <main className="site-shell">
+    <main className="site-shell" id="main-content">
       <SiteHeader />
 
       <section className="hero" id="top">
