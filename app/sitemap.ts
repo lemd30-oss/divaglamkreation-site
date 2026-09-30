@@ -5,6 +5,7 @@ const baseUrl = 'https://divaglamkreation.com';
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
+    '/about',
     '/blog',
     '/blog/7-gentle-journal-prompts-for-releasing-what-no-longer-serves-you',
     '/blog/gentle-august-reset',
