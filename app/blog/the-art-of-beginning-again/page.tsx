@@ -16,12 +16,19 @@ export const metadata = {
     description:
       'A gentle, faith-rooted reflection on beginning again without pressure, perfection, or starting from nothing.',
     siteName: 'DivaglamKreation',
+    images: [
+      {
+        url: '/images/gentle-morning-reset-pack.jpg',
+        alt: 'DivaglamKreation journal notes and gentle reset encouragement',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Art of Beginning Again | DivaglamKreation',
     description:
       'A gentle, faith-rooted reflection on beginning again without pressure, perfection, or starting from nothing.',
+    images: ['/images/gentle-morning-reset-pack.jpg'],
   },
 };
 
