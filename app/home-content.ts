@@ -24,6 +24,7 @@ export const links = {
   contactEmail: 'mailto:divaglamkreation@gmail.com',
   dragonflyKeychain: '/dragonfly-keychain',
   facebook: 'https://www.facebook.com/share/1G9VQrJnaZ/',
+  instagram: 'https://www.instagram.com/divaglamkreation/',
 } as const;
 
 export const images = {
