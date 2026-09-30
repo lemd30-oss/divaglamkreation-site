@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/glowlist',
     '/contact',
     '/policies',
+    '/return-policy',
   ];
 
   return routes.map((route) => ({
