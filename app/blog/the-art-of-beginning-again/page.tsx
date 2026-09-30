@@ -4,8 +4,25 @@ import { links } from '../../home-content';
 
 export const metadata = {
   title: 'The Art of Beginning Again',
-  description: 'You don’t have to overhaul your life to begin again. Discover a gentle, faith-rooted way to start fresh right where you are.',
-  alternates: { canonical: '/blog/the-art-of-beginning-again' },
+  description:
+    'You don’t have to overhaul your life to begin again. Discover a gentle, faith-rooted way to start fresh right where you are.',
+  alternates: {
+    canonical: '/blog/the-art-of-beginning-again',
+  },
+  openGraph: {
+    type: 'article',
+    url: '/blog/the-art-of-beginning-again',
+    title: 'The Art of Beginning Again | DivaglamKreation',
+    description:
+      'A gentle, faith-rooted reflection on beginning again without pressure, perfection, or starting from nothing.',
+    siteName: 'DivaglamKreation',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Art of Beginning Again | DivaglamKreation',
+    description:
+      'A gentle, faith-rooted reflection on beginning again without pressure, perfection, or starting from nothing.',
+  },
 };
 
 export default function BeginningAgainBlogPage() {
