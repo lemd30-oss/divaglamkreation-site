@@ -55,6 +55,8 @@ export function SiteFooter() {
         <div>
           <a href="/policies">Policies</a>
           <span aria-hidden="true">·</span>
+          <a href="/return-policy">Returns</a>
+          <span aria-hidden="true">·</span>
           <a href={links.gumroadShop} target="_blank" rel="noopener noreferrer">Gumroad</a>
         </div>
       </div>

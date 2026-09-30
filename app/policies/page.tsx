@@ -15,7 +15,7 @@ export default function PoliciesPage() {
       <section className="section policy-page">
         <p className="eyebrow">Customer Information</p>
         <h1>Shop policies</h1>
-        <p className="trust-note">Last updated July 24, 2026.</p>
+        <p className="trust-note">Last updated September 30, 2026.</p>
         <p>
           DivaglamKreation offers digital products delivered through Gumroad and limited-batch physical products
           paid for through GoDaddy Payments. These policies explain what customers can expect.
@@ -37,14 +37,20 @@ export default function PoliciesPage() {
           <article className="details-card" id="refunds">
             <h2>Refunds and order concerns</h2>
             <p>
-              Because digital products are delivered immediately, digital purchases are generally final.
-              Please contact DivaglamKreation if you experience a duplicate charge, receive the wrong file,
-              or cannot access your purchase so the issue can be reviewed.
+              Digital purchases are generally final because the files are delivered immediately. If you are
+              charged twice, receive the wrong file, or cannot access your purchase, please contact
+              DivaglamKreation so we can review the issue and help. Refunds will be provided where required by
+              applicable law.
             </p>
             <p>
-              For a physical item that arrives damaged or incorrect, email within seven days of delivery with
-              the order details and clear photographs of the item and packaging. Eligible concerns will be
-              reviewed for a replacement or other appropriate resolution.
+              For a physical item that arrives damaged, defective, or incorrect, email within seven days of
+              delivery with the order details and clear photographs of the item and packaging. Eligible concerns
+              will be reviewed for an appropriate resolution, which may include a replacement, store credit, or
+              refund.
+            </p>
+            <p>
+              Full details on returns, cancellations, and refunds are in our{' '}
+              <a className="text-link" href="/return-policy">Return &amp; Refund Policy</a>.
             </p>
           </article>
 

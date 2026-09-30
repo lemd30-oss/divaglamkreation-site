@@ -23,7 +23,7 @@ export default function ReturnPolicyPage() {
       <section className="section policy-page">
         <p className="eyebrow">Customer Care</p>
         <h1>Return &amp; Refund Policy</h1>
-        <p className="trust-note">Last updated August 6, 2026.</p>
+        <p className="trust-note">Last updated September 30, 2026.</p>
         <p>
           At DivaglamKreation, each product is created with care and intention. This policy explains how returns,
           refunds, replacements, cancellations, and digital purchases are handled.
@@ -33,12 +33,9 @@ export default function ReturnPolicyPage() {
           <article className="details-card" id="digital-products">
             <h2>Digital products</h2>
             <p>
-              Because digital products are delivered electronically and cannot be physically returned, digital
-              downloads are generally non-refundable once the files have been accessed or downloaded.
-            </p>
-            <p>
-              If you experience a technical issue, receive the wrong file, or are unable to access your purchase,
-              please contact us so we can help resolve the issue. Refunds will also be provided where required by
+              Digital purchases are generally final because the files are delivered immediately. If you are
+              charged twice, receive the wrong file, or cannot access your purchase, please contact
+              DivaglamKreation so we can review the issue and help. Refunds will be provided where required by
               applicable law.
             </p>
           </article>
@@ -58,8 +55,8 @@ export default function ReturnPolicyPage() {
           <article className="details-card" id="damaged-items">
             <h2>Damaged, defective, or incorrect items</h2>
             <p>
-              If your order arrives damaged, defective, or incorrect, contact us as soon as possible. We may ask
-              for photographs of the item and packaging so we can review the issue.
+              If your order arrives damaged, defective, or incorrect, contact us within seven days of delivery.
+              We may ask for photographs of the item and packaging so we can review the issue.
             </p>
             <p>
               When appropriate, we may offer a replacement, store credit, or refund.
@@ -69,7 +66,7 @@ export default function ReturnPolicyPage() {
           <article className="details-card" id="non-returnable">
             <h2>Non-returnable items</h2>
             <p>
-              Certain products may not be eligible for return, including downloaded digital products, personalized
+              Certain products may not be eligible for return, including digital products, personalized
               or custom-made items, items marked final sale, and products that have been used or damaged after
               delivery. Any exceptions required by applicable law still apply.
             </p>
@@ -108,6 +105,15 @@ export default function ReturnPolicyPage() {
             <p>
               If you need to cancel an order, contact us as soon as possible. Orders that have already entered
               production, been shipped, personalized, or digitally delivered may not be eligible for cancellation.
+            </p>
+          </article>
+
+          <article className="details-card" id="amazon-orders">
+            <h2>Orders placed through Amazon</h2>
+            <p>
+              Purchases made through Amazon are subject to Amazon&apos;s applicable return and refund process.
+              Please use your Amazon order history or Amazon Customer Service to request a return or refund for
+              those orders.
             </p>
           </article>
         </div>
