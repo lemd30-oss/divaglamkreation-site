@@ -350,7 +350,13 @@ These are live customer-facing destinations defined in `app/home-content.ts`. A 
 
 - Production deploys through **Vercel, from GitHub**. Pushing to `main` triggers a production build automatically.
 - `lemd30-oss/divaglamkreation-site` on branch `main` is the source of truth. A direct Vercel deploy that doesn't match a GitHub commit will be overwritten on the next push.
-- `divaglamkreation-site.vercel.app` is a Vercel-generated deployment URL for this project. **Nothing in this repository confirms what it serves.** It may be a production alias rather than a separate staging environment. Do not describe it as staging, and do not rely on it as a pre-production review surface, until that is confirmed in the Vercel project settings.
+- **Production URLs (confirmed 2026-09-30 from the Vercel alias list for the production deployment):**
+  - Production site: `https://lemd30-oss-divaglamkreation-site.vercel.app`
+  - Custom domain: `https://divaglamkreation.com`
+  - `https://www.divaglamkreation.com` redirects to `divaglamkreation.com`.
+  - All three point at the same production deployment. `lemd30-oss-divaglamkreation-site.vercel.app` is a production alias, not staging.
+- URLs such as `lemd30-oss-divaglamkreation-site-<hash>.vercel.app` are individual deployment instances, and `lemd30-oss-divaglamkreation-git-<branch>-…vercel.app` URLs are branch previews. Do not use either as the canonical site URL.
+- Earlier versions of this file named `divaglamkreation-site.vercel.app` (without the `lemd30-oss-` prefix). Nothing confirms that hostname exists. Use the URLs above.
 - Access to preview deployment URLs depends on the project's deployment protection configuration. Some settings require authentication, some don't. Check the project's protection settings before assuming a preview link can be shared or opened on a phone.
 - Documentation-only commits should include `[skip ci]` in the commit message to avoid an unnecessary production build.
 - Environment variables `UNSPLASH_ACCESS_KEY` and `NOTION_TOKEN` are referenced only by the legacy root `api/` handlers. Do not add, remove, or modify environment variables without approval.
@@ -412,7 +418,7 @@ Tracked, not yet approved. Do not act on these.
 1. Repository cleanup. Done: the Jekyll workflow is removed, and root `.html` files, `style.css`, and `j.s` moved into `legacy/`. Still open: gitignore `tsconfig.tsbuildinfo`, resolve `app/product-links.ts`.
 2. Split `docs/` into `docs/architecture.md`, `docs/content-editing.md`, `docs/commerce-inventory.md`, `docs/deployment.md`, and a dated `docs/decisions/` log.
 3. Stand up `dgk-brand-os`.
-4. Confirm what `divaglamkreation-site.vercel.app` serves and what the deployment protection settings are.
+4. Confirm the deployment protection settings for preview URLs. (What the production alias serves is resolved. See "Deployment safety".)
 5. Audit whether `UNSPLASH_ACCESS_KEY` and `NOTION_TOKEN` are still set in Vercel and whether they can be retired.
 6. Resolve the font gap. The live site renders in Georgia / Times New Roman system serifs. The DGK canonical file in Drive names Playfair Display, Lora, Dancing Script, and Montserrat. Confirm whether the system-serif choice is deliberate (Google Fonts CDN avoidance) before changing anything.
 
@@ -420,4 +426,5 @@ Tracked, not yet approved. Do not act on these.
 
 - 2026-09-30: `/sticker-archive` stays unlinked from the homepage and off the customer journey for now. It is not in the sitemap.
 - 2026-09-30: The blog post `/blog/who-are-you-now` is held until the Oct 26–30 story close. Its sitemap line ships with the page when it goes public.
+- 2026-09-30: Canonical production URL is `https://lemd30-oss-divaglamkreation-site.vercel.app`, with `divaglamkreation.com` as the custom domain.
 - 2026-09-30: The paperback link was removed from the footer. Do not restore it unless Divag confirms the listing is live.
