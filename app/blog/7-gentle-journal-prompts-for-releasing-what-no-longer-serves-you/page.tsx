@@ -100,8 +100,8 @@ export default function GentleReleasePromptsBlogPage() {
           <p className="eyebrow">A Gentle Place to Start</p>
           <h2>Begin with the free 3-Day Pause.</h2>
           <p>
-            Every one of these prompts lives inside the Glow Collection Reset: 7-Day Gentle Reset
-            Journal, coming soon. Until then, the free 3-Day Pause is a gentle place to start —
+            Every one of these prompts lives inside The Gentle Reset, a 7-day digital journal.
+            The free 3-Day Pause is a gentle place to start —
             one grounding thought, one reflection, one small step a day.
           </p>
           <a className="button" href={links.gentleReset}>Grab the Free 3-Day Pause</a>
