@@ -116,10 +116,10 @@ export default function EarnRestBlogPage() {
           <p className="eyebrow">A Gentle Place to Begin</p>
           <h2>Take a quiet reset with DivaglamKreation.</h2>
           <p>
-            The free 3-Day Reset Journal offers a soft, faith-rooted space to pause, reflect, and
+            The free 3-Day Pause offers a soft, faith-rooted space to pause, reflect, and
             return to what matters—one gentle page at a time.
           </p>
-          <a className="button" href={links.gentleReset}>Get the Free 3-Day Reset Journal</a>
+          <a className="button" href={links.gentleReset}>Get the Free 3-Day Pause</a>
         </section>
       </article>
       <SiteFooter />
