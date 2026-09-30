@@ -46,6 +46,7 @@ export function SiteFooter() {
           <a href="/glowlist">Glowlist</a>
           <a href="/contact">Contact</a>
           <a href={links.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href={links.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href={links.contactEmail}>Email</a>
         </div>
       </div>
