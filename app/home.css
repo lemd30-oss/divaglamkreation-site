@@ -319,6 +319,12 @@
   padding-bottom: 0;
 }
 
+.flodesk-inline-wrap {
+  margin-top: 1.5rem;
+  max-width: 760px;
+  width: 100%;
+}
+
 .presentation-glowlist {
   background: var(--blush);
   border: 0;
