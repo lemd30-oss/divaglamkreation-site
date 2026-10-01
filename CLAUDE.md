@@ -425,6 +425,10 @@ Tracked, not yet approved. Do not act on these.
 ## Recorded decisions
 
 - 2026-09-30: `/sticker-archive` stays unlinked from the homepage and off the customer journey for now. It is not in the sitemap.
-- 2026-09-30: The blog post `/blog/who-are-you-now` is held until the Oct 26–30 story close. Its sitemap line ships with the page when it goes public.
+- 2026-10-01: `/blog/who-are-you-now` now exists in production source after PR #40 merged, but it remains intentionally absent from the blog index and sitemap until the Oct 26–30 story close. Do not add those discovery links early.
 - 2026-09-30: Canonical production URL is `https://lemd30-oss-divaglamkreation-site.vercel.app`, with `divaglamkreation.com` as the custom domain.
 - 2026-09-30: The paperback link was removed from the footer. Do not restore it unless Divag confirms the listing is live.
+- 2026-10-01: Homepage Glowlist signup uses Flodesk inline form `6abe85f729e2cfa7a04f5774`; the prior outbound-only signup button was replaced. Footer Connect includes Facebook and Instagram (`https://www.instagram.com/divaglamkreation/`).
+- 2026-10-01: Dragonfly Open Graph image canonical path is `/dgk-dragonfly-pink-charm.jpg`. Production verified 200 `image/jpeg`.
+- 2026-10-01: `/about` is in `sitemap.xml`, and the homepage “Read the full DGK story” link points to `/about`.
+- 2026-10-01: PR #53 / merge commit `fb27400f8ded5a2edab95dee0b658d63ba1b4621` is the current verified production release for the homepage Flodesk embed.
