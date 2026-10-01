@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Script from 'next/script';
 
 import { ProductCard } from './components/ProductCard';
 import { SiteFooter } from './components/SiteFooter';
@@ -142,8 +143,16 @@ export default function Home() {
           <p className="script-accent">Stay close to the glow</p>
           <h2>Your reset doesn’t have to end here.</h2>
           <p>Letters from me, a prompt for the week, and first look at new journals.</p>
-          <div className="hero-actions">
-            <a className="button" href={links.gumroadSubscribe} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
+          <div className="flodesk-inline-wrap">
+            <div id="fd-form-6abe85f729e2cfa7a04f5774" />
+            <Script
+              id="flodesk-glowlist-form"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html:
+                  "window.fd('form', { formId: '6abe85f729e2cfa7a04f5774', containerEl: '#fd-form-6abe85f729e2cfa7a04f5774' });",
+              }}
+            />
           </div>
         </div>
       </section>
