@@ -25,11 +25,11 @@ const greatVibes = Great_Vibes({
 export const metadata: Metadata = {
   metadataBase: new URL('https://divaglamkreation.com'),
   title: {
-    default: 'DivaglamKreation | Faith-rooted journals and gentle resets',
+    default: 'DivaglamKreation | Who are you?',
     template: '%s | DivaglamKreation',
   },
   description:
-    'Faith-rooted journals, gentle gifts, and quiet encouragement made to help women pause, reflect, and begin softly.',
+    'A quiet invitation to pause, reflect, and remember that you matter. Faith-rooted journals, gentle reminders, and meaningful pieces for the woman you are becoming.',
   applicationName: 'DivaglamKreation',
   keywords: ['faith journal', 'printable journal', 'gentle reset', 'self-care journal', 'DivaglamKreation'],
   alternates: { canonical: '/' },
@@ -37,20 +37,21 @@ export const metadata: Metadata = {
     type: 'website',
     url: '/',
     siteName: 'DivaglamKreation',
-    title: 'DivaglamKreation | Faith-rooted journals and gentle resets',
-    description: 'Journals, gentle gifts, and quiet encouragement for women learning to pause and begin softly.',
+    title: 'DivaglamKreation | Who are you?',
+    description:
+      'A quiet invitation to pause, reflect, and remember that you matter. Faith-rooted journals, gentle reminders, and meaningful pieces for the woman you are becoming.',
     images: [
       {
-        url: '/images/gentle-morning-reset-pack.jpg',
-        alt: 'DivaglamKreation gentle reset journal and encouragement',
+        url: '/images/brand/glow-owl.png',
+        alt: 'The DivaglamKreation Glow Owl — know HOO you are',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DivaglamKreation',
-    description: 'Faith-rooted journals, gentle gifts, and quiet encouragement.',
-    images: ['/images/gentle-morning-reset-pack.jpg'],
+    title: 'DivaglamKreation | Who are you?',
+    description: 'A quiet invitation to pause, reflect, and remember that you matter.',
+    images: ['/images/brand/glow-owl.png'],
   },
   robots: { index: true, follow: true },
 };
