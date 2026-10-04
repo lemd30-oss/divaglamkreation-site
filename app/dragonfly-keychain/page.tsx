@@ -41,7 +41,7 @@ export default function DragonflyKeychainPage() {
 
           <div className="hero-actions" style={{ marginTop: '1.25rem' }}>
             <a className="button" href={orderUrl}>
-              Choose Pink or Blue
+              Buy now
             </a>
           </div>
 
