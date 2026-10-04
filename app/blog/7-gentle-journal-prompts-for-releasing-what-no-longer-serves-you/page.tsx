@@ -1,13 +1,9 @@
+import { pageMetadata } from '../../metadata';
 import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
 import { links } from '../../home-content';
 
-export const metadata = {
-  title: '7 Gentle Journal Prompts for Letting Go',
-  description:
-    'Seven gentle, faith-rooted journal prompts to help you release guilt, pressure, and what was never yours to carry one quiet step at a time.',
-  alternates: { canonical: '/blog/7-gentle-journal-prompts-for-releasing-what-no-longer-serves-you' },
-};
+export const metadata = pageMetadata("7 Gentle Journal Prompts for Letting Go", "Seven gentle, faith-rooted journal prompts to help you release guilt, pressure, and what was never yours to carry one quiet step at a time.", "/blog/7-gentle-journal-prompts-for-releasing-what-no-longer-serves-you", "/images/blog/gentle-reset-blog-cover.png");
 
 const prompts = [
   {

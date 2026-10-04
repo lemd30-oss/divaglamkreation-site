@@ -1,14 +1,10 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '../metadata';
 
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 import './sticker-archive.css';
 
-export const metadata: Metadata = {
-  title: 'Sticker Archive | DivaglamKreation',
-  description:
-    'Explore archived DivaglamKreation sticker designs from earlier collections and color palettes. These designs are preserved as part of the DGK creative story and are separate from the current collection.',
-};
+export const metadata = pageMetadata('Sticker Archive', 'Archived DivaglamKreation sticker designs from earlier collections and palettes, preserved as part of the DGK creative story.', '/sticker-archive');
 
 const archivedCollections = [
   {

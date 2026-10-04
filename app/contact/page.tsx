@@ -1,13 +1,9 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '../metadata';
 
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Contact DivaglamKreation for friendly help with digital downloads, physical orders, product questions, order concerns, and general customer support.',
-  alternates: { canonical: '/contact' },
-};
+export const metadata = pageMetadata("Contact", "Contact DivaglamKreation for friendly help with digital downloads, physical orders, product questions, order concerns, and general customer support.", "/contact", "/images/brand/glow-owl.png");
 
 export default function ContactPage() {
   return (

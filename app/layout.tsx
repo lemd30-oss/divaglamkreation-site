@@ -25,7 +25,7 @@ const greatVibes = Great_Vibes({
 export const metadata: Metadata = {
   metadataBase: new URL('https://divaglamkreation.com'),
   title: {
-    default: 'DivaglamKreation | Who are you?',
+    default: 'DivaglamKreation | Faith-Rooted Journals for Rest, Reflection & Renewal',
     template: '%s | DivaglamKreation',
   },
   description:
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: '/',
     siteName: 'DivaglamKreation',
-    title: 'DivaglamKreation | Who are you?',
+    title: 'DivaglamKreation | Faith-Rooted Journals for Rest, Reflection & Renewal',
     description:
       'A quiet invitation to pause, reflect, and remember that you matter. Faith-rooted journals, gentle reminders, and meaningful pieces for the woman you are becoming.',
     images: [
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DivaglamKreation | Who are you?',
+    title: 'DivaglamKreation | Faith-Rooted Journals for Rest, Reflection & Renewal',
     description: 'A quiet invitation to pause, reflect, and remember that you matter.',
     images: ['/images/brand/glow-owl.png'],
   },

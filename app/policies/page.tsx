@@ -1,11 +1,8 @@
+import { pageMetadata } from '../metadata';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-export const metadata = {
-  title: 'Policies',
-  description: 'Read DivaglamKreation policies for digital downloads, physical orders, shipping, refunds, privacy, customer support, and personal-use product terms.',
-  alternates: { canonical: '/policies' },
-};
+export const metadata = pageMetadata("Policies", "Read DivaglamKreation policies for digital downloads, physical orders, shipping, refunds, privacy, customer support, and personal-use product terms.", "/policies", "/images/brand/glow-owl.png");
 
 export default function PoliciesPage() {
   return (

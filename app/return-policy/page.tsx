@@ -1,19 +1,8 @@
+import { pageMetadata } from '../metadata';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-export const metadata = {
-  title: 'Return & Refund Policy',
-  description: 'Read the DivaglamKreation return and refund policy for digital downloads, eligible physical products, damaged orders, cancellations, and replacements.',
-  alternates: { canonical: '/return-policy' },
-  openGraph: {
-    type: 'website',
-    url: '/return-policy',
-    siteName: 'DivaglamKreation',
-    title: 'Return & Refund Policy | DivaglamKreation',
-    description: 'Return and refund guidance for DivaglamKreation digital downloads, physical products, damaged orders, cancellations, and replacements.',
-    images: [{ url: '/images/gentle-morning-reset-pack.jpg', alt: 'DivaglamKreation customer care and product support' }],
-  },
-};
+export const metadata = pageMetadata("Return & Refund Policy", "Read the DivaglamKreation return and refund policy for digital downloads, eligible physical products, damaged orders, cancellations, and replacements.", "/return-policy", "/images/brand/glow-owl.png");
 
 export default function ReturnPolicyPage() {
   return (
