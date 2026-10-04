@@ -5,7 +5,7 @@ import { SiteHeader } from '../components/SiteHeader';
 export const metadata = pageMetadata("Dragonfly Reminder Charm", "A sparkling gold-tone dragonfly reminder charm available in Pink or Blue. A giftable DGK symbol of growth, light, and gentle transformation.", "/dragonfly-keychain", "/dgk-dragonfly-pink-charm.jpg");
 
 const orderUrl =
-  'https://a85da190-df2c-44b8-9510-5fb19ca1b186.paylinks.godaddy.com/p/8ff7cff0-6da6-4ac1-a31b-c70fd941358e';
+  'https://690b9a8f-6eb8-4276-ad96-e5f244ae0b02.paylinks.godaddy.com/daeffdea-5d25-4881-9c9d-fd8';
 const pinkImageUrl = '/images/dgk-dragonfly-pink-website.jpg';
 
 export default function DragonflyKeychainPage() {
@@ -36,7 +36,7 @@ export default function DragonflyKeychainPage() {
           </p>
 
           <p className="trust-note" style={{ marginTop: '0.65rem' }}>
-            Available in Pink or Blue. Choose your color at checkout.
+            Available in Pink or Blue. Enter your color choice in Notes at checkout and complete your shipping address.
           </p>
 
           <div className="hero-actions" style={{ marginTop: '1.25rem' }}>
