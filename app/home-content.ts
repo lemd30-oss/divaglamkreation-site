@@ -25,6 +25,7 @@ export const links = {
   dragonflyKeychain: '/dragonfly-keychain',
   facebook: 'https://www.facebook.com/share/1G9VQrJnaZ/',
   instagram: 'https://www.instagram.com/divaglamkreation/',
+  pinterest: 'https://www.pinterest.com/Lemd3012/',
 } as const;
 
 export const images = {
@@ -74,8 +75,8 @@ export const products: Product[] = [
     image: '/images/reflections-hardcover-cover.jpg',
     imageAlt: 'Reflections hardcover journal cover with the Glow Owl, Rest · Reset · Renewal',
     href: links.reflectionsHardcover,
-    priceLabel: 'Hardcover',
-    buttonLabel: 'Choose the Hardcover',
+    priceLabel: 'Hardcover · See current price on Amazon',
+    buttonLabel: 'Buy on Amazon',
     external: true,
     imageFit: 'contain',
   },

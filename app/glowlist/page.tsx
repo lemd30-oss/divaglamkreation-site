@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '../metadata';
 
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
@@ -7,11 +7,7 @@ import { links } from '../home-content';
 const glowlistSignupUrl = links.gumroadSubscribe;
 const freeResetUrl = links.gentleReset;
 
-export const metadata: Metadata = {
-  title: 'Join the DGK Glowlist',
-  description: 'Join the DGK Glowlist for faith-rooted notes, journaling prompts, product news, and gentle encouragement.',
-  alternates: { canonical: '/glowlist' },
-};
+export const metadata = pageMetadata("Join the DGK Glowlist", "Join the DGK Glowlist for faith-rooted notes, journaling prompts, product news, and gentle encouragement.", "/glowlist", "/images/brand/glow-owl.png");
 
 const glowlistNotes = [
   'Faith-rooted encouragement',

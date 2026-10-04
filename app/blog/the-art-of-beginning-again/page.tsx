@@ -1,36 +1,9 @@
+import { pageMetadata } from '../../metadata';
 import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
 import { links } from '../../home-content';
 
-export const metadata = {
-  title: 'The Art of Beginning Again',
-  description:
-    'You don’t have to overhaul your life to begin again. Discover a gentle, faith-rooted way to start fresh right where you are.',
-  alternates: {
-    canonical: '/blog/the-art-of-beginning-again',
-  },
-  openGraph: {
-    type: 'article',
-    url: '/blog/the-art-of-beginning-again',
-    title: 'The Art of Beginning Again | DivaglamKreation',
-    description:
-      'A gentle, faith-rooted reflection on beginning again without pressure, perfection, or starting from nothing.',
-    siteName: 'DivaglamKreation',
-    images: [
-      {
-        url: '/images/gentle-morning-reset-pack.jpg',
-        alt: 'DivaglamKreation journal notes and gentle reset encouragement',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'The Art of Beginning Again | DivaglamKreation',
-    description:
-      'A gentle, faith-rooted reflection on beginning again without pressure, perfection, or starting from nothing.',
-    images: ['/images/gentle-morning-reset-pack.jpg'],
-  },
-};
+export const metadata = pageMetadata("The Art of Beginning Again", "You don’t have to overhaul your life to begin again. Discover a gentle, faith-rooted way to start fresh right where you are.", "/blog/the-art-of-beginning-again", "/images/brand/glow-owl.png");
 
 export default function BeginningAgainBlogPage() {
   return (

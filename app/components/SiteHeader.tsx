@@ -19,6 +19,7 @@ export function SiteHeader() {
             alt=""
             width={799}
             height={213}
+            sizes="240px"
             priority
           />
           <Image
@@ -27,6 +28,7 @@ export function SiteHeader() {
             alt=""
             width={607}
             height={506}
+            sizes="72px"
             priority
           />
         </a>

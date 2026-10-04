@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '../metadata';
 
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
@@ -8,30 +8,7 @@ import '../editorial-refresh.css';
 const aboutDescription =
   'The story behind DivaglamKreation: faith, creativity, reflection, the Glow Owl, and the reminder that every woman matters.';
 
-export const metadata: Metadata = {
-  title: 'About',
-  description: aboutDescription,
-  alternates: { canonical: '/about' },
-  openGraph: {
-    title: 'About DivaglamKreation | Who are you?',
-    description: aboutDescription,
-    url: 'https://divaglamkreation.com/about',
-    siteName: 'DivaglamKreation',
-    type: 'website',
-    images: [
-      {
-        url: 'https://divaglamkreation.com/images/gentle-morning-reset-pack.jpg',
-        alt: 'DivaglamKreation — faith, creativity, reflection, and the Glow Owl story',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'About DivaglamKreation | Who are you?',
-    description: aboutDescription,
-    images: ['https://divaglamkreation.com/images/gentle-morning-reset-pack.jpg'],
-  },
-};
+export const metadata = pageMetadata('About', aboutDescription, '/about');
 
 export default function AboutPage() {
   return (

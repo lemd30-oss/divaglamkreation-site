@@ -1,12 +1,8 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '../metadata';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-export const metadata: Metadata = {
-  title: 'Journal Notes',
-  description: 'Faith-rooted reflections, journaling encouragement, and quiet reminders from DivaglamKreation.',
-  alternates: { canonical: '/blog' },
-};
+export const metadata = pageMetadata("Journal Notes", "Faith-rooted reflections, journaling encouragement, and quiet reminders from DivaglamKreation.", "/blog", "/images/brand/glow-owl.png");
 
 const posts = [
   {
@@ -61,7 +57,7 @@ export default function BlogPage() {
               <p className="eyebrow">From the Blog</p>
               <h2>{post.title}</h2>
               <p>{post.description}</p>
-              <a className="button secondary" href={post.href}>Read the Note</a>
+              <a className="button secondary" href={post.href} aria-label={`Read the note: ${post.title}`}>Read the Note</a>
             </article>
           ))}
         </div>

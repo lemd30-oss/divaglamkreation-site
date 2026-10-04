@@ -1,22 +1,9 @@
+import { pageMetadata } from '../../metadata';
 import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
 import { links } from '../../home-content';
 
-export const metadata = {
-  title: 'Who Are You Now?',
-  description:
-    'Before there was a brand, there was a woman becoming. A quiet reflection on where you began, who you are now, and who you are still becoming.',
-  alternates: { canonical: '/blog/who-are-you-now' },
-  openGraph: {
-    type: 'article',
-    url: '/blog/who-are-you-now',
-    siteName: 'DivaglamKreation',
-    title: 'Who Are You Now?',
-    description:
-      'Before there was a brand, there was a woman becoming. A quiet reflection on where you began, who you are now, and who you are still becoming.',
-    images: [{ url: '/images/gentle-morning-reset-pack.jpg', alt: 'A quiet reflection on becoming from DivaglamKreation' }],
-  },
-};
+export const metadata = pageMetadata("Who Are You Now?", "Before there was a brand, there was a woman becoming. A quiet reflection on where you began, who you are now, and who you are still becoming.", "/blog/who-are-you-now", "/images/brand/glow-owl.png");
 
 export default function WhoAreYouNowBlogPage() {
   return (

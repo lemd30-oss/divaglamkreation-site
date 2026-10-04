@@ -1,5 +1,4 @@
-'use client';
-
+import { pageMetadata } from './metadata';
 import Image from 'next/image';
 import Script from 'next/script';
 
@@ -10,6 +9,8 @@ import { blogPosts, images, links, products } from './home-content';
 import './home.css';
 import './editorial-refresh.css';
 
+export const metadata = pageMetadata('DivaglamKreation | Faith-Rooted Journals for Rest, Reflection & Renewal', 'Faith-rooted journals and meaningful gifts for rest, reflection, and renewal. Begin with a quiet pause and remember that every woman matters.', '/');
+
 export default function Home() {
   return (
     <main className="site-shell" id="main-content">
@@ -17,7 +18,7 @@ export default function Home() {
 
       <section className="hero hero-home presentation-hero" id="top">
         <div className="hero-copy hero-copy-home">
-          <Image className="hero-owl" src="/images/brand/glow-owl.png" alt="" width={855} height={1186} sizes="64px" priority />
+          <Image className="hero-owl" src="/images/brand/glow-owl.png" alt="DivaglamKreation Glow Owl logo" width={855} height={1186} sizes="64px" priority />
           <h1 className="statement-hero">Who are you<span className="gold-period">?</span></h1>
           <p className="hero-lede">
             A quiet invitation to pause, reflect, and remember that you matter.
@@ -65,7 +66,7 @@ export default function Home() {
             <span className="journey-number">Step 2 · Go deeper</span>
             <h3>The Gentle Reset</h3>
             <p>Seven days, when you’re ready for more room.</p>
-            <a className="text-link" href="#glow-reset">Continue into 7 days →</a>
+            <a className="text-link" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Continue into 7 days →</a>
           </article>
         </div>
       </section>
@@ -132,7 +133,7 @@ export default function Home() {
               <span className="journey-number">0{index + 1}</span>
               <h3>{post.title}</h3>
               <p>{post.description}</p>
-              <a className="text-link" href={post.href}>Read the note →</a>
+              <a className="text-link" href={post.href} aria-label={`Read the note: ${post.title}`}>Read the note →</a>
             </article>
           ))}
         </div>

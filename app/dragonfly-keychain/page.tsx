@@ -1,12 +1,8 @@
+import { pageMetadata } from '../metadata';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-export const metadata = {
-  title: 'Dragonfly Reminder Charm',
-  description:
-    'A sparkling gold-tone dragonfly reminder charm available in Pink or Blue. A giftable DGK symbol of growth, light, and gentle transformation.',
-  alternates: { canonical: '/dragonfly-keychain' },
-};
+export const metadata = pageMetadata("Dragonfly Reminder Charm", "A sparkling gold-tone dragonfly reminder charm available in Pink or Blue. A giftable DGK symbol of growth, light, and gentle transformation.", "/dragonfly-keychain", "/dgk-dragonfly-pink-charm.jpg");
 
 const orderUrl =
   'https://a85da190-df2c-44b8-9510-5fb19ca1b186.paylinks.godaddy.com/p/8ff7cff0-6da6-4ac1-a31b-c70fd941358e';
@@ -50,6 +46,7 @@ export default function DragonflyKeychainPage() {
           </div>
 
           <p className="trust-note">A small reminder, ready when you are.</p>
+          <p className="trust-note">Physical item · Secure checkout via GoDaddy Payments · Packed and shipped by DivaglamKreation.</p>
         </div>
 
         <aside className="hero-card" aria-label="Pink Dragonfly Reminder Charm product photo">

@@ -1,13 +1,9 @@
+import { pageMetadata } from '../../metadata';
 import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
 import { links } from '../../home-content';
 
-export const metadata = {
-  title: 'A Gentle August Reset',
-  description:
-    'A soft, faith-rooted August reflection for slowing down, making room to breathe, and returning to peace one gentle step at a time.',
-  alternates: { canonical: '/blog/gentle-august-reset' },
-};
+export const metadata = pageMetadata("A Gentle August Reset", "A soft, faith-rooted August reflection for slowing down, making room to breathe, and returning to peace one gentle step at a time.", "/blog/gentle-august-reset", "/images/brand/glow-owl.png");
 
 export default function GentleAugustResetBlogPage() {
   return (
