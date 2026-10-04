@@ -72,9 +72,9 @@ PASS: origin story, Glow Owl, Who are you?, Every woman matters, faith, reflecti
 - `public/images/the-gentle-reset-book-cover.png`
 - `docs/2026-10-04-audit-fixes.md` — this review and verification record.
 
-## Next step
+## Remaining verification
 
-Publish the Amazon price follow-up under the user’s instruction to complete all website tasks. Mobile visual testing and a real newsletter delivery test remain unverified; no approved customer testimonials were found.
+The Amazon price follow-up is published. Mobile visual testing and a real newsletter delivery test remain unverified; no approved customer testimonials were found.
 
 ## PR review correction
 
@@ -85,6 +85,6 @@ The automated review identified an existing invalid blog image: public/images/bl
 - Gumroad digital journal purchase control opens checkout with the correct journal, buyer fields, and payment form. No paid order placed. Currency/tax may vary by buyer location.
 - Free journal storefront has a $0 minimum and checkout link.
 - Morning pack storefront renders the correct product and buy control.
-- GoDaddy charm checkout renders $9.99, Pink/Blue choices, order summary, and payment form. No payment submitted.
+- The user supplied a replacement GoDaddy charm checkout. It renders Dragonfly Charm at $9.99, a Notes field for Pink/Blue, billing address fields, and a Shipping Address section. Turning off “Same as billing address” reveals separate street, city, state, and ZIP fields. The product page links to this checkout and tells customers to enter their color in Notes. Notes is not marked required in the rendered HTML; no payment submitted.
 - Only public rating found for the free journal is attributed to the brand owner; it is not used as an independent customer testimonial.
 - Phone viewport emulation is unavailable in the connected browser API. Responsive CSS inspected; mobile visual testing is not represented as passed.
