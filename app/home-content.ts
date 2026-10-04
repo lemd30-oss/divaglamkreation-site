@@ -75,7 +75,7 @@ export const products: Product[] = [
     image: '/images/reflections-hardcover-cover.jpg',
     imageAlt: 'Reflections hardcover journal cover with the Glow Owl, Rest · Reset · Renewal',
     href: links.reflectionsHardcover,
-    priceLabel: 'Hardcover · See current price on Amazon',
+    priceLabel: 'From $29.99 · Hardcover on Amazon',
     buttonLabel: 'Buy on Amazon',
     external: true,
     imageFit: 'contain',
