@@ -1,6 +1,6 @@
 # October 4, 2026 website audit fixes
 
-Status: local changes ready for review; not committed, pushed, or deployed.
+Status: changes committed to PR #58; Vercel preview build passed. Production merge remains pending approval.
 The supplied prompts are the audit input. AUDIT.md was not present in the repository.
 
 ## Findings and changes
@@ -33,7 +33,7 @@ New routes: /products/the-3-day-pause, /products/gentle-morning-reset-pack, /pro
 - Existing GoDaddy checkout returned 200; complete paid checkout was not performed.
 - Pinterest returned 200 with DivaglamKreation profile title.
 - Live browser verified collection CTA and Flodesk fields/Subscribe button rendering. No newsletter signup submitted.
-- Cloud browser blocks localhost (ERR_BLOCKED_BY_CLIENT): new-page desktop/mobile visual checks remain for a hosted preview.
+- Connected Vercel access verified all four deployed product pages, titles, checkout anchors, sitemap entries, and blog aria-labels. Hosted desktop preview verified the Gentle Reset layout and expanding FAQ. Mobile visual checks remain pending.
 - Amazon price/listing verification remains incomplete. Do not treat its URL as a newly verified live listing.
 - Existing Next.js warning: unsupported swcMinify setting. This predates the patch and does not fail the build.
 
@@ -74,4 +74,8 @@ PASS: origin story, Glow Owl, Who are you?, Every woman matters, faith, reflecti
 
 ## Next step
 
-Review the working tree, then authorize a commit and review PR. Verify desktop/mobile and checkout destinations on the hosted preview before production. CLAUDE.md requires explicit approval before externally persistent GitHub/Vercel actions.
+Review PR #58, then authorize its merge. Verify desktop/mobile and checkout destinations on the hosted preview before production. CLAUDE.md requires explicit approval before externally persistent GitHub/Vercel actions.
+
+## PR review correction
+
+The automated review identified an existing invalid blog image: public/images/blog/gentle-reset-blog-cover.png contains base64 text, not PNG bytes. Blog sharing tags now use the verified binary Glow Owl PNG. The alternate gentle-morning-reset-pack.jpg placeholder is also invalid and is not used for these tags. Image decoding verifies the replacement and all sharing-image assets used by this PR.

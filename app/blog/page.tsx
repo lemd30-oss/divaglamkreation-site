@@ -2,7 +2,7 @@ import { pageMetadata } from '../metadata';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-export const metadata = pageMetadata("Journal Notes", "Faith-rooted reflections, journaling encouragement, and quiet reminders from DivaglamKreation.", "/blog", "/images/blog/gentle-reset-blog-cover.png");
+export const metadata = pageMetadata("Journal Notes", "Faith-rooted reflections, journaling encouragement, and quiet reminders from DivaglamKreation.", "/blog", "/images/brand/glow-owl.png");
 
 const posts = [
   {

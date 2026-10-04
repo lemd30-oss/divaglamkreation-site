@@ -3,7 +3,7 @@ import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
 import { links } from '../../home-content';
 
-export const metadata = pageMetadata("A Gentle August Reset", "A soft, faith-rooted August reflection for slowing down, making room to breathe, and returning to peace one gentle step at a time.", "/blog/gentle-august-reset", "/images/blog/gentle-reset-blog-cover.png");
+export const metadata = pageMetadata("A Gentle August Reset", "A soft, faith-rooted August reflection for slowing down, making room to breathe, and returning to peace one gentle step at a time.", "/blog/gentle-august-reset", "/images/brand/glow-owl.png");
 
 export default function GentleAugustResetBlogPage() {
   return (

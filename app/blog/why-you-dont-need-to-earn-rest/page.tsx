@@ -3,7 +3,7 @@ import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
 import { links } from '../../home-content';
 
-export const metadata = pageMetadata("Why You Don't Need to Earn Rest", "A gentle, faith-rooted reminder that rest is not a reward for exhaustion. Pause, release guilt, and begin again with grace.", "/blog/why-you-dont-need-to-earn-rest", "/images/blog/gentle-reset-blog-cover.png");
+export const metadata = pageMetadata("Why You Don't Need to Earn Rest", "A gentle, faith-rooted reminder that rest is not a reward for exhaustion. Pause, release guilt, and begin again with grace.", "/blog/why-you-dont-need-to-earn-rest", "/images/brand/glow-owl.png");
 
 export default function EarnRestBlogPage() {
   return (

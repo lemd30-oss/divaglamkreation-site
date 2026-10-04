@@ -3,7 +3,7 @@ import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
 import { links } from '../../home-content';
 
-export const metadata = pageMetadata("The Art of Beginning Again", "You don’t have to overhaul your life to begin again. Discover a gentle, faith-rooted way to start fresh right where you are.", "/blog/the-art-of-beginning-again", "/images/blog/gentle-reset-blog-cover.png");
+export const metadata = pageMetadata("The Art of Beginning Again", "You don’t have to overhaul your life to begin again. Discover a gentle, faith-rooted way to start fresh right where you are.", "/blog/the-art-of-beginning-again", "/images/brand/glow-owl.png");
 
 export default function BeginningAgainBlogPage() {
   return (

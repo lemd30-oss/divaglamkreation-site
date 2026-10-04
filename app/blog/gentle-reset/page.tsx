@@ -3,7 +3,7 @@ import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
 import { links } from '../../home-content';
 
-export const metadata = pageMetadata("A Gentle Sunday Reset", "A gentle Sunday reset for women who feel tired, depleted, and ready to return to rest, reflection, and faith-rooted renewal.", "/blog/gentle-reset", "/images/blog/gentle-reset-blog-cover.png");
+export const metadata = pageMetadata("A Gentle Sunday Reset", "A gentle Sunday reset for women who feel tired, depleted, and ready to return to rest, reflection, and faith-rooted renewal.", "/blog/gentle-reset", "/images/brand/glow-owl.png");
 
 export default function GentleResetBlogPage() {
   return (
