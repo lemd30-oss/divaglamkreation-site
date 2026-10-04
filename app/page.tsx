@@ -25,7 +25,7 @@ export default function Home() {
             Faith-rooted journals, gentle reminders, and meaningful pieces for the woman you are becoming.
           </p>
           <div className="hero-actions">
-            <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">
+            <a className="button" href="#collection">
               Begin The 3-Day Pause
             </a>
             <a className="button secondary" href="#shop">Explore DGK</a>
@@ -107,6 +107,7 @@ export default function Home() {
       </section>
 
       <section className="section shop-section" id="shop">
+        <span id="collection" aria-hidden="true" />
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">The Collection</p>
@@ -116,7 +117,7 @@ export default function Home() {
         </div>
         <p className="shop-trust">Instant digital delivery · Secure checkout · Thoughtfully created by DivaglamKreation</p>
         <div className="product-grid shop-grid">
-          {products.filter((product) => product.title !== '7-Day Gentle Reset Journal').map((product) => <ProductCard product={product} key={product.title} />)}
+          {products.filter((product) => product.title !== '7-Day Gentle Reset Journal').map((product) => <ProductCard product={product} key={product.title} price={product.title === 'Reflections' ? product.priceLabel : undefined} amazonUrl={product.title === 'Reflections' ? links.reflectionsHardcover : undefined} />)}
         </div>
       </section>
 
