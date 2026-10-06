@@ -65,9 +65,9 @@ export default function BeginningAgainBlogPage() {
         </section>
         <section className="blog-soft-cta">
           <p className="eyebrow">A Gentle Place to Start</p>
-          <h2>Begin your free 3-Day Pause.</h2>
+          <h2>Begin your free 3-Day Mini Reset Journal.</h2>
           <p>Three days of grounding reflections, gentle journal prompts, and simple steps to help you pause and return to yourself—without pressure, streaks, or hustle.</p>
-          <a className="button" href={links.gentleReset}>Begin Your Free 3-Day Pause</a>
+          <a className="button" href={links.gentleReset}>Begin Your Free 3-Day Mini Reset Journal</a>
         </section>
       </article>
       <SiteFooter />
