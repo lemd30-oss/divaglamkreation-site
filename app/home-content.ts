@@ -35,13 +35,13 @@ export const images = {
 
 export const products: Product[] = [
   {
-    title: 'The 3-Day Pause',
-    description: 'Free. Three days of short prompts to slow down and begin again.',
+    title: '3-Day Mini Reset Journal',
+    description: 'Free. Three days of faith-rooted reflection prompts to pause, pray, and begin again.',
     image: '/images/file_000000007a0481f59f22529a564a90af.png',
-    imageAlt: 'Open The 3-Day Pause journal beside a pinecone and neutral stationery',
+    imageAlt: 'Open 3-Day Mini Reset Journal journal beside a pinecone and neutral stationery',
     href: links.gentleReset,
     priceLabel: 'Free · Digital journal',
-    buttonLabel: 'Begin The 3-Day Pause',
+    buttonLabel: 'Get the Free 3-Day Mini Reset Journal',
     external: true,
     stepLabel: 'Step 1 · Free',
   },
