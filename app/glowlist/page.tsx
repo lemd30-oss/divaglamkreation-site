@@ -28,7 +28,7 @@ export default function GlowlistPage() {
           <p>Receive faith-rooted notes, prompts, and product updates from DivaglamKreation.</p>
           <div className="hero-actions">
             <a className="button" href={glowlistSignupUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
-            <a className="button secondary" href={freeResetUrl} target="_blank" rel="noopener noreferrer">Get The 3-Day Pause</a>
+            <a className="button secondary" href={freeResetUrl} target="_blank" rel="noopener noreferrer">Get the Free 3-Day Mini Reset Journal</a>
           </div>
         </div>
 
