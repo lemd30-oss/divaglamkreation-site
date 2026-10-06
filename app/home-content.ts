@@ -38,7 +38,7 @@ export const products: Product[] = [
     title: '3-Day Mini Reset Journal',
     description: 'Free. Three days of faith-rooted reflection prompts to pause, pray, and begin again.',
     image: '/images/file_000000007a0481f59f22529a564a90af.png',
-    imageAlt: 'Open 3-Day Mini Reset Journal journal beside a pinecone and neutral stationery',
+    imageAlt: 'Open 3-Day Mini Reset Journal beside a pinecone and neutral stationery',
     href: links.gentleReset,
     priceLabel: 'Free · Digital journal',
     buttonLabel: 'Get the Free 3-Day Mini Reset Journal',
