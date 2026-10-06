@@ -8,7 +8,7 @@ type ProductCardProps = {
 
 export function ProductCard({ product, price, amazonUrl }: ProductCardProps) {
   const external = Boolean(amazonUrl) || product.external;
-  const detailPaths: Record<string, string> = { 'The 3-Day Pause': '/products/the-3-day-pause', 'Gentle Morning Reset Pack': '/products/gentle-morning-reset-pack', 'The Gentle Reset': '/products/the-gentle-reset', 'Reflections': '/products/reflections' };
+  const detailPaths: Record<string, string> = { '3-Day Mini Reset Journal': '/products/the-3-day-pause', 'Gentle Morning Reset Pack': '/products/gentle-morning-reset-pack', 'The Gentle Reset': '/products/the-gentle-reset', 'Reflections': '/products/reflections' };
   const isBookCover = product.imageFit === 'contain' || product.title.toLowerCase().includes('paperback');
 
   return (
