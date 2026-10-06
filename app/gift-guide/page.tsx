@@ -27,14 +27,13 @@ export default function GiftGuidePage() {
 
       <section className="hero hero-home presentation-hero">
         <div className="hero-copy hero-copy-home">
-          <p className="eyebrow">Faith. Flow. Flourish.</p>
-          <h1 className="statement-hero">A Gentle Guide to Giving</h1>
+          <h1 className="statement-hero">Faith. Flow. Flourish.</h1>
+          <p className="script-accent" style={{ fontSize: '1.8rem', color: 'var(--dgk-plum)' }}>A Gentle Guide to Giving</p>
           <p className="hero-lede">
             Some gifts say &quot;I love you.&quot; These say something quieter: I see you. Slow down with me.
           </p>
           <p className="hero-lede">
             Every gift below was created to help a woman pause, breathe, and remember she matters —
-            with faith-rooted pages and meaningful keepsakes made for the life she is living.
           </p>
         </div>
         <aside className="presentation-panel" style={{ alignSelf: 'stretch', padding: '2rem' }}>
