@@ -110,10 +110,10 @@ export default function WhoAreYouNowBlogPage() {
           <p className="eyebrow">A Gentle Place to Begin</p>
           <h2>Take three quiet days to answer it.</h2>
           <p>
-            The free 3-Day Pause offers short, faith-rooted prompts to slow down, reflect, and
+            The free 3-Day Mini Reset Journal offers short, faith-rooted prompts to slow down, reflect, and
             begin again, one gentle page at a time.
           </p>
-          <a className="button" href={links.gentleReset}>Begin The 3-Day Pause</a>
+          <a className="button" href={links.gentleReset}>Get the Free 3-Day Mini Reset Journal</a>
         </section>
       </article>
       <SiteFooter />
