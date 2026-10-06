@@ -36,7 +36,7 @@ export function SiteFooter() {
 
         <div className="footer-column">
           <p className="footer-heading">Shop</p>
-          <a href={links.gentleReset} target="_blank" rel="noopener noreferrer">The 3-Day Pause</a>
+          <a href={links.gentleReset} target="_blank" rel="noopener noreferrer">3-Day Mini Reset Journal</a>
           <a href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">The Gentle Reset Digital</a>
           <a href={links.dragonflyKeychain}>Dragonfly Charm</a>
         </div>
