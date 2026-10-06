@@ -26,7 +26,7 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a className="button" href="#collection">
-              Begin The 3-Day Pause
+              Get the Free 3-Day Mini Reset Journal
             </a>
             <a className="button secondary" href="#shop">Explore DGK</a>
           </div>
@@ -58,9 +58,9 @@ export default function Home() {
         <div className="journey-grid journey-grid-two">
           <article className="journey-card">
             <span className="journey-number">Step 1 · Free</span>
-            <h3>The 3-Day Pause</h3>
+            <h3>3-Day Mini Reset Journal</h3>
             <p>Short daily prompts to slow down and hear yourself again.</p>
-            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Begin The 3-Day Pause →</a>
+            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Get the Free 3-Day Mini Reset Journal →</a>
           </article>
           <article className="journey-card">
             <span className="journey-number">Step 2 · Go deeper</span>
