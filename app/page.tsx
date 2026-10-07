@@ -29,6 +29,7 @@ export default function Home() {
               Get the Free 3-Day Mini Reset Journal
             </a>
             <a className="button secondary" href="#shop">Explore DGK</a>
+            <a className="button gift" href="/gift-guide"><span aria-hidden="true">🎁 </span>Shop the Gift Guide</a>
           </div>
         </div>
 
