@@ -71,7 +71,7 @@ export default function GiftGuidePage() {
 
       <section className="section reset-feature-section" aria-labelledby="keepsake-title">
         <div className="reset-feature-copy" style={{ maxWidth: '860px' }}>
-          <h2 id="keepsake-title">$10–$25</h2>
+          <h2 id="keepsake-title">From $29.99</h2>
           <p className="section-intro"><em>One keepsake, made to last past the season.</em></p>
           <h3>Reflections — Hardcover Journal — From $29.99 (hardcover, via Amazon)</h3>
           <p className="reset-feature-lede">A 144-page hardcover journal with 63 prompts for rest, reset, and renewal, with the Glow Owl beside her through each season. The keepsake gift — the one she&apos;ll still be writing in next year. Order by Amazon&apos;s holiday shipping cutoff; digital gifts above have no cutoff and arrive instantly.</p>
