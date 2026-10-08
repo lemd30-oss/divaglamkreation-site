@@ -94,6 +94,11 @@ export const products: Product[] = [
 
 export const blogPosts = [
   {
+    title: 'I Built This Website Myself — And It Took Me Two Years',
+    description: 'A personal Behind the Glow story about learning by doing, building slowly, and growing alongside DivaglamKreation.',
+    href: '/blog/i-built-my-website-myself',
+  },
+  {
     title: 'How to Begin a Gentle Reset Routine',
     description: 'A soft place to begin when life feels full and you need a quieter rhythm.',
     href: '/blog/gentle-reset',
