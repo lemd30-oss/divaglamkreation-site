@@ -6,6 +6,11 @@ export const metadata = pageMetadata("Journal Notes", "Faith-rooted reflections,
 
 const posts = [
   {
+    title: 'I Built This Website Myself — And It Took Me Two Years',
+    description: 'A personal Behind the Glow story about learning by doing, building slowly, and growing alongside DivaglamKreation.',
+    href: '/blog/i-built-my-website-myself',
+  },
+  {
     title: 'The Art of Beginning Again',
     description: 'Beginning again does not require a dramatic overhaul—only one small, faithful turn toward what matters.',
     href: '/blog/the-art-of-beginning-again',
