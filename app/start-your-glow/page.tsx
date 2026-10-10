@@ -55,6 +55,12 @@ export default function StartYourGlow() {
               <a className="button secondary" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Explore the 7-Day Journal · $9</a>
             </article>}
           </div>
+          <div className="start-glow-paperback">
+            <p className="eyebrow">Prefer a book you can hold?</p>
+            <h3>The Gentle Reset · Paperback Edition</h3>
+            <p>Choose the printed paperback on Amazon if you prefer writing by hand. This is a physical book, separate from the $9 digital PDF.</p>
+            <a className="text-link" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Explore the Paperback on Amazon →</a>
+          </div>
         </section>
         <section className="start-glow-closing"><p>You mattered before anyone was looking.</p><a className="text-link" href="/glowlist">Stay connected with the Glowlist →</a></section>
       </div>
