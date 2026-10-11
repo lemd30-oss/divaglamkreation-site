@@ -75,6 +75,9 @@ export default function AboutPage() {
             even in quiet seasons when no one else is watching.
           </p>
         </div>
+        <p className="story-copy" style={{ marginBottom: '1.5rem' }}>
+          <a className="text-link" href="https://dk12656006.substack.com/p/it-started-with-this-owl" target="_blank" rel="noopener noreferrer">Read the story behind the owl →</a>
+        </p>
         <div className="journey-grid">
           <article className="journey-card">
             <span className="journey-number">01</span>
