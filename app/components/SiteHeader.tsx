@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-export function SiteHeader() {
+export function SiteHeader({ glowlistSignupUrl }: { glowlistSignupUrl?: string } = {}) {
   const [open, setOpen] = useState(false);
 
   const closeMenu = () => setOpen(false);
@@ -51,7 +51,7 @@ export function SiteHeader() {
           <a href="/about" onClick={closeMenu}>About</a>
           <a href="/blog" onClick={closeMenu}>Blog</a>
           <a href="/contact" onClick={closeMenu}>Contact</a>
-          <a className="nav-cta" href="/glowlist" onClick={closeMenu}>Join the Glowlist</a>
+          <a className="nav-cta" href={glowlistSignupUrl ?? "/glowlist"} target={glowlistSignupUrl ? "_blank" : undefined} rel={glowlistSignupUrl ? "noopener noreferrer" : undefined} onClick={closeMenu}>Join the Glowlist</a>
         </nav>
       </header>
     </>
