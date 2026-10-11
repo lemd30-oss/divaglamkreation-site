@@ -58,7 +58,7 @@ export const products: Product[] = [
   },
   {
     title: 'The Gentle Reset',
-    description: 'Seven guided days to keep the rhythm going as an instant digital PDF download for quiet reflection, prayer, and renewal. Rooted in the same gentle reminder that began with my owl story: you mattered before anyone was looking.',
+    description: 'Seven guided days to keep the rhythm going as an instant digital PDF download for quiet reflection, prayer, and renewal. Rooted in the same gentle reminder that began with my owl story: you mattered before anyone was looking. Choose the digital edition to begin journaling right away, or the printed edition if you prefer writing by hand in a physical book.',
     image: '/images/the-gentle-reset-book-cover.svg',
     imageAlt: 'The Gentle Reset 7-day guided journal cover',
     href: links.graceNotesDigital,
