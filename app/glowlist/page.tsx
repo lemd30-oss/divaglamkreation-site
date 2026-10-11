@@ -19,7 +19,7 @@ const glowlistNotes = [
 export default function GlowlistPage() {
   return (
     <main className="site-shell" id="main-content">
-      <SiteHeader />
+      <SiteHeader glowlistSignupUrl={glowlistSignupUrl} />
 
       <section className="hero" id="top">
         <div className="hero-copy">
