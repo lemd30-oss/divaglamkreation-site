@@ -116,6 +116,8 @@ export default function Home() {
           </div>
           <p className="section-intro">Digital journals, the Reflections hardcover, and meaningful gifts.</p>
         </div>
+        <p className="section-intro">Every piece in The Collection grows from a simple question: <em>Who are you beneath everything you carry?</em> Inspired by the owl that became part of my own journey, these journals offer space to pause, reflect, and remember that every woman matters.</p>
+        <p><a className="text-link" href="#about">The story behind the journals →</a></p>
         <p className="shop-trust">Instant digital delivery · Secure checkout · Thoughtfully created by DivaglamKreation</p>
         <div className="product-grid shop-grid">
           {products.filter((product) => product.title !== '7-Day Gentle Reset Journal').map((product) => <ProductCard product={product} key={product.title} price={product.title === 'Reflections' ? product.priceLabel : undefined} amazonUrl={product.title === 'Reflections' ? links.reflectionsHardcover : undefined} />)}
