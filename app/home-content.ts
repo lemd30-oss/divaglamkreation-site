@@ -18,7 +18,7 @@ export const links = {
   gumroadSubscribe: 'https://divaglamkreation.myflodesk.com',
   gentleReset: 'https://lemdo8.gumroad.com/l/dgk-gentle-pause',
   graceNotesDigital: 'https://lemdo8.gumroad.com/l/dgk-7-day-reset-journal',
-  theGentleResetBook: 'https://www.amazon.com/dp/B0HBN6X699',
+  theGentleResetBook: 'https://a.co/d/02fnmfkg',
   reflectionsHardcover: 'https://www.amazon.com/dp/B0HK1G42HF',
   morningReset: 'https://lemdo8.gumroad.com/l/Divaglamkreation',
   contactEmail: 'mailto:divaglamkreation@gmail.com',
@@ -68,6 +68,7 @@ export const products: Product[] = [
     featured: true,
     stepLabel: 'Step 2 · Go deeper',
     imageFit: 'contain',
+    secondaryAction: { href: links.theGentleResetBook, buttonLabel: 'Buy Printed Journal on Amazon · $9.99' },
   },
   {
     title: 'Reflections',
