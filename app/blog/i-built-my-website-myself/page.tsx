@@ -1,6 +1,7 @@
 import { pageMetadata } from '../../metadata';
 import { SiteFooter } from '../../components/SiteFooter';
 import { SiteHeader } from '../../components/SiteHeader';
+import { links } from '../../home-content';
 
 export const metadata = pageMetadata(
   'I Built My Website Myself — What Two Years Taught Me',
@@ -27,9 +28,7 @@ export default function BuiltByMeFounderStoryPage() {
           </div>
 
           <div className="blog-intro-copy">
-            <p>
-              Two years. That is how long it took me to build this website.
-            </p>
+            <p>Two years. That is how long it took me to build this website.</p>
             <p>
               I built it myself. Little by little. I learned, rewrote, changed things, started over,
               and kept coming back to it until DivaglamKreation finally felt like it had a home that
@@ -37,9 +36,7 @@ export default function BuiltByMeFounderStoryPage() {
             </p>
           </div>
 
-          <aside className="blog-quote-card">
-            Slow does not mean unsuccessful.
-          </aside>
+          <aside className="blog-quote-card">Slow does not mean unsuccessful.</aside>
         </header>
 
         <section className="blog-reading-card">
@@ -72,9 +69,7 @@ export default function BuiltByMeFounderStoryPage() {
 
           <div className="blog-section-block">
             <h2>This Website Is More Than Pages</h2>
-            <p>
-              DivaglamKreation began with a question: <em>Who are you?</em>
-            </p>
+            <p>DivaglamKreation began with a question: <em>Who are you?</em></p>
             <p>
               There was coffee. There was creativity. There was reflection. There was the Glow Owl,
               first as a quiet reminder long before it became part of the brand. And underneath all of
@@ -116,17 +111,13 @@ export default function BuiltByMeFounderStoryPage() {
 
           <div className="blog-section-block">
             <h2>If You Are Starting Your Own</h2>
-            <p>
-              Before you choose colors, templates, or another new tool, start with three questions:
-            </p>
+            <p>Before you choose colors, templates, or another new tool, start with three questions:</p>
             <ul>
               <li>What is the main thing people should know about me or my brand?</li>
               <li>What is the one action I want a visitor to take?</li>
               <li>What are the three pages I absolutely need first?</li>
             </ul>
-            <p>
-              You can build from there. You do not have to solve the whole website in one sitting.
-            </p>
+            <p>You can build from there. You do not have to solve the whole website in one sitting.</p>
           </div>
 
           <div className="blog-section-block">
@@ -140,9 +131,7 @@ export default function BuiltByMeFounderStoryPage() {
               There is nothing wrong with that. Presence matters. Paying attention to what is becoming
               clearer matters. Returning matters.
             </p>
-            <p>
-              I made this website myself. It took me two years. And I am glad I stayed with it.
-            </p>
+            <p>I made this website myself. It took me two years. And I am glad I stayed with it.</p>
           </div>
 
           <footer className="blog-soft-signature">
@@ -152,14 +141,16 @@ export default function BuiltByMeFounderStoryPage() {
         </section>
 
         <section className="blog-soft-cta">
-          <p className="eyebrow">Stay for More Behind the Glow</p>
-          <h2>This is the beginning of the Built by Me series.</h2>
+          <p className="eyebrow">A Gentle Place to Begin</p>
+          <h2>Take the reflection with you.</h2>
           <p>
-            Each month I&apos;ll share one lesson from the two years I spent building this website — not
-            as a web-development expert, but as a woman who learned by doing, changing, and staying
-            with something until it finally felt like her own.
+            If this Letter met you in a season of building, becoming, or beginning again, the free
+            3-Day Mini Reset Journal gives you a quiet place to keep listening.
           </p>
-          <a className="button" href="/blog">Read More Journal Notes</a>
+          <div className="hero-actions">
+            <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Start with the free 3-Day Journal</a>
+            <a className="button secondary" href="/blog">Read More Letters</a>
+          </div>
         </section>
       </article>
       <SiteFooter />
