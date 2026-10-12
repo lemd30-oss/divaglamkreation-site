@@ -26,9 +26,9 @@ export function SiteFooter() {
         <div className="footer-column">
           <p className="footer-heading">Explore</p>
           <a href="/">Home</a>
-          <a href="/#shop">Shop</a>
+          <a href="/shop">Shop</a>
           <a href="/about">About</a>
-          <a href="/blog">Blog</a>
+          <a href="/blog">Letters</a>
           <a href="/blog/7-gentle-journal-prompts-for-releasing-what-no-longer-serves-you">Journal Prompts</a>
           <a href="/blog/gentle-august-reset">August Reset</a>
           <a href="/blog/why-you-dont-need-to-earn-rest">Rest & Grace</a>
@@ -43,7 +43,7 @@ export function SiteFooter() {
 
         <div className="footer-column">
           <p className="footer-heading">Connect</p>
-          <a href="/glowlist">Glowlist</a>
+          <a href="/glowlist">Join the Glowlist</a>
           <a href="/contact">Contact</a>
           <a href={links.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href={links.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
