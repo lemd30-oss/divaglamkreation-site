@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/about',
     '/gift-guide',
     '/blog',
+    '/blog/it-started-with-this-owl',
     '/blog/7-gentle-journal-prompts-for-releasing-what-no-longer-serves-you',
     '/blog/gentle-august-reset',
     '/blog/gentle-reset',
