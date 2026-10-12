@@ -6,6 +6,11 @@ export const metadata = pageMetadata("Journal Notes", "Faith-rooted reflections,
 
 const posts = [
   {
+    title: 'It Started With This Owl',
+    description: 'Before DivaglamKreation had a name, an owl canvas in Germany asked a question that became part of the brand: Know HOO You Are.',
+    href: '/blog/it-started-with-this-owl',
+  },
+  {
     title: 'I Built This Website Myself — And It Took Me Two Years',
     description: 'A personal Behind the Glow story about learning by doing, building slowly, and growing alongside DivaglamKreation.',
     href: '/blog/i-built-my-website-myself',
