@@ -174,3 +174,23 @@
   margin: 0 auto 1.5rem;
   max-width: 520px;
 }
+
+.blog-origin-photo {
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+.blog-origin-photo img {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0.75rem;
+}
+
+.blog-origin-photo figcaption {
+  margin-top: 0.6rem;
+  font-style: italic;
+  opacity: 0.8;
+}
