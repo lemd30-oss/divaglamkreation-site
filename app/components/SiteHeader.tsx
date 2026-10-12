@@ -46,10 +46,10 @@ export function SiteHeader({ glowlistSignupUrl }: { glowlistSignupUrl?: string }
 
         <nav id="site-navigation" className={open ? 'nav nav-open' : 'nav'} aria-label="Main navigation">
           <a href="/" onClick={closeMenu}>Home</a>
-          <a href="/#shop" onClick={closeMenu}>Shop</a>
+          <a href="/shop" onClick={closeMenu}>Shop</a>
           <a href="/gift-guide" onClick={closeMenu}>Gift Guide</a>
           <a href="/about" onClick={closeMenu}>About</a>
-          <a href="/blog" onClick={closeMenu}>Blog</a>
+          <a href="/blog" onClick={closeMenu}>Letters</a>
           <a href="/contact" onClick={closeMenu}>Contact</a>
           <a className="nav-cta" href={glowlistSignupUrl ?? "/glowlist"} target={glowlistSignupUrl ? "_blank" : undefined} rel={glowlistSignupUrl ? "noopener noreferrer" : undefined} onClick={closeMenu}>Join the Glowlist</a>
         </nav>

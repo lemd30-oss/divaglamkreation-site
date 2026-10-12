@@ -5,10 +5,12 @@ const baseUrl = 'https://divaglamkreation.com';
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
+    '/shop',
     '/about',
     '/gift-guide',
     '/blog',
     '/blog/it-started-with-this-owl',
+    '/blog/i-built-my-website-myself',
     '/blog/7-gentle-journal-prompts-for-releasing-what-no-longer-serves-you',
     '/blog/gentle-august-reset',
     '/blog/gentle-reset',
@@ -28,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
-    changeFrequency: route === '' ? 'weekly' : 'monthly',
-    priority: route === '' ? 1 : route === '/dragonfly-keychain' ? 0.9 : 0.7,
+    changeFrequency: route === '' || route === '/blog' ? 'weekly' : 'monthly',
+    priority: route === '' ? 1 : route === '/shop' || route === '/dragonfly-keychain' ? 0.9 : 0.7,
   }));
 }
