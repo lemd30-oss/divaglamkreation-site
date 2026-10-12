@@ -96,8 +96,8 @@ export default function ItStartedWithThisOwlBlogPage() {
               <li>The companion: the Glow Owl, who asks and then waits.</li>
               <li>The pages: journals made for gentle reflection, not pressure.</li>
               <li>
-                The letters: The Glow Letter, where I sit across the table from you with coffee in
-                hand.
+                The letters: Letters from the Glow, where I sit across the table from you with coffee
+                in hand.
               </li>
             </ul>
             <p>
@@ -111,7 +111,7 @@ export default function ItStartedWithThisOwlBlogPage() {
             <h2>If You Have Stopped Making Room for Yourself</h2>
             <p>
               You do not have to answer it all today. Pour a cup. Start small. If you would like
-              the personal side of this story, I share it in The Glow Letter, one cup at a time.
+              the personal side of this story, I share it in Letters from the Glow, one cup at a time.
             </p>
             <p>Every woman matters. You are one of them.</p>
           </div>
@@ -126,10 +126,10 @@ export default function ItStartedWithThisOwlBlogPage() {
           <p className="eyebrow">A Gentle Place to Begin</p>
           <h2>Take three quiet days to answer it.</h2>
           <p>
-            The 3-Day Pause is free: three gentle days of faith-rooted pages, with no answer
-            required at the end.
+            The 3-Day Mini Reset Journal is free: three gentle days of faith-rooted pages, with no
+            answer required at the end.
           </p>
-          <a className="button" href={links.gentleReset}>Get The 3-Day Pause, Free</a>
+          <a className="button" href={links.gentleReset}>Get the Free 3-Day Mini Reset Journal</a>
         </section>
       </article>
       <SiteFooter />

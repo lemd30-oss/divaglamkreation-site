@@ -1,87 +1,89 @@
-# DGK Glowlist Newsletter Launch Kit
+# DGK Letters from the Glow Launch Kit
 
-## Main subscribe link
+## Locked naming
 
-https://lemdo8.gumroad.com/subscribe
+- **Newsletter:** Letters from the Glow
+- **Subscriber list:** the Glowlist
+- **Primary signup page:** https://divaglamkreation.com/glowlist
+- **Email platform:** Flodesk
+- **Free welcome gift:** 3-Day Mini Reset Journal
 
-## Newsletter name
-
-The DGK Glowlist
+Use **Letters from the Glow** for the recurring newsletter itself. Use **Glowlist** for the audience people join.
 
 ## Purpose
 
-A gentle email space for faith-rooted encouragement, journaling prompts, creative updates, and soft reminders from DivaglamKreation.
+Letters from the Glow is the storytelling and relationship side of DivaglamKreation: a gentle weekly letter rooted in faith, reflection, creativity, and the question at the heart of the brand: **Who are you?**
 
-## Gumroad subscribe page copy
+The shop sells the journals. The letters tell the story behind them and invite readers into the journal that fits the moment.
 
-Join The DGK Glowlist
+## Signup copy
 
-A gentle email space for faith-rooted encouragement, journaling prompts, creative updates, and soft reminders from DivaglamKreation.
+### Heading
 
-When you join The DGK Glowlist, you’ll receive gentle notes to help you pause, reset, and keep becoming with grace.
+Letters from the Glow
 
-Start softly. You do not have to rush your growth.
+### Signup line
 
-Join the Glowlist and begin with peace.
+Join the Glowlist for the free 3-Day Mini Reset Journal and a gentle letter from me each week.
 
-## Welcome email draft
+## Weekly rhythm
 
-Subject: Welcome to The DGK Glowlist
+Keep each weekly Letter simple enough to write in about five minutes:
 
-Hi beautiful,
+1. One short story, reflection, or encouragement.
+2. One gentle journaling prompt.
+3. One journal link that naturally fits the message.
 
-Welcome to The DGK Glowlist — a gentle email space for faith-rooted encouragement, journaling prompts, creative updates, and soft reminders from DivaglamKreation.
+The journal link should feel like a next step, not a hard sell.
 
-This space was created to help you pause, reset, and keep becoming with grace.
+## Welcome sequence
 
-You do not have to rush your growth. You can begin softly, one faithful step at a time.
+The existing Flodesk signup workflow should be simplified into this three-email path.
 
-Here is a gentle prompt to start with:
+### Email 1 — Immediately
 
-What is one thing I am ready to release, and one thing I am ready to grow into?
+**Subject:** Welcome to Letters from the Glow ✨
 
-Thank you for being here.
+Deliver the free 3-Day Mini Reset Journal, welcome the reader to the Glowlist, and introduce the question: **Who are you beneath everything you carry?**
 
-With grace,
-DivaglamKreation
-Faith. Flow. Flourish.
+### Email 2 — 2 days later
 
-## First social announcement post
+**Subject:** It started with an owl.
 
-I’m starting The DGK Glowlist 🤎
+Tell the DivaglamKreation origin story: the owl canvas, **Know HOO You Are**, the deeper **Who are you?** question, and the truth that **every woman matters**. Include one reflection prompt and link to the permanent website origin story.
 
-It’s a gentle email space from DivaglamKreation for faith-rooted encouragement, journaling prompts, creative updates, and soft reminders for your reset season.
+### Email 3 — 3 days later
 
-If you need a quiet place to begin again, I’d love for you to join.
+**Subject:** When three days opens something…
 
-Join here:
-https://lemdo8.gumroad.com/subscribe
+Invite the reader to continue gently into the 7-Day Gentle Reset. Keep the tone reflective and pressure-free, ending with the reminder: **You mattered before anyone was looking.**
 
-## Short bio line
+## Story-to-shop model
 
-Join The DGK Glowlist for gentle faith-rooted notes, journaling prompts, and soft reset reminders.
+Use this path across the website and email system:
 
-## Pinterest pin title ideas
+**Who are you? → It started with an owl → pause and reflect → go deeper when you are ready.**
 
-- Join The DGK Glowlist
-- Gentle Faith-Rooted Encouragement
-- Soft Reset Journal Prompts
-- A Gentle Email Space for Your Reset Season
-- Faith, Journaling, and Soft Reminders
+### Website roles
 
-## Pinterest pin description
+- **Homepage:** introduces the question, journals, owl story, Glowlist, and latest Letter.
+- **Letters:** tells the ongoing DivaglamKreation story.
+- **Glowlist:** captures subscribers and delivers the free journal through Flodesk.
+- **Shop:** presents journals and gifts clearly by starting point and need.
 
-Join The DGK Glowlist from DivaglamKreation for gentle faith-rooted encouragement, journaling prompts, creative updates, and soft reminders for your reset season. Start softly and begin again with grace.
+## Content rule
 
-## First 10-subscriber checklist
+Do not repeatedly retell the full owl origin story in every Letter. The permanent story lives on the website. Future Letters should move the story forward through identity, faith, reflection, becoming, creativity, rest, and the quiet truth that every woman matters.
 
-- Add the subscribe link to your website footer.
-- Add the subscribe link to your social media bio.
-- Share the first social announcement post.
-- Create one Pinterest pin that points to the subscribe page.
-- Invite five trusted people personally.
-- Mention the Glowlist inside free product descriptions.
-- Add the link to your blog posts when relevant.
-- Save the welcome email as a Gumroad draft.
-- Check subscriber count twice per week.
-- Celebrate the first 10 subscribers and then plan the first monthly note.
+## Brand signature check
+
+Before publishing a Letter, confirm that it still traces back to the DGK foundation:
+
+- **Who are you?**
+- the original owl canvas and **Know HOO You Are**
+- coffee, creativity, reflection, and faith
+- the Glow Owl as companion
+- **Every woman matters**
+- **You mattered before anyone was looking**
+
+Avoid generic newsletter, generic self-care, and trend-led lifestyle copy.
