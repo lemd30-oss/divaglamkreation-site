@@ -2,7 +2,7 @@ import { pageMetadata } from '../metadata';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-export const metadata = pageMetadata("Journal Notes", "Faith-rooted reflections, journaling encouragement, and quiet reminders from DivaglamKreation.", "/blog", "/images/brand/glow-owl.png");
+export const metadata = pageMetadata('Letters from the Glow', 'Faith-rooted reflections, encouragement, and gentle prompts from DivaglamKreation.', '/blog', '/images/brand/glow-owl.png');
 
 const posts = [
   {
@@ -48,15 +48,15 @@ export default function BlogPage() {
       <SiteHeader />
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">Journal Notes</p>
-          <h1>Gentle words for fuller weeks.</h1>
-          <p>Faith-rooted reflections and practical reminders for slowing down and beginning again.</p>
+          <p className="eyebrow">Letters from the Glow</p>
+          <h1>Stories, encouragement, and a quiet place to reflect.</h1>
+          <p>Each Letter begins with something real, leaves you with one gentle prompt, and points you toward a journal when you want to go deeper.</p>
         </div>
-        <aside className="hero-card" aria-label="Blog welcome message">
+        <aside className="hero-card" aria-label="Letters from the Glow welcome message">
           <div className="hero-card-inner">
             <p className="eyebrow">Read Slowly</p>
             <h2>Bring your coffee. Stay for the reminder.</h2>
-            <p>Choose the note that meets you today.</p>
+            <p>Choose the Letter that meets you today.</p>
           </div>
         </aside>
       </section>
@@ -64,10 +64,10 @@ export default function BlogPage() {
         <div className="blog-grid">
           {posts.map((post) => (
             <article className="card editorial-card" key={post.href}>
-              <p className="eyebrow">From the Blog</p>
+              <p className="eyebrow">A Letter from the Glow</p>
               <h2>{post.title}</h2>
               <p>{post.description}</p>
-              <a className="button secondary" href={post.href} aria-label={`Read the note: ${post.title}`}>Read the Note</a>
+              <a className="button secondary" href={post.href} aria-label={`Read the Letter: ${post.title}`}>Read the Letter</a>
             </article>
           ))}
         </div>
