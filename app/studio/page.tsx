@@ -18,8 +18,10 @@ const links = {
   gumroad: 'https://gumroad.com/',
   substack: 'https://substack.com/@divaglamkreation',
   substackNotes: 'https://app.notion.com/p/3f935eb3816c81459236d5b7deedd169?pvs=204',
+  substackTemplate: 'https://app.notion.com/p/3f935eb3816c81d8aaf3cef08129ebe2?pvs=204',
   flodesk: 'https://app.flodesk.com/email/6aaab6defb611c7dba3a7353/build',
   flodeskNotes: 'https://app.notion.com/p/3f935eb3816c8102a13cff6a58c02cec?pvs=204',
+  flodeskTemplate: 'https://app.notion.com/p/3f935eb3816c8122b2b5ca0301682b56?pvs=204',
   drive: 'https://drive.google.com/',
   gmail: 'https://mail.google.com/',
   website: 'https://lemd30-oss-divaglamkreation-site.vercel.app',
@@ -89,6 +91,9 @@ export default function StudioPage() {
           <details className="studio-folder" open>
             <summary>Substack Folder</summary>
             <div className="studio-folder-links">
+              <StudioLink href={links.substackTemplate} icon="＋">
+                New Substack Draft
+              </StudioLink>
               <StudioLink href={links.substackNotes} icon="🗂">
                 Notes + Articles
               </StudioLink>
@@ -101,6 +106,9 @@ export default function StudioPage() {
           <details className="studio-folder">
             <summary>Flodesk Folder</summary>
             <div className="studio-folder-links">
+              <StudioLink href={links.flodeskTemplate} icon="＋">
+                New Flodesk Draft
+              </StudioLink>
               <StudioLink href={links.flodeskNotes} icon="🗂">
                 Notes + Articles
               </StudioLink>
