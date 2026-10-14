@@ -11,6 +11,7 @@ const links = {
   notion:
     'https://coordinated-chipmunk-2d2.notion.site/DGK-Complete-Operating-System-3d435eb3816c81c89cf7d6db952ac4ea?pvs=149',
   chatgpt: 'https://chatgpt.com/',
+  museai: 'https://museai.im/',
   canva: 'https://www.canva.com/',
   metricool: 'https://app.metricool.com/',
   pinterest: 'https://www.pinterest.com/',
@@ -58,6 +59,9 @@ export default function StudioPage() {
           </StudioLink>
           <StudioLink href={links.chatgpt} icon="✦">
             ChatGPT
+          </StudioLink>
+          <StudioLink href={links.museai} icon="✧">
+            Muse AI
           </StudioLink>
           <StudioLink href={links.canva} icon="🎨">
             Canva
