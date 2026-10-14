@@ -17,7 +17,9 @@ const links = {
   pinterest: 'https://www.pinterest.com/',
   gumroad: 'https://gumroad.com/',
   substack: 'https://substack.com/@divaglamkreation',
+  substackNotes: 'https://app.notion.com/p/3f935eb3816c81459236d5b7deedd169?pvs=204',
   flodesk: 'https://app.flodesk.com/email/6aaab6defb611c7dba3a7353/build',
+  flodeskNotes: 'https://app.notion.com/p/3f935eb3816c8102a13cff6a58c02cec?pvs=204',
   drive: 'https://drive.google.com/',
   gmail: 'https://mail.google.com/',
   website: 'https://lemd30-oss-divaglamkreation-site.vercel.app',
@@ -83,14 +85,27 @@ export default function StudioPage() {
 
         <section className="studio-nav-group">
           <h2>The Glow Letter</h2>
+
           <details className="studio-folder" open>
-            <summary>Glow Letter Folder</summary>
+            <summary>Substack Folder</summary>
             <div className="studio-folder-links">
+              <StudioLink href={links.substackNotes} icon="🗂">
+                Notes + Articles
+              </StudioLink>
               <StudioLink href={links.substack} icon="📝">
-                Substack
+                Open Substack
+              </StudioLink>
+            </div>
+          </details>
+
+          <details className="studio-folder">
+            <summary>Flodesk Folder</summary>
+            <div className="studio-folder-links">
+              <StudioLink href={links.flodeskNotes} icon="🗂">
+                Notes + Articles
               </StudioLink>
               <StudioLink href={links.flodesk} icon="✉">
-                Flodesk Draft
+                Open Flodesk Draft
               </StudioLink>
             </div>
           </details>
@@ -188,15 +203,15 @@ export default function StudioPage() {
             <article>
               <h3>Substack</h3>
               <p>
-                Draft, publish, and keep up with long-form DGK articles and
-                subscriber-facing writing.
+                Keep Substack ideas, notes, article drafts, and published-piece
+                references together in one dedicated folder.
               </p>
             </article>
             <article>
               <h3>Flodesk</h3>
               <p>
-                Open the current Glow Letter email draft directly for editing,
-                subscriber communication, and newsletter publishing.
+                Keep Glow Letter notes, email drafts, article-to-email ideas,
+                and sent-email references together in a separate folder.
               </p>
             </article>
           </div>
