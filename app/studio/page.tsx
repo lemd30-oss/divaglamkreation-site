@@ -17,6 +17,7 @@ const links = {
   metricool: 'https://app.metricool.com/',
   pinterest: 'https://www.pinterest.com/',
   gumroad: 'https://gumroad.com/',
+  writingInbox: 'https://app.notion.com/p/9ba08bd130be479782894c2e8ddce164?pvs=204',
   substack: 'https://substack.com/@divaglamkreation',
   substackNotes: 'https://app.notion.com/p/3f935eb3816c81459236d5b7deedd169?pvs=204',
   substackTemplate: 'https://app.notion.com/p/3f935eb3816c81d8aaf3cef08129ebe2?pvs=204',
@@ -91,6 +92,9 @@ export default function StudioPage() {
 
         <section className="studio-nav-group">
           <h2>The Glow Letter</h2>
+          <StudioLink href={links.writingInbox} icon="📥">
+            DGK Writing Inbox
+          </StudioLink>
 
           <details className="studio-folder" open>
             <summary>Substack Folder</summary>
