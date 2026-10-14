@@ -17,6 +17,7 @@ const links = {
   canva: 'https://www.canva.com/',
   metricool: 'https://app.metricool.com/',
   pinterest: 'https://www.pinterest.com/',
+  instagram: 'https://www.instagram.com/',
   gumroad: 'https://gumroad.com/',
   writingInbox: 'https://app.notion.com/p/9ba08bd130be479782894c2e8ddce164?pvs=204',
   substack: 'https://substack.com/@divaglamkreation',
@@ -88,6 +89,9 @@ export default function StudioPage() {
           </StudioLink>
           <StudioLink href={links.pinterest} icon="📌">
             Pinterest
+          </StudioLink>
+          <StudioLink href={links.instagram} icon="◎">
+            Instagram
           </StudioLink>
           <StudioLink href={links.gumroad} icon="🛍">
             Gumroad
@@ -197,7 +201,7 @@ export default function StudioPage() {
             <h3>Publish</h3>
             <p>
               Move one finished piece into the world through Metricool,
-              Pinterest, Substack, Flodesk, or Gumroad.
+              Pinterest, Instagram, Substack, Flodesk, or Gumroad.
             </p>
           </article>
         </div>
