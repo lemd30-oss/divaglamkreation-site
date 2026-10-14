@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 const links = {
   notion:
     'https://coordinated-chipmunk-2d2.notion.site/DGK-Complete-Operating-System-3d435eb3816c81c89cf7d6db952ac4ea?pvs=149',
+  notionAi: 'https://www.notion.so/',
   chatgpt: 'https://chatgpt.com/',
   claude: 'https://claude.ai/',
   museai: 'https://museai.im/',
@@ -62,6 +63,9 @@ export default function StudioPage() {
           <h2>Daily</h2>
           <StudioLink href={links.notion} icon="🏠">
             DGK Operating System
+          </StudioLink>
+          <StudioLink href={links.notionAi} icon="✨">
+            Notion AI
           </StudioLink>
           <StudioLink href={links.chatgpt} icon="✦">
             ChatGPT
