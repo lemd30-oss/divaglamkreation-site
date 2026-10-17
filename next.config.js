@@ -19,8 +19,6 @@ const nextConfig = {
   },
   // Enable SWR (Stale-While-Revalidate) for static pages
   staticPageGenerationTimeout: 120,
-  // Optimize for performance
-  swcMinify: true,
   // Enable production source maps for better error tracking
   productionBrowserSourceMaps: false,
 };
