@@ -31,8 +31,8 @@ const posts = [
     href: '/blog/gentle-august-reset',
   },
   {
-    title: 'How to Begin a Gentle Reset Routine',
-    description: 'A soft, practical place to begin when life feels full and you need a quieter rhythm.',
+    title: "When You've Lost Your Rhythm: A Gentle Sunday Reset",
+    description: 'A faith-rooted pause for women who feel tired and want to find their rhythm again, gently.',
     href: '/blog/gentle-reset',
   },
   {
