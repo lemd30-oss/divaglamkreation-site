@@ -37,14 +37,18 @@ export function ProductCard({ product, price, amazonUrl }: ProductCardProps) {
         <h3>{product.title}</h3>
         <p>{product.description}</p>
         <div className="product-card-actions">
-          <a
-            className="button secondary product-card-button"
-            href={amazonUrl ?? product.href}
-            target={external ? '_blank' : undefined}
-            rel={external ? 'noopener noreferrer' : undefined}
-          >
-            {amazonUrl ? 'Buy on Amazon' : product.buttonLabel}
-          </a>
+          {product.comingSoon ? (
+            <span className="button secondary product-card-button" role="status">Coming Soon</span>
+          ) : (
+            <a
+              className="button secondary product-card-button"
+              href={amazonUrl ?? product.href}
+              target={external ? '_blank' : undefined}
+              rel={external ? 'noopener noreferrer' : undefined}
+            >
+              {amazonUrl ? 'Buy on Amazon' : product.buttonLabel}
+            </a>
+          )}
           {detailPaths[product.title] ? <a className="text-link" href={detailPaths[product.title]} aria-label={`View details: ${product.title}`}>View details →</a> : null}
           {product.secondaryAction ? (
             <a
