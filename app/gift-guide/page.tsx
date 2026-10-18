@@ -71,13 +71,13 @@ export default function GiftGuidePage() {
 
       <section className="section reset-feature-section" aria-labelledby="keepsake-title">
         <div className="reset-feature-copy" style={{ maxWidth: '860px' }}>
-          <h2 id="keepsake-title">From $29.99</h2>
+          <h2 id="keepsake-title">Coming Soon</h2>
           <p className="section-intro"><em>One keepsake, made to last past the season.</em></p>
-          <h3>Reflections — Hardcover Journal — From $29.99 (hardcover, via Amazon)</h3>
-          <p className="reset-feature-lede">A 144-page hardcover journal with 63 prompts for rest, reset, and renewal, with the Glow Owl beside her through each season. The keepsake gift — the one she&apos;ll still be writing in next year. Order by Amazon&apos;s holiday shipping cutoff; digital gifts above have no cutoff and arrive instantly.</p>
+          <h3>Reflections — Hardcover Journal · Coming Soon</h3>
+          <p className="reset-feature-lede">A 144-page hardcover journal with 63 prompts for rest, reset, and renewal, with the Glow Owl beside her through each season. The keepsake gift — the one she&apos;ll still be writing in next year. Reflections is coming soon; the digital gifts above are available now.</p>
           <div className="hero-actions">
-            <a className="button" href="https://divaglamkreation.com/products/reflections">Shop Reflections</a>
-            <a className="button secondary" href="https://www.amazon.com/dp/B0HK1G42HF">Reflections on Amazon</a>
+            <a className="button" href="/products/reflections">View Reflections</a>
+            <span className="button secondary" role="status">Coming Soon</span>
           </div>
         </div>
       </section>

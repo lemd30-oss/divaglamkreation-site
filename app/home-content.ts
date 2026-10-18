@@ -7,6 +7,7 @@ export type Product = {
   priceLabel: string;
   buttonLabel: string;
   external: boolean;
+  comingSoon?: boolean;
   featured?: boolean;
   stepLabel?: string;
   imageFit?: 'contain';
@@ -76,9 +77,10 @@ export const products: Product[] = [
     image: '/images/reflections-hardcover-cover.jpg',
     imageAlt: 'Reflections hardcover journal cover with the Glow Owl, Rest · Reset · Renewal',
     href: links.reflectionsHardcover,
-    priceLabel: 'From $29.99 · Hardcover on Amazon',
-    buttonLabel: 'Buy on Amazon',
+    priceLabel: 'Hardcover · Coming Soon',
+    buttonLabel: 'Coming Soon',
     external: true,
+    comingSoon: true,
     imageFit: 'contain',
   },
   {
