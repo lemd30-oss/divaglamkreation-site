@@ -6,7 +6,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '',
     '/shop',
-    '/behind-the-glow/guide-01',
     '/about',
     '/gift-guide',
     '/blog',

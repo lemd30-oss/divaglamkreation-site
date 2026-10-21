@@ -88,28 +88,6 @@ export default function ShopPage() {
         </div>
       </section>
 
-      <section className="section shop-section" aria-labelledby="guides-title">
-        <div className="section-heading-row">
-          <div>
-            <p className="eyebrow">Behind the Glow · Creative Guides</p>
-            <h2 id="guides-title">Learn a little of what I’ve learned.</h2>
-          </div>
-          <p className="section-intro">Gentle tutorials that tell you which steps are free and where paid tools may appear.</p>
-        </div>
-        <div className="product-grid shop-grid">
-          <article className="card editorial-card">
-            <p className="eyebrow">Beginner Creative Guide 01</p>
-            <h3>Create Your First Simple Journal in Canva</h3>
-            <p>
-              A 13-page step-by-step PDF guide to making a simple journal with Canva Free.
-              Learn covers, writing pages, exporting, and what to do if Canva asks you to pay.
-            </p>
-            <p className="trust-note"><strong>$7 · Digital learning guide · Gumroad checkout being prepared</strong></p>
-            <a className="button secondary" href="/behind-the-glow/guide-01">Explore the beginner guide</a>
-          </article>
-        </div>
-      </section>
-
       <SiteFooter />
     </main>
   );
