@@ -56,7 +56,7 @@ export default function GiftGuidePage() {
           </article>
 
           <article className="journey-card">
-            <h3>The Gentle Reset — $9</h3>
+            <h3>The Gentle Reset — $7</h3>
             <p>Seven guided days of quiet reflection, prayer, and renewal in an instant digital download. For when three days opened something she wants to keep exploring.</p>
             <a className="text-link" href="https://divaglamkreation.com/products/the-gentle-reset">Shop The Gentle Reset</a>
           </article>
@@ -71,13 +71,13 @@ export default function GiftGuidePage() {
 
       <section className="section reset-feature-section" aria-labelledby="keepsake-title">
         <div className="reset-feature-copy" style={{ maxWidth: '860px' }}>
-          <h2 id="keepsake-title">Coming Soon</h2>
+          <h2 id="keepsake-title">A Keepsake to Give</h2>
           <p className="section-intro"><em>One keepsake, made to last past the season.</em></p>
-          <h3>Reflections — Hardcover Journal · Coming Soon</h3>
-          <p className="reset-feature-lede">A 144-page hardcover journal with 63 prompts for rest, reset, and renewal, with the Glow Owl beside her through each season. The keepsake gift — the one she&apos;ll still be writing in next year. Reflections is coming soon; the digital gifts above are available now.</p>
+          <h3>Reflections — Hardcover Journal · $42</h3>
+          <p className="reset-feature-lede">A 144-page hardcover journal with 63 prompts for rest, reset, and renewal, with the Glow Owl beside her through each season. The keepsake gift — the one she&apos;ll still be writing in next year. Order the hardcover through Lulu, or choose one of the instant digital journals above.</p>
           <div className="hero-actions">
-            <a className="button" href="/products/reflections">View Reflections</a>
-            <span className="button secondary" role="status">Coming Soon</span>
+            <a className="button" href="/products/reflections">Explore Reflections · $42</a>
+            <span className="button secondary" role="status">Hardcover available through Lulu</span>
           </div>
         </div>
       </section>
@@ -97,7 +97,7 @@ export default function GiftGuidePage() {
               }}
             />
           </div>
-          <p><em>P.S. Want the first look at new journals and a weekly prompt in your inbox? Join the list above.</em></p>
+          <p><em>P.S. Want the first look at new journals and a gentle letter twice a month in your inbox? Join the list above.</em></p>
         </div>
       </section>
 
