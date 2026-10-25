@@ -69,6 +69,18 @@ export default function GiftGuidePage() {
         </div>
       </section>
 
+      <section className="section reset-feature-section" aria-labelledby="paperback-gift-title">
+        <div className="reset-feature-copy" style={{ maxWidth: '860px' }}>
+          <p className="eyebrow">Prefer a book you can hold?</p>
+          <h2 id="paperback-gift-title">The Gentle Reset — 7-Day Guided Paperback</h2>
+          <p className="section-intro">For the woman who loves writing on real pages. Seven gentle days of prayer, reflection, and renewal in a physical journal, available through Amazon.</p>
+          <div className="hero-actions">
+            <a className="button" href="https://a.co/d/02fnmfkg" target="_blank" rel="noopener noreferrer">Explore the Paperback on Amazon</a>
+            <a className="button secondary" href="/products/the-gentle-reset">Prefer the $7 digital journal?</a>
+          </div>
+        </div>
+      </section>
+
       <section className="section reset-feature-section" aria-labelledby="keepsake-title">
         <div className="reset-feature-copy" style={{ maxWidth: '860px' }}>
           <h2 id="keepsake-title">A Keepsake to Give</h2>
