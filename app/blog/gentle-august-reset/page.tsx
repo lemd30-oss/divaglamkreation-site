@@ -121,12 +121,12 @@ export default function GentleAugustResetBlogPage() {
 
         <section className="blog-soft-cta">
           <p className="eyebrow">Begin with a Gentle Page</p>
-          <h2>Download the free 3-Day Mini Reset Journal.</h2>
+          <h2>Download The 3-Day Pause for free.</h2>
           <p>
-            If August is asking you to slow down and return to peace, the free 3-Day Mini Reset Journal
+            If August is asking you to slow down and return to peace, The 3-Day Pause
             gives you a soft place to begin with reflection, prayer, and gentle prompts.
           </p>
-          <a className="button" href={links.gentleReset}>Get the Free 3-Day Mini Reset Journal</a>
+          <a className="button" href={links.gentleReset}>Get The 3-Day Pause — Free</a>
         </section>
       </article>
       <SiteFooter />

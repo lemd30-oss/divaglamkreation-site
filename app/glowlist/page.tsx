@@ -9,7 +9,7 @@ const freeResetUrl = links.gentleReset;
 
 export const metadata = pageMetadata(
   'Letters from the Glow | Join the Glowlist',
-  'Join the Glowlist for the free 3-Day Mini Reset Journal and a gentle weekly Letter from DivaglamKreation.',
+  'Join the Glowlist for The 3-Day Pause, a free three-day reflection journal, and letters from DivaglamKreation.',
   '/glowlist',
   '/images/brand/glow-owl.png'
 );
@@ -28,11 +28,11 @@ export default function GlowlistPage() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Letters from the Glow</p>
-          <h1>A gentle letter for the week you're in.</h1>
-          <p>Join the Glowlist for the free 3-Day Mini Reset Journal and a gentle letter from me each week.</p>
+          <h1>A gentle letter for the season you're in.</h1>
+          <p>Join the Glowlist for The 3-Day Pause, a free three-day reflection journal, and letters from DivaglamKreation.</p>
           <div className="hero-actions">
             <a className="button" href={glowlistSignupUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
-            <a className="button secondary" href={freeResetUrl} target="_blank" rel="noopener noreferrer">Get the Free 3-Day Mini Reset Journal</a>
+            <a className="button secondary" href={freeResetUrl} target="_blank" rel="noopener noreferrer">Get The 3-Day Pause — Free</a>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ export default function GlowlistPage() {
           <div className="hero-card-inner">
             <p className="eyebrow">About Five Minutes</p>
             <h2>One story. One prompt. One journal path.</h2>
-            <p>A simple weekly rhythm that keeps the story personal and the next step gentle.</p>
+            <p>A gentle rhythm that keeps the story personal and the next step gentle.</p>
           </div>
         </aside>
       </section>
