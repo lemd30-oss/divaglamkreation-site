@@ -9,12 +9,12 @@ import './start-your-glow.css';
 
 export const metadata = pageMetadata(
   'Start Your Glow | DivaglamKreation',
-  'Begin with a free 3-Day Mini Reset Journal and discover a gentle, faith-rooted path to reflection.',
+  'Begin with The 3-Day Pause, a free journal, and discover a gentle, faith-rooted path to reflection.',
   '/start-your-glow'
 );
 
 export default function StartYourGlow() {
-  const free = products.find((product) => product.title === '3-Day Mini Reset Journal');
+  const free = products.find((product) => product.title === 'The 3-Day Pause');
   const seven = products.find((product) => product.title === 'The Gentle Reset');
   return (
     <main className="site-shell" id="main-content">
