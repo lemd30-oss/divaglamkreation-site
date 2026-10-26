@@ -25,7 +25,7 @@ export default function Home() {
           <p className="hero-lede">Faith-rooted journals for the woman you're becoming. Quiet tools for rest, reset, and renewal.</p>
           <div className="hero-actions">
             <a className="button" href="/shop">Shop the Collection</a>
-            <a className="button secondary" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Start with the free 3-Day Journal</a>
+            <a className="button secondary" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Start with The 3-Day Pause — Free</a>
           </div>
         </div>
 
@@ -68,9 +68,9 @@ export default function Home() {
         <div className="journey-grid journey-grid-two">
           <article className="journey-card">
             <span className="journey-number">Step 1 · Free</span>
-            <h3>3-Day Mini Reset Journal</h3>
+            <h3>The 3-Day Pause</h3>
             <p>Short daily prompts to slow down, reflect, and hear yourself again.</p>
-            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Get the free 3-Day Mini Reset Journal →</a>
+            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Get The 3-Day Pause — Free →</a>
           </article>
           <article className="journey-card">
             <span className="journey-number">Step 2 · Go deeper</span>
@@ -100,7 +100,7 @@ export default function Home() {
         <div className="email-box presentation-glowlist glowlist-copy-only">
           <p className="script-accent">Letters from the Glow</p>
           <h2>Join the Glowlist.</h2>
-          <p>Join the Glowlist for the free 3-Day Mini Reset Journal and a gentle letter from me each week.</p>
+          <p>Join the Glowlist for The 3-Day Pause, a free three-day reflection journal, and letters from DivaglamKreation.</p>
           <div className="flodesk-inline-wrap">
             <div id="fd-form-6abe85f729e2cfa7a04f5774" />
             <Script

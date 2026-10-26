@@ -5,7 +5,7 @@ import { products } from '../../home-content';
 import { pageMetadata } from '../../metadata';
 
 const entries = [
-  { slug: 'the-3-day-pause', title: '3-Day Mini Reset Journal', inside: ['Three days of faith-rooted reflection prompts', 'A printable journal for rest, reflection, prayer, and renewal'], format: 'Free digital printable journal', note: 'Digital download via Gumroad. Delivered to the email used at checkout.' },
+  { slug: 'the-3-day-pause', title: 'The 3-Day Pause', inside: ['Three days of faith-rooted reflection prompts', 'A printable journal for rest, reflection, prayer, and renewal'], format: 'Free digital printable journal', note: 'Digital download via Gumroad. Delivered to the email used at checkout.' },
   { slug: 'gentle-morning-reset-pack', title: 'Gentle Morning Reset Pack', inside: ['Five printable reflection pages', 'Space to begin the day with faith, calm, clarity, and care'], format: 'Digital PDF · $7', note: 'Digital download via Gumroad. Delivered to the email used at checkout.' },
   { slug: 'the-gentle-reset', title: 'The Gentle Reset', inside: ['Seven guided days', 'Prompts for quiet reflection, prayer, and renewal'], format: 'Digital PDF · $7', note: 'Digital download via Gumroad. Delivered to the email used at checkout.' },
   { slug: 'reflections', title: 'Reflections', inside: ['144 pages', '63 prompts for rest, reset, and renewal', 'The Glow Owl beside you through each season'], format: 'Hardcover · 7 × 10 in · $42', note: 'A physical hardcover, printed to order and shipped to you. Ordering is through the Lulu Bookstore.' },

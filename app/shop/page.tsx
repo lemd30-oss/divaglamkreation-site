@@ -15,7 +15,7 @@ export const metadata = pageMetadata(
 const byTitle = (title: string) => products.find((product) => product.title === title)!;
 
 export default function ShopPage() {
-  const threeDay = byTitle('3-Day Mini Reset Journal');
+  const threeDay = byTitle('The 3-Day Pause');
   const gentleReset = byTitle('The Gentle Reset');
   const morningReset = byTitle('Gentle Morning Reset Pack');
   const reflections = byTitle('Reflections');

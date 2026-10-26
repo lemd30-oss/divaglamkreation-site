@@ -44,7 +44,7 @@ export default function GiftGuidePage() {
 
         <div className="journey-grid journey-grid-two">
           <article className="journey-card">
-            <h3>3-Day Mini Reset Journal — Free</h3>
+            <h3>The 3-Day Pause — Free</h3>
             <p>Three days of short, gentle prompts to slow down and begin again. Delivered instantly as a digital journal. Give it to her — or start it yourself first.</p>
             <a className="text-link" href="https://divaglamkreation.com/products/the-3-day-pause">Get the free journal</a>
           </article>
