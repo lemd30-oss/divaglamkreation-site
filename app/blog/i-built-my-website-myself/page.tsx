@@ -144,11 +144,10 @@ export default function BuiltByMeFounderStoryPage() {
           <p className="eyebrow">A Gentle Place to Begin</p>
           <h2>Take the reflection with you.</h2>
           <p>
-            If this Letter met you in a season of building, becoming, or beginning again, the free
-            3-Day Mini Reset Journal gives you a quiet place to keep listening.
+            If this Letter met you in a season of building, becoming, or beginning again, The 3-Day Pause gives you a quiet place to keep listening.
           </p>
           <div className="hero-actions">
-            <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Start with the free 3-Day Journal</a>
+            <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Start with The 3-Day Pause — Free</a>
             <a className="button secondary" href="/blog">Read More Letters</a>
           </div>
         </section>

@@ -126,10 +126,10 @@ export default function ItStartedWithThisOwlBlogPage() {
           <p className="eyebrow">A Gentle Place to Begin</p>
           <h2>Take three quiet days to answer it.</h2>
           <p>
-            The 3-Day Mini Reset Journal is free: three gentle days of faith-rooted pages, with no
+            The 3-Day Pause is free: three gentle days of faith-rooted pages, with no
             answer required at the end.
           </p>
-          <a className="button" href={links.gentleReset}>Get the Free 3-Day Mini Reset Journal</a>
+          <a className="button" href={links.gentleReset}>Get The 3-Day Pause — Free</a>
         </section>
       </article>
       <SiteFooter />
