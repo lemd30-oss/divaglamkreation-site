@@ -12,7 +12,7 @@ The supplied prompts are the audit input. AUDIT.md was not present in the reposi
 | 3. Dragonfly | Existing plain HTML checkout link confirmed in live markup and HTTP 200. Added explicit GoDaddy Payments / DGK physical fulfillment note. No embed required. |
 | 4. Product pages | Four statically generated product routes with description, contents, format, price, FAQs, checkout links, and delivery notes. Added to sitemap; homepage cards now offer View details while retaining direct checkout buttons. |
 | 5. Beginning Again link | Existing href is already correct. No destination edit required. |
-| 6. Hero / seven days links | Hero already had a real Gumroad anchor. Seven-day continuation now links directly to the existing $9 Gumroad URL. |
+| 6. Hero / seven days links | Hero already had a real Gumroad anchor. Seven-day continuation originally linked to a paid Gumroad download; that offer was retired on 2026-10-27. The current destination is the Amazon paperback. |
 | 7. Alt text | Added descriptive Glow Owl hero alt. Product SVG/PNG alt attributes already exist. Header logos retain decorative empty alt because the enclosing home link has an accessible name. |
 | 8. Images | Capped optimized device widths at 1920px and added header logo sizes. Existing responsive hero sizes retained. Reflections JPG 62,902 → 53,304 bytes; dragonfly JPG 169,444 → 152,725 bytes. |
 | 9. Metadata | Shared helper supplies page-specific titles, descriptions, canonicals, OG/Twitter title/description/image; preserves article type on blog posts. Exact SVG cover converted to PNG for social sharing. |
@@ -29,7 +29,7 @@ New routes: /products/the-3-day-pause, /products/gentle-morning-reset-pack, /pro
 - git diff --check passed.
 - All 19 customer page HTML outputs have canonical URLs and OG/Twitter title, description, and image tags; canonicals are unique.
 - Server-rendered purchase anchors exist with no JavaScript dependency. All rendered images include alt attributes. Homepage image candidates no longer include 3840px widths. All five blog links have descriptive aria-labels.
-- Gumroad product endpoints returned 200 and structured product data confirmed prices: free / $7 / $9.
+- At the time of this audit, Gumroad product endpoints returned 200. The paid seven-day download was subsequently retired on 2026-10-27; do not restore it from this historical audit.
 - Existing GoDaddy checkout returned 200; complete paid checkout was not performed.
 - Pinterest returned 200 with DivaglamKreation profile title.
 - Live browser verified collection CTA and Flodesk fields/Subscribe button rendering. No newsletter signup submitted.

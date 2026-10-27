@@ -12,7 +12,7 @@ Live resolution was **not verified**. The sandbox network blocked outbound reque
 | `gumroadShop` | lemdo8.gumroad.com | Footer |
 | `gumroadSubscribe` | divaglamkreation.myflodesk.com (Flodesk) | Homepage |
 | `gentleReset` | lemdo8.gumroad.com/l/dgk-gentle-pause | Homepage, blog CTAs |
-| `graceNotesDigital` | lemdo8.gumroad.com/l/dgk-7-day-reset-journal | Homepage |
+| The Gentle Reset | Paperback on Amazon; current destination is `links.theGentleResetBook` | Homepage |
 | `morningReset` | lemdo8.gumroad.com/l/Divaglamkreation | Homepage |
 | `reflectionsHardcover` | amazon.com/dp/B0HK1G42HF | Homepage |
 | `theGentleResetBook` | amazon.com/dp/B0HBN6X699 | Footer only |

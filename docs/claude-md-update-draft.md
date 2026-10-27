@@ -12,7 +12,7 @@ For Divag's review. `CLAUDE.md` itself has not been edited.
 
 ## 3. Commerce table
 - Add `links.reflectionsHardcover` (Amazon hardcover, "Reflections").
-- Use "The Gentle Reset" (digital PDF) in place of "Grace Notes 7-Day". Note that the paperback is no longer offered on the homepage or footer. `links.theGentleResetBook` is kept but unused.
+- Superseded 2026-10-27: The Gentle Reset is offered as the Amazon paperback through `links.theGentleResetBook`. The paid Gumroad download is retired; do not restore it.
 
 ## 4. Tool map (replaces the vague "Relevant tools" paragraph)
 | Tool | Role |

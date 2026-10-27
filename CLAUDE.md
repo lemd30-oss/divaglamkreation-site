@@ -330,9 +330,8 @@ These are live customer-facing destinations defined in `app/home-content.ts`. A 
 | Gumroad shop | `links.gumroadShop` |
 | Gumroad subscribe (Glowlist signup) | `links.gumroadSubscribe` |
 | The Gentle Reset, 3-Day Mini (free) | `links.gentleReset` |
-| The Gentle Reset, 7-Day, digital PDF | `links.graceNotesDigital` |
-| Reflections, hardcover journal (Amazon) | `links.reflectionsHardcover` |
-| The Gentle Reset paperback (Amazon) | `links.theGentleResetBook`. Kept but unused. No longer offered on the homepage or footer. |
+| Reflections, hardcover journal (Lulu) | `links.reflectionsHardcover` |
+| The Gentle Reset paperback (Amazon) | `links.theGentleResetBook` — the only current seven-day purchase destination |
 | Gentle Morning Reset Pack | `links.morningReset` |
 | Dragonfly Reminder Charm | `/dragonfly-keychain` (internal route) |
 | Contact email | `links.contactEmail` |
@@ -423,6 +422,8 @@ Tracked, not yet approved. Do not act on these.
 6. Resolve the font gap. The live site renders in Georgia / Times New Roman system serifs. The DGK canonical file in Drive names Playfair Display, Lora, Dancing Script, and Montserrat. Confirm whether the system-serif choice is deliberate (Google Fonts CDN avoidance) before changing anything.
 
 ## Recorded decisions
+
+- 2026-10-27: Divag unpublished the paid seven-day Gumroad download and requested its removal from GitHub/Vercel data. The Gentle Reset now points only to the existing Amazon paperback. This supersedes earlier digital-only and paperback-removal guidance. Keep the free The 3-Day Pause Gumroad destination and Reflections Lulu destination. Do not recreate or promote a separate reading companion.
 
 - 2026-09-30: `/sticker-archive` stays unlinked from the homepage and off the customer journey for now. It is not in the sitemap.
 - 2026-10-01: `/blog/who-are-you-now` now exists in production source after PR #40 merged, but it remains intentionally absent from the blog index and sitemap until the Oct 26–30 story close. Do not add those discovery links early.
