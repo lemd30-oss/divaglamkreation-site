@@ -96,7 +96,6 @@ export default function GentleReleasePromptsBlogPage() {
           <p className="eyebrow">A Gentle Place to Start</p>
           <h2>Begin with The 3-Day Pause.</h2>
           <p>
-            Every one of these prompts lives inside The Gentle Reset, a 7-day digital journal.
             The 3-Day Pause is a gentle place to start —
             one grounding thought, one reflection, one small step a day.
           </p>

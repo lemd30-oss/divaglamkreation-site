@@ -99,7 +99,7 @@ Access these metrics in your Vercel dashboard under **Analytics** > **Speed Insi
 ## Next content updates
 
 - Keep product buttons connected to the correct Gumroad or DGK website destinations.
-- Keep the free 3-Day Reset → Grace Notes 7-Day Reset customer path consistent across the homepage and Gumroad.
+- Keep The 3-Day Pause (free on Gumroad) → The Gentle Reset (paperback on Amazon) customer path consistent. Reflections is available through Lulu.
 - Connect the Glowlist form to the chosen email workflow when ready.
 - Add real product images or Canva exports (optimize to < 200KB per image).
 - Monitor Core Web Vitals monthly and adjust as needed.

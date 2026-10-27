@@ -52,14 +52,8 @@ export default function StartYourGlow() {
               <Image src={seven.image} alt={seven.imageAlt} width={520} height={650} className="start-glow-product-image" />
               <p className="eyebrow">Step 2 · Go deeper</p>
               <h3>{seven.title}</h3><p>{seven.description}</p>
-              <a className="button secondary" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Explore the 7-Day Journal · $7</a>
+              <a className="button secondary" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Explore the Paperback on Amazon</a>
             </article>}
-          </div>
-          <div className="start-glow-paperback">
-            <p className="eyebrow">Prefer a book you can hold?</p>
-            <h3>The Gentle Reset · Paperback Edition</h3>
-            <p>Choose the printed paperback on Amazon if you prefer writing by hand. This is a physical book, separate from the $7 digital PDF.</p>
-            <a className="text-link" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Explore the Paperback on Amazon →</a>
           </div>
         </section>
         <section className="start-glow-closing"><p>You mattered before anyone was looking.</p><a className="text-link" href="/glowlist">Stay connected with the Glowlist →</a></section>

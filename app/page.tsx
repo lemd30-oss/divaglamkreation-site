@@ -76,7 +76,7 @@ export default function Home() {
             <span className="journey-number">Step 2 · Go deeper</span>
             <h3>The Gentle Reset</h3>
             <p>Seven guided days for more room to reflect, pray, and renew.</p>
-            <a className="text-link" href={links.graceNotesDigital} target="_blank" rel="noopener noreferrer">Continue into the 7-Day Gentle Reset →</a>
+            <a className="text-link" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Continue into the 7-Day Gentle Reset →</a>
           </article>
         </div>
       </section>

@@ -56,12 +56,6 @@ export default function GiftGuidePage() {
           </article>
 
           <article className="journey-card">
-            <h3>The Gentle Reset — $7</h3>
-            <p>Seven guided days of quiet reflection, prayer, and renewal in an instant digital download. For when three days opened something she wants to keep exploring.</p>
-            <a className="text-link" href="https://divaglamkreation.com/products/the-gentle-reset">Shop The Gentle Reset</a>
-          </article>
-
-          <article className="journey-card">
             <h3>Dragonfly Reminder Charm — $9.99</h3>
             <p>A pink rhinestone dragonfly with a gold-tone keyring and clasp — a giftable symbol of growth, light, and transformation. Clips to keys, handbags, planners, or journal pouches. For the woman spreading her wings.</p>
             <a className="text-link" href="https://divaglamkreation.com/dragonfly-keychain">Shop the Dragonfly Reminder Charm</a>
@@ -76,7 +70,6 @@ export default function GiftGuidePage() {
           <p className="section-intro">For the woman who loves writing on real pages. Seven gentle days of prayer, reflection, and renewal in a physical journal, available through Amazon.</p>
           <div className="hero-actions">
             <a className="button" href="https://a.co/d/02fnmfkg" target="_blank" rel="noopener noreferrer">Explore the Paperback on Amazon</a>
-            <a className="button secondary" href="/products/the-gentle-reset">Prefer the $7 digital journal?</a>
           </div>
         </div>
       </section>
