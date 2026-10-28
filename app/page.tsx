@@ -99,8 +99,8 @@ export default function Home() {
       <section className="section glowlist-section glowlist-band" id="glowlist">
         <div className="email-box presentation-glowlist glowlist-copy-only">
           <p className="script-accent">Letters from the Glow</p>
-          <h2>Join the Glowlist.</h2>
-          <p>Join the Glowlist for The 3-Day Pause, a free three-day reflection journal, and letters from DivaglamKreation.</p>
+          <h2>Your free 3-Day Pause starts here.</h2>
+          <p>Sign up to receive The 3-Day Pause, a free faith-rooted reflection journal, along with gentle Letters from the Glow every two weeks.</p>
           <div className="flodesk-inline-wrap">
             <div id="fd-form-6abe85f729e2cfa7a04f5774" />
             <Script
