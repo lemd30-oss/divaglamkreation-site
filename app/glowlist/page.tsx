@@ -32,7 +32,7 @@ export default function GlowlistPage() {
           <p>Join the Glowlist for The 3-Day Pause, a free three-day reflection journal, and letters from DivaglamKreation.</p>
           <div className="hero-actions">
             <a className="button" href={glowlistSignupUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
-            <a className="button secondary" href={freeResetUrl} target="_blank" rel="noopener noreferrer">Get The 3-Day Pause — Free</a>
+            <a className="button secondary" href={freeResetUrl}>Get The 3-Day Pause — Free</a>
           </div>
         </div>
 

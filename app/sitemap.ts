@@ -18,7 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/why-you-dont-need-to-earn-rest',
     '/dragonfly-keychain',
     '/products/the-3-day-pause',
-    '/products/gentle-morning-reset-pack',
     '/products/the-gentle-reset',
     '/products/reflections',
     '/glowlist',

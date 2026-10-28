@@ -37,8 +37,8 @@ export function ProductCard({ product, price, amazonUrl }: ProductCardProps) {
         <h3>{product.title}</h3>
         <p>{product.description}</p>
         <div className="product-card-actions">
-          {product.comingSoon ? (
-            <span className="button secondary product-card-button" role="status">Coming Soon</span>
+          {product.comingSoon || product.paused ? (
+            <span className="button secondary product-card-button" role="status">{product.paused ? 'Returning soon' : 'Coming Soon'}</span>
           ) : (
             <a
               className="button secondary product-card-button"

@@ -60,9 +60,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${greatVibes.variable}`}>
       <head>
-        <link rel="preconnect" href="https://lemdo8.gumroad.com" />
         <link rel="preconnect" href="https://www.facebook.com" />
-        <link rel="dns-prefetch" href="https://lemdo8.gumroad.com" />
       </head>
       <body>
         {children}

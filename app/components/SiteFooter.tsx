@@ -36,7 +36,7 @@ export function SiteFooter() {
 
         <div className="footer-column">
           <p className="footer-heading">Shop</p>
-          <a href={links.gentleReset} target="_blank" rel="noopener noreferrer">The 3-Day Pause</a>
+          <a href={links.gentleReset}>The 3-Day Pause</a>
           <a href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">The Gentle Reset on Amazon</a>
           <a href={links.dragonflyKeychain}>Dragonfly Charm</a>
         </div>
@@ -58,8 +58,6 @@ export function SiteFooter() {
           <a href="/policies">Policies</a>
           <span aria-hidden="true">·</span>
           <a href="/return-policy">Returns</a>
-          <span aria-hidden="true">·</span>
-          <a href={links.gumroadShop} target="_blank" rel="noopener noreferrer">Gumroad</a>
         </div>
       </div>
     </footer>
