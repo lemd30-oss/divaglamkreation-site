@@ -45,8 +45,8 @@ export default function GiftGuidePage() {
         <div className="journey-grid journey-grid-two">
           <article className="journey-card">
             <h3>The 3-Day Pause — Free</h3>
-            <p>Three days of short, gentle prompts to slow down and begin again. Delivered instantly as a digital journal. Give it to her — or start it yourself first.</p>
-            <a className="text-link" href="https://divaglamkreation.com/products/the-3-day-pause">Get the free journal</a>
+            <p>Three days of short, gentle prompts to slow down and begin again. Sent by email as a free printable journal when you join the Glowlist. Share the invitation with her — or begin gently yourself.</p>
+            <a className="text-link" href="/#glowlist">Get the free journal</a>
           </article>
 
 
@@ -74,7 +74,7 @@ export default function GiftGuidePage() {
           <h2 id="keepsake-title">A Keepsake to Give</h2>
           <p className="section-intro"><em>One keepsake, made to last past the season.</em></p>
           <h3>Reflections — Hardcover Journal · $42</h3>
-          <p className="reset-feature-lede">A 144-page hardcover journal with 63 prompts for rest, reset, and renewal, with the Glow Owl beside her through each season. The keepsake gift — the one she&apos;ll still be writing in next year. Order the hardcover through Lulu, or choose one of the instant digital journals above.</p>
+          <p className="reset-feature-lede">A 144-page hardcover journal with 63 prompts for rest, reset, and renewal, with the Glow Owl beside her through each season. The keepsake gift — the one she&apos;ll still be writing in next year. Order the hardcover through Lulu, or begin gently with the free 3-Day Pause through the Glowlist.</p>
           <div className="hero-actions">
             <a className="button" href="/products/reflections">Explore Reflections · $42</a>
             <span className="button secondary" role="status">Hardcover available through Lulu</span>

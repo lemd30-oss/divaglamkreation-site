@@ -47,7 +47,7 @@ export default function StickerArchivePage() {
         <p className="archive-intro">
           Earlier pieces from the DivaglamKreation creative journey. These designs come from previous DGK seasons and color palettes. They are preserved here as part of the brand story and are separate from the current product collection.
         </p>
-        <a className="archive-back-link" href="/#shop">← Return to the current collection</a>
+        <a className="archive-back-link" href="/shop">← Return to the current collection</a>
       </section>
 
       <section className="archive-section" aria-labelledby="archive-collection-title">
@@ -83,7 +83,7 @@ export default function StickerArchivePage() {
         <p>
           DivaglamKreation continues to evolve while keeping its heart rooted in faith, reflection, creativity, and gentle encouragement. The archive holds earlier chapters while the current collection carries the brand forward.
         </p>
-        <a className="archive-button" href="/#shop">Explore current DGK products</a>
+        <a className="archive-button" href="/shop">Explore current DGK products</a>
       </section>
 
       <SiteFooter />

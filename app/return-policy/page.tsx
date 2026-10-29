@@ -2,7 +2,7 @@ import { pageMetadata } from '../metadata';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-export const metadata = pageMetadata("Return & Refund Policy", "Read the DivaglamKreation return and refund policy for digital downloads, eligible physical products, damaged orders, cancellations, and replacements.", "/return-policy", "/images/brand/glow-owl.png");
+export const metadata = pageMetadata("Return & Refund Policy", "Read the DivaglamKreation return and refund policy for free journal downloads, direct physical orders, Amazon and Lulu purchases, damaged items, and cancellations.", "/return-policy", "/images/brand/glow-owl.png");
 
 export default function ReturnPolicyPage() {
   return (
@@ -12,27 +12,26 @@ export default function ReturnPolicyPage() {
       <section className="section policy-page">
         <p className="eyebrow">Customer Care</p>
         <h1>Return &amp; Refund Policy</h1>
-        <p className="trust-note">Last updated September 30, 2026.</p>
+        <p className="trust-note">Last updated October 29, 2026.</p>
         <p>
           At DivaglamKreation, each product is created with care and intention. This policy explains how returns,
-          refunds, replacements, cancellations, and digital purchases are handled.
+          refunds, replacements, cancellations, and free digital journal access are handled.
         </p>
 
         <div className="policy-stack">
           <article className="details-card" id="digital-products">
-            <h2>Digital products</h2>
+            <h2>Free digital journals</h2>
             <p>
-              Digital purchases are generally final because the files are delivered immediately. If you are
-              charged twice, receive the wrong file, or cannot access your purchase, please contact
-              DivaglamKreation so we can review the issue and help. Refunds will be provided where required by
-              applicable law.
+              The 3-Day Pause is a free printable journal delivered by email after joining the Glowlist.
+              There is no charge to refund. If the download does not arrive or the file will not open,
+              please <a href="/contact">contact us</a> so we can help.
             </p>
           </article>
 
           <article className="details-card" id="physical-products">
             <h2>Physical products</h2>
             <p>
-              We accept return requests for eligible physical products within 14 days of delivery. To be eligible,
+              For physical items purchased directly from DivaglamKreation, we accept return requests within 14 days of delivery for eligible products. To be eligible,
               the item should be unused, in its original condition, and returned with its original packaging when
               reasonably possible. Proof of purchase may be required.
             </p>
@@ -55,9 +54,9 @@ export default function ReturnPolicyPage() {
           <article className="details-card" id="non-returnable">
             <h2>Non-returnable items</h2>
             <p>
-              Certain products may not be eligible for return, including digital products, personalized
-              or custom-made items, items marked final sale, and products that have been used or damaged after
-              delivery. Any exceptions required by applicable law still apply.
+              Personalized or custom-made items, items marked final sale, and items used or damaged after
+              delivery may not be eligible for return. The free journal does not involve a purchase.
+              Any exceptions required by applicable law still apply.
             </p>
           </article>
 
@@ -92,17 +91,18 @@ export default function ReturnPolicyPage() {
           <article className="details-card" id="cancellations">
             <h2>Order cancellations</h2>
             <p>
-              If you need to cancel an order, contact us as soon as possible. Orders that have already entered
-              production, been shipped, personalized, or digitally delivered may not be eligible for cancellation.
+              For orders placed directly with DivaglamKreation, contact us as soon as possible if you need to
+              cancel. Orders already in production, shipped, or personalized may not be eligible for cancellation.
+              For orders placed through Amazon or Lulu, follow the applicable retailer&apos;s cancellation process.
             </p>
           </article>
 
-          <article className="details-card" id="amazon-orders">
-            <h2>Orders placed through Amazon</h2>
+          <article className="details-card" id="retailer-orders">
+            <h2>Orders placed through Amazon or Lulu</h2>
             <p>
-              Purchases made through Amazon are subject to Amazon&apos;s applicable return and refund process.
-              Please use your Amazon order history or Amazon Customer Service to request a return or refund for
-              those orders.
+              Paperback and hardcover orders placed through Amazon or Lulu are processed and fulfilled by those
+              retailers. Their applicable return, refund, damage, and cancellation policies govern those orders.
+              Please use the retailer&apos;s order history or customer support to request assistance.
             </p>
           </article>
         </div>

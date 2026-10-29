@@ -2,7 +2,7 @@ import { pageMetadata } from '../metadata';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-export const metadata = pageMetadata("Policies", "Read DivaglamKreation policies for digital downloads, physical orders, shipping, refunds, privacy, customer support, and personal-use product terms.", "/policies", "/images/brand/glow-owl.png");
+export const metadata = pageMetadata("Policies", "Read DivaglamKreation policies for free printable journals, physical orders, shipping, returns, privacy, customer support, and personal-use product terms.", "/policies", "/images/brand/glow-owl.png");
 
 export default function PoliciesPage() {
   return (
@@ -12,7 +12,7 @@ export default function PoliciesPage() {
       <section className="section policy-page">
         <p className="eyebrow">Customer Information</p>
         <h1>Shop policies</h1>
-        <p className="trust-note">Last updated October 28, 2026.</p>
+        <p className="trust-note">Last updated October 29, 2026.</p>
         <p>
           DivaglamKreation offers free digital journals delivered by email, printed journals sold through Amazon
           and Lulu, and limited-batch physical products paid for through GoDaddy Payments. These policies explain what customers can expect.
@@ -26,7 +26,7 @@ export default function PoliciesPage() {
               Please use a working email address and save your downloaded files.
             </p>
             <p>
-              Digital files are for the purchaser&apos;s personal use only. They may be printed for personal use,
+              Free digital files are for the recipient&apos;s personal use only. They may be printed for personal use,
               but may not be resold, shared, redistributed, or used commercially without written permission.
             </p>
           </article>
@@ -34,16 +34,16 @@ export default function PoliciesPage() {
           <article className="details-card" id="refunds">
             <h2>Refunds and order concerns</h2>
             <p>
-              Digital purchases are generally final because the files are delivered immediately. If you are
-              charged twice, receive the wrong file, or cannot access your purchase, please contact
-              DivaglamKreation so we can review the issue and help. Refunds will be provided where required by
-              applicable law.
+              The 3-Day Pause is free and delivered by email through the Glowlist, so no purchase or refund
+              is required. If you do not receive the journal or have trouble opening it, please contact us
+              so we can help with access.
             </p>
             <p>
-              For a physical item that arrives damaged, defective, or incorrect, email within seven days of
-              delivery with the order details and clear photographs of the item and packaging. Eligible concerns
-              will be reviewed for an appropriate resolution, which may include a replacement, store credit, or
-              refund.
+              For physical items purchased directly from DivaglamKreation, contact us within seven days
+              of delivery if your item arrives damaged, defective, or incorrect, with your order details
+              and photographs if available. Eligible concerns will be reviewed for an appropriate resolution.
+              Return requests for eligible direct orders may be made within 14 days of delivery.
+              Orders placed through Amazon or Lulu follow those retailers&apos; return and refund processes.
             </p>
             <p>
               Full details on returns, cancellations, and refunds are in our{' '}
@@ -54,8 +54,9 @@ export default function PoliciesPage() {
           <article className="details-card" id="shipping">
             <h2>Shipping and fulfillment</h2>
             <p>
-              Physical products are limited-batch items fulfilled by DivaglamKreation. Shipping details and
-              any applicable charges are shown during checkout or communicated with the order confirmation.
+              Limited-batch physical products purchased directly from DivaglamKreation are fulfilled by us.
+              Books ordered through Amazon or Lulu are fulfilled by those retailers. Shipping charges and
+              delivery details are provided by the checkout provider for each order.
               Delivery estimates are not guarantees and may be affected by the carrier, weather, or holidays.
             </p>
             <p>

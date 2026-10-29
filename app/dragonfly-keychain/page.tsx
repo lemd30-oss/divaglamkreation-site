@@ -81,7 +81,7 @@ export default function DragonflyKeychainPage() {
           You mattered before anyone was looking.
         </p>
         <p style={{ marginTop: '1.5rem' }}>
-          <a href="/#shop">← Continue shopping</a>
+          <a href="/shop">← Continue shopping</a>
         </p>
       </section>
 
