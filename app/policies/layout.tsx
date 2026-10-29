@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     url: '/policies',
     siteName: 'DivaglamKreation',
     title: 'Policies | DivaglamKreation',
-    description: 'DivaglamKreation policies for digital downloads, physical orders, privacy, refunds, and customer support.',
+    description: 'DivaglamKreation policies for free journal access, physical orders, privacy, refunds, and customer support.',
     images: [{ url: '/images/gentle-morning-reset-pack.jpg', alt: 'DivaglamKreation gentle reset journal and encouragement' }],
   },
 };

@@ -422,6 +422,9 @@ Tracked, not yet approved. Do not act on these.
 
 ## Recorded decisions
 
+- 2026-10-29 (latest founder clarification): No paid digital products are currently sold by DivaglamKreation. The 3-Day Pause is a FREE printable PDF resource delivered through the Glowlist on the DGK website, not a paid digital listing; The Gentle Reset 7-Day Guided Journal is a PHYSICAL Amazon paperback; Reflections is a PHYSICAL Lulu hardcover with its promotional campaign on hold pending founder sign-off. The former $7 Gumroad edition and other paid digital offers are retired. The Gentle Morning Reset Pack is paused and is not an available offer. Preserve existing live free PDF and physical commerce URLs. This supersedes all older digital-only and paid-PDF statements, which remain historical records.
+
+
 - 2026-10-28: Gumroad is fully retired. The 3-Day Pause buttons point to the homepage Glowlist form (`/#glowlist`); Flodesk delivers the self-hosted PDF. The Gentle Morning Reset Pack ($7) is paused, not deleted: no checkout link, hidden from shop listings, product page kept. The 7-day digital journal is removed from the website; it is not confirmed as permanently discontinued. Policies, contact, and product-page copy no longer mention Gumroad. This supersedes the Oct 27 instruction to keep the 3-Day Pause on Gumroad.
 - 2026-10-27: Divag unpublished the paid seven-day Gumroad download and requested its removal from GitHub/Vercel data. The Gentle Reset now points only to the existing Amazon paperback. This supersedes earlier digital-only and paperback-removal guidance. Keep the free The 3-Day Pause Gumroad destination and Reflections Lulu destination. Do not recreate or promote a separate reading companion.
 

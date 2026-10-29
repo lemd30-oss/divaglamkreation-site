@@ -14,19 +14,19 @@ export default function PoliciesPage() {
         <h1>Shop policies</h1>
         <p className="trust-note">Last updated October 29, 2026.</p>
         <p>
-          DivaglamKreation offers free digital journals delivered by email, printed journals sold through Amazon
-          and Lulu, and limited-batch physical products paid for through GoDaddy Payments. These policies explain what customers can expect.
+          DivaglamKreation offers The 3-Day Pause as a free printable resource through the Glowlist, printed journals sold through Amazon
+          and Lulu, and limited-batch physical products paid for through GoDaddy Payments. No paid downloadable journals are offered. These policies explain what customers can expect.
         </p>
 
         <div className="policy-stack">
           <article className="details-card" id="digital-downloads">
-            <h2>Digital downloads</h2>
+            <h2>Free Glowlist resource</h2>
             <p>
-              Free digital journals, such as The 3-Day Pause, are sent by email when you join the Glowlist.
+              The 3-Day Pause is a free journal PDF sent by email when you join the Glowlist.
               Please use a working email address and save your downloaded files.
             </p>
             <p>
-              Free digital files are for the recipient&apos;s personal use only. They may be printed for personal use,
+              The free journal file is for the recipient&apos;s personal use only. They may be printed for personal use,
               but may not be resold, shared, redistributed, or used commercially without written permission.
             </p>
           </article>
