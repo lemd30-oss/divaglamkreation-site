@@ -12,18 +12,18 @@ export default function PoliciesPage() {
       <section className="section policy-page">
         <p className="eyebrow">Customer Information</p>
         <h1>Shop policies</h1>
-        <p className="trust-note">Last updated September 30, 2026.</p>
+        <p className="trust-note">Last updated October 28, 2026.</p>
         <p>
-          DivaglamKreation offers digital products delivered through Gumroad and limited-batch physical products
-          paid for through GoDaddy Payments. These policies explain what customers can expect.
+          DivaglamKreation offers free digital journals delivered by email, printed journals sold through Amazon
+          and Lulu, and limited-batch physical products paid for through GoDaddy Payments. These policies explain what customers can expect.
         </p>
 
         <div className="policy-stack">
           <article className="details-card" id="digital-downloads">
             <h2>Digital downloads</h2>
             <p>
-              Digital journals and reset packs are delivered by Gumroad to the email address used at checkout.
-              Customers are responsible for entering a working email address and saving their downloaded files.
+              Free digital journals, such as The 3-Day Pause, are sent by email when you join the Glowlist.
+              Please use a working email address and save your downloaded files.
             </p>
             <p>
               Digital files are for the purchaser&apos;s personal use only. They may be printed for personal use,
@@ -68,8 +68,9 @@ export default function PoliciesPage() {
             <h2>Privacy</h2>
             <p>
               DivaglamKreation uses customer information only as needed to provide products, fulfill orders,
-              answer support requests, and send requested Glowlist updates. Checkout providers such as Gumroad
-              and GoDaddy Payments process payment and order information under their own privacy practices.
+              answer support requests, and send requested Glowlist updates. Checkout providers such as Amazon, Lulu,
+              and GoDaddy Payments process payment and order information under their own privacy practices, and
+              Flodesk manages Glowlist email signups.
             </p>
             <p>
               DivaglamKreation does not sell customer contact information. Customers may unsubscribe from

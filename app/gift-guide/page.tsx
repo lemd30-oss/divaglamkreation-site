@@ -49,11 +49,6 @@ export default function GiftGuidePage() {
             <a className="text-link" href="https://divaglamkreation.com/products/the-3-day-pause">Get the free journal</a>
           </article>
 
-          <article className="journey-card">
-            <h3>Gentle Morning Reset Pack — $7</h3>
-            <p>Soft printable reflection pages to help her begin the day with faith, calm, clarity, and care. A small gift for the woman who does everything for everyone else.</p>
-            <a className="text-link" href="https://divaglamkreation.com/products/gentle-morning-reset-pack">Shop the Gentle Morning Reset Pack</a>
-          </article>
 
           <article className="journey-card">
             <h3>Dragonfly Reminder Charm — $9.99</h3>

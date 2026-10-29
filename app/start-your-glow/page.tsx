@@ -46,7 +46,7 @@ export default function StartYourGlow() {
               <Image src={free.image} alt={free.imageAlt} width={520} height={650} className="start-glow-product-image" />
               <p className="eyebrow">Step 1 · Free</p>
               <h3>{free.title}</h3><p>{free.description}</p>
-              <a className="button" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Get the Free Journal</a>
+              <a className="button" href={links.gentleReset}>Get the Free Journal</a>
             </article>}
             {seven && <article className="start-glow-product">
               <Image src={seven.image} alt={seven.imageAlt} width={520} height={650} className="start-glow-product-image" />

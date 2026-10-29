@@ -12,7 +12,7 @@ import './editorial-refresh.css';
 export const metadata = pageMetadata('DivaglamKreation | Faith-Rooted Journals for Rest, Reflection & Renewal', 'Faith-rooted journals and meaningful gifts for rest, reflection, and renewal. Begin with a quiet pause and remember that every woman matters.', '/');
 
 export default function Home() {
-  const featuredJournals = products.filter((product) => product.title !== 'Dragonfly Reminder Charm');
+  const featuredJournals = products.filter((product) => product.title !== 'Dragonfly Reminder Charm' && !product.paused);
 
   return (
     <main className="site-shell" id="main-content">
@@ -25,7 +25,7 @@ export default function Home() {
           <p className="hero-lede">Faith-rooted journals for the woman you're becoming. Quiet tools for rest, reset, and renewal.</p>
           <div className="hero-actions">
             <a className="button" href="/shop">Shop the Collection</a>
-            <a className="button secondary" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Start with The 3-Day Pause — Free</a>
+            <a className="button secondary" href={links.gentleReset}>Start with The 3-Day Pause — Free</a>
           </div>
         </div>
 
@@ -70,7 +70,7 @@ export default function Home() {
             <span className="journey-number">Step 1 · Free</span>
             <h3>The 3-Day Pause</h3>
             <p>Short daily prompts to slow down, reflect, and hear yourself again.</p>
-            <a className="text-link" href={links.gentleReset} target="_blank" rel="noopener noreferrer">Get The 3-Day Pause — Free →</a>
+            <a className="text-link" href={links.gentleReset}>Get The 3-Day Pause — Free →</a>
           </article>
           <article className="journey-card">
             <span className="journey-number">Step 2 · Go deeper</span>

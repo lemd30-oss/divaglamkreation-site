@@ -136,10 +136,10 @@ The broader DGK operating system uses these tools. Integrations should be explic
 | Canva | Visual production |
 | Metricool | Social scheduling and proof |
 | Vercel / GitHub | Website |
-| Gumroad / Amazon | Verified purchase destinations |
+| Amazon / Lulu | Verified purchase destinations (Gumroad retired 2026-10-28) |
 | Flodesk | Glow Letter and Glowlist signup |
 
-Status rule: **Ready is not Scheduled.** Only a post visibly queued in Metricool is Scheduled. Website and product changes follow edit, preview deployment, review, then production. Never claim a Gumroad or Amazon listing is live unless the link has been verified.
+Status rule: **Ready is not Scheduled.** Only a post visibly queued in Metricool is Scheduled. Website and product changes follow edit, preview deployment, review, then production. Never claim an Amazon or Lulu listing is live unless the link has been verified.
 
 ## Canonical application source
 
@@ -286,7 +286,7 @@ No exception for urgency, convenience, or confidence.
 - Vercel project settings, domains, DNS, production environment variables
 - Deleting **any** file, including files identified here as legacy or stale
 - Rewriting git history or force-pushing
-- Applying a live change to any checkout link, product price, or Gumroad/Amazon URL
+- Applying a live change to any checkout link, product price, or Amazon/Lulu URL
 - Applying any edit to `package.json`, a lockfile, or any other dependency manifest, including version bumps, additions, and removals
 - Creating or connecting new external accounts or integrations
 - Everything listed under the global execution rule
@@ -327,12 +327,11 @@ These are live customer-facing destinations defined in `app/home-content.ts`. A 
 
 | Destination | Where |
 | --- | --- |
-| Gumroad shop | `links.gumroadShop` |
-| Gumroad subscribe (Glowlist signup) | `links.gumroadSubscribe` |
-| The Gentle Reset, 3-Day Mini (free) | `links.gentleReset` |
+| Glowlist signup (Flodesk hosted page) | `links.gumroadSubscribe` (legacy name; points to Flodesk) |
+| The 3-Day Pause (free) | `links.gentleReset` → `/#glowlist` (homepage Flodesk form; welcome email sends `/downloads/3-day-mini-reset-journal.pdf`) |
 | Reflections, hardcover journal (Lulu) | `links.reflectionsHardcover` |
 | The Gentle Reset paperback (Amazon) | `links.theGentleResetBook` — the only current seven-day purchase destination |
-| Gentle Morning Reset Pack | `links.morningReset` |
+| Gentle Morning Reset Pack | Paused 2026-10-28 (`paused: true`). No checkout link; hidden from shop, gift guide, and sitemap. `/products/gentle-morning-reset-pack` and assets kept for relaunch. |
 | Dragonfly Reminder Charm | `/dragonfly-keychain` (internal route) |
 | Contact email | `links.contactEmail` |
 
@@ -423,6 +422,7 @@ Tracked, not yet approved. Do not act on these.
 
 ## Recorded decisions
 
+- 2026-10-28: Gumroad is fully retired. The 3-Day Pause buttons point to the homepage Glowlist form (`/#glowlist`); Flodesk delivers the self-hosted PDF. The Gentle Morning Reset Pack ($7) is paused, not deleted: no checkout link, hidden from shop listings, product page kept. The 7-day digital journal is removed from the website; it is not confirmed as permanently discontinued. Policies, contact, and product-page copy no longer mention Gumroad. This supersedes the Oct 27 instruction to keep the 3-Day Pause on Gumroad.
 - 2026-10-27: Divag unpublished the paid seven-day Gumroad download and requested its removal from GitHub/Vercel data. The Gentle Reset now points only to the existing Amazon paperback. This supersedes earlier digital-only and paperback-removal guidance. Keep the free The 3-Day Pause Gumroad destination and Reflections Lulu destination. Do not recreate or promote a separate reading companion.
 
 - 2026-09-30: `/sticker-archive` stays unlinked from the homepage and off the customer journey for now. It is not in the sitemap.

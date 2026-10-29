@@ -21,7 +21,7 @@ export default function ContactPage() {
         <div className="policy-grid">
           <article className="details-card">
             <h2>Digital downloads</h2>
-            <p>Include the Gumroad email, product name, and a short description of the issue.</p>
+            <p>Include the email you used to join the Glowlist, the product name, and a short description of the issue.</p>
           </article>
           <article className="details-card">
             <h2>Physical orders</h2>

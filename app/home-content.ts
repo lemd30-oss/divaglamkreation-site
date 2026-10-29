@@ -8,6 +8,7 @@ export type Product = {
   buttonLabel: string;
   external: boolean;
   comingSoon?: boolean;
+  paused?: boolean;
   featured?: boolean;
   stepLabel?: string;
   imageFit?: 'contain';
@@ -15,12 +16,10 @@ export type Product = {
 };
 
 export const links = {
-  gumroadShop: 'https://lemdo8.gumroad.com/',
   gumroadSubscribe: 'https://divaglamkreation.myflodesk.com',
-  gentleReset: 'https://lemdo8.gumroad.com/l/dgk-gentle-pause',
+  gentleReset: '/#glowlist',
   theGentleResetBook: 'https://a.co/d/02fnmfkg',
   reflectionsHardcover: 'https://www.lulu.com/shop/divaglam-kreation/reflections-rest-reset-renewal/hardcover/product-2mgzme5.html',
-  morningReset: 'https://lemdo8.gumroad.com/l/Divaglamkreation',
   contactEmail: 'mailto:divaglamkreation@gmail.com',
   dragonflyKeychain: '/dragonfly-keychain',
   facebook: 'https://www.facebook.com/share/1G9VQrJnaZ/',
@@ -42,7 +41,7 @@ export const products: Product[] = [
     href: links.gentleReset,
     priceLabel: 'Free · Digital journal',
     buttonLabel: 'Get The 3-Day Pause — Free',
-    external: true,
+    external: false,
     stepLabel: 'Step 1 · Free',
   },
   {
@@ -50,10 +49,11 @@ export const products: Product[] = [
     description: 'Soft printable pages created to help you begin the day with faith, calm, clarity, and care.',
     image: '/images/file_00000000340c81f580fa4e9e6704ebf2.png',
     imageAlt: 'Gentle Morning Reset Pack with five printable reflection pages',
-    href: links.morningReset,
+    href: '/products/gentle-morning-reset-pack',
     priceLabel: '$7 · Digital PDF',
     buttonLabel: 'Explore the Morning Reset',
-    external: true,
+    external: false,
+    paused: true,
     stepLabel: 'Anytime',
   },
   {

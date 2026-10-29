@@ -17,7 +17,6 @@ const byTitle = (title: string) => products.find((product) => product.title === 
 export default function ShopPage() {
   const threeDay = byTitle('The 3-Day Pause');
   const gentleReset = byTitle('The Gentle Reset');
-  const morningReset = byTitle('Gentle Morning Reset Pack');
   const reflections = byTitle('Reflections');
   const dragonfly = byTitle('Dragonfly Reminder Charm');
 
@@ -65,7 +64,6 @@ export default function ShopPage() {
           </div>
         </div>
         <div className="product-grid shop-grid">
-          <ProductCard product={morningReset} />
           <ProductCard product={reflections} />
         </div>
       </section>
