@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     url: '/contact',
     siteName: 'DivaglamKreation',
     title: 'Contact | DivaglamKreation',
-    description: 'Contact DivaglamKreation for help with digital downloads, physical orders, or general questions.',
+    description: 'Contact DivaglamKreation for help with the free Glowlist journal, physical orders, or general questions.',
     images: [{ url: '/images/gentle-morning-reset-pack.jpg', alt: 'DivaglamKreation gentle reset journal and encouragement' }],
   },
 };

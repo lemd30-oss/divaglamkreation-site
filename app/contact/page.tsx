@@ -3,7 +3,7 @@ import { pageMetadata } from '../metadata';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-export const metadata = pageMetadata("Contact", "Contact DivaglamKreation for friendly help with digital downloads, physical orders, product questions, order concerns, and general customer support.", "/contact", "/images/brand/glow-owl.png");
+export const metadata = pageMetadata("Contact", "Contact DivaglamKreation for friendly help with the free Glowlist journal, physical orders, product questions, order concerns, and general customer support.", "/contact", "/images/brand/glow-owl.png");
 
 export default function ContactPage() {
   return (
@@ -20,8 +20,8 @@ export default function ContactPage() {
 
         <div className="policy-grid">
           <article className="details-card">
-            <h2>Digital downloads</h2>
-            <p>Include the email you used to join the Glowlist, the product name, and a short description of the issue.</p>
+            <h2>Free Glowlist journal</h2>
+            <p>If your free 3-Day Pause journal did not arrive or will not open, include the email you used to join the Glowlist and a short description of the issue.</p>
           </article>
           <article className="details-card">
             <h2>Physical orders</h2>

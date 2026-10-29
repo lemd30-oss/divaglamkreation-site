@@ -15,12 +15,12 @@ export default function ReturnPolicyPage() {
         <p className="trust-note">Last updated October 29, 2026.</p>
         <p>
           At DivaglamKreation, each product is created with care and intention. This policy explains how returns,
-          refunds, replacements, cancellations, and free digital journal access are handled.
+          refunds, replacements, cancellations, and access to the free Glowlist journal are handled.
         </p>
 
         <div className="policy-stack">
           <article className="details-card" id="digital-products">
-            <h2>Free digital journals</h2>
+            <h2>Free Glowlist journal</h2>
             <p>
               The 3-Day Pause is a free printable journal delivered by email after joining the Glowlist.
               There is no charge to refund. If the download does not arrive or the file will not open,
