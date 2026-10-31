@@ -1,154 +1,229 @@
-/* Choose Your Glow — scoped to the existing Start Your Glow page. */
+/* The compact, visitor-led Glow Path lives within Start Your Glow.
+   Keep DGK's established editorial design and page structure. */
 .glow-path {
+  max-width: 960px;
   margin: 0 auto;
-  max-width: 1120px;
-  padding: clamp(3.5rem, 7vw, 6.25rem) 1.25rem;
+  padding: clamp(2rem, 4vw, 3.25rem) 1.25rem clamp(1rem, 2vw, 1.75rem);
+  scroll-margin-top: 5rem;
 }
 
 .glow-path-intro {
-  margin: 0 auto 2rem;
-  max-width: 780px;
-  text-align: center;
+  max-width: 700px;
+  margin: 0 0 1.4rem;
+}
+
+.glow-path-intro .eyebrow {
+  font-size: .72rem;
+  margin-bottom: .6rem;
 }
 
 .glow-path-intro h2 {
-  font-size: clamp(2.2rem, 5vw, 4.2rem);
-  line-height: 1.1;
+  font-size: clamp(1.8rem, 3.5vw, 2.9rem);
+  line-height: 1.14;
+  margin: 0 0 .6rem;
 }
 
 .glow-path-intro > p:last-child {
-  margin: 0 auto;
-  max-width: 650px;
+  font-size: .95rem;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 620px;
 }
 
 .glow-path-options {
   display: grid;
-  gap: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+  align-items: start;
+}
+
+.glow-path-item {
+  border: 1px solid #dfd1c0;
+  border-radius: 13px;
+  overflow: hidden;
+  background: #fffaf3;
+  min-width: 0;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.glow-path-item-selected {
+  background: #fffaf3;
+  border-color: var(--dgk-gold-text);
 }
 
 .glow-path-option {
-  align-items: flex-start;
-  background: var(--warm-cream);
-  border: 1px solid rgba(107, 63, 42, 0.23);
-  border-radius: 1.1rem;
-  color: var(--dgk-brown-deep);
   display: flex;
-  gap: 1rem;
+  align-items: center;
   justify-content: flex-start;
-  min-height: 116px;
-  padding: 1.35rem;
-  text-align: left;
+  gap: .85rem;
   width: 100%;
+  min-height: 74px;
+  background: transparent;
+  border-radius: 0;
+  padding: .85rem 1rem;
+  text-align: left;
+  color: var(--dgk-brown-deep);
 }
 
-.glow-path-option:hover,
-.glow-path-option[aria-pressed="true"] {
-  background: var(--dgk-sand);
-  border-color: var(--dgk-gold-text);
+.glow-path-option:hover {
+  background: #f5e9d6;
   color: var(--dgk-brown-deep);
+  transform: none;
 }
 
 .glow-path-option:focus-visible,
-.glow-path-clear:focus-visible,
-.glow-path-actions .button:focus-visible {
+.glow-path-link:focus-visible,
+.glow-path-clear:focus-visible {
   outline: 3px solid var(--dgk-plum);
-  outline-offset: 4px;
+  outline-offset: -3px;
 }
 
-.glow-path-option-number {
-  color: var(--dgk-gold-text);
-  font-size: 0.85rem;
+.glow-path-number {
+  flex-shrink: 0;
+  align-self: center;
+  font-family: Georgia, serif;
+  font-size: .76rem;
   font-weight: 700;
-  padding-top: 0.2rem;
+  color: var(--dgk-gold-text);
 }
 
 .glow-path-option-copy {
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 0.45rem;
+  gap: .16rem;
+  min-width: 0;
 }
 
 .glow-path-option-copy strong {
-  font-size: 1.18rem;
+  color: var(--dgk-brown-deep);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .glow-path-option-copy > span {
-  color: var(--soft-brown);
-  font-size: 0.94rem;
-  line-height: 1.5;
+  color: #766459;
+  font-size: .78rem;
+  line-height: 1.4;
 }
 
 .glow-path-option-mark {
   color: var(--dgk-plum);
-  font-size: 1.35rem;
-  font-weight: 700;
+  flex-shrink: 0;
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1;
+  align-self: center;
 }
 
-.glow-path-result {
-  background: var(--dgk-sand);
-  border-left: 3px solid var(--dgk-gold-text);
-  margin-top: 1.5rem;
-  min-height: 164px;
-  padding: clamp(1.5rem, 4vw, 2.5rem);
+.glow-path-detail {
+  border-top: 1px solid rgba(107,63,42,.17);
+  margin: 0 1rem 1rem;
+  padding-top: .85rem;
 }
 
-.glow-path-result-label {
+.glow-path-detail p {
+  color: var(--soft-brown);
+  font-size: .87rem;
+  line-height: 1.58;
+  margin: 0 0 .75rem;
+}
+
+.glow-path-link {
   color: var(--dgk-plum);
-  font-size: 0.83rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.glow-path-result h3 {
-  font-size: clamp(1.5rem, 3vw, 2.2rem);
-}
-
-.glow-path-result > p:not(.glow-path-result-label) {
-  max-width: 720px;
-}
-
-.glow-path-actions {
+  display: inline-flex;
   align-items: center;
+  gap: .3rem;
+  font-family: Georgia, serif;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.glow-path-link:hover {
+  color: var(--dgk-plum-deep);
+}
+
+.glow-path-footer {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .35rem 1rem;
+  margin-top: .9rem;
 }
 
-.glow-path-actions .glow-path-clear {
+.glow-path-footer p {
+  max-width: 690px;
+  color: #766459;
+  font-size: .75rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.glow-path-clear {
+  padding: .2rem 0;
   background: transparent;
-  border: 1px solid var(--dgk-brown);
-  color: var(--dgk-brown-deep);
+  color: var(--dgk-plum);
+  font-family: inherit;
+  font-size: .75rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-radius: 0;
 }
 
-.glow-path-actions .glow-path-clear:hover {
-  background: var(--dgk-ivory);
-  color: var(--dgk-brown-deep);
+.glow-path-clear:hover {
+  background: transparent;
+  color: var(--dgk-plum-deep);
+  transform: none;
 }
 
-.glow-path-privacy {
-  color: var(--soft-brown);
-  font-size: 0.88rem;
-  line-height: 1.6;
-  margin: 1rem auto 0;
-  max-width: 840px;
-  text-align: center;
+/* Make the next existing Start Your Glow section feel connected. */
+.glow-path + .start-glow-products {
+  padding-top: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 @media (max-width: 700px) {
+  .glow-path {
+    padding: 2rem 1.25rem .75rem;
+  }
+
+  .glow-path-intro {
+    margin-bottom: 1.1rem;
+  }
+
+  .glow-path-intro h2 {
+    font-size: clamp(1.65rem, 8vw, 2.3rem);
+  }
+
   .glow-path-options {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: .55rem;
   }
 
   .glow-path-option {
-    min-height: 102px;
+    min-height: 62px;
+    padding: .7rem .85rem;
   }
 
-  .glow-path-actions {
-    align-items: stretch;
-    flex-direction: column;
+  .glow-path-option-copy strong {
+    font-size: .94rem;
+  }
+
+  .glow-path-option-copy > span {
+    font-size: .75rem;
+  }
+
+  .glow-path-detail {
+    margin: 0 .85rem .85rem;
+    padding-top: .65rem;
+  }
+
+  .glow-path-footer {
+    margin-top: .65rem;
   }
 }
