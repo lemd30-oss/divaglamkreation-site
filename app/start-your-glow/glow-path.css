@@ -1,0 +1,154 @@
+/* Choose Your Glow — scoped to the existing Start Your Glow page. */
+.glow-path {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: clamp(3.5rem, 7vw, 6.25rem) 1.25rem;
+}
+
+.glow-path-intro {
+  margin: 0 auto 2rem;
+  max-width: 780px;
+  text-align: center;
+}
+
+.glow-path-intro h2 {
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  line-height: 1.1;
+}
+
+.glow-path-intro > p:last-child {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.glow-path-options {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.glow-path-option {
+  align-items: flex-start;
+  background: var(--warm-cream);
+  border: 1px solid rgba(107, 63, 42, 0.23);
+  border-radius: 1.1rem;
+  color: var(--dgk-brown-deep);
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  min-height: 116px;
+  padding: 1.35rem;
+  text-align: left;
+  width: 100%;
+}
+
+.glow-path-option:hover,
+.glow-path-option[aria-pressed="true"] {
+  background: var(--dgk-sand);
+  border-color: var(--dgk-gold-text);
+  color: var(--dgk-brown-deep);
+}
+
+.glow-path-option:focus-visible,
+.glow-path-clear:focus-visible,
+.glow-path-actions .button:focus-visible {
+  outline: 3px solid var(--dgk-plum);
+  outline-offset: 4px;
+}
+
+.glow-path-option-number {
+  color: var(--dgk-gold-text);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding-top: 0.2rem;
+}
+
+.glow-path-option-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.glow-path-option-copy strong {
+  font-size: 1.18rem;
+}
+
+.glow-path-option-copy > span {
+  color: var(--soft-brown);
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.glow-path-option-mark {
+  color: var(--dgk-plum);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.glow-path-result {
+  background: var(--dgk-sand);
+  border-left: 3px solid var(--dgk-gold-text);
+  margin-top: 1.5rem;
+  min-height: 164px;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.glow-path-result-label {
+  color: var(--dgk-plum);
+  font-size: 0.83rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.glow-path-result h3 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.glow-path-result > p:not(.glow-path-result-label) {
+  max-width: 720px;
+}
+
+.glow-path-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.glow-path-actions .glow-path-clear {
+  background: transparent;
+  border: 1px solid var(--dgk-brown);
+  color: var(--dgk-brown-deep);
+}
+
+.glow-path-actions .glow-path-clear:hover {
+  background: var(--dgk-ivory);
+  color: var(--dgk-brown-deep);
+}
+
+.glow-path-privacy {
+  color: var(--soft-brown);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 1rem auto 0;
+  max-width: 840px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .glow-path-options {
+    grid-template-columns: 1fr;
+  }
+
+  .glow-path-option {
+    min-height: 102px;
+  }
+
+  .glow-path-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
