@@ -6,6 +6,8 @@ import { pageMetadata } from '../metadata';
 import '../home.css';
 import '../editorial-refresh.css';
 import './start-your-glow.css';
+import './glow-path.css';
+import { GlowPathPicker } from './GlowPathPicker';
 
 export const metadata = pageMetadata(
   'Start Your Glow | DivaglamKreation',
@@ -37,6 +39,7 @@ export default function StartYourGlow() {
             <a className="text-link" href="/about">Read our story →</a>
           </div>
         </section>
+        <GlowPathPicker />
         <section id="begin" className="start-glow-products" aria-labelledby="glow-products-heading">
           <p className="eyebrow">Your gentle first step</p>
           <h2 id="glow-products-heading">Start with three quiet days.</h2>
