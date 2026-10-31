@@ -10,8 +10,8 @@ const glowPaths = [
     id: 'reflect',
     number: '01',
     title: 'A quiet moment',
-    preview: 'Space to listen to yourself.',
-    result: 'Your story matters, including the quiet chapters. Start with the owl and the question that began DivaglamKreation: Who are you?',
+    preview: 'Space to listen to yourself',
+    result: 'Begin with the Glow Owl and the question that started it all: “Who are you?” Your story matters, even in its quiet chapters.',
     href: '/blog/it-started-with-this-owl',
     cta: 'Read the Glow Owl story',
   },
@@ -19,8 +19,8 @@ const glowPaths = [
     id: 'faith',
     number: '02',
     title: 'Faith & encouragement',
-    preview: 'A gentle reminder to keep close.',
-    result: 'You do not have to earn your rest. Find a faith-rooted letter for the days when a little grace is what you need.',
+    preview: 'A gentle reminder for today',
+    result: 'Some days, all you need is permission to rest. This little letter offers encouragement rooted in faith and grace.',
     href: '/blog/why-you-dont-need-to-earn-rest',
     cta: 'Read a gentle letter',
   },
@@ -28,17 +28,17 @@ const glowPaths = [
     id: 'reset',
     number: '03',
     title: 'A gentle reset',
-    preview: 'One small step to begin again.',
-    result: 'Begin with The 3-Day Pause, a free guided reflection, and continue into The Gentle Reset whenever you are ready.',
+    preview: 'Begin again, one page at a time',
+    result: 'Start with The 3-Day Pause, a free reflection journal. You can go deeper with The Gentle Reset whenever you feel ready.',
     href: '#begin',
-    cta: 'Explore your first step',
+    cta: 'Explore the free journal',
   },
   {
     id: 'create',
     number: '04',
     title: 'Creative inspiration',
-    preview: 'A little room to make and become.',
-    result: 'Come behind the scenes of a creative life shaped by coffee, reflection, journaling, and the simple truth that every woman matters.',
+    preview: 'Coffee, journaling & creative living',
+    result: 'Come behind the scenes, where a quiet creative life and a simple reminder—that every woman matters—became DivaglamKreation.',
     href: '/studio',
     cta: 'Visit the DGK Studio',
   },
@@ -51,25 +51,26 @@ export function GlowPathPicker() {
 
   useEffect(() => {
     try {
-      const remembered = window.localStorage.getItem(STORAGE_KEY);
-      const saved = glowPaths.find((path) => path.id === remembered);
-      if (saved) setSelected(saved.id);
+      const saved = window.localStorage.getItem(STORAGE_KEY);
+      if (glowPaths.some((path) => path.id === saved)) {
+        setSelected(saved as GlowPathId);
+      }
     } catch {
-      // The experience still works when browser storage is unavailable.
+      // Browser storage is optional.
     }
   }, []);
 
-  function selectPath(id: GlowPathId) {
+  function choose(id: GlowPathId) {
     setSelected(id);
     try {
       window.localStorage.setItem(STORAGE_KEY, id);
     } catch {
-      // Persisting a choice is optional.
+      // Still usable when storage is blocked.
     }
     try {
       track('glow_path_selected', { path: id });
     } catch {
-      // Tracking must never prevent someone from using the page.
+      // Never interrupt navigation for analytics.
     }
   }
 
@@ -78,68 +79,65 @@ export function GlowPathPicker() {
     try {
       window.localStorage.removeItem(STORAGE_KEY);
     } catch {
-      // Selection can always be cleared for the current visit.
+      // Still clears the current session's choice.
     }
   }
-
-  const active = glowPaths.find((path) => path.id === selected);
 
   return (
     <section className="glow-path" id="choose-your-glow" aria-labelledby="choose-glow-title">
       <div className="glow-path-intro">
         <p className="eyebrow">Choose Your Glow</p>
-        <h2 id="choose-glow-title">What does your heart need today?</h2>
-        <p>There is no wrong place to begin. Choose what speaks to you, and we will point you to a thoughtful first step.</p>
+        <h2 id="choose-glow-title">A little space for what you need.</h2>
+        <p>Choose what speaks to your season. We’ll help you find a gentle place to begin.</p>
       </div>
 
       <div className="glow-path-options" role="group" aria-label="Choose a Glow Path">
-        {glowPaths.map((path) => (
-          <button
-            type="button"
-            className="glow-path-option"
-            aria-pressed={selected === path.id}
-            key={path.id}
-            onClick={() => selectPath(path.id)}
-          >
-            <span className="glow-path-option-number" aria-hidden="true">{path.number}</span>
-            <span className="glow-path-option-copy">
-              <strong>{path.title}</strong>
-              <span>{path.preview}</span>
-            </span>
-            <span className="glow-path-option-mark" aria-hidden="true">{selected === path.id ? '✓' : '→'}</span>
-          </button>
-        ))}
-      </div>
-
-      <div className="glow-path-result" aria-live="polite" aria-atomic="true">
-        {active ? (
-          <>
-            <p className="glow-path-result-label">Your Glow Path</p>
-            <h3>{active.title}</h3>
-            <p>{active.result}</p>
-            <div className="glow-path-actions">
-              <a
-                className="button"
-                href={active.href}
-                onClick={() => {
-                  try {
-                    track('glow_path_continue', { path: active.id });
-                  } catch {
-                    // A blocked analytics request never blocks navigation.
-                  }
-                }}
+        {glowPaths.map((path) => {
+          const isSelected = selected === path.id;
+          return (
+            <div className={isSelected ? 'glow-path-item glow-path-item-selected' : 'glow-path-item'} key={path.id}>
+              <button
+                type="button"
+                className="glow-path-option"
+                aria-expanded={isSelected}
+                aria-pressed={isSelected}
+                onClick={() => choose(path.id)}
               >
-                {active.cta} →
-              </a>
-              <button type="button" className="glow-path-clear" onClick={clearChoice}>Forget my choice</button>
+                <span className="glow-path-number" aria-hidden="true">{path.number}</span>
+                <span className="glow-path-option-copy">
+                  <strong>{path.title}</strong>
+                  <span>{path.preview}</span>
+                </span>
+                <span className="glow-path-option-mark" aria-hidden="true">{isSelected ? '−' : '+'}</span>
+              </button>
+
+              {isSelected && (
+                <div className="glow-path-detail">
+                  <p>{path.result}</p>
+                  <a
+                    className="glow-path-link"
+                    href={path.href}
+                    onClick={() => {
+                      try {
+                        track('glow_path_continue', { path: path.id });
+                      } catch {
+                        // Navigating is always possible without analytics.
+                      }
+                    }}
+                  >
+                    {path.cta} <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              )}
             </div>
-          </>
-        ) : (
-          <p className="glow-path-empty">Choose one of the four paths above to find a gentle next step.</p>
-        )}
+          );
+        })}
       </div>
 
-      <p className="glow-path-privacy">Your choice is kept in this browser so you can return to it, and you can forget it any time. We record only the chosen topic in site analytics—not your name or any personal journal answers.</p>
+      <div className="glow-path-footer">
+        <p>Your choice stays in this browser. We measure selected topics to improve the experience, but collect no journal answers.</p>
+        {selected && <button type="button" className="glow-path-clear" onClick={clearChoice}>Clear my choice</button>}
+      </div>
     </section>
   );
 }
