@@ -1,0 +1,229 @@
+/* The compact, visitor-led Glow Path lives within Start Your Glow.
+   Keep DGK's established editorial design and page structure. */
+.glow-path {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: clamp(2rem, 4vw, 3.25rem) 1.25rem clamp(1rem, 2vw, 1.75rem);
+  scroll-margin-top: 5rem;
+}
+
+.glow-path-intro {
+  max-width: 700px;
+  margin: 0 0 1.4rem;
+}
+
+.glow-path-intro .eyebrow {
+  font-size: .72rem;
+  margin-bottom: .6rem;
+}
+
+.glow-path-intro h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.9rem);
+  line-height: 1.14;
+  margin: 0 0 .6rem;
+}
+
+.glow-path-intro > p:last-child {
+  font-size: .95rem;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 620px;
+}
+
+.glow-path-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+  align-items: start;
+}
+
+.glow-path-item {
+  border: 1px solid #dfd1c0;
+  border-radius: 13px;
+  overflow: hidden;
+  background: #fffaf3;
+  min-width: 0;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.glow-path-item-selected {
+  background: #fffaf3;
+  border-color: var(--dgk-gold-text);
+}
+
+.glow-path-option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .85rem;
+  width: 100%;
+  min-height: 74px;
+  background: transparent;
+  border-radius: 0;
+  padding: .85rem 1rem;
+  text-align: left;
+  color: var(--dgk-brown-deep);
+}
+
+.glow-path-option:hover {
+  background: #f5e9d6;
+  color: var(--dgk-brown-deep);
+  transform: none;
+}
+
+.glow-path-option:focus-visible,
+.glow-path-link:focus-visible,
+.glow-path-clear:focus-visible {
+  outline: 3px solid var(--dgk-plum);
+  outline-offset: -3px;
+}
+
+.glow-path-number {
+  flex-shrink: 0;
+  align-self: center;
+  font-family: Georgia, serif;
+  font-size: .76rem;
+  font-weight: 700;
+  color: var(--dgk-gold-text);
+}
+
+.glow-path-option-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: .16rem;
+  min-width: 0;
+}
+
+.glow-path-option-copy strong {
+  color: var(--dgk-brown-deep);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.glow-path-option-copy > span {
+  color: #766459;
+  font-size: .78rem;
+  line-height: 1.4;
+}
+
+.glow-path-option-mark {
+  color: var(--dgk-plum);
+  flex-shrink: 0;
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1;
+  align-self: center;
+}
+
+.glow-path-detail {
+  border-top: 1px solid rgba(107,63,42,.17);
+  margin: 0 1rem 1rem;
+  padding-top: .85rem;
+}
+
+.glow-path-detail p {
+  color: var(--soft-brown);
+  font-size: .87rem;
+  line-height: 1.58;
+  margin: 0 0 .75rem;
+}
+
+.glow-path-link {
+  color: var(--dgk-plum);
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  font-family: Georgia, serif;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.glow-path-link:hover {
+  color: var(--dgk-plum-deep);
+}
+
+.glow-path-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .35rem 1rem;
+  margin-top: .9rem;
+}
+
+.glow-path-footer p {
+  max-width: 690px;
+  color: #766459;
+  font-size: .75rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.glow-path-clear {
+  padding: .2rem 0;
+  background: transparent;
+  color: var(--dgk-plum);
+  font-family: inherit;
+  font-size: .75rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-radius: 0;
+}
+
+.glow-path-clear:hover {
+  background: transparent;
+  color: var(--dgk-plum-deep);
+  transform: none;
+}
+
+/* Make the next existing Start Your Glow section feel connected. */
+.glow-path + .start-glow-products {
+  padding-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+@media (max-width: 700px) {
+  .glow-path {
+    padding: 2rem 1.25rem .75rem;
+  }
+
+  .glow-path-intro {
+    margin-bottom: 1.1rem;
+  }
+
+  .glow-path-intro h2 {
+    font-size: clamp(1.65rem, 8vw, 2.3rem);
+  }
+
+  .glow-path-options {
+    grid-template-columns: minmax(0, 1fr);
+    gap: .55rem;
+  }
+
+  .glow-path-option {
+    min-height: 62px;
+    padding: .7rem .85rem;
+  }
+
+  .glow-path-option-copy strong {
+    font-size: .94rem;
+  }
+
+  .glow-path-option-copy > span {
+    font-size: .75rem;
+  }
+
+  .glow-path-detail {
+    margin: 0 .85rem .85rem;
+    padding-top: .65rem;
+  }
+
+  .glow-path-footer {
+    margin-top: .65rem;
+  }
+}
