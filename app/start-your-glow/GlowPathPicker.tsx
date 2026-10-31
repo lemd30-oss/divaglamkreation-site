@@ -39,8 +39,8 @@ const glowPaths = [
     title: 'Creative inspiration',
     preview: 'Coffee, journaling & creative living',
     result: 'Come behind the scenes, where a quiet creative life and a simple reminder—that every woman matters—became DivaglamKreation.',
-    href: '/studio',
-    cta: 'Visit the DGK Studio',
+    href: '/blog/i-built-my-website-myself',
+    cta: 'Read a Behind the Glow story',
   },
 ] as const;
 
