@@ -79,6 +79,7 @@ export default function Home() {
             <a className="text-link" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Continue into the 7-Day Gentle Reset →</a>
           </article>
         </div>
+        <p className="section-intro">Not sure where to begin? <a className="text-link" href="/start-your-glow#choose-your-glow">Choose Your Glow →</a></p>
       </section>
 
       <section className="section story-section" id="about" aria-labelledby="story-question">

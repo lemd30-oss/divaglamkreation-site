@@ -36,8 +36,8 @@ export const products: Product[] = [
   {
     title: 'The 3-Day Pause',
     description: 'Free. Three days of faith-rooted reflection prompts to pause, pray, and begin again.',
-    image: '/images/file_000000007a0481f59f22529a564a90af.png',
-    imageAlt: 'The 3-Day Pause free journal beside a pinecone and neutral stationery',
+    image: '/images/the-3-day-pause-free.svg',
+    imageAlt: 'Promotional graphic for The 3-Day Pause, a free reflection journal delivered through the Glowlist',
     href: links.gentleReset,
     priceLabel: 'Free · Glowlist resource',
     buttonLabel: 'Get The 3-Day Pause — Free',

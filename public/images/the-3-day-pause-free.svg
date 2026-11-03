@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 850" role="img" aria-labelledby="title description">
+  <title id="title">The 3-Day Pause — Free Reflection Journal</title>
+  <desc id="description">A warm cream DivaglamKreation promotional graphic for the free 3-Day Pause journal, sent through the Glowlist.</desc>
+  <rect width="700" height="850" fill="#f6f0e7"/>
+  <rect x="38" y="38" width="624" height="774" rx="10" fill="#fffbf4" stroke="#d8c4ab" stroke-width="2"/>
+  <rect x="58" y="58" width="584" height="734" rx="3" fill="none" stroke="#eadfcf" stroke-width="1"/>
+  <g fill="none" stroke="#a78454" stroke-width="2" stroke-linecap="round">
+    <path d="M280 181 H420"/>
+    <path d="M350 157v-27m0 12c-15-3-23-12-26-23 15 2 23 9 26 23m0 16c14-4 22-12 25-24-14 2-21 10-25 24"/>
+    <path d="M295 610H405"/>
+  </g>
+  <text x="350" y="117" fill="#5b2a5e" text-anchor="middle" font-family="Georgia, serif" font-size="21" font-weight="bold" letter-spacing="4">DIVAGLAMKREATION</text>
+  <text x="350" y="302" fill="#6b3f2a" text-anchor="middle" font-family="Georgia, serif" font-size="76">The 3-Day</text>
+  <text x="350" y="399" fill="#6b3f2a" text-anchor="middle" font-family="Georgia, serif" font-size="106">Pause</text>
+  <text x="350" y="466" fill="#7a5a12" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="20" letter-spacing="3">FREE REFLECTION JOURNAL</text>
+  <g fill="#6a5a52" font-family="Georgia, serif" text-anchor="middle" font-size="27">
+    <text x="350" y="529">Three gentle days to pause,</text>
+    <text x="350" y="568">pray, and begin again.</text>
+  </g>
+  <text x="350" y="675" fill="#5b2a5e" text-anchor="middle" font-family="Georgia, serif" font-size="23" font-weight="bold">Delivered through the Glowlist</text>
+  <text x="350" y="725" fill="#6b3f2a" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-style="italic">Every woman matters.</text>
+</svg>
