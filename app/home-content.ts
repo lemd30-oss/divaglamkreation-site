@@ -28,7 +28,7 @@ export const links = {
 } as const;
 
 export const images = {
-  glowlist: '/images/file_000000006878822f9afa6bda9bae9f6d.png',
+  glowlist: '/images/the-3-day-pause-owl-cover-20261107.jpg',
   hero: '/images/hero-mug-candle-journal.jpg',
 } as const;
 
@@ -36,8 +36,9 @@ export const products: Product[] = [
   {
     title: 'The 3-Day Pause',
     description: 'Free. Three days of faith-rooted reflection prompts to pause, pray, and begin again.',
-    image: '/images/the-3-day-pause-free.svg',
-    imageAlt: 'Promotional graphic for The 3-Day Pause, a free reflection journal delivered through the Glowlist',
+    image: '/images/the-3-day-pause-owl-cover-20261107.webp',
+    imageAlt: 'The 3-Day Pause cover with a gold and cream Glow Owl, brown title, and a small heart',
+    imageFit: 'contain',
     href: links.gentleReset,
     priceLabel: 'Free · Glowlist resource',
     buttonLabel: 'Get The 3-Day Pause — Free',
@@ -59,8 +60,8 @@ export const products: Product[] = [
   {
     title: 'The Gentle Reset',
     description: 'Seven guided days of quiet reflection, prayer, and renewal in a printed journal. Rooted in the same gentle reminder that began with my owl story: you mattered before anyone was looking.',
-    image: '/images/the-gentle-reset-book-cover.svg',
-    imageAlt: 'The Gentle Reset 7-day guided journal cover',
+    image: '/images/the-gentle-reset-owl-cover-20261107.jpg',
+    imageAlt: 'The Gentle Reset paperback cover with a cream and soft-gold Glow Owl',
     href: links.theGentleResetBook,
     priceLabel: 'Paperback · Amazon',
     buttonLabel: 'Explore the Paperback on Amazon',
@@ -72,7 +73,7 @@ export const products: Product[] = [
   {
     title: 'Reflections',
     description: 'A 144-page hardcover journal with 63 prompts for rest, reset, and renewal, with the Glow Owl beside you through each season.',
-    image: '/images/reflections-hardcover-cover.jpg',
+    image: '/images/reflections-owl-cover-20261107.jpg',
     imageAlt: 'Reflections hardcover journal cover with the Glow Owl, Rest · Reset · Renewal',
     href: links.reflectionsHardcover,
     priceLabel: '$42 · Hardcover',

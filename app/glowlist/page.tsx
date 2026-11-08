@@ -11,7 +11,7 @@ export const metadata = pageMetadata(
   'Letters from the Glow | Join the Glowlist',
   'Join the Glowlist for The 3-Day Pause, a free three-day reflection journal, and letters from DivaglamKreation.',
   '/glowlist',
-  '/images/brand/glow-owl.png'
+  '/images/the-3-day-pause-owl-cover-20261107.webp'
 );
 
 const glowlistNotes = [

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     siteName: 'DivaglamKreation',
     title: 'Join the DGK Glowlist | DivaglamKreation',
     description: 'Join the DGK Glowlist for faith-rooted notes, journaling prompts, product news, and gentle encouragement.',
-    images: [{ url: '/images/gentle-morning-reset-pack.jpg', alt: 'DivaglamKreation gentle reset journal and encouragement' }],
+    images: [{ url: '/images/the-3-day-pause-owl-cover-20261107.webp', alt: 'The 3-Day Pause free journal with the Glow Owl' }],
   },
 };
 

@@ -7,7 +7,7 @@ import '../home.css';
 import '../editorial-refresh.css';
 
 const giftGuideDescription =
-  "A gentle holiday gift guide for the women you love: faith-rooted journals and small gifts under $10, plus one keepsake hardcover she'll write in all year. Faith. Flow. Flourish.";
+  "A gentle holiday gift guide for the women you love: faith-rooted journals and small gifts under $10. Faith. Flow. Flourish.";
 
 export const metadata = pageMetadata(
   'Faith. Flow. Flourish. — A Gentle Guide to Giving | DivaglamKreation',
@@ -65,19 +65,6 @@ export default function GiftGuidePage() {
           <p className="section-intro">For the woman who loves writing on real pages. Seven gentle days of prayer, reflection, and renewal in a physical journal, available through Amazon.</p>
           <div className="hero-actions">
             <a className="button" href="https://a.co/d/02fnmfkg" target="_blank" rel="noopener noreferrer">Explore the Paperback on Amazon</a>
-          </div>
-        </div>
-      </section>
-
-      <section className="section reset-feature-section" aria-labelledby="keepsake-title">
-        <div className="reset-feature-copy" style={{ maxWidth: '860px' }}>
-          <h2 id="keepsake-title">A Keepsake to Give</h2>
-          <p className="section-intro"><em>One keepsake, made to last past the season.</em></p>
-          <h3>Reflections — Hardcover Journal · $42</h3>
-          <p className="reset-feature-lede">A 144-page hardcover journal with 63 prompts for rest, reset, and renewal, with the Glow Owl beside her through each season. The keepsake gift — the one she&apos;ll still be writing in next year. Order the hardcover through Lulu, or begin gently with the free 3-Day Pause through the Glowlist.</p>
-          <div className="hero-actions">
-            <a className="button" href="/products/reflections">Explore Reflections · $42</a>
-            <span className="button secondary" role="status">Hardcover available through Lulu</span>
           </div>
         </div>
       </section>

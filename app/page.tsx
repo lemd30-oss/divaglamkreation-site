@@ -12,7 +12,7 @@ import './editorial-refresh.css';
 export const metadata = pageMetadata('DivaglamKreation | Faith-Rooted Journals for Rest, Reflection & Renewal', 'Faith-rooted journals and meaningful gifts for rest, reflection, and renewal. Begin with a quiet pause and remember that every woman matters.', '/');
 
 export default function Home() {
-  const featuredJournals = products.filter((product) => product.title !== 'Dragonfly Reminder Charm' && !product.paused);
+  const featuredJournals = products.filter((product) => product.title !== 'Dragonfly Reminder Charm' && product.title !== 'Reflections' && !product.paused);
 
   return (
     <main className="site-shell" id="main-content">
