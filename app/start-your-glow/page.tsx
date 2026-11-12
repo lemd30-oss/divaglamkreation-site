@@ -13,6 +13,14 @@ export const metadata = pageMetadata(
   '/start-your-glow'
 );
 
+const reflectionPrompts = [
+  'What would I put down if no one would be disappointed in me?',
+  'Where did I say yes with my mouth and no in my chest?',
+  'Name one thing I did today that nobody saw. Let it count anyway.',
+  'What am I praying for that I am also running from?',
+  'What have I survived that I have never once thanked myself for?',
+];
+
 export default function StartYourGlow() {
   const free = products.find((product) => product.title === 'The 3-Day Pause');
   const seven = products.find((product) => product.title === 'The Gentle Reset');
@@ -26,6 +34,16 @@ export default function StartYourGlow() {
           <h1 id="glow-heading">Your Glow Begins Here</h1>
           <p>A quiet place to reconnect with yourself, one gentle moment at a time.</p>
           <a className="button" href="#begin">Begin with three quiet days</a>
+        </section>
+        <section className="start-glow-prompts" aria-labelledby="glow-prompts-heading">
+          <p className="eyebrow">Yours to keep</p>
+          <h2 id="glow-prompts-heading">Five prompts, before anything else.</h2>
+          <p className="start-glow-prompts-intro">No sign-up for these. Take them with you, and write to whichever one sits down next to you.</p>
+          <ul className="start-glow-prompt-list">
+            {reflectionPrompts.map((prompt) => (
+              <li key={prompt} className="start-glow-prompt">{prompt}</li>
+            ))}
+          </ul>
         </section>
         <section className="start-glow-story" aria-labelledby="glow-story-heading">
           <Image src={images.hero} alt="DivaglamKreation coffee, candle, and journaling scene" width={1000} height={720} className="start-glow-photo" />
