@@ -147,6 +147,16 @@ Status rule: **Ready is not Scheduled.** Only a post visibly queued in Metricool
 
 **Updated 2026-09-30.** The hero anchor is now **"Who are you?"**, with the supporting line "A quiet invitation to pause, reflect, and remember that you matter." "You matter." and "You mattered before anyone was looking." remain core brand language. Confirm the live hero after the update ships.
 
+**Updated 2026-11-15 (PR #107).** The homepage hero lede is now "Faith-rooted journals for the woman you're becoming. Quiet tools for rest, reset, and renewal." The homepage section order is:
+
+1. Hero — "Who are you?" (`#top`)
+2. The Glow Collection (`#collection`) — each journal shown once, with "Start free. Go deeper when you're ready." and the Choose Your Glow link
+3. Behind the Glow (`#about`) — the short owl story
+4. Latest Letter (`#letters`)
+5. Glowlist signup (`#glowlist`) — the Flodesk inline form, last before the footer
+
+The former "Start Here" section and its `#start` anchor are removed. Do not link to `/#start`; use `/#glowlist` for the free journal or `/#collection` for the journals. "Who are you?" is the `h1` on the homepage only; the About page `h1` is "It started with a question."
+
 Three generations of the site coexist in this repository. Only one is served.
 
 | Layer | Files | Served in production |
@@ -194,7 +204,7 @@ The authoritative file for each common task. Tier refers to the permission model
 Every link in it points to `'#glowlist'`. Its prices disagree with `home-content.ts`. It is not what the homepage reads. An agent looking for "where the product links live" will find this file first and be wrong. To change a product link or price, edit `home-content.ts`. This file is a candidate for removal in a future cleanup, pending approval.
 
 **Blog preview count.**
-`blogPosts` in `home-content.ts` lists 2 posts. `app/blog/` contains 5 live routes. This may be deliberate curation or may be drift. Confirm with Divag before "correcting" it.
+`blogPosts` in `home-content.ts` lists 3 posts and the homepage shows only the first as "Latest Letter". `app/blog/page.tsx` keeps its own list of 7 Letters, and `app/blog/` contains 8 routes (`who-are-you-now` is intentionally unlisted). This may be deliberate curation or may be drift. Confirm with Divag before "correcting" it.
 
 **Stacked CSS.**
 Style files named `hero-image-fix.css` and `editorial-refresh.css` are patch layers added over time. Cascade order is set by the import order in `app/layout.tsx` and `app/page.tsx`. Check that order before assuming a rule will apply.
@@ -327,7 +337,8 @@ These are live customer-facing destinations defined in `app/home-content.ts`. A 
 
 | Destination | Where |
 | --- | --- |
-| Glowlist signup (Flodesk hosted page) | `links.gumroadSubscribe` (legacy name; points to Flodesk) |
+| Glowlist signup (on-site) | Flodesk inline form `6abe85f729e2cfa7a04f5774`, embedded on the homepage (`/#glowlist`), `/glowlist`, and `/gift-guide` |
+| Glowlist signup (Flodesk hosted page) | `links.gumroadSubscribe` (legacy name; points to Flodesk). Kept for social bios and pins; no longer linked from any site page as of 2026-11-15 |
 | The 3-Day Pause (free) | `links.gentleReset` → `/#glowlist` (homepage Flodesk form; welcome email sends `/downloads/3-day-mini-reset-journal.pdf`) |
 | Reflections, hardcover journal (Lulu) | `links.reflectionsHardcover` |
 | The Gentle Reset paperback (Amazon) | `links.theGentleResetBook` — the only current seven-day purchase destination |
@@ -342,7 +353,7 @@ These are live customer-facing destinations defined in `app/home-content.ts`. A 
 3. Never edit a commerce URL as a side effect of another task.
 4. After any approved change reaches production, open the link and confirm it resolves to the correct product at the correct price.
 5. `app/product-links.ts` is not a commerce source. See "Known traps."
-6. The live Glowlist signup routes to Flodesk (`https://divaglamkreation.myflodesk.com`). The variable in `app/home-content.ts` is still named `gumroadSubscribe` even though it points to Flodesk. Verify the destination, not the variable name.
+6. Site signup is the Flodesk inline form, embedded on the homepage, `/glowlist`, and `/gift-guide`. All three use the same form ID, so they feed the same list and welcome email. The hosted Flodesk page (`https://divaglamkreation.myflodesk.com`) still exists but the site no longer links to it. The variable in `app/home-content.ts` is still named `gumroadSubscribe` even though it points to Flodesk; verify the destination, not the variable name. The `glowlistSignupUrl` prop on `SiteHeader` is no longer passed by any page. The wording and styling inside the form (heading, button, fields) are set in Flodesk, not in this repository.
 
 ## Deployment safety
 
@@ -418,9 +429,19 @@ Tracked, not yet approved. Do not act on these.
 3. Stand up `dgk-brand-os`.
 4. Confirm the deployment protection settings for preview URLs. (What the production alias serves is resolved. See "Deployment safety".)
 5. Audit whether `UNSPLASH_ACCESS_KEY` and `NOTION_TOKEN` are still set in Vercel and whether they can be retired.
-6. Resolve the font gap. The live site renders in Georgia / Times New Roman system serifs. The DGK canonical file in Drive names Playfair Display, Lora, Dancing Script, and Montserrat. Confirm whether the system-serif choice is deliberate (Google Fonts CDN avoidance) before changing anything.
+6. Resolve the font gap. The live site renders in Georgia / Times New Roman system serifs. The DGK canonical file in Drive names Playfair Display, Lora, Dancing Script, and Montserrat. Confirm whether the system-serif choice is deliberate (Google Fonts CDN avoidance) before changing anything. Note 2026-11-15: `app/layout.tsx` loads Playfair Display and Great Vibes through `next/font/google`, so the system-serif description above may be out of date. Verify against the live site before acting.
 
 ## Recorded decisions
+
+- 2026-11-15: Site cohesion pass, approved by Divag and shipped in PR #107 (merge commit `7700b289930e8ced848ea73dc3e86abfc9cbab15`). Each section and page has one job, and nothing is said twice.
+  - Homepage: the duplicate "Start Here" section is removed; order is Hero, The Glow Collection, Behind the Glow, Latest Letter, Glowlist signup. The signup accent reads "Join the Glowlist".
+  - Signup: one on-site path. `/glowlist` carries the inline Flodesk form; buttons to the hosted Flodesk page are removed. About ends with a single "Get The 3-Day Pause — Free" button to `/#glowlist`.
+  - Start Your Glow: keeps the five prompts, Choose Your Glow, and the closing line. The repeated owl story and Step 1 / Step 2 blocks are removed. Choose Your Glow has three choices; "Creative inspiration" was removed at Divag's request. "A gentle reset" links to `/#collection`.
+  - Text-only hero cards ("About Five Minutes", "Read Slowly", "Begin Gently") are removed from Glowlist, Letters, and Shop. Do not reintroduce a hero card that has no link or image.
+  - Footer: Gift Guide added; the August Reset link removed (the Letter itself stays on `/blog`).
+  - Gift Guide: `h1` is "A Gentle Guide to Giving" with "Faith. Flow. Flourish." as the accent; the closing section is headed "For the woman on your heart."
+  - About: `h1` is "It started with a question."
+  - Still undecided, do not act: Reflections showing "Coming Soon", whether to list `/blog/who-are-you-now`, and whether the homepage hero keeps two buttons.
 
 - 2026-10-29 (latest founder clarification): No paid digital products are currently sold by DivaglamKreation. The 3-Day Pause is a FREE printable PDF resource delivered through the Glowlist on the DGK website, not a paid digital listing; The Gentle Reset 7-Day Guided Journal is a PHYSICAL Amazon paperback; Reflections is a PHYSICAL Lulu hardcover with its promotional campaign on hold pending founder sign-off. The former $7 Gumroad edition and other paid digital offers are retired. The Gentle Morning Reset Pack is paused and is not an available offer. Preserve existing live free PDF and physical commerce URLs. This supersedes all older digital-only and paid-PDF statements, which remain historical records.
 
