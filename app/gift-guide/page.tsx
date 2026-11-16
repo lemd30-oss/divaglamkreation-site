@@ -62,9 +62,10 @@ export default function GiftGuidePage() {
         <div className="reset-feature-copy" style={{ maxWidth: '860px' }}>
           <p className="eyebrow">Prefer a book you can hold?</p>
           <h2 id="paperback-gift-title">The Gentle Reset — 7-Day Guided Paperback</h2>
-          <p className="section-intro">For the woman who loves writing on real pages. Seven gentle days of prayer, reflection, and renewal in a physical journal, available through Amazon.</p>
+          <p className="section-intro">For the woman who loves writing on real pages. Seven gentle days of prayer, reflection, and renewal in a physical journal. Coming Soon — direct ordering through DivaglamKreation is not open yet.</p>
           <div className="hero-actions">
-            <a className="button" href="https://a.co/d/02fnmfkg" target="_blank" rel="noopener noreferrer">Explore the Paperback on Amazon</a>
+            <span className="button secondary" role="status">Coming Soon</span>
+            <a className="text-link" href="/products/the-gentle-reset">View journal details →</a>
           </div>
         </div>
       </section>
