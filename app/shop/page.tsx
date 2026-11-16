@@ -24,7 +24,7 @@ export default function ShopPage() {
     <main className="site-shell" id="main-content">
       <SiteHeader />
 
-      <section className="hero">
+      <section className="hero" style={{ gridTemplateColumns: 'minmax(0, 1fr)' }}>
         <div className="hero-copy">
           <p className="eyebrow">The Collection</p>
           <h1>Tools for real-life pauses.</h1>
@@ -33,13 +33,6 @@ export default function ShopPage() {
             go deeper when you're ready, or give one to a woman who needs to hear she matters.
           </p>
         </div>
-        <aside className="hero-card" aria-label="Collection welcome message">
-          <div className="hero-card-inner">
-            <p className="eyebrow">Begin Gently</p>
-            <h2>You don't have to choose everything at once.</h2>
-            <p>Start with the free journal, then follow the season you're in.</p>
-          </div>
-        </aside>
       </section>
 
       <section className="section shop-section" aria-labelledby="start-here-title">

@@ -1,11 +1,11 @@
+import Script from 'next/script';
+
 import { pageMetadata } from '../metadata';
 
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
-import { links } from '../home-content';
-
-const glowlistSignupUrl = links.gumroadSubscribe;
-const freeResetUrl = links.gentleReset;
+import '../home.css';
+import '../editorial-refresh.css';
 
 export const metadata = pageMetadata(
   'Letters from the Glow | Join the Glowlist',
@@ -23,26 +23,32 @@ const glowlistNotes = [
 export default function GlowlistPage() {
   return (
     <main className="site-shell" id="main-content">
-      <SiteHeader glowlistSignupUrl={glowlistSignupUrl} />
+      <SiteHeader />
 
-      <section className="hero" id="top">
+      <section className="hero" id="top" style={{ gridTemplateColumns: 'minmax(0, 1fr)' }}>
         <div className="hero-copy">
           <p className="eyebrow">Letters from the Glow</p>
           <h1>A gentle letter for the season you're in.</h1>
           <p>Join the Glowlist for The 3-Day Pause, a free three-day reflection journal, and letters from DivaglamKreation.</p>
-          <div className="hero-actions">
-            <a className="button" href={glowlistSignupUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
-            <a className="button secondary" href={freeResetUrl}>Get The 3-Day Pause — Free</a>
+        </div>
+      </section>
+
+      <section className="section glowlist-section glowlist-band" id="join" aria-labelledby="join-title">
+        <div className="email-box presentation-glowlist glowlist-copy-only">
+          <p className="script-accent">Join the Glowlist</p>
+          <h2 id="join-title">Your free 3-Day Pause starts here.</h2>
+          <div className="flodesk-inline-wrap">
+            <div id="fd-form-6abe85f729e2cfa7a04f5774" />
+            <Script
+              id="flodesk-glowlist-page-form"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html:
+                  "window.fd('form', { formId: '6abe85f729e2cfa7a04f5774', containerEl: '#fd-form-6abe85f729e2cfa7a04f5774' });",
+              }}
+            />
           </div>
         </div>
-
-        <aside className="hero-card" aria-label="Letters from the Glow welcome message">
-          <div className="hero-card-inner">
-            <p className="eyebrow">About Five Minutes</p>
-            <h2>One story. One prompt. One journal path.</h2>
-            <p>A gentle rhythm that keeps the story personal and the next step gentle.</p>
-          </div>
-        </aside>
       </section>
 
       <section className="section start-section">
@@ -52,9 +58,6 @@ export default function GlowlistPage() {
           {glowlistNotes.map((note) => (
             <article className="card" key={note}><p>{note}</p></article>
           ))}
-        </div>
-        <div className="hero-actions">
-          <a className="button" href={glowlistSignupUrl} target="_blank" rel="noopener noreferrer">Join the Glowlist</a>
         </div>
       </section>
 

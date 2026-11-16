@@ -46,19 +46,12 @@ export default function BlogPage() {
   return (
     <main className="site-shell" id="main-content">
       <SiteHeader />
-      <section className="hero">
+      <section className="hero" style={{ gridTemplateColumns: 'minmax(0, 1fr)' }}>
         <div className="hero-copy">
           <p className="eyebrow">Letters from the Glow</p>
           <h1>Stories, encouragement, and a quiet place to reflect.</h1>
           <p>Each Letter begins with something real, leaves you with one gentle prompt, and points you toward a journal when you want to go deeper.</p>
         </div>
-        <aside className="hero-card" aria-label="Letters from the Glow welcome message">
-          <div className="hero-card-inner">
-            <p className="eyebrow">Read Slowly</p>
-            <h2>Bring your coffee. Stay for the reminder.</h2>
-            <p>Choose the Letter that meets you today.</p>
-          </div>
-        </aside>
       </section>
       <section className="section">
         <div className="blog-grid">

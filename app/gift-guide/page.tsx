@@ -22,8 +22,8 @@ export default function GiftGuidePage() {
 
       <section className="hero hero-home presentation-hero">
         <div className="hero-copy hero-copy-home">
-          <h1 className="statement-hero">Faith. Flow. Flourish.</h1>
-          <p className="script-accent">A Gentle Guide to Giving</p>
+          <h1 className="statement-hero">A Gentle Guide to Giving</h1>
+          <p className="script-accent">Faith. Flow. Flourish.</p>
           <p className="hero-lede">Some gifts say &quot;I love you.&quot; These say something quieter: I see you. Slow down with me.</p>
         </div>
 
@@ -71,7 +71,7 @@ export default function GiftGuidePage() {
 
       <section className="section glowlist-section glowlist-band" aria-labelledby="closing-title">
         <div className="email-box presentation-glowlist glowlist-copy-only">
-          <h2 id="closing-title">Closing</h2>
+          <h2 id="closing-title">For the woman on your heart.</h2>
           <p>Whatever she carries this season, she doesn&apos;t have to carry it alone. Faith. Flow. Flourish. — because every woman matters.</p>
           <div className="flodesk-inline-wrap">
             <div id="fd-form-6abe85f729e2cfa7a04f5774" />

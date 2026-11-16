@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { SiteHeader } from '../components/SiteHeader';
 import { SiteFooter } from '../components/SiteFooter';
-import { links, products, images } from '../home-content';
 import { pageMetadata } from '../metadata';
 import '../home.css';
 import '../editorial-refresh.css';
@@ -24,8 +23,6 @@ const reflectionPrompts = [
 ];
 
 export default function StartYourGlow() {
-  const free = products.find((product) => product.title === 'The 3-Day Pause');
-  const seven = products.find((product) => product.title === 'The Gentle Reset');
   return (
     <main className="site-shell" id="main-content">
       <SiteHeader />
@@ -35,7 +32,7 @@ export default function StartYourGlow() {
           <p className="eyebrow">Faith · Reflection · Creativity</p>
           <h1 id="glow-heading">Your Glow Begins Here</h1>
           <p>A quiet place to reconnect with yourself, one gentle moment at a time.</p>
-          <a className="button" href="#begin">Begin with three quiet days</a>
+          <a className="button" href="#choose-your-glow">Choose Your Glow</a>
         </section>
         <section className="start-glow-prompts" aria-labelledby="glow-prompts-heading">
           <p className="eyebrow">Yours to keep</p>
@@ -47,36 +44,7 @@ export default function StartYourGlow() {
             ))}
           </ul>
         </section>
-        <section className="start-glow-story" aria-labelledby="glow-story-heading">
-          <Image src={images.hero} alt="DivaglamKreation coffee, candle, and journaling scene" width={1000} height={720} className="start-glow-photo" />
-          <div>
-            <p className="eyebrow">Behind the Glow</p>
-            <h2 id="glow-story-heading">It started with a question: Who are you?</h2>
-            <p>An owl canvas asked a question I couldn't stop thinking about. The Glow Owl became my companion in quiet moments of coffee, creativity, and reflection.</p>
-            <p>And the answer became the heart of DivaglamKreation: every woman matters.</p>
-            <a className="text-link" href="/about">Read our story →</a>
-          </div>
-        </section>
         <GlowPathPicker />
-        <section id="begin" className="start-glow-products" aria-labelledby="glow-products-heading">
-          <p className="eyebrow">Your gentle first step</p>
-          <h2 id="glow-products-heading">Start with three quiet days.</h2>
-          <p>No pressure. Just a little space to pause, pray, and reflect.</p>
-          <div className="start-glow-product-grid">
-            {free && <article className="start-glow-product">
-              <Image src={free.image} alt={free.imageAlt} width={520} height={650} className="start-glow-product-image" />
-              <p className="eyebrow">Step 1 · Free</p>
-              <h3>{free.title}</h3><p>{free.description}</p>
-              <a className="button" href={links.gentleReset}>Get the Free Journal</a>
-            </article>}
-            {seven && <article className="start-glow-product">
-              <Image src={seven.image} alt={seven.imageAlt} width={520} height={650} className="start-glow-product-image" />
-              <p className="eyebrow">Step 2 · Go deeper</p>
-              <h3>{seven.title}</h3><p>{seven.description}</p>
-              <a className="button secondary" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Explore the Paperback on Amazon</a>
-            </article>}
-          </div>
-        </section>
         <section className="start-glow-closing"><p>You mattered before anyone was looking.</p><a className="text-link" href="/glowlist">Stay connected with the Glowlist →</a></section>
       </div>
       <SiteFooter />

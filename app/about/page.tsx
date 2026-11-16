@@ -18,7 +18,7 @@ export default function AboutPage() {
       <section className="hero hero-home presentation-hero">
         <div className="hero-copy hero-copy-home">
           <p className="eyebrow">Behind the Glow</p>
-          <h1 className="statement-hero">Who are you<span className="gold-period">?</span></h1>
+          <h1 className="statement-hero">It started with a question<span className="gold-period">.</span></h1>
           <p className="hero-lede">
             DivaglamKreation began in quiet moments with coffee nearby, something to sketch or write with,
             room to reflect, and one question that kept returning: Who are you when the noise gets quiet?
@@ -108,8 +108,7 @@ export default function AboutPage() {
           </p>
           <p className="reset-feature-note">Faith. Flow. Flourish.</p>
           <div className="hero-actions">
-            <a className="button" href="/#start">Get The 3-Day Pause — Free</a>
-            <a className="button secondary" href="/glowlist">Join the Glowlist</a>
+            <a className="button" href="/#glowlist">Get The 3-Day Pause — Free</a>
           </div>
         </div>
       </section>

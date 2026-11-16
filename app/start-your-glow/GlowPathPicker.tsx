@@ -30,17 +30,8 @@ const glowPaths = [
     title: 'A gentle reset',
     preview: 'Begin again, one page at a time',
     result: 'Start with The 3-Day Pause, a free reflection journal. You can go deeper with The Gentle Reset whenever you feel ready.',
-    href: '#begin',
-    cta: 'Explore the free journal',
-  },
-  {
-    id: 'create',
-    number: '04',
-    title: 'Creative inspiration',
-    preview: 'Coffee, journaling & creative living',
-    result: 'Come behind the scenes, where a quiet creative life and a simple reminder—that every woman matters—became DivaglamKreation.',
-    href: '/blog/i-built-my-website-myself',
-    cta: 'Read a Behind the Glow story',
+    href: '/#collection',
+    cta: 'See the journals',
   },
 ] as const;
 
