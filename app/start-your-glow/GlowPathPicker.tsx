@@ -30,8 +30,8 @@ const glowPaths = [
     title: 'A gentle reset',
     preview: 'Begin again, one page at a time',
     result: 'Start with The 3-Day Pause, a free reflection journal. You can go deeper with The Gentle Reset whenever you feel ready.',
-    href: '#begin',
-    cta: 'Explore the free journal',
+    href: '/#collection',
+    cta: 'See the journals',
   },
 ] as const;
 
