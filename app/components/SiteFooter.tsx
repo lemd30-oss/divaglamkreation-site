@@ -36,14 +36,13 @@ export function SiteFooter() {
 
         <div className="footer-column">
           <p className="footer-heading">Shop</p>
-          <a href={links.gentleReset}>The 3-Day Pause</a>
           <a href={links.theGentleResetBook}>The Gentle Reset — Coming Soon</a>
           <a href={links.dragonflyKeychain}>Dragonfly Charm</a>
         </div>
 
         <div className="footer-column">
           <p className="footer-heading">Connect</p>
-          <a href="/glowlist">Join the Glowlist</a>
+          <a href="/glowlist">Glowlist · Free 3-Day Pause</a>
           <a href="/contact">Contact</a>
           <a href={links.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href={links.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>

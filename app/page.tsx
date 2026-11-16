@@ -12,7 +12,7 @@ import './editorial-refresh.css';
 export const metadata = pageMetadata('DivaglamKreation | Faith-Rooted Journals for Rest, Reflection & Renewal', 'Faith-rooted journals and meaningful gifts for rest, reflection, and renewal. Begin with a quiet pause and remember that every woman matters.', '/');
 
 export default function Home() {
-  const featuredJournals = products.filter((product) => product.title !== 'Dragonfly Reminder Charm' && product.title !== 'Reflections' && !product.paused);
+  const featuredJournals = products.filter((product) => product.title === 'The Gentle Reset');
 
   return (
     <main className="site-shell" id="main-content">
@@ -25,7 +25,7 @@ export default function Home() {
           <p className="hero-lede">Faith-rooted journals for the woman you're becoming. Quiet tools for rest, reset, and renewal.</p>
           <div className="hero-actions">
             <a className="button" href="/shop">Shop the Collection</a>
-            <a className="button secondary" href={links.gentleReset}>Start with The 3-Day Pause — Free</a>
+            <a className="button secondary" href={links.gentleReset}>Join the Glowlist · Free 3-Day Pause</a>
           </div>
         </div>
 
@@ -50,7 +50,7 @@ export default function Home() {
             <p className="eyebrow">The Glow Collection</p>
             <h2>Quiet tools for the season you're in.</h2>
           </div>
-          <p className="section-intro">Start free. Go deeper when you're ready.</p>
+          <p className="section-intro">A guided journal for your next gentle step.</p>
         </div>
         <div className="product-grid shop-grid">
           {featuredJournals.map((product) => <ProductCard product={product} key={product.title} />)}
@@ -99,8 +99,8 @@ export default function Home() {
       <section className="section glowlist-section glowlist-band" id="glowlist">
         <div className="email-box presentation-glowlist glowlist-copy-only">
           <p className="script-accent">Join the Glowlist</p>
-          <h2>Your free 3-Day Pause starts here.</h2>
-          <p>Sign up to receive The 3-Day Pause, a free faith-rooted reflection journal, along with gentle Letters from the Glow every two weeks.</p>
+          <h2>Join the Glowlist for your free 3-Day Pause.</h2>
+          <p>One gentle signup brings The 3-Day Pause, a free faith-rooted reflection journal, plus Letters from the Glow twice a month.</p>
           <div className="flodesk-inline-wrap">
             <div id="fd-form-6abe85f729e2cfa7a04f5774" />
             <Script

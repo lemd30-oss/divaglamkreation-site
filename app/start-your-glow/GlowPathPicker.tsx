@@ -29,9 +29,9 @@ const glowPaths = [
     number: '03',
     title: 'A gentle reset',
     preview: 'Begin again, one page at a time',
-    result: 'Start with The 3-Day Pause, a free reflection journal. You can go deeper with The Gentle Reset whenever you feel ready.',
-    href: '/#collection',
-    cta: 'See the journals',
+    result: 'Join the Glowlist for The 3-Day Pause, a free reflection journal. The Gentle Reset paperback is coming soon when you are ready for more.',
+    href: '/#glowlist',
+    cta: 'Join the Glowlist for your free journal',
   },
 ] as const;
 

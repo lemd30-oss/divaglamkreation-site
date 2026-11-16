@@ -17,7 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/the-art-of-beginning-again',
     '/blog/why-you-dont-need-to-earn-rest',
     '/dragonfly-keychain',
-    '/products/the-3-day-pause',
     '/products/the-gentle-reset',
     '/products/reflections',
     '/glowlist',
