@@ -33,15 +33,6 @@ const glowPaths = [
     href: '#begin',
     cta: 'Explore the free journal',
   },
-  {
-    id: 'create',
-    number: '04',
-    title: 'Creative inspiration',
-    preview: 'Coffee, journaling & creative living',
-    result: 'Come behind the scenes, where a quiet creative life and a simple reminder—that every woman matters—became DivaglamKreation.',
-    href: '/blog/i-built-my-website-myself',
-    cta: 'Read a Behind the Glow story',
-  },
 ] as const;
 
 type GlowPathId = (typeof glowPaths)[number]['id'];
