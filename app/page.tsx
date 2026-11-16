@@ -47,39 +47,19 @@ export default function Home() {
       <section className="section shop-section" id="collection">
         <div className="section-heading-row">
           <div>
-            <p className="eyebrow">Featured Journals</p>
+            <p className="eyebrow">The Glow Collection</p>
             <h2>Quiet tools for the season you're in.</h2>
           </div>
-          <a className="text-link" href="/shop">Shop the full Collection →</a>
+          <p className="section-intro">Start free. Go deeper when you're ready.</p>
         </div>
         <div className="product-grid shop-grid">
           {featuredJournals.map((product) => <ProductCard product={product} key={product.title} />)}
         </div>
-      </section>
-
-      <section className="section start-section presentation-panel" id="start">
-        <div className="section-heading-row">
-          <div>
-            <p className="eyebrow">Start Here</p>
-            <h2>Begin with a gentle pause.</h2>
-          </div>
-          <p className="section-intro">Start free. Go deeper when you're ready.</p>
-        </div>
-        <div className="journey-grid journey-grid-two">
-          <article className="journey-card">
-            <span className="journey-number">Step 1 · Free</span>
-            <h3>The 3-Day Pause</h3>
-            <p>Short daily prompts to slow down, reflect, and hear yourself again.</p>
-            <a className="text-link" href={links.gentleReset}>Get The 3-Day Pause — Free →</a>
-          </article>
-          <article className="journey-card">
-            <span className="journey-number">Step 2 · Go deeper</span>
-            <h3>The Gentle Reset</h3>
-            <p>Seven guided days for more room to reflect, pray, and renew.</p>
-            <a className="text-link" href={links.theGentleResetBook} target="_blank" rel="noopener noreferrer">Continue into the 7-Day Gentle Reset →</a>
-          </article>
-        </div>
-        <p className="section-intro">Not sure where to begin? <a className="text-link" href="/start-your-glow#choose-your-glow">Choose Your Glow →</a></p>
+        <p className="section-intro" style={{ marginTop: '1.75rem' }}>
+          <a className="text-link" href="/shop">Shop the full Collection →</a>
+          {' · '}
+          Not sure where to begin? <a className="text-link" href="/start-your-glow#choose-your-glow">Choose Your Glow →</a>
+        </p>
       </section>
 
       <section className="section story-section" id="about" aria-labelledby="story-question">
@@ -94,25 +74,6 @@ export default function Home() {
           <p>An owl canvas asked me a question I couldn't stop thinking about: Who are you?</p>
           <p>The Glow Owl became my companion to that question, and the answer became the heart of everything I make: every woman matters.</p>
           <a className="text-link" href="/blog/it-started-with-this-owl">Read the full owl story →</a>
-        </div>
-      </section>
-
-      <section className="section glowlist-section glowlist-band" id="glowlist">
-        <div className="email-box presentation-glowlist glowlist-copy-only">
-          <p className="script-accent">Letters from the Glow</p>
-          <h2>Your free 3-Day Pause starts here.</h2>
-          <p>Sign up to receive The 3-Day Pause, a free faith-rooted reflection journal, along with gentle Letters from the Glow every two weeks.</p>
-          <div className="flodesk-inline-wrap">
-            <div id="fd-form-6abe85f729e2cfa7a04f5774" />
-            <Script
-              id="flodesk-glowlist-form"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html:
-                  "window.fd('form', { formId: '6abe85f729e2cfa7a04f5774', containerEl: '#fd-form-6abe85f729e2cfa7a04f5774' });",
-              }}
-            />
-          </div>
         </div>
       </section>
 
@@ -132,6 +93,25 @@ export default function Home() {
               <a className="text-link" href={post.href} aria-label={`Read the Letter: ${post.title}`}>Read the Letter →</a>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="section glowlist-section glowlist-band" id="glowlist">
+        <div className="email-box presentation-glowlist glowlist-copy-only">
+          <p className="script-accent">Join the Glowlist</p>
+          <h2>Your free 3-Day Pause starts here.</h2>
+          <p>Sign up to receive The 3-Day Pause, a free faith-rooted reflection journal, along with gentle Letters from the Glow every two weeks.</p>
+          <div className="flodesk-inline-wrap">
+            <div id="fd-form-6abe85f729e2cfa7a04f5774" />
+            <Script
+              id="flodesk-glowlist-form"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html:
+                  "window.fd('form', { formId: '6abe85f729e2cfa7a04f5774', containerEl: '#fd-form-6abe85f729e2cfa7a04f5774' });",
+              }}
+            />
+          </div>
         </div>
       </section>
 
