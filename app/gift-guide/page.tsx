@@ -44,13 +44,6 @@ export default function GiftGuidePage() {
 
         <div className="journey-grid journey-grid-two">
           <article className="journey-card">
-            <h3>The 3-Day Pause — Free</h3>
-            <p>Three days of short, gentle prompts to slow down and begin again. Sent by email as a free printable journal when you join the Glowlist. Share the invitation with her — or begin gently yourself.</p>
-            <a className="text-link" href="/#glowlist">Get the free journal</a>
-          </article>
-
-
-          <article className="journey-card">
             <h3>Dragonfly Reminder Charm — $9.99</h3>
             <p>A pink rhinestone dragonfly with a gold-tone keyring and clasp — a giftable symbol of growth, light, and transformation. Clips to keys, handbags, planners, or journal pouches. For the woman spreading her wings.</p>
             <a className="text-link" href="https://divaglamkreation.com/dragonfly-keychain">Shop the Dragonfly Reminder Charm</a>
@@ -73,7 +66,7 @@ export default function GiftGuidePage() {
       <section className="section glowlist-section glowlist-band" aria-labelledby="closing-title">
         <div className="email-box presentation-glowlist glowlist-copy-only">
           <h2 id="closing-title">For the woman on your heart.</h2>
-          <p>Whatever she carries this season, she doesn&apos;t have to carry it alone. Faith. Flow. Flourish. — because every woman matters.</p>
+          <p>Join the Glowlist to receive The 3-Day Pause, a free reflection journal, along with gentle letters twice a month. Every woman matters.</p>
           <div className="flodesk-inline-wrap">
             <div id="fd-form-6abe85f729e2cfa7a04f5774" />
             <Script

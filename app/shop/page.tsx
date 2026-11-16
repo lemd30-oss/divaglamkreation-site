@@ -15,7 +15,6 @@ export const metadata = pageMetadata(
 const byTitle = (title: string) => products.find((product) => product.title === title)!;
 
 export default function ShopPage() {
-  const threeDay = byTitle('The 3-Day Pause');
   const gentleReset = byTitle('The Gentle Reset');
   const reflections = byTitle('Reflections');
   const dragonfly = byTitle('Dragonfly Reminder Charm');
@@ -29,8 +28,7 @@ export default function ShopPage() {
           <p className="eyebrow">The Collection</p>
           <h1>Tools for real-life pauses.</h1>
           <p>
-            Every journal here began with one question: <em>Who are you beneath everything you carry?</em> Start free,
-            go deeper when you're ready, or give one to a woman who needs to hear she matters.
+            Every journal here began with one question: <em>Who are you beneath everything you carry?</em> Explore guided journals and meaningful gifts created to remind her she matters.
           </p>
         </div>
       </section>
@@ -38,13 +36,12 @@ export default function ShopPage() {
       <section className="section shop-section" aria-labelledby="start-here-title">
         <div className="section-heading-row">
           <div>
-            <p className="eyebrow">Start Here</p>
-            <h2 id="start-here-title">A simple place to begin.</h2>
+            <p className="eyebrow">The Gentle Reset</p>
+            <h2 id="start-here-title">A quiet journal, coming soon.</h2>
           </div>
-          <p className="section-intro">Three quiet days first. Seven when you're ready for more room.</p>
+          <p className="section-intro">Seven guided days of reflection and renewal in a printed journal.</p>
         </div>
         <div className="product-grid shop-grid">
-          <ProductCard product={threeDay} />
           <ProductCard product={gentleReset} />
         </div>
       </section>

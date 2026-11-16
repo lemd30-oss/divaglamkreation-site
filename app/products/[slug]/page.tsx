@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { SiteHeader } from '../../components/SiteHeader';
 import { SiteFooter } from '../../components/SiteFooter';
 import { products } from '../../home-content';
@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (slug === 'the-3-day-pause') redirect('/#glowlist');
   const entry = entries.find(item => item.slug === slug);
   const product = products.find(item => item.title === entry?.title);
   if (!entry || !product) notFound();
@@ -44,6 +45,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <h2>Format and delivery</h2>
       <p>{entry.format}</p><p>{entry.note}</p>
       <h2>Before you begin</h2>
+      <p className="trust-note">Select a question below to read the answer. {slug === 'the-gentle-reset' ? <>For a free place to start, <a href="/#glowlist">join the Glowlist for The 3-Day Pause</a>.</> : null}</p>
       <details className="details-card"><summary>Is this a physical item or a download?</summary><p>{physical ? slug === 'reflections' ? 'This will be a physical hardcover journal when released. No downloadable edition is sold.' : 'This is a physical journal shipped to you. No downloadable edition is sold.' : slug === 'the-3-day-pause' ? 'The 3-Day Pause is a free resource sent as a PDF by email. Nothing is purchased or shipped.' : 'This product is on hold and not available for purchase or delivery.'}</p></details>
       <details className="details-card"><summary>How do I get this item?</summary><p>{entry.note}</p></details>
       <details className="details-card"><summary>Where can I find help with my order?</summary><p>{physical ? <>For help with your journal, <a href="/contact">contact DivaglamKreation</a> with your product name and order details.</> : <>For download help, <a href="/contact">contact DivaglamKreation</a> with the product name and the email you used.</>}</p><a href="/return-policy">Read the return policy</a></details>

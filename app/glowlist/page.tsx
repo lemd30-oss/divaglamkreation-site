@@ -28,15 +28,15 @@ export default function GlowlistPage() {
       <section className="hero" id="top" style={{ gridTemplateColumns: 'minmax(0, 1fr)' }}>
         <div className="hero-copy">
           <p className="eyebrow">Letters from the Glow</p>
-          <h1>A gentle letter for the season you're in.</h1>
-          <p>Join the Glowlist for The 3-Day Pause, a free three-day reflection journal, and letters from DivaglamKreation.</p>
+          <h1>Join the Glowlist.</h1>
+          <p>One gentle signup brings The 3-Day Pause, a free three-day reflection journal, plus Letters from the Glow twice a month.</p>
         </div>
       </section>
 
       <section className="section glowlist-section glowlist-band" id="join" aria-labelledby="join-title">
         <div className="email-box presentation-glowlist glowlist-copy-only">
           <p className="script-accent">Join the Glowlist</p>
-          <h2 id="join-title">Your free 3-Day Pause starts here.</h2>
+          <h2 id="join-title">Your free 3-Day Pause is part of the Glowlist.</h2>
           <div className="flodesk-inline-wrap">
             <div id="fd-form-6abe85f729e2cfa7a04f5774" />
             <Script
