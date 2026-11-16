@@ -10,5 +10,5 @@ export const productLinks = {
 
 export const productPricing = {
   threeDayMiniResetJournal: 'Free download',
-  sevenDayResetJournal: 'Paperback · Amazon',
+  sevenDayResetJournal: 'Coming Soon · Paperback',
 };
