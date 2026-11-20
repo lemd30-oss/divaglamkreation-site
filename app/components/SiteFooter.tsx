@@ -18,7 +18,7 @@ export function SiteFooter() {
           </div>
           <div>
             <p className="footer-copy">
-              Faith-rooted journals, gentle gifts, and quiet encouragement for women learning to pause and begin softly.
+              Created with faith and care for women learning to honor their own stories.
             </p>
           </div>
         </div>

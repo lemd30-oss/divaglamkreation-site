@@ -22,7 +22,7 @@ export default function Home() {
         <div className="hero-copy hero-copy-home">
           <Image className="hero-owl" src="/images/brand/glow-owl.png" alt="DivaglamKreation Glow Owl logo" width={855} height={1186} sizes="64px" priority />
           <h1 className="statement-hero">Who are you<span className="gold-period">?</span></h1>
-          <p className="hero-lede">Faith-rooted journals for the woman you're becoming. Quiet tools for rest, reset, and renewal.</p>
+          <p className="hero-lede">Faith-rooted journals and thoughtful gifts for the woman you're becoming.</p>
           <div className="hero-actions">
             <a className="button" href="/shop">Shop the Collection</a>
             <a className="button secondary" href={links.gentleReset}>Join the Glowlist · Free 3-Day Pause</a>
@@ -50,7 +50,7 @@ export default function Home() {
             <p className="eyebrow">The Glow Collection</p>
             <h2>Quiet tools for the season you're in.</h2>
           </div>
-          <p className="section-intro">A guided journal for your next gentle step.</p>
+          <p className="section-intro">A closer look at the printed journal we're preparing.</p>
         </div>
         <div className="product-grid shop-grid">
           {featuredJournals.map((product) => <ProductCard product={product} key={product.title} />)}
@@ -98,9 +98,9 @@ export default function Home() {
 
       <section className="section glowlist-section glowlist-band" id="glowlist">
         <div className="email-box presentation-glowlist glowlist-copy-only">
-          <p className="script-accent">Join the Glowlist</p>
-          <h2>Join the Glowlist for your free 3-Day Pause.</h2>
-          <p>One gentle signup brings The 3-Day Pause, a free faith-rooted reflection journal, plus Letters from the Glow twice a month.</p>
+          <p className="script-accent">Start with a pause</p>
+          <h2>Your free 3-Day Pause, delivered by email.</h2>
+          <p>Join the Glowlist for three days of guided reflection and Letters from the Glow twice a month.</p>
           <div className="flodesk-inline-wrap">
             <div id="fd-form-6abe85f729e2cfa7a04f5774" />
             <Script

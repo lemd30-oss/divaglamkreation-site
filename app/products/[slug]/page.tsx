@@ -6,9 +6,9 @@ import { pageMetadata } from '../../metadata';
 
 const entries = [
   { slug: 'the-3-day-pause', title: 'The 3-Day Pause', inside: ['Three days of faith-rooted reflection prompts', 'A printable journal for rest, reflection, prayer, and renewal'], format: 'Free Glowlist printable journal', note: 'A free 10-page journal PDF sent to your inbox through the Glowlist. Nothing to purchase.' },
-  { slug: 'gentle-morning-reset-pack', title: 'Gentle Morning Reset Pack', inside: ['Five printable reflection pages', 'Space to begin the day with faith, calm, clarity, and care'], format: 'On hold · Returning soon', note: 'This product is paused and is not available to purchase right now.' },
-  { slug: 'the-gentle-reset', title: 'The Gentle Reset', inside: ['Seven guided days', 'Prompts for quiet reflection, prayer, and renewal'], format: 'Paperback · Coming Soon · Direct from DivaglamKreation', note: 'Coming Soon. This printed journal is being prepared for direct orders and shipping by DivaglamKreation. Ordering is not open yet.' },
-  { slug: 'reflections', title: 'Reflections', inside: ['144 pages', '63 prompts for rest, reset, and renewal', 'The Glow Owl beside you through each season'], format: 'Hardcover · 7 × 10 in · Coming Soon', note: 'Coming Soon. This physical hardcover is being finalized and is not yet available to order.' },
+  { slug: 'gentle-morning-reset-pack', title: 'Gentle Morning Reset Pack', inside: ['Five printable reflection pages', 'Space to begin the day with faith, calm, clarity, and care'], format: 'Printable pages · On hold', note: 'No orders or downloads are available for this pack right now.' },
+  { slug: 'the-gentle-reset', title: 'The Gentle Reset', inside: ['Seven guided days', 'Prompts for quiet reflection, prayer, and renewal'], format: 'Paperback · Direct from DivaglamKreation', note: 'Orders have not opened yet. After release, DivaglamKreation will pack and ship each copy.' },
+  { slug: 'reflections', title: 'Reflections', inside: ['144 pages', '63 prompts for rest, reset, and renewal', 'The Glow Owl beside you through each season'], format: 'Hardcover · 7 × 10 in', note: 'Orders are not open while this hardcover is being finalized.' },
 ];
 export function generateStaticParams() { return entries.map(({ slug }) => ({ slug })); }
 export const dynamicParams = false;
@@ -42,12 +42,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     <section className="section">
       <h2>What’s inside</h2>
       <ul>{entry.inside.map(item => <li key={item}>{item}</li>)}</ul>
-      <h2>Format and delivery</h2>
-      <p>{entry.format}</p><p>{entry.note}</p>
-      <h2>Before you begin</h2>
-      <p className="trust-note">Select a question below to read the answer. {slug === 'the-gentle-reset' ? <>For a free place to start, <a href="/#glowlist">join the Glowlist for The 3-Day Pause</a>.</> : null}</p>
+      <h2>Common questions</h2>
+      {slug === 'the-gentle-reset' ? <p className="trust-note">New to DGK? <a href="/#glowlist">Begin with the free 3-Day Pause</a>.</p> : null}
       <details className="details-card"><summary>Is this a physical item or a download?</summary><p>{physical ? slug === 'reflections' ? 'This will be a physical hardcover journal when released. No downloadable edition is sold.' : 'This is a physical journal shipped to you. No downloadable edition is sold.' : slug === 'the-3-day-pause' ? 'The 3-Day Pause is a free resource sent as a PDF by email. Nothing is purchased or shipped.' : 'This product is on hold and not available for purchase or delivery.'}</p></details>
-      <details className="details-card"><summary>How do I get this item?</summary><p>{entry.note}</p></details>
       <details className="details-card"><summary>Where can I find help with my order?</summary><p>{physical ? <>For help with your journal, <a href="/contact">contact DivaglamKreation</a> with your product name and order details.</> : <>For download help, <a href="/contact">contact DivaglamKreation</a> with the product name and the email you used.</>}</p><a href="/return-policy">Read the return policy</a></details>
       <p><a href="/shop">← Continue shopping</a></p>
     </section>

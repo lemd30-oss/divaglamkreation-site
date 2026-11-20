@@ -8,7 +8,7 @@ import '../editorial-refresh.css';
 
 export const metadata = pageMetadata(
   'The Collection | DivaglamKreation',
-  'Faith-rooted journals and meaningful gifts for real-life pauses, reflection, rest, reset, and renewal.',
+  'Faith-rooted journals and thoughtful gifts that encourage rest, self-worth, and reflection.',
   '/shop'
 );
 
@@ -28,7 +28,7 @@ export default function ShopPage() {
           <p className="eyebrow">The Collection</p>
           <h1>Tools for real-life pauses.</h1>
           <p>
-            Every journal here began with one question: <em>Who are you beneath everything you carry?</em> Explore guided journals and meaningful gifts created to remind her she matters.
+            The collection grew from one question: <em>Who are you beneath everything you carry?</em> Each piece is a reminder that you matter.
           </p>
         </div>
       </section>
@@ -37,9 +37,9 @@ export default function ShopPage() {
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">The Gentle Reset</p>
-            <h2 id="start-here-title">A quiet journal, coming soon.</h2>
+            <h2 id="start-here-title">A little space to begin again.</h2>
           </div>
-          <p className="section-intro">Seven guided days of reflection and renewal in a printed journal, being prepared for direct ordering through DivaglamKreation.</p>
+          <p className="section-intro">A printed companion for prayer and personal growth, with direct ordering planned through DivaglamKreation.</p>
         </div>
         <div className="product-grid shop-grid">
           <ProductCard product={gentleReset} />
@@ -50,7 +50,7 @@ export default function ShopPage() {
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">Journals</p>
-            <h2 id="journals-title">For mornings, reflection, and becoming.</h2>
+            <h2 id="journals-title">Pages to revisit as you grow.</h2>
           </div>
         </div>
         <div className="product-grid shop-grid">
@@ -69,8 +69,8 @@ export default function ShopPage() {
           <ProductCard product={dragonfly} />
           <article className="card editorial-card">
             <p className="eyebrow">Gift Guide</p>
-            <h3>Choose a gentle gift with meaning.</h3>
-            <p>Browse journal-and-gift ideas for the woman who needs rest, encouragement, or a quiet reminder that she matters.</p>
+            <h3>Something thoughtful, just for her.</h3>
+            <p>Explore keepsakes and reading gifts for the women you love.</p>
             <a className="button secondary" href="/gift-guide">Open the Gift Guide</a>
           </article>
         </div>
