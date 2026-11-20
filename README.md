@@ -98,8 +98,8 @@ Access these metrics in your Vercel dashboard under **Analytics** > **Speed Insi
 
 ## Next content updates
 
-- Keep product buttons connected to the correct Gumroad or DGK website destinations.
-- Keep The 3-Day Pause (free on Gumroad) → The Gentle Reset (paperback on Amazon) customer path consistent. Reflections is available through Lulu.
+- Keep product buttons connected to approved DGK website destinations; never enable checkout for Coming Soon products.
+- Keep The 3-Day Pause (free through the Glowlist) → The Gentle Reset (printed journal, Coming Soon for direct DivaglamKreation orders) customer path consistent. Reflections remains Coming Soon pending physical-proof approval.
 - Connect the Glowlist form to the chosen email workflow when ready.
 - Add real product images or Canva exports (optimize to < 200KB per image).
 - Monitor Core Web Vitals monthly and adjust as needed.
