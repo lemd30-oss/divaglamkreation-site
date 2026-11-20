@@ -3,11 +3,10 @@ import type { Product } from '../home-content';
 type ProductCardProps = {
   product: Product;
   price?: string;
-  amazonUrl?: string;
 };
 
-export function ProductCard({ product, price, amazonUrl }: ProductCardProps) {
-  const external = Boolean(amazonUrl) || product.external;
+export function ProductCard({ product, price }: ProductCardProps) {
+  const external = product.external;
   const detailPaths: Record<string, string> = { 'The 3-Day Pause': '/products/the-3-day-pause', 'Gentle Morning Reset Pack': '/products/gentle-morning-reset-pack', 'The Gentle Reset': '/products/the-gentle-reset', 'Reflections': '/products/reflections' };
   const isBookCover = product.imageFit === 'contain' || product.title.toLowerCase().includes('paperback');
 
@@ -42,11 +41,11 @@ export function ProductCard({ product, price, amazonUrl }: ProductCardProps) {
           ) : (
             <a
               className="button secondary product-card-button"
-              href={amazonUrl ?? product.href}
+              href={product.href}
               target={external ? '_blank' : undefined}
               rel={external ? 'noopener noreferrer' : undefined}
             >
-              {amazonUrl ? 'Buy on Amazon' : product.buttonLabel}
+              {product.buttonLabel}
             </a>
           )}
           {detailPaths[product.title] ? <a className="text-link" href={detailPaths[product.title]} aria-label={`View details: ${product.title}`}>View details →</a> : null}
