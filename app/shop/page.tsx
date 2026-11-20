@@ -39,7 +39,7 @@ export default function ShopPage() {
             <p className="eyebrow">The Gentle Reset</p>
             <h2 id="start-here-title">A quiet journal, coming soon.</h2>
           </div>
-          <p className="section-intro">Seven guided days of reflection and renewal in a printed journal.</p>
+          <p className="section-intro">Seven guided days of reflection and renewal in a printed journal, being prepared for direct ordering through DivaglamKreation.</p>
         </div>
         <div className="product-grid shop-grid">
           <ProductCard product={gentleReset} />
