@@ -256,6 +256,33 @@ ul {
   margin-top: 1rem;
 }
 
+.product-details,
+.blog-list-section {
+  padding-top: 1.5rem;
+}
+
+.product-details h2:not(:first-child) {
+  margin-top: 2.5rem;
+}
+
+.product-details ul {
+  margin-bottom: 0.5rem;
+}
+
+.product-details > p:last-child {
+  margin-top: 2rem;
+}
+
+.blog-list-section .editorial-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-list-section .editorial-card .button {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
 .product-grid,
 .blog-grid,
 .steps-grid {

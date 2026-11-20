@@ -53,7 +53,7 @@ export default function BlogPage() {
           <p>Each Letter begins with something real, leaves you with one gentle prompt, and points you toward a journal when you want to go deeper.</p>
         </div>
       </section>
-      <section className="section">
+      <section className="section blog-list-section">
         <div className="blog-grid">
           {posts.map((post) => (
             <article className="card editorial-card" key={post.href}>

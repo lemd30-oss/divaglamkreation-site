@@ -95,7 +95,7 @@
 }
 
 .hero-cover-image {
-  object-position: center;
+  object-position: right center;
 }
 
 /* Small screens: keep the open journal ("Be still, God is working") in frame. */
@@ -184,8 +184,8 @@
 }
 
 .shop-section {
-  padding-bottom: 6rem;
-  padding-top: 6rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .shop-trust {
@@ -199,6 +199,16 @@
   align-items: stretch;
   gap: 1.4rem;
   margin-top: 3rem;
+}
+
+.shop-grid:has(> :only-child),
+.blog-grid:has(> :only-child) {
+  grid-template-columns: minmax(0, 560px);
+  justify-content: center;
+}
+
+.presentation-hero .presentation-panel {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .product-card {
@@ -224,6 +234,11 @@
 
 .product-card-content > p:not(.eyebrow) {
   font-size: 0.98rem;
+}
+
+.product-card-content .trust-note {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .product-card-actions {
@@ -301,14 +316,25 @@
 }
 
 .blog-section {
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
   padding-top: 6rem;
 }
 
 .editorial-card {
+  display: flex;
+  flex-direction: column;
   border-radius: 0;
   min-height: 320px;
   padding: 2rem;
+}
+
+.editorial-card .button {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.shop-grid > .editorial-card {
+  padding-bottom: 1.4rem;
 }
 
 .editorial-card h3 {
