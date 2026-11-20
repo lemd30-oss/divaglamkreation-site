@@ -12,10 +12,9 @@ export default function PoliciesPage() {
       <section className="section policy-page">
         <p className="eyebrow">Customer Information</p>
         <h1>Shop policies</h1>
-        <p className="trust-note">Last updated October 29, 2026.</p>
+        <p className="trust-note">Last updated November 20, 2026.</p>
         <p>
-          DivaglamKreation offers The 3-Day Pause as a free printable resource through the Glowlist, printed journals sold through Amazon
-          and Lulu, and limited-batch physical products paid for through GoDaddy Payments. No paid downloadable journals are offered. These policies explain what customers can expect.
+          DivaglamKreation offers The 3-Day Pause as a free printable resource through the Glowlist and physical gifts available through our website. The Gentle Reset printed journal is being prepared for direct orders from DivaglamKreation but remains Coming Soon; Reflections is also not yet available to order. No paid downloadable journals are offered. These policies explain what customers can expect.
         </p>
 
         <div className="policy-stack">
@@ -43,7 +42,7 @@ export default function PoliciesPage() {
               of delivery if your item arrives damaged, defective, or incorrect, with your order details
               and photographs if available. Eligible concerns will be reviewed for an appropriate resolution.
               Return requests for eligible direct orders may be made within 14 days of delivery.
-              Orders placed through Amazon or Lulu follow those retailers&apos; return and refund processes.
+              Earlier orders placed through a third-party retailer follow that retailer&apos;s return and refund processes.
             </p>
             <p>
               Full details on returns, cancellations, and refunds are in our{' '}
@@ -54,9 +53,9 @@ export default function PoliciesPage() {
           <article className="details-card" id="shipping">
             <h2>Shipping and fulfillment</h2>
             <p>
-              Limited-batch physical products purchased directly from DivaglamKreation are fulfilled by us.
-              Books ordered through Amazon or Lulu are fulfilled by those retailers. Shipping charges and
-              delivery details are provided by the checkout provider for each order.
+              Physical products purchased directly from DivaglamKreation are fulfilled by us. This will include
+              The Gentle Reset journal once orders officially open. Coming Soon items cannot be ordered yet.
+              Shipping charges and delivery details for available items are shown during checkout.
               Delivery estimates are not guarantees and may be affected by the carrier, weather, or holidays.
             </p>
             <p>
@@ -69,9 +68,8 @@ export default function PoliciesPage() {
             <h2>Privacy</h2>
             <p>
               DivaglamKreation uses customer information only as needed to provide products, fulfill orders,
-              answer support requests, and send requested Glowlist updates. Checkout providers such as Amazon, Lulu,
-              and GoDaddy Payments process payment and order information under their own privacy practices, and
-              Flodesk manages Glowlist email signups.
+              answer support requests, and send requested Glowlist updates. Checkout services such as GoDaddy Payments process payment information for eligible direct orders
+              under their own privacy practices, and Flodesk manages Glowlist email signups.
             </p>
             <p>
               DivaglamKreation does not sell customer contact information. Customers may unsubscribe from

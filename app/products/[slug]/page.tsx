@@ -7,7 +7,7 @@ import { pageMetadata } from '../../metadata';
 const entries = [
   { slug: 'the-3-day-pause', title: 'The 3-Day Pause', inside: ['Three days of faith-rooted reflection prompts', 'A printable journal for rest, reflection, prayer, and renewal'], format: 'Free Glowlist printable journal', note: 'A free 10-page journal PDF sent to your inbox through the Glowlist. Nothing to purchase.' },
   { slug: 'gentle-morning-reset-pack', title: 'Gentle Morning Reset Pack', inside: ['Five printable reflection pages', 'Space to begin the day with faith, calm, clarity, and care'], format: 'On hold · Returning soon', note: 'This product is paused and is not available to purchase right now.' },
-  { slug: 'the-gentle-reset', title: 'The Gentle Reset', inside: ['Seven guided days', 'Prompts for quiet reflection, prayer, and renewal'], format: 'Paperback · Coming Soon', note: 'Coming Soon. This printed journal is being prepared for direct orders and shipping by DivaglamKreation. Ordering is not open yet.' },
+  { slug: 'the-gentle-reset', title: 'The Gentle Reset', inside: ['Seven guided days', 'Prompts for quiet reflection, prayer, and renewal'], format: 'Paperback · Coming Soon · Direct from DivaglamKreation', note: 'Coming Soon. This printed journal is being prepared for direct orders and shipping by DivaglamKreation. Ordering is not open yet.' },
   { slug: 'reflections', title: 'Reflections', inside: ['144 pages', '63 prompts for rest, reset, and renewal', 'The Glow Owl beside you through each season'], format: 'Hardcover · 7 × 10 in · Coming Soon', note: 'Coming Soon. This physical hardcover is being finalized and is not yet available to order.' },
 ];
 export function generateStaticParams() { return entries.map(({ slug }) => ({ slug })); }

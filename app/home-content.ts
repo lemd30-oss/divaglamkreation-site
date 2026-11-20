@@ -63,7 +63,7 @@ export const products: Product[] = [
     image: '/images/the-gentle-reset-owl-cover-20261107.jpg',
     imageAlt: 'The Gentle Reset paperback cover with a cream and soft-gold Glow Owl',
     href: links.theGentleResetBook,
-    priceLabel: 'Coming Soon · Paperback',
+    priceLabel: 'Coming Soon · Direct from DivaglamKreation',
     buttonLabel: 'Coming Soon',
     external: false,
     comingSoon: true,
