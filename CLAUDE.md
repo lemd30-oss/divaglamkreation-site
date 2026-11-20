@@ -136,7 +136,7 @@ The broader DGK operating system uses these tools. Integrations should be explic
 | Canva | Visual production |
 | Metricool | Social scheduling and proof |
 | Vercel / GitHub | Website |
-| Amazon / Lulu | Verified purchase destinations (Gumroad retired 2026-10-28) |
+| DivaglamKreation / Lulu | Direct ordering and founder fulfillment for The Gentle Reset (Coming Soon); Lulu supplies printed copies, while Reflections remains on proof and promotion hold |
 | Flodesk | Glow Letter and Glowlist signup |
 
 Status rule: **Ready is not Scheduled.** Only a post visibly queued in Metricool is Scheduled. Website and product changes follow edit, preview deployment, review, then production. Never claim an Amazon or Lulu listing is live unless the link has been verified.
@@ -341,7 +341,7 @@ These are live customer-facing destinations defined in `app/home-content.ts`. A 
 | Glowlist signup (Flodesk hosted page) | `links.gumroadSubscribe` (legacy name; points to Flodesk). Kept for social bios and pins; no longer linked from any site page as of 2026-11-15 |
 | The 3-Day Pause (free) | `links.gentleReset` → `/#glowlist` (homepage Flodesk form; welcome email sends `/downloads/3-day-mini-reset-journal.pdf`) |
 | Reflections, hardcover journal (Lulu) | `links.reflectionsHardcover` |
-| The Gentle Reset paperback (Amazon) | `links.theGentleResetBook` — the only current seven-day purchase destination |
+| The Gentle Reset paperback (DivaglamKreation direct) | `links.theGentleResetBook` → `/products/the-gentle-reset`; Coming Soon until physical proof, repeat production cost, margin and checkout are approved |
 | Gentle Morning Reset Pack | Paused 2026-10-28 (`paused: true`). No checkout link; hidden from shop, gift guide, and sitemap. `/products/gentle-morning-reset-pack` and assets kept for relaunch. |
 | Dragonfly Reminder Charm | `/dragonfly-keychain` (internal route) |
 | Contact email | `links.contactEmail` |
@@ -443,7 +443,8 @@ Tracked, not yet approved. Do not act on these.
   - About: `h1` is "It started with a question."
   - Still undecided, do not act: Reflections showing "Coming Soon", whether to list `/blog/who-are-you-now`, and whether the homepage hero keeps two buttons.
 
-- 2026-10-29 (latest founder clarification): No paid digital products are currently sold by DivaglamKreation. The 3-Day Pause is a FREE printable PDF resource delivered through the Glowlist on the DGK website, not a paid digital listing; The Gentle Reset 7-Day Guided Journal is a PHYSICAL Amazon paperback; Reflections is a PHYSICAL Lulu hardcover with its promotional campaign on hold pending founder sign-off. The former $7 Gumroad edition and other paid digital offers are retired. The Gentle Morning Reset Pack is paused and is not an available offer. Preserve existing live free PDF and physical commerce URLs. This supersedes all older digital-only and paid-PDF statements, which remain historical records.
+- 2026-11-20 (current founder direction, superseding 2026-10-29 for The Gentle Reset): The seven-day printed journal is being prepared for direct DivaglamKreation ordering and founder shipment, with Lulu supplying print copies. Keep Coming Soon until physical proof, standard print and shipping costs, packaging, margin, and checkout are approved. No Amazon purchase CTA, product price, or external checkout for The Gentle Reset; `links.theGentleResetBook` points to its internal details. The 3-Day Pause stays free through Glowlist; Reflections remains held for proof approval. Earlier Amazon references in chronological notes below are historical only.
+- 2026-10-29 (historical founder clarification): No paid digital products are currently sold by DivaglamKreation. The 3-Day Pause is a FREE printable PDF resource delivered through the Glowlist on the DGK website, not a paid digital listing; The Gentle Reset 7-Day Guided Journal is a PHYSICAL Amazon paperback; Reflections is a PHYSICAL Lulu hardcover with its promotional campaign on hold pending founder sign-off. The former $7 Gumroad edition and other paid digital offers are retired. The Gentle Morning Reset Pack is paused and is not an available offer. Preserve existing live free PDF and physical commerce URLs. This supersedes all older digital-only and paid-PDF statements, which remain historical records.
 
 
 - 2026-10-28: Gumroad is fully retired. The 3-Day Pause buttons point to the homepage Glowlist form (`/#glowlist`); Flodesk delivers the self-hosted PDF. The Gentle Morning Reset Pack ($7) is paused, not deleted: no checkout link, hidden from shop listings, product page kept. The 7-day digital journal is removed from the website; it is not confirmed as permanently discontinued. Policies, contact, and product-page copy no longer mention Gumroad. This supersedes the Oct 27 instruction to keep the 3-Day Pause on Gumroad.
