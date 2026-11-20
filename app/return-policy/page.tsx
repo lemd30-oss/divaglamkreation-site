@@ -2,7 +2,7 @@ import { pageMetadata } from '../metadata';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
 
-export const metadata = pageMetadata("Return & Refund Policy", "Read the DivaglamKreation return and refund policy for free journal downloads, direct physical orders, Amazon and Lulu purchases, damaged items, and cancellations.", "/return-policy", "/images/brand/glow-owl.png");
+export const metadata = pageMetadata("Return & Refund Policy", "Read the DivaglamKreation return and refund policy for free journal downloads, direct physical orders, earlier third-party retailer purchases, damaged items, and cancellations.", "/return-policy", "/images/brand/glow-owl.png");
 
 export default function ReturnPolicyPage() {
   return (
@@ -12,7 +12,7 @@ export default function ReturnPolicyPage() {
       <section className="section policy-page">
         <p className="eyebrow">Customer Care</p>
         <h1>Return &amp; Refund Policy</h1>
-        <p className="trust-note">Last updated October 29, 2026.</p>
+        <p className="trust-note">Last updated November 20, 2026.</p>
         <p>
           At DivaglamKreation, each product is created with care and intention. This policy explains how returns,
           refunds, replacements, cancellations, and access to the free Glowlist journal are handled.
@@ -93,16 +93,17 @@ export default function ReturnPolicyPage() {
             <p>
               For orders placed directly with DivaglamKreation, contact us as soon as possible if you need to
               cancel. Orders already in production, shipped, or personalized may not be eligible for cancellation.
-              For orders placed through Amazon or Lulu, follow the applicable retailer&apos;s cancellation process.
+              For earlier purchases made through a third-party retailer, follow that retailer&apos;s cancellation process.
             </p>
           </article>
 
           <article className="details-card" id="retailer-orders">
-            <h2>Orders placed through Amazon or Lulu</h2>
+            <h2>Earlier third-party retailer orders</h2>
             <p>
-              Paperback and hardcover orders placed through Amazon or Lulu are processed and fulfilled by those
-              retailers. Their applicable return, refund, damage, and cancellation policies govern those orders.
-              Please use the retailer&apos;s order history or customer support to request assistance.
+              If you previously placed an order through an outside retailer, that retailer&apos;s applicable
+              return, refund, damage, and cancellation policies govern the order. Please use the original
+              retailer&apos;s order history or customer support to request assistance. New direct orders from
+              DivaglamKreation follow the direct-order policies above.
             </p>
           </article>
         </div>
