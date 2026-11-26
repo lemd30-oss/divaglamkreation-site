@@ -1,7 +1,7 @@
 import { notFound, redirect } from 'next/navigation';
 import { SiteHeader } from '../../components/SiteHeader';
 import { SiteFooter } from '../../components/SiteFooter';
-import { products } from '../../home-content';
+import { links, products } from '../../home-content';
 import { pageMetadata } from '../../metadata';
 
 const entries = [
@@ -26,6 +26,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const product = products.find(item => item.title === entry?.title);
   if (!entry || !product) notFound();
   const physical = slug === 'reflections' || slug === 'the-gentle-reset';
+  const isPaperback = slug === 'the-gentle-reset';
+  const testLink = process.env.GENTLE_RESET_TEST_PAYMENT_LINK ??
+    'https://buy.stripe.com/test_3cI7sLdnf5550Bq6YC8Zq00';
+  const previewCheckout = process.env.VERCEL_ENV === 'preview' &&
+    testLink?.startsWith('https://buy.stripe.com/test_') ? testLink : undefined;
   return <main className="site-shell" id="main-content">
     <SiteHeader />
     <section className="hero">
@@ -34,8 +39,22 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <h1>{product.title}</h1>
         <p>{product.description}</p>
         <p className="trust-note">{entry.format}</p>
+        {isPaperback && (
+          <div>
+            <p><strong>$14.00 per paperback</strong> · Estimated U.S. shipping $6.50 for one copy</p>
+            <p>Estimated total before tax: $20.50.</p>
+          </div>
+        )}
         <div className="hero-actions">{product.comingSoon || product.paused ? <span className="button" role="status">{product.paused ? 'Returning soon' : 'Coming Soon'}</span> : <a className="button" href={product.href} target={product.external ? '_blank' : undefined} rel={product.external ? 'noopener noreferrer' : undefined}>{product.buttonLabel}</a>}</div>
         <p className="trust-note">{entry.note}</p>
+        {isPaperback && (
+          <div className="hero-actions">
+            <a className="button" href={links.contactEmail + '?subject=The%20Gentle%20Reset%20paperback%20waitlist&body=Please%20add%20me%20to%20the%20paperback%20waitlist%20and%20email%20me%20when%20orders%20open.'}>
+              Email me when orders open
+            </a>
+            {previewCheckout && <a href={previewCheckout}>Try test checkout</a>}
+          </div>
+        )}
       </div>
       <aside className="hero-card"><img src={product.image} alt={product.imageAlt} style={{ display: 'block', width: '100%', maxHeight: '460px', objectFit: 'contain' }} /></aside>
     </section>
