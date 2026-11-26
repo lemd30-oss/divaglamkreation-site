@@ -27,7 +27,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   if (!entry || !product) notFound();
   const physical = slug === 'reflections' || slug === 'the-gentle-reset';
   const isPaperback = slug === 'the-gentle-reset';
-  const testLink = process.env.GENTLE_RESET_TEST_PAYMENT_LINK;
+  const testLink = process.env.GENTLE_RESET_TEST_PAYMENT_LINK ??
+    'https://buy.stripe.com/test_3cI7sLdnf5550Bq6YC8Zq00';
   const previewCheckout = process.env.VERCEL_ENV === 'preview' &&
     testLink?.startsWith('https://buy.stripe.com/test_') ? testLink : undefined;
   return <main className="site-shell" id="main-content">
