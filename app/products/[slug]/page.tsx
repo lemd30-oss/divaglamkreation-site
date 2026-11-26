@@ -39,7 +39,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       </div>
       <aside className="hero-card"><img src={product.image} alt={product.imageAlt} style={{ display: 'block', width: '100%', maxHeight: '460px', objectFit: 'contain' }} /></aside>
     </section>
-    <section className="section">
+    <section className="section product-details">
       <h2>What’s inside</h2>
       <ul>{entry.inside.map(item => <li key={item}>{item}</li>)}</ul>
       <h2>Common questions</h2>
